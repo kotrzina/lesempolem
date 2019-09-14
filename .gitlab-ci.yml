@@ -6,9 +6,9 @@ services:
   - docker:dind
 
 cache:
+  policy: pull
   paths:
     - vendor/
-
 
 variables:
   DOCKER_HOST: tcp://docker:2375
@@ -17,6 +17,10 @@ variables:
 unit-tests:
   stage: test
   image: php:7.3-cli
+  cache:
+    policy: pull-push
+    paths:
+      - vendor/
   script:
   - apt-get update && apt-get install -y zlib1g-dev git libpq-dev libzip-dev unzip
   - php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
