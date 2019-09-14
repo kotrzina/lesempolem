@@ -1,6 +1,6 @@
 <?php
 
-namespace Lesempolem\Constant;
+namespace Lesempolem\Model\Constant;
 
 
 interface BankAccount

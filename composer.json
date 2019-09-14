@@ -12,5 +12,15 @@
     "require-dev": {
         "nette/tester": "~2.3"
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Lesempolem\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Lesempolem\\": "tests/"
+        }
+    }
 }

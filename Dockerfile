@@ -22,5 +22,5 @@ RUN mkdir -p /var/www/html/temp/cache \
     && chmod -R 777 /var/www/html/log \
     && chmod -R 777 /var/www/html/www/static_files
 
-RUN composer install --no-dev
+RUN composer install --no-dev --optimize-autoloader
 RUN php bin/minify.php

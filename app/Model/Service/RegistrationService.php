@@ -1,6 +1,6 @@
 <?php
 
-namespace Lesempolem\Service;
+namespace Lesempolem\Model\Service;
 
 
 class RegistrationService
@@ -24,21 +24,6 @@ class RegistrationService
 	{
 		$this->lastPaymentDay = new \DateTime($lastPaymentDay);
 		$this->lastRegistrationDay = new \DateTime($lastRegistrationDay);
-	}
-
-	/**
-	 * Return true, if payment should be generated
-	 * @return bool
-	 */
-	public function generatePayment()
-	{
-		$now = new \DateTime();
-		$interval = $now->diff($this->lastPaymentDay);
-		if ($now <= $this->lastPaymentDay || $interval->days === 0) {
-			return true;
-		}
-
-		return false;
 	}
 
 	/**

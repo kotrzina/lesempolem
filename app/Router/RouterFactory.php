@@ -1,8 +1,8 @@
 <?php
 
-namespace App;
+namespace Lesempolem\Router;
 
-use Lesempolem\Environment;
+use Lesempolem\Model\Environment;
 use Nette,
 	Nette\Application\Routers\RouteList,
 	Nette\Application\Routers\Route,

@@ -12,15 +12,3 @@ if (!is_dir(__DIR__ . "/../temp/data")) {
 }
 
 Tester\Environment::setup();
-
-$configurator = new Nette\Configurator;
-$configurator->setDebugMode(FALSE);
-$configurator->setTempDirectory(__DIR__ . '/../temp');
-$configurator->createRobotLoader()
-    ->addDirectory(__DIR__ . '/../app')
-    ->register();
-
-$configurator->addConfig(__DIR__ . '/../app/config/registration.neon');
-$configurator->addConfig(__DIR__ . '/../app/config/config.params.php');
-$configurator->addConfig(__DIR__ . '/../app/config/config.neon');
-return $configurator->createContainer();

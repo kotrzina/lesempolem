@@ -1,20 +1,11 @@
 <?php
 
-namespace Lesempolem;
+namespace Lesempolem\Model;
 
-
-use Lesempolem\Entity\Category;
-use Lesempolem\Entity\Payment;
-use Lesempolem\Entity\Racer;
-use Lesempolem\Filter\IFilter;
-use Nette\Application\BadRequestException;
+use Lesempolem\Model\Filter\IFilter;
 use Nette\Database\Context;
-use Nette\Database\UniqueConstraintViolationException;
 use Nette\Http\Request;
 use Nette\Http\Session;
-use Nette\Utils\DateTime;
-use Nette\Utils\Random;
-use Tracy\Debugger;
 
 class MainService
 {
@@ -65,21 +56,5 @@ class MainService
 		}
 
 		return $data;
-	}
-
-	public function insertRacer(Racer $racer)
-	{
-		$data = [
-			'name' => $racer->getName(),
-			'surname' => $racer->getSurname(),
-			'club' => $racer->getClub(),
-			'year' => $racer->getYear(),
-			'sex' => $racer->getSex(),
-			'category' => $racer->getCategory(),
-			'price' => $racer->getPrice(),
-			'created' => $racer->getCreated(),
-		];
-		$row = $this->db->table(self::REGISTRATION_TABLE)->insert($data);
-		return $row['id'];
 	}
 } 

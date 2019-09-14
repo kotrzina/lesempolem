@@ -1,6 +1,6 @@
 <?php
 
-namespace Lesempolem\Filter;
+namespace Lesempolem\Model\Filter;
 
 interface IFilter
 {

@@ -1,10 +1,11 @@
 <?php
 
-namespace Lesempolem\Filter;
+namespace Lesempolem\Model\Filter;
 
 
-class WomenFilter implements IFilter
+class MenFilter implements IFilter
 {
+
 
 	/**
 	 * @param array $data
@@ -13,7 +14,7 @@ class WomenFilter implements IFilter
 	public function filter(array $data)
 	{
 		$data = array_filter($data, function ($item) {
-			if ($item['sex'] == 1) {
+			if ($item['sex'] == 0) {
 				return true;
 			}
 			return false;
@@ -21,5 +22,4 @@ class WomenFilter implements IFilter
 
 		return $data;
 	}
-
 }

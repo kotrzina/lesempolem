@@ -1,6 +1,6 @@
 <?php
 
-namespace Lesempolem;
+namespace Lesempolem\Model;
 
 
 class Environment

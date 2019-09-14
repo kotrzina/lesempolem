@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Presenters;
+namespace Lesempolem\Presenters;
 
-use Lesempolem\StaticFiles;
-use Lesempolem\Environment;
-use Lesempolem\UUID;
+use Lesempolem\Model\TimeFormatter;
+use Lesempolem\Model\StaticFiles;
+use Lesempolem\Model\Environment;
 use Nette;
 use Nette\Application\UI\ITemplate;
-use TimeFormatter;
 
 
 /**

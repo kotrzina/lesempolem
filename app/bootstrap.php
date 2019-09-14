@@ -14,10 +14,6 @@ $configurator->enableDebugger(__DIR__ . '/../log');
 
 $configurator->setTempDirectory(__DIR__ . '/../temp');
 
-$configurator->createRobotLoader()
-	->addDirectory(__DIR__)
-	->register();
-
 $configurator->addConfig(__DIR__ . "/config/config.params.php");
 $configurator->addConfig(__DIR__ . '/config/registration.neon');
 $configurator->addConfig(__DIR__ . '/config/config.neon');

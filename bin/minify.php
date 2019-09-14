@@ -1,6 +1,8 @@
 <?php
 
 
+use Lesempolem\Model\StaticFiles;
+
 require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../app/model/StaticFiles.php';
 
@@ -11,7 +13,7 @@ $css->add(__DIR__ . "/../www/bootstrap/css/bootstrap.min.css");
 $css->add(__DIR__ . "/../www/bootstrap/css/bootstrap-theme.min.css");
 $css->add(__DIR__ . "/../www/css/styles.css");
 
-$css->minify($output_dir . "/styles_" . \Lesempolem\StaticFiles::CSS_VERSION . ".css");
+$css->minify($output_dir . "/styles_" . StaticFiles::CSS_VERSION . ".css");
 echo "\nCSS has been generated\n";
 
 $js = new \MatthiasMullie\Minify\JS();
@@ -22,5 +24,5 @@ $js->add(__DIR__ . "/../www/js/validationPayment.js");
 $js->add(__DIR__ . "/../www/js/fixFooter.js");
 $js->add(__DIR__ . "/../www/js/toTop.js");
 
-$js->minify($output_dir . "/scripts_" . \Lesempolem\StaticFiles::JS_VERSION . ".js");
+$js->minify($output_dir . "/scripts_" . StaticFiles::JS_VERSION . ".js");
 echo "JS has been generated\n\n";

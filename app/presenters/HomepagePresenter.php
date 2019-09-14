@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Presenters;
+namespace Lesempolem\Presenters;
 
-use Lesempolem\Filter\MenFilter;
-use Lesempolem\Filter\NotDeletedFilter;
-use Lesempolem\Filter\WomenFilter;
-use Lesempolem\LiveResultsService;
-use Lesempolem\MainService;
-use Lesempolem\Service\RegistrationService;
+use Lesempolem\Model\Filter\MenFilter;
+use Lesempolem\Model\Filter\NotDeletedFilter;
+use Lesempolem\Model\Filter\WomenFilter;
+use Lesempolem\Model\LiveResultsService;
+use Lesempolem\Model\MainService;
+use Lesempolem\Model\Service\RegistrationService;
 use Nette\Application\UI\Form;
 use Nette\Caching\Cache;
 use Nette\Caching\IStorage;
@@ -44,7 +44,7 @@ class HomepagePresenter extends BasePresenter
 	{
 		parent::startup();
 		$this->cache = new Cache($this->storage);
-		$this->template->isSale = $this->registrationService->generatePayment();
+		$this->template->isSale = $this->registrationService->isRegistrationEnabled();
 
 		$today = new \DateTime();
 		$this->template->showOnline = $today->format('d/m/Y') === '15/06/2019' ? true : false;

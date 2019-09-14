@@ -1,10 +1,9 @@
 <?php
 
-namespace App\Presenters;
+namespace Lesempolem\Presenters;
 
 
-use Lesempolem\Entity\Racer;
-use Lesempolem\MainService;
+use Lesempolem\Model\MainService;
 use Nette\Application\Responses\JsonResponse;
 use Nette\Application\UI\Form;
 use Nette\Http\Session;

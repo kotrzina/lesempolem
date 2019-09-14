@@ -1,6 +1,6 @@
 <?php
 
-namespace Lesempolem;
+namespace Lesempolem\Model;
 
 use Nette\Database\Context;
 use Nette\Utils\Json;

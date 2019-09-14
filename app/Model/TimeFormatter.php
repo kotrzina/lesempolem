@@ -1,5 +1,6 @@
 <?php
 
+namespace Lesempolem\Model;
 
 class TimeFormatter
 {

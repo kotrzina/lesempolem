@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Presenters;
+namespace Lesempolem\Presenters;
 
 
-use Lesempolem\LiveResultsService;
+use Lesempolem\Model\LiveResultsService;
 use Nette\Utils\JsonException;
 
 class ApiPresenter extends BasePresenter
