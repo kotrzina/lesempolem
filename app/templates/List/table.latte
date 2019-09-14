@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Seznam závodníků</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<p>
+    <a n:href="json">JSON file</a>
+</p>
+<table border="1">
+    <tr>
+        <th>Jméno</th>
+        <th>Příjmení</th>
+        <th>Klub</th>
+        <th>Ročník</th>
+        <th>Pohlaví</th>
+        <th>Registrace</th>
+        <th>Cena</th>
+        <th>VS</th>
+        <th>Smazán</th>
+        <th>Zaplaceno</th>
+    </tr>
+    {foreach $list as $racer}
+        <tr>
+            <td>{$racer->getName()}</td>
+            <td>{$racer->getSurname()}</td>
+            <td>{$racer->getClub()}</td>
+            <td>{$racer->getYear()}</td>
+            <td>{if $racer->isWoman()}}Žena{else}Muž{/if}</td>
+            <td>{$racer->getCreated()->format('d.m.Y H:i:s')}</td>
+            <td>{$racer->getPrice()} Kč</td>
+            <td>{$racer->getVariableSymbol()}</td>
+            <td style="text-align: center">{if $racer->isDeleted()}<img width="16px"
+                                                                        src="{$basePath}/images/ok.png">{/if}</td>
+            <td style="text-align: center">{if $racer->hasPaid()}<img width="16px" src="{$basePath}/images/ok.png">{/if}
+            </td>
+        </tr>
+    {/foreach}
+</table>
+
+</body>
+</html>

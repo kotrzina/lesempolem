@@ -1,0 +1,37 @@
+php:
+	date.timezone: Europe/Prague
+
+database:
+	default:
+		dsn: %db.dsn%
+		user: %db.user%
+		password: %db.pass%
+		options:
+			lazy: true
+			PDO::MYSQL_ATTR_COMPRESS: true
+
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+session:
+	expiration: 2 years
+	savePath: %tempDir%/sessions
+
+
+services:
+	- App\RouterFactory()
+	router: @App\RouterFactory::createRouter
+	mainService: Lesempolem\MainService
+	mailer: Lesempolem\Mailer(%mailer.host%, %mailer.port%, %mailer.username%, %mailer.password%, %mailer.secure%)
+	- Lesempolem\Environment(%env%)
+	- Lesempolem\Service\RegistrationService(%lastPaymentDay%, %lastRegistrationDay%)
+	- Lesempolem\LiveResultsService
+
+
+	cacheStorage:
+		factory: Nette\Caching\Storages\FileStorage(%tempDir%/data)
+
+	- App\Presenters\ApiPresenter(%api.live_token%)

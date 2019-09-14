@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakty | Lesempolem</title>
+    {include './head.latte'}
+    {include './headImport.latte'}
+    <script src="//api.mapy.cz/loader.js"></script>
+    <script>Loader.load();</script>
+</head>
+<body>
+{block|strip}
+
+    {include './nav.latte', active => 'kontakty'}
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-6 col-md-12">
+                <h1>Kontakty na pořadatele</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img class="userImage" src="{$basePath}/kontakty/jirka.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Jirka Skoták</h3>
+                        <p>Jirka je hlavním myslitelem běhu Lesempolem a dělá pro něj skoro vše. Oficiálně pak figuruje
+                            jako
+                            hlavní pořadatel a řešitel ostatních průserů.</p>
+                        <div class="inner-addon left-addon addon-space-after">
+                            <i class="glyphicon glyphicon-envelope"></i>
+                            <input name="email" type="text" class="form-control" value="skotak@jiskel.cz"/>
+                        </div>
+                        <div class="inner-addon left-addon">
+                            <i class="glyphicon glyphicon-earphone"></i>
+                            <input name="email" type="text" class="form-control" value="777 250 164"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img class="userImage" src="{$basePath}/kontakty/tomas.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Tomáš Kozák</h3>
+                        <p>Pro Lesempolem zajišťuje grafické práce, webové stránky a především měření výsledků přímo na
+                            závodech. Najdete ho v cíli u PC nebo radši na mailu.</p>
+                        <div class="inner-addon left-addon addon-space-after">
+                            <i class="glyphicon glyphicon-envelope"></i>
+                            <input name="email" type="text" class="form-control" value="kozak@talko.cz"/>
+                        </div>
+                        <div class="inner-addon left-addon">
+                            <i class="glyphicon glyphicon-earphone"></i>
+                            <input name="email" type="text" class="form-control" value="730 996 957"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img class="userImage" src="{$basePath}/kontakty/kozel.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Luba Němec</h3>
+                        <p>Náš Kozlík shání a diriguje tu spoustu lidí, kteří vás pak po trati směrují, abyste nám někde
+                            nezabloudili. Také zajištuje všechny dobroty k jídlu a pití.</p>
+                        <div class="inner-addon left-addon addon-space-after">
+                            <i class="glyphicon glyphicon-envelope"></i>
+                            <input name="email" type="text" class="form-control" value="lubanemec88@gmail.com"/>
+                        </div>
+                        <div class="inner-addon left-addon">
+                            <i class="glyphicon glyphicon-earphone"></i>
+                            <input name="email" type="text" class="form-control" value="728 637 987"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div n:if="false" class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img class="userImage" src="{$basePath}/kontakty/blecha.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Martin Nečas</h3>
+                        <p>Blecha medvědí se už od začátku stará o registraci účastníků běhu. Po příchodu na závody to
+                            bude
+                            právě on, koho budete hledat.</p>
+                        <div class="inner-addon left-addon addon-space-after">
+                            <i class="glyphicon glyphicon-envelope"></i>
+                            <input name="email" type="text" class="form-control" value="necasmartin@seznam.cz"/>
+                        </div>
+                        <div class="inner-addon left-addon">
+                            <i class="glyphicon glyphicon-earphone"></i>
+                            <input name="email" type="text" class="form-control" value="721 095 439"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Mapka:</h2>
+                <div class="map">
+                    <div id="m" style="height:500px"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+{include './footer.latte'}
+
+
+    <script src="{$basePath}/js/map.js"></script>
+{/block}
+</body>
+</html>

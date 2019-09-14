@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Lesempolem - potvrzení platby</title>
+</head>
+<body>
+<h1>Ahoj,</h1>
+
+<h2>tvoji platbu jsme úspěšně přijali!</h2>
+<ul>
+    <li><strong>Variabilní symbol:</strong> {$variable_symbol}</li>
+    <li><strong>Částka:</strong> {$amount} Kč</li>
+</ul>
+
+<h3>Registrovaní závodníci:</h3>
+<ul>
+    {foreach $payment->getRacers() as $racer}
+        <li>
+            {$racer->getName()} {$racer->getSurname()} ({$racer->getClub()})
+        </li>
+    {/foreach}
+</ul>
+
+<p>Díky! Budeme se těšit! <br/>
+    <strong>Tým LESEMPOLEM.</strong>
+</p>
+</body>
+</html>

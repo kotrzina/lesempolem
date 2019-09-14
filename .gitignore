@@ -1,0 +1,14 @@
+.idea/
+data/
+
+log/*
+temp/*
+vendor/*
+!vendor/others
+
+.DS_Store
+!.gitignore
+!.htaccess
+!web.config
+www/payment/
+www/static_files/

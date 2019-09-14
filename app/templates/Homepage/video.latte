@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sestřih ze závodů | Lesempolem.cz</title>
+    {include './head.latte'}
+    {include './headImport.latte'}
+</head>
+<body>
+{block|strip}
+
+{include './nav.latte', active => 'video'}
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Sestřih ze závodů - video</h1>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class=".embed-responsive-item" src="https://www.youtube.com/embed/JSZ0lRwT7R0?rel=0"
+                        allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+{include './footer.latte'}
+
+
+</body>
+{/block}
+</html>

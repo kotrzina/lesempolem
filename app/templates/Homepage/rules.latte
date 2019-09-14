@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Podmínky registrace | Lesempolem</title>
+    {include './head.latte'}
+    {include './headImport.latte'}
+</head>
+<body>
+{block|strip}
+
+    {include './nav.latte', active => 'payment'}
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Podmínky registrace</h1>
+                <p>
+                    Vyplněním a odesláním registračního formuláře dává každý registrovaný spol. SH ČMS - Sbor
+                    dobrovolných hasičů Veselice (IČ: 65339851) souhlas se zpracováním a využitím údajů o své osobě pro
+                    účely realizace soutěže a pro marketingové účely pořadatele, a to včetně e-mailové adresy vyplněné v
+                    registračním formuláři, a obrazového a video materiálu pořízeného během akce, na kterém se může
+                    účastník závodu objevit, po dobu deseti let od udělení souhlasu v souladu s příslušnými ustanoveními
+                    zákona č. 101/2000 Sb. (zákon o ochraně osobních údajů) v platném znění.
+                    Dále učastník souhlasí se zveřejněním svého jména, příjmení a klubu (bydliště) na webových stránkách
+                    www.lesempolem.cz v seznamu již zaregistrovaných osob.
+                    Pokud uživatel provádí registraci pro více účastníků, jedná tak s jejich platným souhlasem o
+                    poskytnují všech zmíněných osobních údajů a na všechny registrované se vztahují výše uvedené
+                    podmínky.
+                    V případě nezletilých může být registrace provedena pouze zákoným zástupcem nezletilého.
+                    Účastník zároveň vyjadřuje souhlas s tím, aby údaje o jeho osobě byly v plném rozsahu a k účelům
+                    výše uvedeným dále zpracovány a využity partnery SH ČMS - Sbor dobrovolných hasičů Veselice. Údaje
+                    jsou účastníkem soutěže poskytovány dobrovolně a svůj souhlas s jejich zpracováním může kdykoliv
+                    písemně odvolat na adrese sídla pořadatele.
+                </p>
+
+                <p>
+                    <a n:href="payment" class="btn btn-success btn-lg spacedown">Dokončit registraci</a>
+                    <a n:href="registration" class="btn btn-success btn-lg spacedown">
+                        <i class="glyphicon glyphicon-plus"></i> Přidat dalšího závodníka</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    {include './footer.latte'}
+{/block}
+</body>
+</html>

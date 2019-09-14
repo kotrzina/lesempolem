@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrace závodníků | Lesempolem</title>
+    {include './head.latte'}
+    {include './headImport.latte'}
+</head>
+<body>
+{block|strip}
+
+{include './nav.latte', active => 'registration'}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Registrace na Lesempolem</h1>
+            <div n:if="$isSale" class="alert alert-success message-success hidden-xs hidden-sm" role="alert">
+                <a title="Dokončené a nedokončené registrace" n:if="$showRegistration" n:href="payment"
+                   class="btn-lg btn-danger cena">Moje registrace</a>
+                &nbsp;Sleva 20 Kč pro závodníky registrované do 11. 6.
+                &nbsp;
+                <span class="btn btn-success">80 Kč dospělí</span>
+                <span class="btn btn-success">20 Kč děti</span>
+            </div>
+
+            <p>Zde se můžeš na Lesempolem zaregistrovat a zaplatit startovné na náš účet.
+                Závody se uskuteční 15. 6. 2019. Zajistíš si tím, že už tě budeme mít v
+                počítači a tvoje odbavení při přidělení čísla na místě bude mnohem
+                rychlejší. A pokud stihneš obojí do 11.&nbsp;6., budeš mít startovné o 20 Kč
+                levnější, tj. 80&nbsp;Kč dospělí a 20&nbsp;Kč děti. Od 12.&nbsp;6. bude registrace možná až
+                15.&nbsp;6.&nbsp; v místě závodu za plnou cenu, tj. 100&nbsp;Kč dospělí a 40&nbsp;Kč děti (na webu
+                bude k dispozici jen předběžná registrace). Pokud stále nejsi rozhodnutý,
+                <a n:href="info">rozklikni si další pravidla a informace o Lesempolem</a>.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        {form registrationForm}
+            <div class="col-md-4">
+                {foreach $flashes as $flash}
+                    <div class="alert alert-success message-success" role="alert">{$flash->message}</div>
+                {/foreach}
+                <div class="form-group has-feedback">
+                    {label name class=>'control-label'/}
+                    {input name class=>'form-control'}
+                    <span class="validation form-control-feedback"></span>
+                </div>
+
+                <div class="form-group has-feedback">
+                    {label surname class=>'control-label'/}
+                    {input surname class=>'form-control'}
+                    <span class="validation form-control-feedback"></span>
+                </div>
+
+                <div class="form-group has-feedback">
+                    {label club class=>'control-label'/}
+                    {input club class=>'form-control'}
+                    <span class="validation form-control-feedback"></span>
+                </div>
+
+                <div class="form-group has-feedback">
+                    {label year class=>'control-label'/}
+                    {input year class=>'form-control'}
+                    <span class="validation form-control-feedback"></span>
+                </div>
+
+                <div class="form-group has-feedback">
+                    {label sex class=>'control-label'/}
+                    {input sex class=>'form-control'}
+                    <span class="validation"></span>
+                </div>
+
+                <div class="form-group has-feedback">
+                    {label category class=>'control-label'/}
+                    {input category class=>'form-control'}
+                    <span class="validation"></span>
+                </div>
+
+                {input ok class=>'btn btn-success btn-lg', id => 'ok-button'}
+
+                <p n:if="false" class="small">* Pokud chceš běžet jinou trať než určuje tvůj věk a pohlaví, je třeba to
+                    nahlásit před
+                    závodem při registraci přímo na závodu.</p>
+                <hr>
+            </div>
+        {/form}
+
+        <div class="col-md-2 hidden-sm hidden-xs"></div>
+        <div class="col-md-6 hidden-sm hidden-xs one-photo">
+            <h3>Medaile z roku 2016</h3>
+            <img src="{$basePath}/images/rsz_img_0361.jpg" class="img-responsive" alt="Medaile z roku 2015">
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div n:if="count($men) > 0" class="col-md-5">
+            <h2>Již zaregistrovaní MUŽI</h2>
+            <ul>
+                {foreach $men as $racer}
+                    <li>
+                        {$racer->name} {$racer->surname}
+                        <span>({$racer->club|truncate:25})</span>
+                    </li>
+                {/foreach}
+            </ul>
+        </div>
+
+        <div n:if="count($women) > 0" class="col-md-5">
+            <h2>Již zaregistrované ŽENY</h2>
+            <ul>
+                {foreach $women as $racer}
+                    <li>
+                        {$racer->name} {$racer->surname}
+                        <span>({$racer->club|truncate:25})</span>
+                    </li>
+                {/foreach}
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+{include './footer.latte'}
+
+</body>
+{/block}
+</html>

@@ -1,0 +1,23 @@
+<h1>Lesempolem,</h1>
+
+<h2>Uživateli bylo odesána upomínka</h2>
+<ul>
+    <li><strong>Variabilní symbol:</strong> {$variable_symbol}</li>
+    <li><strong>Částka:</strong> {$amount} Kč</li>
+</ul>
+
+<h3>Registroval:</h3>
+<ul>
+    <li><strong>Jméno:</strong> {$payment->getName()}</li>
+    <li><strong>Email:</strong> {$payment->getEmail()}</li>
+</ul>
+
+<h3>Registrovaní závodníci:</h3>
+<ul>
+    {foreach $payment->getRacers() as $racer}
+        <li>{$racer->getName()} {$racer->getSurname()}
+            ({$racer->getClub()}), ročník: {$racer->getYear()},
+            startovné: {$racer->getPrice()} Kč
+        </li>
+    {/foreach}
+</ul>

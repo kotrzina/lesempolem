@@ -1,0 +1,22 @@
+<h1>Proběhla nová registrace závodníků na Lesempolem.</h1>
+
+<h2>Registraci provedl(a):</h2>
+<ul>
+    <li><strong>Jméno:</strong> {$payment->getName()}</li>
+    <li><strong>Email:</strong> {$payment->getEmail()}</li>
+    <li><strong>Session_id:</strong> {$payment->getSessionId()}</li>
+    <li><strong>IP:</strong> {$payment->getIp()}</li>
+    <li><strong>Vytvořeno:</strong> {$payment->getCreated()->format('d. m. Y H:i:s')}</li>
+</ul>
+
+<h2>Registrování:</h2>
+<ul>
+    {foreach $payment->getRacers() as $racer}
+        <li>{$racer->getName()} {$racer->getSurname()}
+            ({$racer->getClub()}), ročník: {$racer->getYear()},
+            startovné: {$racer->getPrice()} Kč
+        </li>
+    {/foreach}
+</ul>
+
+Celkem by na startovném mělo být zaplaceno: {$payment->getTotalPrice()} Kč

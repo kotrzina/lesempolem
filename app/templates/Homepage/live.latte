@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Online výsledky | Lesempolem.cz</title>
+    {include './head.latte'}
+    {include './headImport.latte'}
+</head>
+<body>
+{block|strip}
+{include './nav.latte', active => 'live'}
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Live výsledky</h1>
+
+            {var $races = ['10', '5', 'zaci', 'pripravka_h', 'pripravka_k', 'svisti_h', 'svisti_k', 'svistici_h', 'svistici_k']}
+
+            {foreach $races as $race}
+                {if isset($data[$race]) && count($data[$race]['results']) > 0}
+                    <h2>{$data[$race][title]}</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <tr>
+                                <th>Poř.</th>
+                                <th>S. číslo</th>
+                                <th>Příjmení, Jméno</th>
+                                <th>Oddíl/město</th>
+                                <th>Kat.</th>
+                                <th>Poř.<br>kat.</th>
+                                <th>Čas</th>
+                                <th>Ztráta</th>
+                            </tr>
+                            {foreach $data[$race]['results'] as $racer}
+                                {var $isValid = !$racer['na'] && !$racer['dnf']}
+                                <tr>
+                                    <td>{if $isValid}{$racer['place']}.{/if}</td>
+                                    <td>{$racer['number']}</td>
+                                    <td>{$racer['surname']} {$racer['name']}</td>
+                                    <td>{$racer['club']}</td>
+                                    <td>{$racer['category']}</td>
+                                    <td>{if $isValid}{$racer['category_place']}.{/if}</td>
+                                    <td>
+                                        {if $isValid}
+                                            {$racer['time']|time}
+                                        {elseif $racer['na']}
+                                            NA
+                                        {elseif $racer['dnf']}
+                                            DNF
+                                        {/if}
+                                    </td>
+                                    <td>{if $isValid}{$racer['distance']|time_behind}{/if}</td>
+                                </tr>
+                            {/foreach}
+
+                        </table>
+                    </div>
+                {/if}
+            {/foreach}
+
+            <div class="vysledky">
+                <a class="btn btn-primary toTop">
+                    <span class="glyphicon glyphicon-chevron-up"></span>&nbsp;Nahoru
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{include './footer.latte'}
+
+
+</body>
+{/block}
+</html>

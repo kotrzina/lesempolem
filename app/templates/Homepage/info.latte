@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Informace | Lesempolem</title>
+    {include './head.latte'}
+    {include './headImport.latte'}
+</head>
+<body>
+{block|strip}
+
+{include './nav.latte', active => 'info'}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Informace pro účastníky</h1>
+
+            <div class="alert alert-success" role="alert">Hlídání dětí během hlavního závodu zajištěno - malování a
+                hry
+            </div>
+
+
+            <p>Pro všechny příchozí je připraveno pamětní startovní číslo a medaile! Protože věříme, že opět pokvete
+                bez, bude z
+                něj
+                již tradičně vyroben nápoj, který bude závodníkům k dispozici během celého konání závodu. Na závodníky
+                čeká
+                občerstvení z regionálních produktů v podobě Černohorského piva a uzených klobás z nedalekých Němčic.
+                Pro vegetariány bude připraven těstovinový salát se zeleninou z místních zahrad, co hrdlo račí.
+                První tři v
+                každé
+                kategorii obdrží medaile, diplomy a pouťové ceny. Jako bonus bude všem majitelům pamětních startovních
+                čísel
+                umožněn
+                zdarma výstup na rozhlednu v Podvrší. Letos se opět objeví na pódiu živá hudba. Jako každý rok bude
+                ochutnávka
+                produktů zdravé výživy. Pro rodiče s dětmi je připraveno hlídání dětí v době hlavního závodu.</p>
+
+            <p>Pro juniorky a příchozí, kteří nestojí o body do OBL, nebo si netroufají na 10&nbsp;km,
+                bude
+                stejně jako loni připravená trasa dlouhá 5&nbsp;km.</p>
+
+            <p>Celá akce spočívá na práci společenství Kotržiny, složené z dobrovolných hasičů, oddílu stolního tenisu,
+                dětí a dospělých z oddílu Orientačního běhu a sdružení „Kaplička“. Je dobré vědět, že k uspořádání akce
+                tohoto charakteru ve složitém terénu je potřeba kolem 50 pořadatelů - dobrovolníků.</p>
+
+            <p>Snad se za všechnu vynaloženou námahu atmosféra příprav přenese až k vám, účastníkům a návštěvníkům
+                tohoto
+                závodu. Těšíme se na vás!</p>
+
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <h2>Kategorie a harmonogram</h2>
+            <table class="table">
+                <tr>
+                    <th></th>
+                    <th>Prezence</th>
+                    <th>od 08:00</th>
+                    <th></th>
+                </tr>
+                {foreach $categories as $category}
+                    <tr class="{$category->color}">
+                        <td><img src="{$basePath}/images/{if $category->gender === 1}fe{/if}male.png"
+                                 alt="Ikona pohlavi">
+                        </td>
+                        <td>{$category->title}</td>
+                        <td>{$category->start}</td>
+                        <td>{$category->distance|number:0:'':' '} m</td>
+                    </tr>
+                {/foreach}
+            </table>
+            <p>* bez bodů do OBL</p>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <h2>Propozice</h2>
+            <ul>
+                <li>Název: LESEMPOLEM</li>
+                <li>Datum: 15. 6. 2019</li>
+                <li>Délka: 10 km (společný start)</li>
+                <li>Čas startu dětských závodů: 9:00</li>
+                <li>Čas startu hlavního závodu: 11:00</li>
+                <li>Čas prezentace: od 8:00 do 10:45, min. 15 minut před závodem</li>
+                <li>Místo startu: Hřiště sportovního areálu ve Veselici (směr rozhledna ve Veselici)</li>
+                <li>Startovné: 80&nbsp;Kč (100&nbsp;Kč po 11.&nbsp;6.&nbsp;2019). Dětské kategorie 20&nbsp;Kč (40&nbsp;Kč
+                    po 11.&nbsp;6.&nbsp;2019)
+                </li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-sm-12 col-md-6">
+            <h2>Pravidla</h2>
+            <ul>
+                <li>Závodí se dle pravidel Českého svazu atletiky a propozic závodu, každý účastník na vlastní
+                    nebezpečí
+                </li>
+                <li>Každý účastník závodu musí zaplatit startovné ve výši 80&nbsp;Kč (100&nbsp;Kč po 11.&nbsp;6.&nbsp;2019),
+                    dětské kategorie 20&nbsp;Kč (40&nbsp;Kč po 11.&nbsp;6.&nbsp;2019)
+                </li>
+                <li>Závod se koná za každého počasí</li>
+                <li>Registrace na místě před startem závodu</li>
+                <li>Předregistrace na stránkách <a n:href="registration">www.lesempolem.cz</a> - rychlejší odbavení na
+                    závodě
+                </li>
+                <li>Závodníci zaregistrovaní do 11. 6. 2019, kteří provedou i platbu startovného, mají nárok na
+                    zvýhodněné startovné
+                </li>
+                <li>Závody jsou určené pro veřejnost a nejsou limitovány žádným omezením. Každý se zde zúčastňuje na
+                    vlastní nebezpečí a běží s intenzitou podle svého zdravotního stavu a kondice
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-sm-12 col-md-6">
+            <h2>Popis tratě</h2>
+            <ul>
+                <li>Trať závodu na 5&nbsp;000&nbsp;m a 10&nbsp;000&nbsp;m vede převážně po polních a lesních cestách (90&nbsp;%)
+                    a pouze
+                    10&nbsp;% po
+                    asfaltových cestách
+                </li>
+                <li>Na 4. a 9. km občerstvovací stanice s vodou a rumem</li>
+                <li>Trať závodu na 1 350&nbsp;m vede po polních (50&nbsp;%) a asfaltových cestách (50&nbsp;%)</li>
+                <li>Dětské tratě (200&nbsp;m) a žákovské tratě (600 m) vedou po zpevněných a asfaltových cestách.</li>
+                <li><a n:href="trat">Detailní informace o trati včetně videa</a></li>
+            </ul>
+            <a class="btn btn-success" n:href="registration">Chci se zaregistrovat</a>
+        </div>
+    </div>
+
+    <div class="row gallery-under more-photo">
+        <div class="col-lg-12">
+            <h2>Fotky ze závodu:</h2>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <img src="{$basePath}/images/information/pod_rozhlednou.jpg" class="img-responsive"
+                 alt="Fotka trati pod rozhlednou">
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <img src="{$basePath}/images/information/hriste.jpg" class="img-responsive"
+                 alt="Fotka trati z výběhu ze hřiště">
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <img src="{$basePath}/images/information/cesta.jpg" class="img-responsive"
+                 alt="Cesta na rozhlednu">
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <img src="{$basePath}/images/information/z_rozhledny.jpg" class="img-responsive"
+                 alt="Fotka z dronu nad rozhlednou.">
+        </div>
+    </div>
+
+</div>
+
+{include './footer.latte'}
+
+</body>
+{/block}
+</html>

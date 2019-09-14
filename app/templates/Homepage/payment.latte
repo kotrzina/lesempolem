@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Dokončení registrace | Lesempolem</title>
+    {include './head.latte'}
+    {include './headImport.latte'}
+</head>
+<body>
+{block|strip}
+
+    {include './nav.latte', active => 'payment'}
+    <div class="container">
+
+        <div n:if="count($registration) > 0" class="row">
+            <div class="col-md-12">
+                <h1>Nedokončené registrace</h1>
+                <p>Pokud chceš v rámci jedné registrace provést registraci více závodníků, klikni na <a
+                            n:href="registration">"Přidat
+                        závodníka"</a>. Pokud chceš registraci dokončit, zkontroluj údaje ve formuláři níže a dokonči
+                    registraci
+                    tlačítkem "Dokončit registraci". Poté budeš muset startovné zaplatit převodem z účtu nebo pomocí QR
+                    platby. Celou rekapitulaci registrace samozřejmě dostaneš do své emailové schránky. Hned jak platbu
+                    příijmeme, tak ti dáme vědět ;)</p>
+            </div>
+        </div>
+
+        <div n:if="count($registration) > 0" class="row">
+            {form paymentForm}
+                <div class="col-md-4">
+                    <h2>Dokončení registrace</h2>
+                    {foreach $flashes as $flash}
+                        <div class="alert alert-{$flash->type}" role="alert">{$flash->message}</div>
+                    {/foreach}
+                    <div class="form-group has-feedback">
+                        {label name class=>'control-label'/}
+                        {input name class=>'form-control'}
+                        <span class="validation"></span>
+                    </div>
+
+                    <div class="form-group has-feedback">
+                        {label email class=>'control-label'/}
+                        {input email class=>'form-control'}
+                        <span class="validation"></span>
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input checked="checked" type="checkbox" name="rules"> Souhlasím s <a n:href="rules">podmínkami
+                                registrace</a>
+                        </label>
+                    </div>
+
+                    <a n:href="registration" class="btn btn-success btn-md"><i
+                                class="glyphicon glyphicon-plus"></i> Přidat závodníka</a>
+                    {input ok class=>'btn btn-success btn-md'}
+                    <img class="hiddenSpinner" src="{$basePath}/images/spinner.gif" alt="Progress spinner">
+                </div>
+            {/form}
+            <div class="col-md-8">
+                <h2>Zaregistrovaní běžci</h2>
+                <table class="table table-hover">
+                    <tr>
+                        <th>Jméno</th>
+                        <th>Příjmení</th>
+                        <th>Klub</th>
+                        <th>Rok narození</th>
+                        <th>Pohlaví</th>
+                        <th>Kategorie</th>
+                        <th>Startovné</th>
+                        <th></th>
+                    </tr>
+                    {foreach $registration as $key => $racer}
+                        {var $category = $categories[$racer->getCategory()]}
+                        <tr>
+                            <td>{$racer->getName()}</td>
+                            <td>{$racer->getSurname()}</td>
+                            <td>{$racer->getClub()}</td>
+                            <td>{$racer->getYear()}</td>
+                            <td>{if $racer->isWoman()}žena{else}muž{/if}</td>
+                            <td title="{$category->getTitle()}">{$category->getDescription()}</td>
+                            <td>{$racer->getPrice()} Kč</td>
+                            <td><a title="Odstranit závodníka" n:href="removeRacer $key"><span
+                                            class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+                        </tr>
+                    {/foreach}
+                    <tr>
+                        <td colspan="6"><strong>Celkem</strong></td>
+                        <td colspan="2">{$totalAmount} Kč</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div n:if="count($registration) > 0 && count($history) > 0" class="row">
+            <hr>
+        </div>
+
+        <div n:if="count($history) > 0" class="row">
+            <div class="col-md-12">
+                <h2>Dokončené registrace</h2>
+            </div>
+        </div>
+
+        {foreach $history as $payment}
+            <div n:if="count($history)" class="row">
+
+
+                <div class="col-lg-6">
+                    <h3>Registroval:</h3>
+                    <ul>
+                        <li><strong>Akce:</strong> Lesempolem 2019</li>
+                        <li><strong>Jméno:</strong> {$payment->getName()}</li>
+                        <li><strong>Email:</strong> {$payment->getEmail()}</li>
+                        <li><strong>Vytvořeno:</strong> {$payment->getCreated()->format('d. m.')} v
+                            {$payment->getCreated()->format('H:i')}
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+                    <h3>Platba:</h3>
+                    <ul>
+                        <li><strong>Platba přijata:</strong>
+                            {if $payment->isPaid()}
+                                <span class="btn btn-success btn-xs">ANO</span>
+                            {else}
+                                <span class="btn btn-danger btn-xs">NE</span>
+                            {/if}
+                        </li>
+                        <li n:if="!$payment->isPaid()"><strong>Číslo účtu:</strong> {$bankAccount}
+                            &nbsp;/&nbsp;{$bankCode}</li>
+                        <li n:if="!$payment->isPaid()"><strong>Variabilní
+                                symbol:</strong> {$payment->getVariableSymbol()}</li>
+                        <li><strong>Částka</strong> {$payment->getTotalPrice()} Kč</li>
+                    </ul>
+                </div>
+
+                <div class="clearfix"></div>
+
+
+                <div class="col-lg-6">
+                    <h3>Zaregistrovaní závodníci:</h3>
+                    <table class="table table-hover">
+                        <tr>
+                            <th>Jméno</th>
+                            <th>Příjmení</th>
+                            <th>Ročník</th>
+                            <th>Pohlaví</th>
+                            <th>Kategorie</th>
+                            <th>Start</th>
+                        </tr>
+                        {foreach $payment->getRacers() as $key => $racer}
+                            {var $category = $categories[$racer->getCategory()]}
+                            <tr>
+                                <td>{$racer->getName()}</td>
+                                <td>{$racer->getSurname()}</td>
+                                <td>{$racer->getYear()}</td>
+                                <td>{if $racer->isWoman()}žena{else}muž{/if}</td>
+                                <td>{$category->getDescription()}</td>
+                                <td>{$category->getStart()}</td>
+                            </tr>
+                        {/foreach}
+                    </table>
+                </div>
+
+
+                <div n:if="!$payment->isPaid()" class="col-lg-6">
+                    <img src="{$basePath}/payment/{$payment->getHash()}.png" alt="QR kód s platbou"
+                         class="img-responsive qrpay">
+                </div>
+
+            </div>
+            {sep}
+                <hr>
+            {/sep}
+        {/foreach}
+
+    </div>
+    {include './footer.latte'}
+{/block}
+</body>
+</html>
