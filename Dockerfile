@@ -17,10 +17,10 @@ RUN mkdir -p /var/www/html/temp/cache \
     && mkdir -p /var/www/html/temp/sessions \
     && mkdir -p /var/www/html/temp/data \
     && mkdir -p /var/www/html/log \
-    && mkdir -p /var/www/html/static_files \
+    && mkdir -p /var/www/html/www/static_files \
     && chmod -R 777 /var/www/html/temp \
     && chmod -R 777 /var/www/html/log \
-    && chmod -R 777 /var/www/html/static_files
+    && chmod -R 777 /var/www/html/www/static_files
 
 RUN composer install --no-dev
 RUN php bin/minify.php
