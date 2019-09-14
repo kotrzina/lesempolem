@@ -1,10 +1,8 @@
 <?php
 
-
 use Lesempolem\Model\StaticFiles;
 
 require __DIR__ . '/../vendor/autoload.php';
-require __DIR__ . '/../app/model/StaticFiles.php';
 
 $output_dir = __DIR__ . "/../www/static_files";
 
