@@ -1,7 +1,7 @@
 FROM php:7.3-apache-buster
 
 RUN docker-php-ext-install pdo pdo_mysql mysqli
-RUN apt-get update && apt-get -y install git
+RUN apt-get update && apt-get install -y zlib1g-dev git libpq-dev libzip-dev unzip
 
 # composer
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
@@ -17,7 +17,10 @@ RUN mkdir -p /var/www/html/temp/cache \
     && mkdir -p /var/www/html/temp/sessions \
     && mkdir -p /var/www/html/temp/data \
     && mkdir -p /var/www/html/log \
-    && mkdir -p /var/www/html/static_files
+    && mkdir -p /var/www/html/static_files \
+    && chmod -R 777 /var/www/html/temp \
+    && chmod -R 777 /var/www/html/log \
+    && chmod -R 777 /var/www/html/static_files
 
 RUN composer install --no-dev
 RUN php bin/minify.php
