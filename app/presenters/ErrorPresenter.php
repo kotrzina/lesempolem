@@ -13,10 +13,11 @@ class ErrorPresenter extends BasePresenter
 {
 
 	/**
-	 * @param Exception
+	 * @param \Exception $exception
 	 * @return void
+	 * @throws Nette\Application\AbortException
 	 */
-	public function renderDefault($exception)
+	public function renderDefault(\Exception $exception)
 	{
 		if ($exception instanceof Nette\Application\BadRequestException) {
 			$code = $exception->getCode();

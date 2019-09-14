@@ -18,9 +18,9 @@ class ApiPresenter extends BasePresenter
 	private $liveApiToken;
 
 	/**
-	 * @param $liveApiToken
+	 * @param string $liveApiToken
 	 */
-	public function __construct($liveApiToken)
+	public function __construct(string $liveApiToken)
 	{
 		parent::__construct();
 		$this->liveApiToken = $liveApiToken;
@@ -36,6 +36,9 @@ class ApiPresenter extends BasePresenter
 		if ($token === $this->liveApiToken) {
 			$data = $this->getHttpRequest()->getRawBody();
 			try {
+				if (!\is_string($data)) {
+					throw new JsonException('Body is not valid json.');
+				}
 				$this->liveResultsService->insertResult($data);
 			} catch (JsonException $exception) {
 				$this->sendJson(['status' => 'error', 'message' => 'Json error']);

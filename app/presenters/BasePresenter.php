@@ -7,10 +7,11 @@ use Lesempolem\Model\StaticFiles;
 use Lesempolem\Model\Environment;
 use Nette;
 use Nette\Application\UI\ITemplate;
+use Nette\Bridges\ApplicationLatte\Template;
 
 
 /**
- * Base presenter for all application presenters.
+ * @property-write Template|\stdClass $template
  */
 abstract class BasePresenter extends Nette\Application\UI\Presenter
 {
@@ -28,6 +29,7 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
 
 	protected function createTemplate(): ITemplate
 	{
+		/** @var Template $template */
 		$template = parent::createTemplate();
 
 		$template->addFilter('time', [TimeFormatter::class, 'time']);

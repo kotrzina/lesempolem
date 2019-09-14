@@ -115,7 +115,9 @@ class HomepagePresenter extends BasePresenter
 		}
 		$form->addSelect('category', "Kategorie:", $toForm)->setPrompt('-')->setDisabled($disabled);;
 		$form->addSubmit('ok', "Provést registraci")->setDisabled($disabled);
-		$form->onSuccess[] = [$this, 'registrationFormSubmitted'];
+		$form->onSuccess[] = function () use ($form) {
+			$this->registrationFormSubmitted($form);
+		};
 		return $form;
 	}
 
@@ -124,72 +126,72 @@ class HomepagePresenter extends BasePresenter
 	 */
 	public function actionValidateCategory($year, $gender)
 	{
-		$year = (int)$year;
-		$gender = (int)$gender;
-
-		$return = [];
-		$return['possible'] = [];
-
-		$categories = $this->repository->getCategories();
-
-		foreach ($categories as $category) {
-			if ($gender === $category->getGender()
-				&& $year >= $category->getYearFrom()
-				&& $year <= $category->getYearTo()
-			) {
-				$return['suggest'] = $category->getId();
-				break;
-			}
-		}
-
-		if ($gender === 0) {
-			$available = [1, 3, 5, 7, 9, 11, 15];
-			$oldCategories = [16, 17, 18];
-			foreach ($oldCategories as $oldCategory) {
-				$category = $categories[$oldCategory];
-				if ($year >= $category->getYearFrom() && $year <= $category->getYearTo()) {
-					$available[] = $oldCategory;
-				}
-			}
-			$return['possible'][] = 13; // prichozi kluci
-		} elseif ($gender === 1) {
-			$available = [2, 4, 6, 8, 10, 19];
-			$oldCategories = [20, 21];
-			foreach ($oldCategories as $oldCategory) {
-				$category = $categories[$oldCategory];
-				if ($year >= $category->getYearFrom() && $year <= $category->getYearTo()) {
-					$available[] = $oldCategory;
-				}
-			}
-			$return['possible'][] = 14; // prichozi holky
-		} else {
-			$available = [];
-			$return['error'] = "Gender shit";
-			$return['status'] = false;
-		}
-
-		$found = false;
-		foreach ($available as $keyValue) {
-			/** @var Category $category */
-			$category = $categories[$keyValue];
-			if (!$found && $year >= $category->getYearFrom()) {
-				$found = true;
-			}
-
-			if ($found) {
-				$return['possible'][] = $keyValue;
-			}
-		}
-
-		// juniorky
-		/** @var Category $c */
-		$c = $categories[12];
-		if ($gender === 1 && $year >= $c->getYearFrom() && $year <= $c->getYearTo()) {
-			$return['possible'][] = 12;
-		}
-
-		sort($return['possible']);
-		$this->sendJson($return);
+//		$year = (int)$year;
+//		$gender = (int)$gender;
+//
+//		$return = [];
+//		$return['possible'] = [];
+//
+//		$categories = $this->repository->getCategories();
+//
+//		foreach ($categories as $category) {
+//			if ($gender === $category->getGender()
+//				&& $year >= $category->getYearFrom()
+//				&& $year <= $category->getYearTo()
+//			) {
+//				$return['suggest'] = $category->getId();
+//				break;
+//			}
+//		}
+//
+//		if ($gender === 0) {
+//			$available = [1, 3, 5, 7, 9, 11, 15];
+//			$oldCategories = [16, 17, 18];
+//			foreach ($oldCategories as $oldCategory) {
+//				$category = $categories[$oldCategory];
+//				if ($year >= $category->getYearFrom() && $year <= $category->getYearTo()) {
+//					$available[] = $oldCategory;
+//				}
+//			}
+//			$return['possible'][] = 13; // prichozi kluci
+//		} elseif ($gender === 1) {
+//			$available = [2, 4, 6, 8, 10, 19];
+//			$oldCategories = [20, 21];
+//			foreach ($oldCategories as $oldCategory) {
+//				$category = $categories[$oldCategory];
+//				if ($year >= $category->getYearFrom() && $year <= $category->getYearTo()) {
+//					$available[] = $oldCategory;
+//				}
+//			}
+//			$return['possible'][] = 14; // prichozi holky
+//		} else {
+//			$available = [];
+//			$return['error'] = "Gender shit";
+//			$return['status'] = false;
+//		}
+//
+//		$found = false;
+//		foreach ($available as $keyValue) {
+//			/** @var Category $category */
+//			$category = $categories[$keyValue];
+//			if (!$found && $year >= $category->getYearFrom()) {
+//				$found = true;
+//			}
+//
+//			if ($found) {
+//				$return['possible'][] = $keyValue;
+//			}
+//		}
+//
+//		// juniorky
+//		/** @var Category $c */
+//		$c = $categories[12];
+//		if ($gender === 1 && $year >= $c->getYearFrom() && $year <= $c->getYearTo()) {
+//			$return['possible'][] = 12;
+//		}
+//
+//		sort($return['possible']);
+//		$this->sendJson($return);
 	}
 
 	/**
@@ -198,33 +200,33 @@ class HomepagePresenter extends BasePresenter
 	public function registrationFormSubmitted(Form $form)
 	{
 
-		$values = $form->getValues();
-
-		$categories = $this->repository->getCategories();
-		/** @var Category $category */
-		$category = $categories[$values->category];
-
-		$racer = new Racer();
-		$racer->setName($values->name);
-		$racer->setSurname($values->surname);
-		$racer->setClub($values->club);
-		$racer->setYear($values->year);
-		$racer->setSex($values->sex);
-		$racer->setCategory($values->category);
-		$racer->setPrice($category->getPrice());
-		$racer->setCreated(new DateTime());
-
-		if ($this->registrationService->generatePayment()) {
-			$this->section->registration[] = $racer;
-			$this->redirect('payment');
-		} elseif ($this->registrationService->isRegistrationEnabled()) {
-			$this->repository->insertRacer($racer);
-			$this->flashMessage("Závodník byl zaregistrován.");
-			$this->redirect('this');
-		} else {
-			$this->flashMessage("Registrace již není možná");
-			$this->redirect('this');
-		}
+//		$values = $form->getValues();
+//
+//		$categories = $this->repository->getCategories();
+//		/** @var Category $category */
+//		$category = $categories[$values->category];
+//
+//		$racer = new Racer();
+//		$racer->setName($values->name);
+//		$racer->setSurname($values->surname);
+//		$racer->setClub($values->club);
+//		$racer->setYear($values->year);
+//		$racer->setSex($values->sex);
+//		$racer->setCategory($values->category);
+//		$racer->setPrice($category->getPrice());
+//		$racer->setCreated(new DateTime());
+//
+//		if ($this->registrationService->generatePayment()) {
+//			$this->section->registration[] = $racer;
+//			$this->redirect('payment');
+//		} elseif ($this->registrationService->isRegistrationEnabled()) {
+//			$this->repository->insertRacer($racer);
+//			$this->flashMessage("Závodník byl zaregistrován.");
+//			$this->redirect('this');
+//		} else {
+//			$this->flashMessage("Registrace již není možná");
+//			$this->redirect('this');
+//		}
 	}
 
 	public function renderTrat()

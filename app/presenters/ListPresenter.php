@@ -43,7 +43,9 @@ class ListPresenter extends BasePresenter
 		$form = new Form();
 		$form->addPassword('password', "Heslo: ");
 		$form->addSubmit('ok', "OK");
-		$form->onSuccess[] = [$this, 'loginFormSubmitted'];
+		$form->onSuccess[] = function () use ($form) {
+			$this->loginFormSubmitted($form);
+		};
 		return $form;
 	}
 
@@ -72,16 +74,11 @@ class ListPresenter extends BasePresenter
 		if (TRUE !== $this->sessionSection->logged) {
 			$this->redirect('form');
 		}
+//
+//		$racers = $this->repository->getAllPerson();
+//		$data = [];
 
-		$racers = $this->repository->getAllPerson();
-		$data = [];
-
-		foreach ($racers as $racer) {
-			/** @var $racer Racer */
-			$data[] = $racer->toArray();
-		}
-
-		$this->sendResponse(new JsonResponse($data));
+		$this->sendResponse(new JsonResponse([]));
 		$this->terminate();
 	}
 

@@ -17,15 +17,14 @@ class Mailer
 	private $httpRequest;
 
 	/**
-	 * Mailer constructor.
-	 * @param $host
-	 * @param $port
-	 * @param $username
-	 * @param $password
-	 * @param $secure
+	 * @param string $host
+	 * @param int $port
+	 * @param string $username
+	 * @param string $password
+	 * @param string $secure
 	 * @param \Nette\Http\Request $httpRequest
 	 */
-	public function __construct($host, $port, $username, $password, $secure, \Nette\Http\Request $httpRequest)
+	public function __construct(string $host, int $port, string $username, string $password, string $secure, \Nette\Http\Request $httpRequest)
 	{
 		$this->mailer = new SmtpMailer([
 			'host' => $host,
@@ -38,7 +37,7 @@ class Mailer
 	}
 
 
-	public function test()
+	public function test(): void
 	{
 		$params = [];
 		$latte = new Engine;

@@ -16,9 +16,9 @@ class Environment
 
 	/**
 	 * Environment constructor.
-	 * @param $env
+	 * @param string $env
 	 */
-	public function __construct($env)
+	public function __construct(string $env)
 	{
 		$this->environment = $env;
 	}

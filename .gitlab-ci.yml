@@ -24,6 +24,7 @@ unit-tests:
   - php -r "unlink('composer-setup.php');"
   - composer install
   - php vendor/bin/tester tests
+  - php vendor/bin/phpstan analyse -l max -c phpstan.neon app
 
 build:
   image: docker:stable

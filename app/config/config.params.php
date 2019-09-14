@@ -10,7 +10,7 @@ return [
 		],
 		'mailer' => [
 			'host' => 'smtp.gmail.com',
-			'port' => '465',
+			'port' => 465,
 			'username' => 'lesempolem@gmail.com',
 			'password' => \getenv('MAILER_PASS'),
 			'secure' => 'ssl',

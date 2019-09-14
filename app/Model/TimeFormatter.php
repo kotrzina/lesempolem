@@ -7,10 +7,11 @@ class TimeFormatter
 
 
 	/**
-	 * @param $val - time in seconds
+	 * @param int $val - time in seconds
+	 * @param string $prefix
 	 * @return string
 	 */
-	public static function time($val, $prefix = "")
+	public static function time(int $val, string $prefix = ""): string
 	{
 		if ($val === 0) {
 			return "-";
@@ -20,16 +21,16 @@ class TimeFormatter
 		$seconds = $val - ($hours * 60 * 60) - ($minutes * 60);
 
 		return $prefix .
-			str_pad($hours, 2, "0", STR_PAD_LEFT) . ":" .
-			str_pad($minutes, 2, "0", STR_PAD_LEFT) . ":" .
-			str_pad($seconds, 2, "0", STR_PAD_LEFT);
+			str_pad((string)$hours, 2, "0", STR_PAD_LEFT) . ":" .
+			str_pad((string)$minutes, 2, "0", STR_PAD_LEFT) . ":" .
+			str_pad((string)$seconds, 2, "0", STR_PAD_LEFT);
 	}
 
 	/**
-	 * @param $val - time in seconds
+	 * @param int $val - time in seconds
 	 * @return string
 	 */
-	public static function time_behind($val)
+	public static function time_behind(int $val): string
 	{
 		if ($val === 0) {
 			return "-";
