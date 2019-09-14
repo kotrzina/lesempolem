@@ -1,6 +1,6 @@
 <?php
 
-namespace Lesempolem\Presenters;
+namespace Lesempolem\Presenter;
 
 
 use Lesempolem\Model\MainService;

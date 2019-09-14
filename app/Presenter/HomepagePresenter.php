@@ -1,6 +1,6 @@
 <?php
 
-namespace Lesempolem\Presenters;
+namespace Lesempolem\Presenter;
 
 use Lesempolem\Model\Filter\MenFilter;
 use Lesempolem\Model\Filter\NotDeletedFilter;

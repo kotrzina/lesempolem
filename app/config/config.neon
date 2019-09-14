@@ -14,7 +14,7 @@ database:
 application:
 	errorPresenter: Error
 	mapping:
-		*: Lesempolem\*Module\Presenters\*Presenter
+		*: Lesempolem\*Module\Presenter\*Presenter
 
 session:
 	expiration: 2 years
@@ -34,4 +34,4 @@ services:
 	cacheStorage:
 		factory: Nette\Caching\Storages\FileStorage(%tempDir%/data)
 
-	- Lesempolem\Presenters\ApiPresenter(%api.live_token%)
+	- Lesempolem\Presenter\ApiPresenter(%api.live_token%)
