@@ -13,13 +13,11 @@ RUN a2enmod rewrite
 WORKDIR /var/www/html
 
 ADD . /var/www/html
-RUN mkdir -p /var/www/html/temp/cache
-RUN mkdir -p /var/www/html/log \
-    && mkdir -p /var/www/html/static_files \
-    && chmod -R 777 /var/www/html/temp \
-    && chmod -R 777 /var/www/html/log
-
-WORKDIR /var/www/html
+RUN mkdir -p /var/www/html/temp/cache \
+    && mkdir -p /var/www/html/temp/sessions \
+    && mkdir -p /var/www/html/temp/data \
+    && mkdir -p /var/www/html/log \
+    && mkdir -p /var/www/html/static_files
 
 RUN composer install --no-dev
 RUN php bin/minify.php

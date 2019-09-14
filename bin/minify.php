@@ -1,7 +1,9 @@
 <?php
 
 
-$container = require __DIR__ . '/../app/bootstrap.php';
+require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../app/model/StaticFiles.php';
+
 $output_dir = __DIR__ . "/../www/static_files";
 
 $css = new \MatthiasMullie\Minify\CSS();
