@@ -1,3 +1,7 @@
+stages:
+  - test
+  - build
+
 services:
   - docker:dind
 
@@ -9,6 +13,17 @@ cache:
 variables:
   DOCKER_HOST: tcp://docker:2375
   DOCKER_DRIVER: overlay2
+
+unit-tests:
+  stage: test
+  image: php:7.3-cli
+  script:
+  - apt-get update && apt-get install -y zlib1g-dev git libpq-dev libzip-dev unzip
+  - php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+  - php composer-setup.php --install-dir=/bin --filename=composer
+  - php -r "unlink('composer-setup.php');"
+  - composer install
+  - php vendor/bin/tester tests
 
 build:
   image: docker:stable
