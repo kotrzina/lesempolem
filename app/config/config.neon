@@ -24,11 +24,12 @@ session:
 services:
 	routerFactory: Lesempolem\Router\RouterFactory
 	router: @routerFactory::createRouter
-	mainService: Lesempolem\Model\MainService
-	mailer: Lesempolem\Model\Mailer(%mailer.host%, %mailer.port%, %mailer.username%, %mailer.password%, %mailer.secure%)
+	mainService: Lesempolem\Model\Service\RegistrationService
 	- Lesempolem\Model\Environment(%env%)
-	- Lesempolem\Model\Service\RegistrationService(%lastPaymentDay%, %lastRegistrationDay%)
+	- Lesempolem\Model\Service\ConfigService(%lastPaymentDay%, %lastRegistrationDay%)
 	- Lesempolem\Model\LiveResultsService
+	- Lesempolem\Model\Service\EmailService
+	- Lesempolem\Model\QrGenerator
 
 
 	cacheStorage:

@@ -1,4 +1,5 @@
 up:
+	touch .env
 	mkdir -p temp/cache
 	mkdir -p temp/sessions
 	mkdir -p temp/data

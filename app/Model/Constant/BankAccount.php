@@ -6,7 +6,7 @@ namespace Lesempolem\Model\Constant;
 interface BankAccount
 {
 
-	const
+	public const
 		ACCOUNT_OWNER = 'SH ČMS - Sbor dobrovolných hasičů Veselice',
 		ACCOUNT_NUMBER = '2000928860',
 		BANK_CODE = '2010',

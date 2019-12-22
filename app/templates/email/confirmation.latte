@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Demystifying Email Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<h1>Ahoj,</h1>
+<p>tvoje registrace na Lesempolem byla úspěšně zpracována a už se můžeš najít v seznamu zaregistrovaných
+    závodníků.
+</p>
+<p>
+    {if $hasPayment}
+        Pro úspěšné dokončení tvé registrace už stačí jen zaplatit startovní poplatek pomocí převodu na účet. Je také
+        možné využít QR platbu. Obrázek QR kódu nalezneš v příloze. Hned jak platbu obdržíme, pošleme ti potvrzující
+        email. Pro kontrolu také posíláme registrační údaje a naše kontakty pro případ, že by se
+        někde vyskytly komplikace.
+    {else}
+        Závodík byl zaregistrován do kategorie, kde není vyžadována platba. Registrace je tedy kompletní a v červnu se budeme těšit.
+    {/if}
+</p>
+
+<h2>Registrace:</h2>
+<ul>
+    <li>{$name} {$surname}</li>
+    <li>{$email}</li>
+</ul>
+
+{if $hasPayment}
+    <h2>Platbu prosím proveď s těmito údaji:</h2>
+    <ul>
+        <li>Číslo účtu: {$accountNumber}/{$bankCode}</li>
+        <li>Variabilní symbol: {$vs}</li>
+        <li>Částka: {$price} Kč</li>
+    </ul>
+{/if}
+
+
+<h2>Kontaktní informace:</h2>
+<p><strong>Jiří Skoták</strong><br/>
+    hlavní pořadatel <br/>
+    Telefon: 777 250 164 <br/>
+    Email: <a href="mailto:skotak@jiskel.cz">skotak@jiskel.cz</a>
+</p>
+<p><strong>Tomáš Kozák</strong><br/>
+    správa webu, platby <br/>
+    Telefon: 730 996 957 <br/>
+    Email: <a href="mailto:kozak@talko.cz">kozak@talko.cz</a>
+</p>
+<p><strong>Web: </strong> <a href="https://lesempolem.cz">www.lesempolem.cz</a></p>
+
+</body>
+</html>

@@ -17,7 +17,7 @@ echo "\nCSS has been generated\n";
 $js = new \MatthiasMullie\Minify\JS();
 $js->add(__DIR__ . "/../www/js/jquery-1.11.0.min.js");
 $js->add(__DIR__ . "/../www/bootstrap/js/bootstrap.min.js");
-$js->add(__DIR__ . "/../www/js/validationRegistration.js");
+//$js->add(__DIR__ . "/../www/js/validationRegistration.js");
 $js->add(__DIR__ . "/../www/js/validationPayment.js");
 $js->add(__DIR__ . "/../www/js/fixFooter.js");
 $js->add(__DIR__ . "/../www/js/toTop.js");

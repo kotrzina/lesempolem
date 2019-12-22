@@ -17,59 +17,289 @@
         <div class="col-md-12">
             <h1>Informace pro účastníky</h1>
 
-            <div class="alert alert-success" role="alert">Hlídání dětí během hlavního závodu zajištěno - malování a
+            <div n:if="false" class="alert alert-success" role="alert">Hlídání dětí během hlavního závodu zajištěno -
+                malování a
                 hry
             </div>
 
 
             <p>Pro všechny příchozí je připraveno pamětní startovní číslo a medaile! Protože věříme, že opět pokvete
-                bez, bude z
-                něj
-                již tradičně vyroben nápoj, který bude závodníkům k dispozici během celého konání závodu. Na závodníky
-                čeká
+                bez, bude z něj již tradičně vyroben nápoj, který bude závodníkům k dispozici během celého konání
+                závodu. Na závodníky čeká
                 občerstvení z regionálních produktů v podobě Černohorského piva a uzených klobás z nedalekých Němčic.
                 Pro vegetariány bude připraven těstovinový salát se zeleninou z místních zahrad, co hrdlo račí.
-                První tři v
-                každé
-                kategorii obdrží medaile, diplomy a pouťové ceny. Jako bonus bude všem majitelům pamětních startovních
-                čísel
-                umožněn
-                zdarma výstup na rozhlednu v Podvrší. Letos se opět objeví na pódiu živá hudba. Jako každý rok bude
-                ochutnávka
-                produktů zdravé výživy. Pro rodiče s dětmi je připraveno hlídání dětí v době hlavního závodu.</p>
+                První tři v každé kategorii obdrží medaile, diplomy a pouťové ceny. Zdarma můžete navštívit rozhlednu v
+                Podvrší. Letos se opět objeví na pódiu živá hudba. Jako každý rok bude
+                ochutnávka produktů zdravé výživy. Pro rodiče s dětmi je připraveno hlídání dětí v době hlavního
+                závodu.</p>
 
-            <p>Pro juniorky a příchozí, kteří nestojí o body do OBL, nebo si netroufají na 10&nbsp;km,
-                bude
-                stejně jako loni připravená trasa dlouhá 5&nbsp;km.</p>
+            <p>Pro příchozí, kteří nestojí o body do OBL, nebo si netroufají na 21&nbsp;km,
+                bude stejně jako loni připravená trasa dlouhá 5&nbsp;km.</p>
+
+            <p>Ubytovaní pro účastníky ultramaratonských běhů bude postaráno v mateřské školce ve Vavřinci vzálené asi
+                2&nbsp;km od místa startu závodu. Cena za noc je 50 kč - spaní ve spacáku, WC, sprcha. Pro více
+                informací prosím neváhejte kontaktovat pořadatele.
+            </p>
 
             <p>Celá akce spočívá na práci společenství Kotržiny, složené z dobrovolných hasičů, oddílu stolního tenisu,
                 dětí a dospělých z oddílu Orientačního běhu a sdružení „Kaplička“. Je dobré vědět, že k uspořádání akce
                 tohoto charakteru ve složitém terénu je potřeba kolem 50 pořadatelů - dobrovolníků.</p>
 
             <p>Snad se za všechnu vynaloženou námahu atmosféra příprav přenese až k vám, účastníkům a návštěvníkům
-                tohoto
-                závodu. Těšíme se na vás!</p>
+                tohoto závodu. Těšíme se na vás!</p>
 
         </div>
         <div class="col-sm-12 col-md-6">
             <h2>Kategorie a harmonogram</h2>
             <table class="table">
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td>Prezence</td>
+                    <td colspan="2">pá 17:00 - 22:00</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Prezence</td>
+                    <td colspan="2">so 07:00 - 14:35</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2">Prezence min 15 min před startem závodu</td>
+                </tr>
+
                 <tr>
                     <th></th>
-                    <th>Prezence</th>
-                    <th>od 08:00</th>
-                    <th></th>
+                    <th>Kategorie</th>
+                    <th>Start</th>
+                    <th>Závod</th>
                 </tr>
-                {foreach $categories as $category}
-                    <tr class="{$category->color}">
-                        <td><img src="{$basePath}/images/{if $category->gender === 1}fe{/if}male.png"
-                                 alt="Ikona pohlavi">
-                        </td>
-                        <td>{$category->title}</td>
-                        <td>{$category->start}</td>
-                        <td>{$category->distance|number:0:'':' '} m</td>
-                    </tr>
-                {/foreach}
+
+                {*ULTRAMARATON*}
+                <tr class="success">
+                    <td><img src="/images/male.png" alt="Ikona pohlavi"></td>
+                    <td>Muži (do 39 let)</td>
+                    <td>08:00</td>
+                    <td>MČR Ultramaraton 63 km</td>
+                </tr>
+                <tr class="success">
+                    <td><img src="/images/male.png" alt="Ikona pohlavi"></td>
+                    <td>Muži (40 - 49 let)</td>
+                    <td>08:00</td>
+                    <td>MČR Ultramaraton 63 km</td>
+                </tr>
+                <tr class="success">
+                    <td><img src="/images/male.png" alt="Ikona pohlavi"></td>
+                    <td>Muži (50 - 59 let)</td>
+                    <td>08:00</td>
+                    <td>MČR Ultramaraton 63 km</td>
+                </tr>
+                <tr class="success">
+                    <td><img src="/images/male.png" alt="Ikona pohlavi"></td>
+                    <td>Muži (60 - 69 let)</td>
+                    <td>08:00</td>
+                    <td>MČR Ultramaraton 63 km</td>
+                </tr>
+                <tr class="success">
+                    <td><img src="/images/male.png" alt="Ikona pohlavi"></td>
+                    <td>Muži (nad 70 let)</td>
+                    <td>08:00</td>
+                    <td>MČR Ultramaraton 63 km</td>
+                </tr>
+                <tr class="success">
+                    <td><img src="/images/female.png" alt="Ikona pohlavi"></td>
+                    <td>Ženy (do 39 let)</td>
+                    <td>08:00</td>
+                    <td>MČR Ultramaraton 63 km</td>
+                </tr>
+                <tr class="success">
+                    <td><img src="/images/female.png" alt="Ikona pohlavi"></td>
+                    <td>Ženy (40 - 49 let)</td>
+                    <td>08:00</td>
+                    <td>MČR Ultramaraton 63 km</td>
+                </tr>
+                <tr class="success">
+                    <td><img src="/images/female.png" alt="Ikona pohlavi"></td>
+                    <td>Ženy (50 - 59 let)</td>
+                    <td>08:00</td>
+                    <td>MČR Ultramaraton 63 km</td>
+                </tr>
+                <tr class="success">
+                    <td><img src="/images/female.png" alt="Ikona pohlavi"></td>
+                    <td>Ženy (60 - 69 let)</td>
+                    <td>08:00</td>
+                    <td>MČR Ultramaraton 63 km</td>
+                </tr>
+                <tr class="success">
+                    <td><img src="/images/female.png" alt="Ikona pohlavi"></td>
+                    <td>Ženy (nad 70 let)</td>
+                    <td>08:00</td>
+                    <td>MČR Ultramaraton 63 km</td>
+                </tr>
+
+                {*Marton*}
+                <tr class="warning">
+                    <td><img src="/images/male.png" alt="Ikona pohlavi"></td>
+                    <td>Muži (do 39 let)*</td>
+                    <td>09:00</td>
+                    <td>Maraton 42 km</td>
+                </tr>
+                <tr class="warning">
+                    <td><img src="/images/male.png" alt="Ikona pohlavi"></td>
+                    <td>Muži (nad 40 let)*</td>
+                    <td>09:00</td>
+                    <td>Maraton 42 km</td>
+                </tr>
+                <tr class="warning">
+                    <td><img src="/images/female.png" alt="Ikona pohlavi"></td>
+                    <td>Ženy (do 39 let)*</td>
+                    <td>09:00</td>
+                    <td>Maraton 42 km</td>
+                </tr>
+                <tr class="warning">
+                    <td><img src="/images/female.png" alt="Ikona pohlavi"></td>
+                    <td>Ženy (nad 40 let)*</td>
+                    <td>09:00</td>
+                    <td>Maraton 42 km</td>
+                </tr>
+
+                {*Pulmaraton*}
+                <tr class="danger">
+                    <td><img src="/images/male.png" alt="Ikona pohlavi"></td>
+                    <td>Muži (1981 - 2000)</td>
+                    <td>11:00</td>
+                    <td>OBL Půlmaraton 21 km</td>
+                </tr>
+                <tr class="danger">
+                    <td><img src="/images/male.png" alt="Ikona pohlavi"></td>
+                    <td>Muži vetarání I (1971 - 1980)</td>
+                    <td>11:00</td>
+                    <td>OBL Půlmaraton 21 km</td>
+                </tr>
+                <tr class="danger">
+                    <td><img src="/images/male.png" alt="Ikona pohlavi"></td>
+                    <td>Muži vetarání II (1961 - 1970)</td>
+                    <td>11:00</td>
+                    <td>OBL Půlmaraton 21 km</td>
+                </tr>
+                <tr class="danger">
+                    <td><img src="/images/male.png" alt="Ikona pohlavi"></td>
+                    <td>Muži vetarání III (do 1960)</td>
+                    <td>11:00</td>
+                    <td>OBL Půlmaraton 21 km</td>
+                </tr>
+                <tr class="danger">
+                    <td><img src="/images/female.png" alt="Ikona pohlavi"></td>
+                    <td>Ženy (1981 - 2000)</td>
+                    <td>11:00</td>
+                    <td>OBL Půlmaraton 21 km</td>
+                </tr>
+                <tr class="danger">
+                    <td><img src="/images/female.png" alt="Ikona pohlavi"></td>
+                    <td>Ženy veteránky I (1971 - 1980)</td>
+                    <td>11:00</td>
+                    <td>OBL Půlmaraton 21 km</td>
+                </tr>
+                <tr class="danger">
+                    <td><img src="/images/female.png" alt="Ikona pohlavi"></td>
+                    <td>Ženy veteránky II (do 1970)</td>
+                    <td>11:00</td>
+                    <td>OBL Půlmaraton 21 km</td>
+                </tr>
+
+                {*Juniori*}
+                <tr class="success">
+                    <td><img src="/images/male.png" alt="Ikona pohlavi"></td>
+                    <td>Junioři (2001 - 2004)</td>
+                    <td>11:30</td>
+                    <td>OBL 5 000 m</td>
+                </tr>
+                <tr class="success">
+                    <td><img src="/images/female.png" alt="Ikona pohlavi"></td>
+                    <td>Juniorky (2001 - 2004)</td>
+                    <td>11:30</td>
+                    <td>OBL 5 000 m</td>
+                </tr>
+                <tr class="success">
+                    <td><img src="/images/male.png" alt="Ikona pohlavi"></td>
+                    <td>Příchozí kluci*</td>
+                    <td>11:30</td>
+                    <td>5 000 m</td>
+                </tr>
+                <tr class="success">
+                    <td><img src="/images/female.png" alt="Ikona pohlavi"></td>
+                    <td>Příchozí holky*</td>
+                    <td>11:30</td>
+                    <td>5 000 m</td>
+                </tr>
+
+
+                <tr class="warning">
+                    <td><img src="/images/male.png" alt="Ikona pohlavi"></td>
+                    <td>Svištíci kluci (2013 a mladší)</td>
+                    <td>14:00</td>
+                    <td>200 m</td>
+                </tr>
+                <tr class="warning">
+                    <td><img src="/images/female.png" alt="Ikona pohlavi"></td>
+                    <td>Svištíci hoky (2013 a mladší)</td>
+                    <td>14:00</td>
+                    <td>200 m</td>
+                </tr>
+
+                <tr class="danger">
+                    <td><img src="/images/male.png" alt="Ikona pohlavi"></td>
+                    <td>Svišti kluci (2011 - 2012)</td>
+                    <td>14:15</td>
+                    <td>200 m</td>
+                </tr>
+                <tr class="danger">
+                    <td><img src="/images/female.png" alt="Ikona pohlavi"></td>
+                    <td>Svišti holky (2011 - 2012)</td>
+                    <td>14:15</td>
+                    <td>200 m</td>
+                </tr>
+
+                <tr class="success">
+                    <td><img src="/images/male.png" alt="Ikona pohlavi"></td>
+                    <td>Přípravka chlapci (2009 – 2010)</td>
+                    <td>14:30</td>
+                    <td>OBL 600 m</td>
+                </tr>
+                <tr class="success">
+                    <td><img src="/images/female.png" alt="Ikona pohlavi"></td>
+                    <td>Přípravka holky (2009 – 2010)</td>
+                    <td>14:30</td>
+                    <td>OBL 600 m</td>
+                </tr>
+
+                <tr class="warning">
+                    <td><img src="/images/male.png" alt="Ikona pohlavi"></td>
+                    <td>Mladší žáci (2007 - 2008)</td>
+                    <td>14:50</td>
+                    <td>OBL 1 350 m</td>
+                </tr>
+                <tr class="warning">
+                    <td><img src="/images/female.png" alt="Ikona pohlavi"></td>
+                    <td>Mladší žákyně (2007 - 2008)</td>
+                    <td>14:50</td>
+                    <td>OBL 1 350 m</td>
+                </tr>
+                <tr class="warning">
+                    <td><img src="/images/male.png" alt="Ikona pohlavi"></td>
+                    <td>Starší žáci (2005 - 2006)</td>
+                    <td>14:50</td>
+                    <td>OBL 1 350 m</td>
+                </tr>
+                <tr class="warning">
+                    <td><img src="/images/female.png" alt="Ikona pohlavi"></td>
+                    <td>Starší žákyně (2005 - 2006)</td>
+                    <td>14:50</td>
+                    <td>OBL 1 350 m</td>
+                </tr>
+
+
+                </tbody>
             </table>
             <p>* bez bodů do OBL</p>
         </div>
@@ -77,56 +307,69 @@
             <h2>Propozice</h2>
             <ul>
                 <li>Název: LESEMPOLEM</li>
-                <li>Datum: 15. 6. 2019</li>
-                <li>Délka: 10 km (společný start)</li>
-                <li>Čas startu dětských závodů: 9:00</li>
-                <li>Čas startu hlavního závodu: 11:00</li>
-                <li>Čas prezentace: od 8:00 do 10:45, min. 15 minut před závodem</li>
+                <li>Datum: 13. 6. 2020</li>
+                <li>Ultramaraton je oficiálním závodem mistrovství ČR</li>
+                <li>Půlmaraton a dětské běhy jsou zařazeny do OBL (okresní běžecká liga)</li>
+                <li>Čas startu hlavního závodu: 08:00</li>
+                <li>Čas startu dětských závodů: 14:00</li>
+                <li>Prezence min. 15 minut před startem závodu</li>
                 <li>Místo startu: Hřiště sportovního areálu ve Veselici (směr rozhledna ve Veselici)</li>
-                <li>Startovné: 80&nbsp;Kč (100&nbsp;Kč po 11.&nbsp;6.&nbsp;2019). Dětské kategorie 20&nbsp;Kč (40&nbsp;Kč
-                    po 11.&nbsp;6.&nbsp;2019)
+                <li>Každý závodník je povinnen uhradit startovné ve výši odpovídající jeho kategorii. Závodníci narozeni
+                    po roce 2001 jsou od startovného osvobozeni
                 </li>
             </ul>
-        </div>
-        <div class="clearfix"></div>
-        <div class="col-sm-12 col-md-6">
+            <h2>Startovné</h2>
+            <table class="table">
+                <tbody>
+                <tr class="success">
+                    <td>Ultramaraton</td>
+                    <td>400 Kč</td>
+                </tr>
+                <tr class="warning">
+                    <td>Maraton</td>
+                    <td>400 Kč</td>
+                </tr>
+                <tr class="danger">
+                    <td>Půlmaraton</td>
+                    <td>200 Kč</td>
+                </tr>
+                <tr class="">
+                    <td>Ostatní</td>
+                    <td>zdarma</td>
+                </tr>
+                </tbody>
+            </table>
             <h2>Pravidla</h2>
             <ul>
                 <li>Závodí se dle pravidel Českého svazu atletiky a propozic závodu, každý účastník na vlastní
                     nebezpečí
                 </li>
-                <li>Každý účastník závodu musí zaplatit startovné ve výši 80&nbsp;Kč (100&nbsp;Kč po 11.&nbsp;6.&nbsp;2019),
-                    dětské kategorie 20&nbsp;Kč (40&nbsp;Kč po 11.&nbsp;6.&nbsp;2019)
-                </li>
                 <li>Závod se koná za každého počasí</li>
-                <li>Registrace na místě před startem závodu</li>
+                <li>Registrace online nebo na místě před startem závodu</li>
                 <li>Předregistrace na stránkách <a n:href="registration">www.lesempolem.cz</a> - rychlejší odbavení na
                     závodě
-                </li>
-                <li>Závodníci zaregistrovaní do 11. 6. 2019, kteří provedou i platbu startovného, mají nárok na
-                    zvýhodněné startovné
                 </li>
                 <li>Závody jsou určené pro veřejnost a nejsou limitovány žádným omezením. Každý se zde zúčastňuje na
                     vlastní nebezpečí a běží s intenzitou podle svého zdravotního stavu a kondice
                 </li>
             </ul>
-        </div>
-
-        <div class="col-sm-12 col-md-6">
             <h2>Popis tratě</h2>
             <ul>
-                <li>Trať závodu na 5&nbsp;000&nbsp;m a 10&nbsp;000&nbsp;m vede převážně po polních a lesních cestách (90&nbsp;%)
+                <li>Maratonská trať vede převážně po polních a lesních cestách (90&nbsp;%)
                     a pouze
                     10&nbsp;% po
                     asfaltových cestách
                 </li>
-                <li>Na 4. a 9. km občerstvovací stanice s vodou a rumem</li>
+                <li>Každých 5 km občerstvovací stanice - voda, čaj, bezinková štáva, iontový napoj, CocaCola, chleba se
+                    sádlem, banány, meloun, čokoláda, sůl, rum
+                </li>
                 <li>Trať závodu na 1 350&nbsp;m vede po polních (50&nbsp;%) a asfaltových cestách (50&nbsp;%)</li>
                 <li>Dětské tratě (200&nbsp;m) a žákovské tratě (600 m) vedou po zpevněných a asfaltových cestách.</li>
                 <li><a n:href="trat">Detailní informace o trati včetně videa</a></li>
             </ul>
             <a class="btn btn-success" n:href="registration">Chci se zaregistrovat</a>
         </div>
+        <div class="clearfix"></div>
     </div>
 
     <div class="row gallery-under more-photo">

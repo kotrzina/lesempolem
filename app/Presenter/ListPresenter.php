@@ -2,8 +2,7 @@
 
 namespace Lesempolem\Presenter;
 
-
-use Lesempolem\Model\MainService;
+use Lesempolem\Model\Service\RegistrationService;
 use Nette\Application\Responses\JsonResponse;
 use Nette\Application\UI\Form;
 use Nette\Http\Session;
@@ -15,7 +14,7 @@ class ListPresenter extends BasePresenter
 	const PASSWORD = 'svazarm';
 
 	/**
-	 * @var MainService @inject
+	 * @var RegistrationService @inject
 	 */
 	public $repository;
 

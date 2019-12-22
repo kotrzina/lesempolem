@@ -2,43 +2,44 @@
 
 namespace Lesempolem\Model\Service;
 
+use Lesempolem\Model\Filter\IFilter;
+use Nette\Database\Context;
 
 class RegistrationService
 {
-	/**
-	 * @var \DateTime
-	 */
-	private $lastPaymentDay;
 
-	/**
-	 * @var \DateTime
-	 */
-	private $lastRegistrationDay;
+    private const REGISTRATION_TABLE = "registration";
 
-	/**
-	 * RegistrationService constructor.
-	 * @param string $lastPaymentDay
-	 * @param string $lastRegistrationDay
-	 */
-	public function __construct($lastPaymentDay, $lastRegistrationDay)
-	{
-		$this->lastPaymentDay = new \DateTime($lastPaymentDay);
-		$this->lastRegistrationDay = new \DateTime($lastRegistrationDay);
-	}
+    /** @var Context */
+    protected Context $db;
 
-	/**
-	 * Returns true, if registration is still enabled
-	 * @return bool
-	 */
-	public function isRegistrationEnabled()
-	{
-		$now = new \DateTime();
-		$interval = $now->diff($this->lastRegistrationDay);
-		if ($now <= $this->lastRegistrationDay || $interval->days === 0) {
-			return true;
-		}
 
-		return false;
-	}
+    public function __construct(Context $context)
+    {
+        $this->db = $context;
+    }
 
-}
+    /**
+     * @param IFilter[] $filters
+     * @return array
+     */
+    public function getAllPerson($filters = [])
+    {
+        $data = $this->db->table(self::REGISTRATION_TABLE)->order('created DESC')->fetchAll();
+
+        foreach ($filters as $filter) {
+            $data = $filter->filter($data);
+        }
+
+        return $data;
+    }
+
+    /**
+     * Inserts raw data from web form
+     * @param array $racer
+     */
+    public function insertRacer(array $racer)
+    {
+        $this->db->table(self::REGISTRATION_TABLE)->insert($racer);
+    }
+} 

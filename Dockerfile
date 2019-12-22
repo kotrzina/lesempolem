@@ -1,7 +1,9 @@
-FROM php:7.3-apache-buster
+FROM php:7.4-apache-buster
 
-RUN docker-php-ext-install pdo pdo_mysql mysqli
-RUN apt-get update && apt-get install -y zlib1g-dev git libpq-dev libzip-dev unzip
+RUN apt-get update && apt-get install -y zlib1g-dev git libpq-dev libzip-dev unzip libpng-dev libjpeg-dev
+
+RUN docker-php-ext-install pdo pdo_mysql mysqli gd
+
 
 # composer
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \

@@ -4,10 +4,12 @@
     "homepage": "https://lesempolem.cz",
     "type": "project",
     "require": {
-        "php": ">= 7.3",
+        "php": ">= 7.4",
+        "ext-pdo": "*",
         "nette/nette": "~3.0",
         "matthiasmullie/minify": "1.3.32",
-        "ext-pdo": "*"
+        "rikudou/czqrpayment": "^4.0",
+        "endroid/qr-code": "^3.7"
     },
     "require-dev": {
         "nette/tester": "~2.3",
