@@ -12,7 +12,7 @@ cache:
 
 unit-tests:
   stage: test
-  image: php:7.3-cli
+  image: php:7.4-cli
   cache:
     policy: pull-push
     paths:
