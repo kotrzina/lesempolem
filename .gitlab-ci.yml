@@ -18,7 +18,8 @@ unit-tests:
     paths:
       - vendor/
   script:
-    - apt-get update && apt-get install -y zlib1g-dev git libpq-dev libzip-dev unzip
+    - apt-get update && apt-get install -y zlib1g-dev git libpq-dev libzip-dev unzip libpng-dev libjpeg-dev
+    - docker-php-ext-install gd
     - php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
     - php composer-setup.php --install-dir=/bin --filename=composer
     - php -r "unlink('composer-setup.php');"
