@@ -12,6 +12,8 @@ use Nette\Mail\SmtpMailer;
 class EmailService
 {
 
+    private const BCC_EMAIL = 'kozak@talko.cz';
+
     /**
      * @param string $email
      * @param string $name
@@ -45,6 +47,7 @@ class EmailService
         $mail = new Message;
         $mail->setFrom('Lesempolem <lesempolem@gmail.com>')
             ->addTo($email)
+            ->addBcc(self::BCC_EMAIL)
             ->setSubject('Registrace na Lesempolem 2020')
             ->setHtmlBody($rendered);
 
