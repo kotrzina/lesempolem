@@ -13,20 +13,13 @@ class ListPresenter extends BasePresenter
 
 	const PASSWORD = 'svazarm';
 
-	/**
-	 * @var RegistrationService @inject
-	 */
-	public $repository;
+	/** @inject */
+	public RegistrationService $repository;
 
-	/**
-	 * @var Session @inject
-	 */
-	public $session;
+	/** @inject */
+	public Session $session;
 
-	/**
-	 * @var SessionSection
-	 */
-	private $sessionSection;
+	private SessionSection $sessionSection;
 
 	protected function startup()
 	{

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Lesempolem\Model;
 
 use Lesempolem\Model\Constant\BankAccount;

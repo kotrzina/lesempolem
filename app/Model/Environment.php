@@ -1,7 +1,8 @@
 <?php
 
-namespace Lesempolem\Model;
+declare(strict_types=1);
 
+namespace Lesempolem\Model;
 
 class Environment
 {
@@ -11,8 +12,7 @@ class Environment
 		TEST = 'TEST',
 		DEV = 'DEV';
 
-	/** @var  string */
-	private $environment;
+	private string $environment;
 
 	/**
 	 * Environment constructor.
@@ -27,7 +27,7 @@ class Environment
 	 * Return true, if Google analytics script should be enabled
 	 * @return bool
 	 */
-	public function isGoogleAnalyticsEnabled()
+	public function isGoogleAnalyticsEnabled(): bool
 	{
 		if ($this->environment === self::PROD) {
 			return true;

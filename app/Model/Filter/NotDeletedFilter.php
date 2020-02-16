@@ -1,7 +1,8 @@
 <?php
 
-namespace Lesempolem\Model\Filter;
+declare(strict_types=1);
 
+namespace Lesempolem\Model\Filter;
 
 class NotDeletedFilter implements IFilter
 {
@@ -10,7 +11,7 @@ class NotDeletedFilter implements IFilter
 	 * @param array $data
 	 * @return array
 	 */
-	public function filter(array $data)
+	public function filter(array $data): array
 	{
 		$data = array_filter($data, function ($item) {
 			if ($item['deleted'] == 0) {

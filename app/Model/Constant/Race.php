@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Lesempolem\Model\Constant;
 
 abstract class Race
@@ -12,7 +14,7 @@ abstract class Race
         JUNIORS = 'juniors',
         CHILD = 'child';
 
-    public static function getRaces()
+    public static function getRaces(): array
     {
         return [
             self::ULTRAMARATHON => 'Ultramaraton (MČR) - 63 km',

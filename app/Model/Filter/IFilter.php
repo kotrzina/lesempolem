@@ -9,6 +9,6 @@ interface IFilter
 	 * @param array $data
 	 * @return array
 	 */
-	public function filter(array $data);
+	public function filter(array $data): array ;
 
 }

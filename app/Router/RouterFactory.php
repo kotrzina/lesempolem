@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Lesempolem\Router;
 
 use Lesempolem\Model\Environment;
@@ -15,8 +17,7 @@ use Nette,
 class RouterFactory
 {
 
-	/** @var  Environment */
-	private $environment;
+	private Environment $environment;
 
 	/**
 	 * RouterFactory constructor.
@@ -27,10 +28,8 @@ class RouterFactory
 		$this->environment = $env;
 	}
 
-	/**
-	 * @return \Nette\Application\IRouter
-	 */
-	public function createRouter()
+
+	public function createRouter(): RouteList
 	{
 		$router = new RouteList();
 		$router[] = new Route('api/results', 'Api:results');

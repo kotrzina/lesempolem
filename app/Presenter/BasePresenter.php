@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Lesempolem\Presenter;
 
 use Lesempolem\Model\TimeFormatter;
@@ -16,8 +18,8 @@ use Nette\Bridges\ApplicationLatte\Template;
 abstract class BasePresenter extends Nette\Application\UI\Presenter
 {
 
-	/** @var Environment @inject */
-	public $environment;
+	/** @inject */
+	public Environment $environment;
 
 	protected function startup()
 	{

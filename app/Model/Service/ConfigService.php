@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Lesempolem\Model\Service;
 
 use DateTimeImmutable;
@@ -34,7 +36,7 @@ class ConfigService
      * @return bool
      * @throws Exception
      */
-    public function isRegistrationEnabled()
+    public function isRegistrationEnabled(): bool
     {
         $now = new DateTimeImmutable();
         $interval = $now->diff($this->lastRegistrationDay);

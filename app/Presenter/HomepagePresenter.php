@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Lesempolem\Presenter;
 
 use Lesempolem\Model\Constant\Payment;
@@ -96,7 +98,7 @@ class HomepagePresenter extends BasePresenter
                 : "";
     }
 
-    public function renderRegistration()
+    public function renderRegistration(): void
     {
         $this->template->men = $this->registrationService->getAllPerson([
             new MenFilter(),
@@ -151,12 +153,12 @@ class HomepagePresenter extends BasePresenter
      * @param Form $form
      * @throws \Exception
      */
-    public function registrationFormSubmitted(Form $form)
+    public function registrationFormSubmitted(Form $form): void
     {
         $values = (array)$form->getValues();
         $values['created'] = new \DateTimeImmutable();
         $today = new DateTime('now');
-        $values['vs'] = (int)$today->format('md') * 1e6 + \mt_rand(0, 999999);
+        $values['vs'] = (int)($today->format('md') * 1e6 + \mt_rand(0, 999999));
         unset($values['agree']);
 
 
@@ -174,7 +176,7 @@ class HomepagePresenter extends BasePresenter
         $this->redirect('this');
     }
 
-    public function renderTrat()
+    public function renderTrat(): void
     {
         $data = $this->cache->load(self::TRAT_CACHE_KEY);
         if (NULL === $data) {
@@ -202,14 +204,14 @@ class HomepagePresenter extends BasePresenter
         $this->template->data = $data;
     }
 
-    public function renderLive()
+    public function renderLive(): void
     {
         $last = $this->liveResultsService->getLastResults();
         $data = Json::decode($last['data'], Json::FORCE_ARRAY);
         $this->template->data = $data;
     }
 
-    public function actionOnline()
+    public function actionOnline(): void
     {
         $this->redirect('live');
     }
