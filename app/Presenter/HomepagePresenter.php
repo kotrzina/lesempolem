@@ -119,29 +119,39 @@ class HomepagePresenter extends BasePresenter
 
     public function createComponentRegistrationForm(): Form
     {
+        $disabled = true;
         $form = new Form();
         $form->addSelect('race', 'Závod:', Race::getRaces())
             ->setPrompt('-')
-            ->setRequired("Prosím vyberte závod.");
+            ->setRequired("Prosím vyberte závod.")
+            ->setDisabled($disabled);
         $form->addText('email', 'Email:')
             ->addRule(Form::EMAIL, 'Prosím zadejte validní email.')
-            ->setRequired("Zadejte prosím email.");
+            ->setRequired("Zadejte prosím email.")
+            ->setDisabled($disabled);
         $form->addText('name', 'Jméno:')
-            ->setRequired("Prosím zadejte jméno");
+            ->setRequired("Prosím zadejte jméno")
+            ->setDisabled($disabled);
         $form->addText('surname', 'Příjmení:')
-            ->setRequired("Prosím zadejte příjmení");
+            ->setRequired("Prosím zadejte příjmení")
+            ->setDisabled($disabled);
         $form->addText('club', 'Klub / Bydliště:')
-            ->setRequired();
+            ->setRequired()
+            ->setDisabled($disabled);
         $form->addText('born', 'Rok narození:')
             ->addRule(Form::PATTERN, 'Prosím zadejte datum norození', '[0-9]{4}\-[0-9]{2}\-[0-9]{2}')
-            ->setRequired("Prosím zadejte rok narození");
+            ->setRequired("Prosím zadejte rok narození")
+            ->setDisabled($disabled);
         $form->addSelect('sex', 'Pohlaví:', ['Muž', 'Žena'])
             ->setPrompt("-")
-            ->setRequired("Zvolte prosím pohlaví");
+            ->setRequired("Zvolte prosím pohlaví")
+            ->setDisabled($disabled);
         $form->addCheckbox('agree', '')
             ->setDefaultValue(true)
-            ->setRequired("Prosím odsouhlaste podmínky");
-        $form->addSubmit('ok', "Provést registraci");
+            ->setRequired("Prosím odsouhlaste podmínky")
+            ->setDisabled($disabled);
+        $form->addSubmit('ok', "Provést registraci")
+            ->setDisabled($disabled);
         $form->onSuccess[] = function () use ($form) {
             $this->registrationFormSubmitted($form);
         };

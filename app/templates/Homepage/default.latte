@@ -11,14 +11,16 @@
 
 {include './nav.latte', active => 'default'}
 <div class="container">
-
+    {include covid.latte}
     <div class="row hidden-xs hidden-sm">
         <div class="col-md-12">
             <div class="background-main">
-
+                {*
                 <a n:if="!$showOnline" n:href="registration" class="btn btn-success btn-lg">
                     13. 6. 2020 - REGISTRACE
                 </a>
+                *}
+
                 {*
 
                 <br>
@@ -46,14 +48,14 @@
                 13.&nbsp;června&nbsp;2020 proběhne ve Veselici, v lesích okolo rozhledny Podvrší a v jejím blízkém
                 okolí,
                 7.&nbsp;ročník běžeckého závodu "Lesempolem", jehož nultý ročník proběhl v červnu 2013. Soutěžit se bude
-                v několika kategoriích na běžeckých trasách délky 200 m, 600 m, 1&nbsp;350 m, 5 km, 21 km, 42 km a 63 km.
+                v několika kategoriích na běžeckých trasách délky 200&nbsp;m, 600&nbsp;m, 1&nbsp;350&nbsp;m, 5&nbsp;km, 21&nbsp;km, 42&nbsp;km a 63&nbsp;km.
                 Lesempolem, to nejsou jen běžecké závody, ale kulturní záležitost! Každý rok jsou
                 připraveny nejrůznější atrakce, kterých se můžeš zúčastnit. Živá kapela, příjemné posezení a mnoho
                 dalšího!
             </p>
 
-            <a n:if="!$showOnline" n:href="registration" class="btn btn-success btn-lg">
-                    13. 6. 2020 - REGISTRACE
+            <a n:if="false" n:href="registration" class="btn btn-success btn-lg">
+                13. 6. 2020 - REGISTRACE
             </a>
             <a n:href="vysledky2019" class="btn btn-success btn-lg">Výsledky 2019</a>
 

@@ -13,6 +13,8 @@
 
 <div class="container">
 
+    {include covid.latte}
+
     <div class="row">
         <div class="col-md-12">
             <h1>Registrace na Lesempolem</h1>
@@ -30,6 +32,10 @@
     <div class="row">
         {form registrationForm}
             <div class="col-md-4">
+                <div class="alert alert-danger" role="alert">
+                    Regitrace není možná.
+                </div>
+
                 {foreach $flashes as $flash}
                     <div class="alert alert-success message-success" role="alert">{$flash->message}</div>
                 {/foreach}
