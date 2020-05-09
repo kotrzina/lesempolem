@@ -14,6 +14,9 @@ abstract class Race
         JUNIORS = 'juniors',
         CHILD = 'child';
 
+    /**
+     * @return array<string>
+     */
     public static function getRaces(): array
     {
         return [

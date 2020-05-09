@@ -28,7 +28,7 @@ class EmailService
         string $surname,
         int $price,
         int $variableSymbol
-    )
+    ): void
     {
         $vars = [
             'name' => $name,

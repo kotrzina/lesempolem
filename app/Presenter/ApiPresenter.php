@@ -29,7 +29,7 @@ class ApiPresenter extends BasePresenter
 	/**
 	 * @throws \Nette\Application\AbortException
 	 */
-	public function actionResults()
+	public function actionResults(): void
 	{
 		$token = $this->getHttpRequest()->getHeader(self::SECURE_TOKEN_NAME);
 

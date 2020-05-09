@@ -13,7 +13,7 @@ use Nette\Bridges\ApplicationLatte\Template;
 
 
 /**
- * @property-write Template|\stdClass $template
+ * @property Template|\stdClass $template
  */
 abstract class BasePresenter extends Nette\Application\UI\Presenter
 {

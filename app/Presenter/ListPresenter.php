@@ -30,18 +30,18 @@ class ListPresenter extends BasePresenter
 		}
 	}
 
-	public function createComponentLoginForm()
+	public function createComponentLoginForm(): Form
 	{
 		$form = new Form();
 		$form->addPassword('password', "Heslo: ");
 		$form->addSubmit('ok', "OK");
-		$form->onSuccess[] = function () use ($form) {
+		$form->onSuccess[] = function () use ($form): void {
 			$this->loginFormSubmitted($form);
 		};
 		return $form;
 	}
 
-	public function loginFormSubmitted(Form $form)
+	public function loginFormSubmitted(Form $form): void
 	{
 		$values = $form->getValues();
 		if ($values->password === self::PASSWORD) {
@@ -52,7 +52,7 @@ class ListPresenter extends BasePresenter
 		$this->redirect('this');
 	}
 
-	public function renderTable()
+	public function renderTable(): void
 	{
 		if (TRUE !== $this->sessionSection->logged) {
 			$this->redirect('form');
@@ -61,7 +61,7 @@ class ListPresenter extends BasePresenter
 		$this->template->list = $this->repository->getAllPerson();
 	}
 
-	public function renderJson()
+	public function renderJson(): void
 	{
 		if (TRUE !== $this->sessionSection->logged) {
 			$this->redirect('form');
@@ -71,7 +71,6 @@ class ListPresenter extends BasePresenter
 //		$data = [];
 
 		$this->sendResponse(new JsonResponse([]));
-		$this->terminate();
 	}
 
 }

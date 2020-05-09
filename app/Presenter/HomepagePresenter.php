@@ -154,7 +154,7 @@ class HomepagePresenter extends BasePresenter
             ->setDisabled($disabled);
         $form->addSubmit('ok', "Provést registraci")
             ->setDisabled($disabled);
-        $form->onSuccess[] = function () use ($form) {
+        $form->onSuccess[] = function () use ($form): void {
             $this->registrationFormSubmitted($form);
         };
         return $form;

@@ -38,7 +38,7 @@ class RegistrationService
      * Inserts raw data from web form
      * @param array $racer
      */
-    public function insertRacer(array $racer)
+    public function insertRacer(array $racer): void
     {
         $this->db->table(self::REGISTRATION_TABLE)->insert($racer);
     }
