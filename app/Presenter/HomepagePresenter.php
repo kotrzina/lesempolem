@@ -100,15 +100,17 @@ class HomepagePresenter extends BasePresenter
 
     public function renderRegistration(): void
     {
-        $this->template->men = $this->registrationService->getAllPerson([
-            new MenFilter(),
-            new NotDeletedFilter()
-        ]);
-
-        $this->template->women = $this->registrationService->getAllPerson([
-            new WomenFilter(),
-            new NotDeletedFilter()
-        ]);
+//        $this->template->men = $this->registrationService->getAllPerson([
+//            new MenFilter(),
+//            new NotDeletedFilter()
+//        ]);
+//
+//        $this->template->women = $this->registrationService->getAllPerson([
+//            new WomenFilter(),
+//            new NotDeletedFilter()
+//        ]);
+        $this->template->men = [];
+        $this->template->women = [];
         $this->template->disabled = $this->configService->isRegistrationEnabled();
 
         if (!$this->configService->isRegistrationEnabled()) {
