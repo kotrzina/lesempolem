@@ -12,3 +12,4 @@ vendor/*
 !web.config
 www/payment/
 www/static_files/
+.env
