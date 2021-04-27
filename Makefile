@@ -18,4 +18,4 @@ clean:
 
 test:
 	php vendor/bin/tester tests
-	php vendor/bin/phpstan analyse -l max -c phpstan.neon app
+	php -d memory_limit=20G vendor/bin/phpstan analyse -l max -c phpstan.neon app
