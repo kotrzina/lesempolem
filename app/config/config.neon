@@ -1,16 +1,6 @@
 php:
 	date.timezone: Europe/Prague
 
-database:
-	default:
-		dsn: %db.dsn%
-		user: %db.user%
-		password: %db.pass%
-		options:
-			lazy: true
-			PDO::MYSQL_ATTR_COMPRESS: true
-
-
 application:
 	errorPresenter: Error
 	mapping:
@@ -24,10 +14,8 @@ session:
 services:
 	routerFactory: Lesempolem\Router\RouterFactory
 	router: @routerFactory::createRouter
-	mainService: Lesempolem\Model\Service\RegistrationService
 	- Lesempolem\Model\Environment(%env%)
 	- Lesempolem\Model\Service\ConfigService(%lastPaymentDay%, %lastRegistrationDay%)
-	- Lesempolem\Model\LiveResultsService
 	- Lesempolem\Model\Service\EmailService
 	- Lesempolem\Model\QrGenerator
 	- Lesempolem\Model\Storage\FileStorage(%dataDir%)
@@ -35,5 +23,3 @@ services:
 
 	cacheStorage:
 		factory: Nette\Caching\Storages\FileStorage(%tempDir%/data)
-
-	- Lesempolem\Presenter\ApiPresenter(%api.live_token%)

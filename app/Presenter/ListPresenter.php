@@ -2,7 +2,6 @@
 
 namespace Lesempolem\Presenter;
 
-use Lesempolem\Model\Service\RegistrationService;
 use Nette\Application\Responses\JsonResponse;
 use Nette\Application\UI\Form;
 use Nette\Http\Session;
@@ -12,9 +11,6 @@ class ListPresenter extends BasePresenter
 {
 
 	const PASSWORD = 'svazarm';
-
-	/** @inject */
-	public RegistrationService $repository;
 
 	/** @inject */
 	public Session $session;
@@ -58,7 +54,7 @@ class ListPresenter extends BasePresenter
 			$this->redirect('form');
 		}
 
-		$this->template->list = $this->repository->getAllPerson();
+		$this->template->list = [];
 	}
 
 	public function renderJson(): void

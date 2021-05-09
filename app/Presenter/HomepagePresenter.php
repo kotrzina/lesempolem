@@ -7,15 +7,12 @@ namespace Lesempolem\Presenter;
 use Lesempolem\Model\Entity\Racer;
 use Lesempolem\Model\Filter\FilterService;
 use Lesempolem\Model\Filter\MenFilter;
-use Lesempolem\Model\Filter\NotDeletedFilter;
 use Lesempolem\Model\Filter\WomenFilter;
-use Lesempolem\Model\LiveResultsService;
 use Lesempolem\Model\Service\ConfigService;
 use Lesempolem\Model\Storage\IStorage;
 use Nette\Application\UI\Form;
 use Nette\Caching\Cache;
 use Nette\Caching\Storage;
-use Nette\Utils\Json;
 
 
 class HomepagePresenter extends BasePresenter
@@ -26,22 +23,18 @@ class HomepagePresenter extends BasePresenter
 
     private ConfigService $configService;
 
-    private LiveResultsService $liveResultsService;
-
     private Cache $cache;
 
     private IStorage $storage;
 
     public function __construct(
         ConfigService $configService,
-        LiveResultsService $liveResultsService,
         Storage $cacheStorage,
         IStorage $storage
     )
     {
         parent::__construct();
         $this->configService = $configService;
-        $this->liveResultsService = $liveResultsService;
         $this->cache = new Cache($cacheStorage);
         $this->storage = $storage;
     }
@@ -187,9 +180,7 @@ class HomepagePresenter extends BasePresenter
 
     public function renderLive(): void
     {
-        $last = $this->liveResultsService->getLastResults();
-        $data = Json::decode($last['data'], Json::FORCE_ARRAY);
-        $this->template->data = $data;
+        $this->template->data = [];
     }
 
     public function actionOnline(): void
