@@ -17,6 +17,9 @@ $configurator->setTempDirectory(__DIR__ . '/../temp');
 $configurator->addConfig(__DIR__ . "/config/config.params.php");
 $configurator->addConfig(__DIR__ . '/config/registration.neon');
 $configurator->addConfig(__DIR__ . '/config/config.neon');
+$configurator->addParameters([
+    'dataDir' => __DIR__ .  '/../dd',
+]);
 
 
 $container = $configurator->createContainer();

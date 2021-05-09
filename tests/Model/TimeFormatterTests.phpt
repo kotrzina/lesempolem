@@ -25,4 +25,5 @@ class TimeFormatterTests extends TestCase
     }
 }
 
-(new TimeFormatterTests())->run();
+(new TimeFormatterTests())
+    ->run();

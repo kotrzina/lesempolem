@@ -4,19 +4,17 @@ declare(strict_types=1);
 
 namespace Lesempolem\Presenter;
 
-use Lesempolem\Model\Constant\Payment;
-use Lesempolem\Model\Constant\Race;
+use Lesempolem\Model\Entity\Racer;
+use Lesempolem\Model\Filter\FilterService;
 use Lesempolem\Model\Filter\MenFilter;
 use Lesempolem\Model\Filter\NotDeletedFilter;
 use Lesempolem\Model\Filter\WomenFilter;
 use Lesempolem\Model\LiveResultsService;
-use Lesempolem\Model\Service\RegistrationService;
-use Lesempolem\Model\Service\EmailService;
 use Lesempolem\Model\Service\ConfigService;
+use Lesempolem\Model\Storage\IStorage;
 use Nette\Application\UI\Form;
 use Nette\Caching\Cache;
-use Nette\Caching\IStorage;
-use Nette\Utils\DateTime;
+use Nette\Caching\Storage;
 use Nette\Utils\Json;
 
 
@@ -26,42 +24,26 @@ class HomepagePresenter extends BasePresenter
     const TRAT_CACHE_KEY = 'trat';
     const CACHE_TIME = '7 days';
 
-    /** @var RegistrationService */
-    private RegistrationService $registrationService;
-
-    /** @var ConfigService */
     private ConfigService $configService;
 
-    /** @var LiveResultsService */
     private LiveResultsService $liveResultsService;
 
-    /** @var Cache */
     private Cache $cache;
 
-    /** @var EmailService */
-    private EmailService $emailService;
+    private IStorage $storage;
 
-    /**
-     * @param RegistrationService $registrationService
-     * @param ConfigService $configService
-     * @param LiveResultsService $liveResultsService
-     * @param EmailService $emailService
-     * @param IStorage $storage
-     */
     public function __construct(
-        RegistrationService $registrationService,
         ConfigService $configService,
         LiveResultsService $liveResultsService,
-        EmailService $emailService,
+        Storage $cacheStorage,
         IStorage $storage
     )
     {
         parent::__construct();
-        $this->registrationService = $registrationService;
         $this->configService = $configService;
         $this->liveResultsService = $liveResultsService;
-        $this->cache = new Cache($storage);
-        $this->emailService = $emailService;
+        $this->cache = new Cache($cacheStorage);
+        $this->storage = $storage;
     }
 
 
@@ -100,33 +82,24 @@ class HomepagePresenter extends BasePresenter
 
     public function renderRegistration(): void
     {
-//        $this->template->men = $this->registrationService->getAllPerson([
-//            new MenFilter(),
-//            new NotDeletedFilter()
-//        ]);
-//
-//        $this->template->women = $this->registrationService->getAllPerson([
-//            new WomenFilter(),
-//            new NotDeletedFilter()
-//        ]);
-        $this->template->men = [];
-        $this->template->women = [];
+         $all = $this->storage->getAll();
+
+
+
+        $this->template->men = FilterService::applyFilters($all, new MenFilter());
+        $this->template->women = FilterService::applyFilters($all, new WomenFilter());
         $this->template->disabled = $this->configService->isRegistrationEnabled();
 
         if (!$this->configService->isRegistrationEnabled()) {
-            $this->flashMessage("Registrace  není možná.");
+            // $this->flashMessage("Registrace  není možná.");
         }
 
     }
 
     public function createComponentRegistrationForm(): Form
     {
-        $disabled = true;
+        $disabled = false;
         $form = new Form();
-        $form->addSelect('race', 'Závod:', Race::getRaces())
-            ->setPrompt('-')
-            ->setRequired("Prosím vyberte závod.")
-            ->setDisabled($disabled);
         $form->addText('email', 'Email:')
             ->addRule(Form::EMAIL, 'Prosím zadejte validní email.')
             ->setRequired("Zadejte prosím email.")
@@ -144,7 +117,7 @@ class HomepagePresenter extends BasePresenter
             ->addRule(Form::PATTERN, 'Prosím zadejte datum norození', '[0-9]{4}\-[0-9]{2}\-[0-9]{2}')
             ->setRequired("Prosím zadejte rok narození")
             ->setDisabled($disabled);
-        $form->addSelect('sex', 'Pohlaví:', ['Muž', 'Žena'])
+        $form->addSelect('sex', 'Pohlaví:', ['m' => 'Muž', 'f' => 'Žena'])
             ->setPrompt("-")
             ->setRequired("Zvolte prosím pohlaví")
             ->setDisabled($disabled);
@@ -168,21 +141,17 @@ class HomepagePresenter extends BasePresenter
     public function registrationFormSubmitted(Form $form): void
     {
         $values = (array)$form->getValues();
-        $values['created'] = new \DateTimeImmutable();
-        $today = new DateTime('now');
-        $values['vs'] = (int)($today->format('md') * 1e6 + \mt_rand(0, 999999));
-        unset($values['agree']);
-
-
-        $this->registrationService->insertRacer($values);
-        $this->emailService->sendConfirmation(
-            $values['email'],
+        $racer = new Racer(
             $values['name'],
             $values['surname'],
-            Payment::getRacePrice($values['race']),
-            $values['vs'],
-            );
+            $values['email'],
+            $values['club'],
+            (new \DateTimeImmutable($values['born']))->format('Y-m-d'),
+            $values['sex'],
+            (new \DateTimeImmutable())->format('Y-m-d H:i:s'),
+        );
 
+        $this->storage->insert($racer);
 
         $this->flashMessage('Registrace proběhla úspěšně.');
         $this->redirect('this');

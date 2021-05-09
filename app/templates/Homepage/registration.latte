@@ -19,41 +19,34 @@
         <div class="col-md-12">
             <h1>Registrace na Lesempolem</h1>
 
-            <p>Zde se můžeš na Lesempolem zaregistrovat a zaplatit startovné na náš účet.
-                Závody se uskuteční 13. 6. 2020. Zajistíš si tím, že už tě budeme mít v
+            <p n:if="false">Zde se můžeš na Lesempolem zaregistrovat a zaplatit startovné na náš účet.
+                Závody se uskuteční 12. 6. 2021. Zajistíš si tím, že už tě budeme mít v
                 počítači a tvoje odbavení při přidělení čísla na místě bude mnohem
                 rychlejší. Registraci je možné přovést na všechny závody. Pro maratonské běhy bude ještě nutné provést
                 platbu pomocí bankovního převodu. Všechny potřebné údaje ti dorazí hned po dokončení registrace na
                 email. Pokud stále nejsi rozhodnutý,
-                <a n:href="info">rozklikni si další pravidla a informace o Lesempolem</a>.</p>
+                <a n:href="info">rozklikni si další pravidla a informace o Lesempolem</a>.
+            </p>
         </div>
     </div>
 
     <div class="row">
+        <div class="col-md-12">
+            <div class="alert alert-success" role="alert">
+                Registrace pro rok 2021 je v přípravě.
+            </div>
+        </div>
+    </div>
+
+    <div class="row" n:if="false">
         {form registrationForm}
             <div class="col-md-4">
-                <div class="alert alert-danger" role="alert">
-                    Regitrace není možná.
-                </div>
-
                 {foreach $flashes as $flash}
                     <div class="alert alert-success message-success" role="alert">{$flash->message}</div>
                 {/foreach}
                 {foreach $form->errors as $error}
                     <div class="alert alert-danger" role="alert">{$error}</div>
                 {/foreach}
-
-                <div class="form-group has-feedback">
-                    {label race class=>'control-label'/}
-                    {input race class=>'form-control'}
-                    <span class="validation"></span>
-                </div>
-
-                <div class="form-group has-feedback">
-                    {label email class=>'control-label'/}
-                    {input email class=>'form-control'}
-                    <span class="validation form-control-feedback"></span>
-                </div>
 
                 <div class="form-group has-feedback">
                     {label name class=>'control-label'/}
@@ -64,6 +57,12 @@
                 <div class="form-group has-feedback">
                     {label surname class=>'control-label'/}
                     {input surname class=>'form-control'}
+                    <span class="validation form-control-feedback"></span>
+                </div>
+
+                <div class="form-group has-feedback">
+                    {label email class=>'control-label'/}
+                    {input email class=>'form-control'}
                     <span class="validation form-control-feedback"></span>
                 </div>
 
@@ -117,8 +116,8 @@
             <ul>
                 {foreach $men as $racer}
                     <li>
-                        {$racer->name} {$racer->surname}
-                        <span>({$racer->club|truncate:25})</span>
+                        {$racer->getName()} {$racer->getSurname()}
+                        <span>({$racer->getClub()|truncate:25})</span>
                     </li>
                 {/foreach}
             </ul>
@@ -129,8 +128,8 @@
             <ul>
                 {foreach $women as $racer}
                     <li>
-                        {$racer->name} {$racer->surname}
-                        <span>({$racer->club|truncate:25})</span>
+                        {$racer->getName()} {$racer->getSurname()}
+                        <span>({$racer->getClub()|truncate:25})</span>
                     </li>
                 {/foreach}
             </ul>

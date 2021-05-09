@@ -4,18 +4,19 @@ declare(strict_types=1);
 
 namespace Lesempolem\Model\Filter;
 
+use Lesempolem\Model\Entity\Racer;
+
 class MenFilter implements IFilter
 {
 
-
 	/**
-	 * @param array $data
+	 * @param Racer[] $data
 	 * @return array
 	 */
 	public function filter(array $data): array
 	{
-		$data = array_filter($data, function ($item) {
-			if ($item['sex'] == 0) {
+		$data = array_filter($data, function (Racer $racer) {
+			if ($racer->getGender() == Racer::MALE) {
 				return true;
 			}
 			return false;

@@ -30,6 +30,7 @@ services:
 	- Lesempolem\Model\LiveResultsService
 	- Lesempolem\Model\Service\EmailService
 	- Lesempolem\Model\QrGenerator
+	- Lesempolem\Model\Storage\FileStorage(%dataDir%)
 
 
 	cacheStorage:
