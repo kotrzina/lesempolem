@@ -19,18 +19,17 @@
         <div class="col-md-12">
             <h1>Registrace na Lesempolem</h1>
 
-            <p n:if="false">Zde se můžeš na Lesempolem zaregistrovat a zaplatit startovné na náš účet.
+            <p n:if="true
+            ">Zde se můžeš na Lesempolem zaregistrovat a zaplatit startovné na náš účet.
                 Závody se uskuteční 12. 6. 2021. Zajistíš si tím, že už tě budeme mít v
                 počítači a tvoje odbavení při přidělení čísla na místě bude mnohem
-                rychlejší. Registraci je možné přovést na všechny závody. Pro maratonské běhy bude ještě nutné provést
-                platbu pomocí bankovního převodu. Všechny potřebné údaje ti dorazí hned po dokončení registrace na
-                email. Pokud stále nejsi rozhodnutý,
+                rychlejší. Registraci je možné přovést na všechny závody. Pokud stále nejsi rozhodnutý,
                 <a n:href="info">rozklikni si další pravidla a informace o Lesempolem</a>.
             </p>
         </div>
     </div>
 
-    <div class="row">
+    <div class="row" n:if="false">
         <div class="col-md-12">
             <div class="alert alert-success" role="alert">
                 Registrace pro rok 2021 je v přípravě.
@@ -38,7 +37,7 @@
         </div>
     </div>
 
-    <div class="row" n:if="false">
+    <div class="row">
         {form registrationForm}
             <div class="col-md-4">
                 {foreach $flashes as $flash}
@@ -104,7 +103,7 @@
         {/form}
 
         <div class="col-md-2 hidden-sm hidden-xs"></div>
-        <div class="col-md-6 hidden-sm hidden-xs one-photo">
+        <div n:if="false" class="col-md-6 hidden-sm hidden-xs one-photo">
             <h3>Medaile z roku 2016</h3>
             <img src="{$basePath}/images/rsz_img_0361.jpg" class="img-responsive" alt="Medaile z roku 2015">
         </div>
