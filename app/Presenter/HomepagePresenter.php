@@ -106,7 +106,7 @@ class HomepagePresenter extends BasePresenter
         $form->addText('club', 'Klub / Bydliště:')
             ->setRequired()
             ->setDisabled($disabled);
-        $form->addText('born', 'Rok narození:')
+        $form->addText('born', 'Datum narození:')
             ->addRule(Form::PATTERN, 'Prosím zadejte datum norození', '[0-9]{4}\-[0-9]{2}\-[0-9]{2}')
             ->setRequired("Prosím zadejte rok narození")
             ->setDisabled($disabled);
