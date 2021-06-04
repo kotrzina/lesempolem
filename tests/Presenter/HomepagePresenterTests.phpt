@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Tests\Lesempolem\Presenter;
-
 use Lesempolem\Bootstrap;
 use Nette\Application\IPresenterFactory;
 use Nette\Application\Request;
@@ -14,9 +12,6 @@ use Tester\Assert;
 use Tester\TestCase;
 
 require __DIR__ . '/../bootstrap.php';
-
-/** @var Container $container */
-$container = Bootstrap::boot();
 
 class HomepagePresenterTests extends TestCase
 {
@@ -158,4 +153,5 @@ class HomepagePresenterTests extends TestCase
     }
 }
 
+$container = Bootstrap::boot();
 (new HomepagePresenterTests($container))->run();
