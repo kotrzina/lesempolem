@@ -1,5 +1,14 @@
 <?php
 
-$container = require __DIR__ . '/../app/bootstrap.php';
+use Lesempolem\Bootstrap;
+use Nette\Application\Application;
 
-$container->getService('application')->run();
+require __DIR__ . '/../vendor/autoload.php';
+
+$container = Bootstrap::boot();
+
+/** @var Application $application */
+$application = $container->getByType(Application::class);
+$application->run();
+
+

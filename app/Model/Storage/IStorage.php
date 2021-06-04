@@ -13,4 +13,6 @@ interface IStorage {
 
     public function insert(Racer $racer): void;
 
+    public function flush(): void;
+
 }

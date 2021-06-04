@@ -25,6 +25,9 @@ unit-tests:
     - php composer-setup.php --install-dir=/bin --filename=composer
     - php -r "unlink('composer-setup.php');"
     - composer install
+    - mkdir dd && chmod -R 777 dd
+    - mkdir log && chmod -R 777 log
+    - mkdir -p temp/sessions && mkdir -p temp/data && chmod -R 777 dd
     - php vendor/bin/tester tests
     - php -d memory_limit=4G vendor/bin/phpstan analyse -l max -c phpstan.neon app
 

@@ -6,6 +6,8 @@ namespace Lesempolem\Model\Storage;
 
 use Lesempolem\Model\Entity\Racer;
 use Nette\Utils\Json;
+use function file_get_contents;
+use function file_put_contents;
 
 class FileStorage implements IStorage
 {
@@ -45,6 +47,11 @@ class FileStorage implements IStorage
         $data = Json::decode($content, Json::FORCE_ARRAY);
         $data[] = $this->encodeRacer($racer);
         file_put_contents($this->path, Json::encode($data, Json::PRETTY), LOCK_EX);
+    }
+
+    public function flush(): void
+    {
+        file_put_contents($this->path, '[]', LOCK_EX); // empty json array
     }
 
     private function encodeRacer(Racer $racer): array
