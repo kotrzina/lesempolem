@@ -8,7 +8,6 @@ use Lesempolem\Model\TimeFormatter;
 use Lesempolem\Model\StaticFiles;
 use Lesempolem\Model\Environment;
 use Nette;
-use Nette\Application\UI\ITemplate;
 use Nette\Bridges\ApplicationLatte\Template;
 
 
@@ -29,7 +28,7 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
 		$this->template->googleAnalytics = $this->environment->isGoogleAnalyticsEnabled();
 	}
 
-	protected function createTemplate(): ITemplate
+	protected function createTemplate(): Template
 	{
 		/** @var Template $template */
 		$template = parent::createTemplate();

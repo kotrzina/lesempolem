@@ -13,7 +13,7 @@ cache:
 
 unit-tests:
   stage: test
-  image: php:7.4-cli
+  image: php:8.0-cli
   cache:
     policy: pull-push
     paths:
@@ -27,7 +27,7 @@ unit-tests:
     - composer install
     - mkdir dd && chmod -R 777 dd
     - mkdir log && chmod -R 777 log
-    - mkdir -p temp/sessions && mkdir -p temp/data && chmod -R 777 dd
+    - mkdir -p temp/sessions && mkdir -p temp/data && chmod -R 777 temp
     - php vendor/bin/tester tests
     - php -d memory_limit=4G vendor/bin/phpstan analyse -l max -c phpstan.neon app
 

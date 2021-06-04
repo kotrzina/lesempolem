@@ -11,31 +11,21 @@ use Lesempolem\Model\Filter\WomenFilter;
 use Lesempolem\Model\Service\ConfigService;
 use Lesempolem\Model\Storage\IStorage;
 use Nette\Application\UI\Form;
-use Nette\Caching\Cache;
-use Nette\Caching\Storage;
-
 
 class HomepagePresenter extends BasePresenter
 {
 
-    const TRAT_CACHE_KEY = 'trat';
-    const CACHE_TIME = '7 days';
-
     private ConfigService $configService;
-
-    private Cache $cache;
 
     private IStorage $storage;
 
     public function __construct(
         ConfigService $configService,
-        Storage $cacheStorage,
         IStorage $storage
     )
     {
         parent::__construct();
         $this->configService = $configService;
-        $this->cache = new Cache($cacheStorage);
         $this->storage = $storage;
     }
 
@@ -148,34 +138,6 @@ class HomepagePresenter extends BasePresenter
 
         $this->flashMessage('Registrace proběhla úspěšně.');
         $this->redirect('this');
-    }
-
-    public function renderTrat(): void
-    {
-        $data = $this->cache->load(self::TRAT_CACHE_KEY);
-        if (NULL === $data) {
-            $xml = new \DOMDocument();
-            $xml->load(__DIR__ . "/../lp.xml");
-            $data = [];
-            $elements = $xml->getElementsByTagName('coordinates');
-            $first = TRUE;
-            foreach ($elements as $element) {
-                if (!$first) {
-                    $gps = explode(",", $element->nodeValue);
-                    $data[] = [
-                        'lat' => $gps['0'],
-                        'lon' => $gps['1'],
-                    ];
-                } else {
-                    $first = FALSE;
-                }
-            }
-            $this->cache->save(self::TRAT_CACHE_KEY, $data, array(
-                Cache::EXPIRE => self::CACHE_TIME,
-            ));
-        }
-
-        $this->template->data = $data;
     }
 
     public function renderLive(): void

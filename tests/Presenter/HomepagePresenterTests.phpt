@@ -18,7 +18,7 @@ require __DIR__ . '/../bootstrap.php';
 /** @var Container $container */
 $container = Bootstrap::boot();
 
-final class HomepagePresenterTests extends TestCase
+class HomepagePresenterTests extends TestCase
 {
 
     private IPresenterFactory $presenterFactory;
