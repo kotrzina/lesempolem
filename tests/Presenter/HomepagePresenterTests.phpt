@@ -18,9 +18,6 @@ require __DIR__ . '/../bootstrap.php';
 /** @var Container $container */
 $container = Bootstrap::boot();
 
-/** @var IPresenterFactory $presenterFactory */
-
-
 final class HomepagePresenterTests extends TestCase
 {
 
@@ -64,12 +61,12 @@ final class HomepagePresenterTests extends TestCase
         ];
         $request = new Request('Homepage', 'POST', ['action' => 'registration', '_fid' => 'k6pz-submit'], $post);
 
-
         /** @var RedirectResponse $response */
         $response = $hp->run($request);
         if (!$response instanceof RedirectResponse) {
             Assert::fail('Invalid response from registration form');
         }
+        Assert::true(true);
     }
 
     public function testInfo()
