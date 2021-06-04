@@ -5,8 +5,6 @@
     <title>Trať | Lesempolem.cz</title>
     {include './head.latte'}
     {include './headImport.latte'}
-    <script src="https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js"></script>
-    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css" type="text/css">
 </head>
 <body>
 {block|strip}
@@ -29,66 +27,14 @@
                         allowfullscreen></iframe>
             </div>
 
-
-            <h3>Mapa závodu na 10 km</h3>
-            <div id="map"></div>
-
-
-            <h3>Profil závodu (výškové převýšení)</h3>
-            <a href="{$basePath}/images/profil_zavodu.jpg">
+            <h3 n:if="false">Profil závodu (výškové převýšení)</h3>
+            <a n:if="false" href="{$basePath}/images/profil_zavodu.jpg">
                 <img class="img-responsive" src="{$basePath}/images/profil_zavodu.jpg" alt="Profil závodu"/>
             </a>
         </div>
 
     </div>
 </div>
-
-<script>
-    L.mapbox.accessToken = 'pk.eyJ1Ijoia296YWt0b21hcyIsImEiOiJmZTljZjI5ZTk4OTJhOWY3ZTQ2NTJmMDMyMDE1NWE5MCJ9.-9JfXSQh9389mn5MHp8t3g';
-    var map = L.mapbox.map('map', 'mapbox.satellite')
-        .setView([0, 0], 13);
-
-    // Add a new line to the map with no points.
-    var polyline = L.polyline([]).addTo(map);
-
-    // Keep a tally of how many points we've added to the map.
-    var pointsAdded = 0;
-
-    var data = {$data};
-    var iterator = 0;
-
-    // Start drawing the polyline.
-    add();
-
-    var firstlatLng;
-
-    function add() {
-        var latLng = L.latLng({
-            lon: data[iterator].lat,
-            lat: data[iterator].lon
-        });
-        polyline.addLatLng(latLng);
-
-        if (iterator == 0) {
-            firstlatLng = L.latLng({
-                lon: data[iterator].lat,
-                lat: data[iterator].lon
-            });
-            map.setView(firstlatLng, 16);
-        } else if (iterator == 50) {
-            map.setView(firstlatLng, 15);
-        } else if (iterator == 100) {
-            map.setView(firstlatLng, 14);
-        }
-
-
-        iterator++;
-        if (iterator < data.length) {
-            window.setTimeout(add, 50);
-        }
-    }
-
-</script>
 
 {include './footer.latte'}
 
