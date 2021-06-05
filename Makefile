@@ -6,7 +6,6 @@ up:
 	mkdir -p log
 	mkdir -p www/static_files
 	composer install
-	docker-compose up -d
 
 stop:
 	docker-compose stop
