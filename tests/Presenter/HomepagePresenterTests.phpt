@@ -23,14 +23,14 @@ class HomepagePresenterTests extends TestCase
         $this->presenterFactory = $container->getByType(IPresenterFactory::class);
     }
 
-    public function testHomepage()
+    public function testHomepage(): void
     {
         $response = $this->sendRequest('Homepage', 'default', 'GET');
         $html = (string)$response->getSource();
         Assert::contains('Lesempolem', $html);
     }
 
-    public function testRegistration()
+    public function testRegistration(): void
     {
         $response = $this->sendRequest('Homepage', 'registration', 'GET');
         $html = (string)$response->getSource();
@@ -39,7 +39,7 @@ class HomepagePresenterTests extends TestCase
         Assert::contains('Souhlasím', $html);
     }
 
-    public function testRegistrationForm()
+    public function testRegistrationForm(): void
     {
         $hp = $this->presenterFactory->createPresenter('Homepage');
         $hp->autoCanonicalize = false;
@@ -61,10 +61,9 @@ class HomepagePresenterTests extends TestCase
         if (!$response instanceof RedirectResponse) {
             Assert::fail('Invalid response from registration form');
         }
-        Assert::true(true);
     }
 
-    public function testInfo()
+    public function testInfo(): void
     {
         $response = $this->sendRequest('Homepage', 'info', 'GET');
         $html = (string)$response->getSource();
@@ -74,7 +73,7 @@ class HomepagePresenterTests extends TestCase
         Assert::contains('Prezence', $html);
     }
 
-    public function testResultsNav()
+    public function testResultsNav(): void
     {
         $response = $this->sendRequest('Homepage', 'vysledky', 'GET');
         $html = (string)$response->getSource();
@@ -82,7 +81,7 @@ class HomepagePresenterTests extends TestCase
         Assert::contains('Rekord', $html);
     }
 
-    public function testResults()
+    public function testResults(): void
     {
         $pages = [
             'vysledky2013',
@@ -101,7 +100,7 @@ class HomepagePresenterTests extends TestCase
         }
     }
 
-    public function testVideo()
+    public function testVideo(): void
     {
         $response = $this->sendRequest('Homepage', 'video', 'GET');
         $html = (string)$response->getSource();
@@ -109,7 +108,7 @@ class HomepagePresenterTests extends TestCase
         Assert::contains('video', $html);
     }
 
-    public function testTrat()
+    public function testTrat(): void
     {
         $response = $this->sendRequest('Homepage', 'trat', 'GET');
         $html = (string)$response->getSource();
@@ -117,7 +116,7 @@ class HomepagePresenterTests extends TestCase
         Assert::contains('Ke stažení:', $html);
     }
 
-    public function testContacts()
+    public function testContacts(): void
     {
         $response = $this->sendRequest('Homepage', 'kontakty', 'GET');
         $html = (string)$response->getSource();
@@ -129,7 +128,7 @@ class HomepagePresenterTests extends TestCase
         Assert::contains('Open source', $html);
     }
 
-    public function testRules()
+    public function testRules(): void
     {
         $response = $this->sendRequest('Homepage', 'rules', 'GET');
         $html = (string)$response->getSource();
@@ -145,7 +144,7 @@ class HomepagePresenterTests extends TestCase
 
         /** @var TextResponse $response */
         $response = $hp->run($request);
-        if (!$response instanceof \Nette\Application\Responses\TextResponse) {
+        if (!$response instanceof TextResponse) {
             Assert::fail(sprintf('Invalid response from %s:%s', $presenter, $action));
         }
 

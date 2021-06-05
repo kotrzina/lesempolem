@@ -11,4 +11,6 @@ if (!is_dir(__DIR__ . "/../temp/data")) {
     mkdir(__DIR__ . "/../temp/data");
 }
 
+putenv('ENV=dev');
+
 Tester\Environment::setup();

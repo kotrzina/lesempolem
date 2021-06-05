@@ -19,3 +19,6 @@ clean:
 test:
 	php vendor/bin/tester tests
 	php -d memory_limit=20G vendor/bin/phpstan analyse -l max -c phpstan.neon app
+coverage:
+	pecl install xdebug || true # could be already installed
+	php -c tests/php.xdebug.ini vendor/bin/tester -c tests/php.xdebug.ini --coverage coverage.html --coverage-src app
