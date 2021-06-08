@@ -22,27 +22,18 @@
         <th>Jméno</th>
         <th>Příjmení</th>
         <th>Klub</th>
-        <th>Ročník</th>
+        <th>Dob</th>
         <th>Pohlaví</th>
         <th>Registrace</th>
-        <th>Cena</th>
-        <th>VS</th>
-        <th>Smazán</th>
-        <th>Zaplaceno</th>
     </tr>
     {foreach $list as $racer}
         <tr>
             <td>{$racer->getName()}</td>
             <td>{$racer->getSurname()}</td>
             <td>{$racer->getClub()}</td>
-            <td>{$racer->getYear()}</td>
-            <td>{if $racer->isWoman()}}Žena{else}Muž{/if}</td>
-            <td>{$racer->getCreated()->format('d.m.Y H:i:s')}</td>
-            <td>{$racer->getPrice()} Kč</td>
-            <td>{$racer->getVariableSymbol()}</td>
-            <td style="text-align: center">{if $racer->isDeleted()}<img width="16px"
-                                                                        src="{$basePath}/images/ok.png">{/if}</td>
-            <td style="text-align: center">{if $racer->hasPaid()}<img width="16px" src="{$basePath}/images/ok.png">{/if}
+            <td>{$racer->getDob()}</td>
+            <td>{if $racer->getGender() === 'f'}Žena{else}Muž{/if}</td>
+            <td>{$racer->getCreated()}</td>
             </td>
         </tr>
     {/foreach}

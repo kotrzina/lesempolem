@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Lesempolem\Model\Entity;
 
+use JetBrains\PhpStorm\ArrayShape;
+
 class Racer
 {
 
@@ -72,6 +74,20 @@ class Racer
     public function getCreated(): string
     {
         return $this->created;
+    }
+
+    #[ArrayShape(['name' => "string", 'surname' => "string", 'email' => "string", 'club' => "string", 'dob' => "string", 'gender' => "string", 'created' => "string"])]
+    public function toArray(): array
+    {
+        return [
+            'name' => $this->name,
+            'surname' => $this->surname,
+            'email' => $this->email,
+            'club' => $this->club,
+            'dob' => $this->dob,
+            'gender' => $this->gender,
+            'created' => $this->created,
+        ];
     }
 
 }

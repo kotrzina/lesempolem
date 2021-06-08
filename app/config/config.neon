@@ -19,6 +19,7 @@ services:
 	- Lesempolem\Model\Service\EmailService
 	- Lesempolem\Model\QrGenerator
 	- Lesempolem\Model\Storage\FileStorage(%dataDir%)
+	- Lesempolem\Presenter\ListPresenter(::getenv('LIST_PASSWORD'))
 
 
 	cacheStorage:
