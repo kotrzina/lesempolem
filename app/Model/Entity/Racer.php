@@ -75,8 +75,7 @@ class Racer
     {
         return $this->created;
     }
-
-    #[ArrayShape(['name' => "string", 'surname' => "string", 'email' => "string", 'club' => "string", 'dob' => "string", 'gender' => "string", 'created' => "string"])]
+    
     public function toArray(): array
     {
         return [
