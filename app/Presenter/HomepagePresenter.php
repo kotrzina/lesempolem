@@ -51,6 +51,7 @@ class HomepagePresenter extends BasePresenter
             'vysledky2017' => 'LESEMPOLEM.cz - výsledky 2017',
             'vysledky2018' => 'LESEMPOLEM.cz - výsledky 2018',
             'vysledky2019' => 'LESEMPOLEM.cz - výsledky 2019',
+            'vysledky2021' => 'LESEMPOLEM.cz - výsledky 2021',
             'video' => 'LESEMPOLEM.cz - video',
             'trat' => 'LESEMPOLEM.cz - trať',
             'kontakty' => 'LESEMPOLEM.cz - kontakty',
@@ -73,15 +74,13 @@ class HomepagePresenter extends BasePresenter
         $this->template->women = FilterService::applyFilters($all, new WomenFilter());
         $this->template->disabled = $this->configService->isRegistrationEnabled();
 
-        if (!$this->configService->isRegistrationEnabled()) {
-            // $this->flashMessage("Registrace  není možná.");
-        }
 
+        $this->flashMessage("Registrace není možná.");
     }
 
     public function createComponentRegistrationForm(): Form
     {
-        $disabled = false;
+        $disabled = true;
         $form = new Form();
         $form->addText('email', 'Email:')
             ->addRule(Form::EMAIL, 'Prosím zadejte validní email.')
