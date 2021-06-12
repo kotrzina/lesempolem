@@ -62,6 +62,7 @@ class RouterFactory
 		$router[] = new Route('vysledky-2017.html', 'Homepage:vysledky2017');
 		$router[] = new Route('vysledky-2018.html', 'Homepage:vysledky2018');
 		$router[] = new Route('vysledky-2019.html', 'Homepage:vysledky2019');
+		$router[] = new Route('vysledky-20121.html', 'Homepage:vysledky2021');
 
 		$router[] = new Route('admin/regenerateQR', 'Homepage:regenerateQR');
 		$router[] = new Route('admin/testing', 'Homepage:test');
