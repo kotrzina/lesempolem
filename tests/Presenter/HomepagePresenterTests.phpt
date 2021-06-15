@@ -91,6 +91,7 @@ class HomepagePresenterTests extends TestCase
             'vysledky2017',
             'vysledky2018',
             'vysledky2019',
+            'vysledky2021',
         ];
         foreach ($pages as $page) {
             $response = $this->sendRequest('Homepage', $page, 'GET');
