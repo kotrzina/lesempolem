@@ -1,0 +1,29 @@
+#sponsors {
+    border-top: 2px #000 solid;
+    width: 100%;
+    margin: 49px 0 0;
+    text-align: center;
+    margin: 10px auto 0;
+    background-color: #289c4a;
+    flex-grow: 1;
+}
+
+#sponsors .row {
+    margin-top: 35px;
+    text-align: center;
+}
+
+#sponsors .list{
+    display: block;
+    text-align: center;
+}
+
+#sponsors a {
+    margin: 0 12px;
+}
+
+#sponsors a img {
+    margin-bottom: 20px;
+}
+
+
