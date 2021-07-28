@@ -1,0 +1,2069 @@
+{
+  "title": "Výsledky závodu v roce 2021",
+  "year": 2021,
+  "races": [
+    {
+      "title": "MČR ultramaraton",
+      "distance": 63000,
+      "laps": 6,
+      "lapDistance": 10500,
+      "results": [
+        {
+          "place": 1,
+          "sn": 1,
+          "name": "Daniel Orálek",
+          "category": "(50-54)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:50:34",
+              "position": 3,
+              "lapTime": "0:50:34"
+            },
+            {
+              "lap": 2,
+              "time": "01:38:55",
+              "position": 1,
+              "lapTime": "0:48:21"
+            },
+            {
+              "lap": 3,
+              "time": "02:27:13",
+              "position": 1,
+              "lapTime": "0:48:18"
+            },
+            {
+              "lap": 4,
+              "time": "03:19:03",
+              "position": 1,
+              "lapTime": "0:51:50"
+            },
+            {
+              "lap": 5,
+              "time": "04:19:45",
+              "position": 1,
+              "lapTime": "1:0:42"
+            },
+            {
+              "lap": 6,
+              "time": "05:30:58",
+              "position": 1,
+              "lapTime": "1:11:13"
+            }
+          ]
+        },
+        {
+          "place": 2,
+          "sn": 23,
+          "name": "Ivan Urbánek",
+          "category": "(35-39)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:50:33",
+              "position": 2,
+              "lapTime": "0:50:33"
+            },
+            {
+              "lap": 2,
+              "time": "01:40:57",
+              "position": 5,
+              "lapTime": "0:50:24"
+            },
+            {
+              "lap": 3,
+              "time": "02:34:48",
+              "position": 5,
+              "lapTime": "0:53:51"
+            },
+            {
+              "lap": 4,
+              "time": "03:32:14",
+              "position": 4,
+              "lapTime": "0:57:26"
+            },
+            {
+              "lap": 5,
+              "time": "04:32:55",
+              "position": 3,
+              "lapTime": "1:0:41"
+            },
+            {
+              "lap": 6,
+              "time": "05:32:32",
+              "position": 2,
+              "lapTime": "0:59:37"
+            }
+          ]
+        },
+        {
+          "place": 3,
+          "sn": 3,
+          "name": "Ondřej Pouč",
+          "category": "(45-49)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:54:02",
+              "position": 9,
+              "lapTime": "0:54:2"
+            },
+            {
+              "lap": 2,
+              "time": "01:48:36",
+              "position": 9,
+              "lapTime": "0:54:34"
+            },
+            {
+              "lap": 3,
+              "time": "02:41:54",
+              "position": 6,
+              "lapTime": "0:53:18"
+            },
+            {
+              "lap": 4,
+              "time": "03:37:08",
+              "position": 6,
+              "lapTime": "0:55:14"
+            },
+            {
+              "lap": 5,
+              "time": "04:35:54",
+              "position": 5,
+              "lapTime": "0:58:46"
+            },
+            {
+              "lap": 6,
+              "time": "05:34:07",
+              "position": 3,
+              "lapTime": "0:58:13"
+            }
+          ]
+        },
+        {
+          "place": 4,
+          "sn": 24,
+          "name": "Jan Šunka",
+          "category": "(40-44)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:50:32",
+              "position": 1,
+              "lapTime": "0:50:32"
+            },
+            {
+              "lap": 2,
+              "time": "01:38:56",
+              "position": 2,
+              "lapTime": "0:48:24"
+            },
+            {
+              "lap": 3,
+              "time": "02:30:26",
+              "position": 3,
+              "lapTime": "0:51:30"
+            },
+            {
+              "lap": 4,
+              "time": "03:29:37",
+              "position": 3,
+              "lapTime": "0:59:11"
+            },
+            {
+              "lap": 5,
+              "time": "04:32:51",
+              "position": 2,
+              "lapTime": "1:3:14"
+            },
+            {
+              "lap": 6,
+              "time": "05:36:39",
+              "position": 4,
+              "lapTime": "1:3:48"
+            }
+          ]
+        },
+        {
+          "place": 5,
+          "sn": 17,
+          "name": "Filip Švrček",
+          "category": "(35-39)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:50:34",
+              "position": 4,
+              "lapTime": "0:50:34"
+            },
+            {
+              "lap": 2,
+              "time": "01:40:34",
+              "position": 4,
+              "lapTime": "0:50:0"
+            },
+            {
+              "lap": 3,
+              "time": "02:33:54",
+              "position": 4,
+              "lapTime": "0:53:20"
+            },
+            {
+              "lap": 4,
+              "time": "03:32:50",
+              "position": 5,
+              "lapTime": "0:58:56"
+            },
+            {
+              "lap": 5,
+              "time": "04:40:40",
+              "position": 6,
+              "lapTime": "1:7:50"
+            },
+            {
+              "lap": 6,
+              "time": "05:40:23",
+              "position": 5,
+              "lapTime": "0:59:43"
+            }
+          ]
+        },
+        {
+          "place": 6,
+          "sn": 19,
+          "name": "Jakub Kolman",
+          "category": "(45-49)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:56:28",
+              "position": 17,
+              "lapTime": "0:56:28"
+            },
+            {
+              "lap": 2,
+              "time": "01:53:17",
+              "position": 14,
+              "lapTime": "0:56:49"
+            },
+            {
+              "lap": 3,
+              "time": "02:50:03",
+              "position": 11,
+              "lapTime": "0:56:46"
+            },
+            {
+              "lap": 4,
+              "time": "03:47:52",
+              "position": 9,
+              "lapTime": "0:57:49"
+            },
+            {
+              "lap": 5,
+              "time": "04:46:34",
+              "position": 8,
+              "lapTime": "0:58:42"
+            },
+            {
+              "lap": 6,
+              "time": "05:43:45",
+              "position": 6,
+              "lapTime": "0:57:11"
+            }
+          ]
+        },
+        {
+          "place": 7,
+          "sn": 21,
+          "name": "Stanislav Široký",
+          "category": "(40-44)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:50:35",
+              "position": 5,
+              "lapTime": "0:50:35"
+            },
+            {
+              "lap": 2,
+              "time": "01:38:56",
+              "position": 3,
+              "lapTime": "0:48:21"
+            },
+            {
+              "lap": 3,
+              "time": "02:28:46",
+              "position": 2,
+              "lapTime": "0:49:50"
+            },
+            {
+              "lap": 4,
+              "time": "03:29:20",
+              "position": 2,
+              "lapTime": "1:0:34"
+            },
+            {
+              "lap": 5,
+              "time": "04:35:29",
+              "position": 4,
+              "lapTime": "1:6:9"
+            },
+            {
+              "lap": 6,
+              "time": "05:44:13",
+              "position": 7,
+              "lapTime": "1:8:44"
+            }
+          ]
+        },
+        {
+          "place": 8,
+          "sn": 6,
+          "name": "Ladislav Erbert",
+          "category": "(40-44)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:54:04",
+              "position": 10,
+              "lapTime": "0:54:4"
+            },
+            {
+              "lap": 2,
+              "time": "01:48:35",
+              "position": 8,
+              "lapTime": "0:54:31"
+            },
+            {
+              "lap": 3,
+              "time": "02:42:54",
+              "position": 7,
+              "lapTime": "0:54:19"
+            },
+            {
+              "lap": 4,
+              "time": "03:41:05",
+              "position": 7,
+              "lapTime": "0:58:11"
+            },
+            {
+              "lap": 5,
+              "time": "04:45:07",
+              "position": 7,
+              "lapTime": "1:4:2"
+            },
+            {
+              "lap": 6,
+              "time": "05:48:17",
+              "position": 8,
+              "lapTime": "1:3:10"
+            }
+          ]
+        },
+        {
+          "place": 9,
+          "sn": 28,
+          "name": "Martina Dvořáková",
+          "category": "(35-39)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:51:32",
+              "position": 6,
+              "lapTime": "0:51:32"
+            },
+            {
+              "lap": 2,
+              "time": "01:46:55",
+              "position": 6,
+              "lapTime": "0:55:23"
+            },
+            {
+              "lap": 3,
+              "time": "02:44:25",
+              "position": 9,
+              "lapTime": "0:57:30"
+            },
+            {
+              "lap": 4,
+              "time": "03:47:22",
+              "position": 8,
+              "lapTime": "1:2:57"
+            },
+            {
+              "lap": 5,
+              "time": "04:53:47",
+              "position": 10,
+              "lapTime": "1:6:25"
+            },
+            {
+              "lap": 6,
+              "time": "05:59:21",
+              "position": 9,
+              "lapTime": "1:5:34"
+            }
+          ]
+        },
+        {
+          "place": 10,
+          "sn": 8,
+          "name": "Miroslav Zemánek",
+          "category": "(40-44)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:54:01",
+              "position": 8,
+              "lapTime": "0:54:1"
+            },
+            {
+              "lap": 2,
+              "time": "01:49:55",
+              "position": 11,
+              "lapTime": "0:55:54"
+            },
+            {
+              "lap": 3,
+              "time": "02:47:21",
+              "position": 10,
+              "lapTime": "0:57:26"
+            },
+            {
+              "lap": 4,
+              "time": "03:48:10",
+              "position": 10,
+              "lapTime": "1:0:49"
+            },
+            {
+              "lap": 5,
+              "time": "04:53:15",
+              "position": 9,
+              "lapTime": "1:5:5"
+            },
+            {
+              "lap": 6,
+              "time": "05:59:32",
+              "position": 10,
+              "lapTime": "1:6:17"
+            }
+          ]
+        },
+        {
+          "place": 11,
+          "sn": 99,
+          "name": "Stanislav Sotolář",
+          "category": "(50-54)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:55:32",
+              "position": 15,
+              "lapTime": "0:55:32"
+            },
+            {
+              "lap": 2,
+              "time": "01:53:52",
+              "position": 15,
+              "lapTime": "0:58:20"
+            },
+            {
+              "lap": 3,
+              "time": "02:53:13",
+              "position": 15,
+              "lapTime": "0:59:21"
+            },
+            {
+              "lap": 4,
+              "time": "03:55:25",
+              "position": 13,
+              "lapTime": "1:2:12"
+            },
+            {
+              "lap": 5,
+              "time": "04:59:41",
+              "position": 11,
+              "lapTime": "1:4:16"
+            },
+            {
+              "lap": 6,
+              "time": "06:03:42",
+              "position": 11,
+              "lapTime": "1:4:1"
+            }
+          ]
+        },
+        {
+          "place": 12,
+          "sn": 22,
+          "name": "Michal Krška",
+          "category": "(35-39)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:53:05",
+              "position": 7,
+              "lapTime": "0:53:5"
+            },
+            {
+              "lap": 2,
+              "time": "01:48:05",
+              "position": 7,
+              "lapTime": "0:55:0"
+            },
+            {
+              "lap": 3,
+              "time": "02:44:03",
+              "position": 8,
+              "lapTime": "0:55:58"
+            },
+            {
+              "lap": 4,
+              "time": "03:48:48",
+              "position": 11,
+              "lapTime": "1:4:45"
+            },
+            {
+              "lap": 5,
+              "time": "04:59:45",
+              "position": 12,
+              "lapTime": "1:10:57"
+            },
+            {
+              "lap": 6,
+              "time": "06:06:00",
+              "position": 12,
+              "lapTime": "1:6:15"
+            }
+          ]
+        },
+        {
+          "place": 13,
+          "sn": 13,
+          "name": "David Knotek",
+          "category": "(35-39)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:56:51",
+              "position": 19,
+              "lapTime": "0:56:51"
+            },
+            {
+              "lap": 2,
+              "time": "01:54:22",
+              "position": 18,
+              "lapTime": "0:57:31"
+            },
+            {
+              "lap": 3,
+              "time": "02:53:54",
+              "position": 16,
+              "lapTime": "0:59:32"
+            },
+            {
+              "lap": 4,
+              "time": "03:57:42",
+              "position": 14,
+              "lapTime": "1:3:48"
+            },
+            {
+              "lap": 5,
+              "time": "05:07:33",
+              "position": 13,
+              "lapTime": "1:9:51"
+            },
+            {
+              "lap": 6,
+              "time": "06:23:29",
+              "position": 13,
+              "lapTime": "1:15:56"
+            }
+          ]
+        },
+        {
+          "place": 14,
+          "sn": 14,
+          "name": "Pavel Kinc",
+          "category": "(45-49)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:55:17",
+              "position": 14,
+              "lapTime": "0:55:17"
+            },
+            {
+              "lap": 2,
+              "time": "01:52:02",
+              "position": 12,
+              "lapTime": "0:56:45"
+            },
+            {
+              "lap": 3,
+              "time": "02:50:16",
+              "position": 12,
+              "lapTime": "0:58:14"
+            },
+            {
+              "lap": 4,
+              "time": "03:55:22",
+              "position": 12,
+              "lapTime": "1:5:6"
+            },
+            {
+              "lap": 5,
+              "time": "05:08:58",
+              "position": 14,
+              "lapTime": "1:13:36"
+            },
+            {
+              "lap": 6,
+              "time": "06:27:22",
+              "position": 14,
+              "lapTime": "1:18:24"
+            }
+          ]
+        },
+        {
+          "place": 15,
+          "sn": 5,
+          "name": "Martin Řezáč",
+          "category": "(35-39)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:55:08",
+              "position": 12,
+              "lapTime": "0:55:8"
+            },
+            {
+              "lap": 2,
+              "time": "01:52:46",
+              "position": 13,
+              "lapTime": "0:57:38"
+            },
+            {
+              "lap": 3,
+              "time": "02:52:59",
+              "position": 14,
+              "lapTime": "1:0:13"
+            },
+            {
+              "lap": 4,
+              "time": "04:03:05",
+              "position": 15,
+              "lapTime": "1:10:6"
+            },
+            {
+              "lap": 5,
+              "time": "05:15:51",
+              "position": 15,
+              "lapTime": "1:12:46"
+            },
+            {
+              "lap": 6,
+              "time": "06:29:04",
+              "position": 15,
+              "lapTime": "1:13:13"
+            }
+          ]
+        },
+        {
+          "place": 16,
+          "sn": 2,
+          "name": "Zdeněk Novák",
+          "category": "(55-59)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:56:08",
+              "position": 16,
+              "lapTime": "0:56:8"
+            },
+            {
+              "lap": 2,
+              "time": "01:54:01",
+              "position": 16,
+              "lapTime": "0:57:53"
+            },
+            {
+              "lap": 3,
+              "time": "02:54:10",
+              "position": 17,
+              "lapTime": "1:0:9"
+            },
+            {
+              "lap": 4,
+              "time": "04:03:32",
+              "position": 16,
+              "lapTime": "1:9:22"
+            },
+            {
+              "lap": 5,
+              "time": "05:19:26",
+              "position": 16,
+              "lapTime": "1:15:54"
+            },
+            {
+              "lap": 6,
+              "time": "06:30:30",
+              "position": 16,
+              "lapTime": "1:11:4"
+            }
+          ]
+        },
+        {
+          "place": 17,
+          "sn": 18,
+          "name": "Michal Komarek",
+          "category": "(40-44)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:59:58",
+              "position": 20,
+              "lapTime": "0:59:58"
+            },
+            {
+              "lap": 2,
+              "time": "01:59:50",
+              "position": 20,
+              "lapTime": "0:59:52"
+            },
+            {
+              "lap": 3,
+              "time": "03:01:36",
+              "position": 19,
+              "lapTime": "1:1:46"
+            },
+            {
+              "lap": 4,
+              "time": "04:12:11",
+              "position": 19,
+              "lapTime": "1:10:35"
+            },
+            {
+              "lap": 5,
+              "time": "05:25:00",
+              "position": 19,
+              "lapTime": "1:12:49"
+            },
+            {
+              "lap": 6,
+              "time": "06:34:20",
+              "position": 17,
+              "lapTime": "1:9:20"
+            }
+          ]
+        },
+        {
+          "place": 18,
+          "sn": 20,
+          "name": "Pavel Sinkule",
+          "category": "(40-44)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:59:59",
+              "position": 21,
+              "lapTime": "0:59:59"
+            },
+            {
+              "lap": 2,
+              "time": "01:59:50",
+              "position": 21,
+              "lapTime": "0:59:51"
+            },
+            {
+              "lap": 3,
+              "time": "03:01:36",
+              "position": 20,
+              "lapTime": "1:1:46"
+            },
+            {
+              "lap": 4,
+              "time": "04:12:11",
+              "position": 20,
+              "lapTime": "1:10:35"
+            },
+            {
+              "lap": 5,
+              "time": "05:25:00",
+              "position": 20,
+              "lapTime": "1:12:49"
+            },
+            {
+              "lap": 6,
+              "time": "06:34:20",
+              "position": 18,
+              "lapTime": "1:9:20"
+            }
+          ]
+        },
+        {
+          "place": 19,
+          "sn": 16,
+          "name": "Jana Kakáčová",
+          "category": "(45-49)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:55:14",
+              "position": 13,
+              "lapTime": "0:55:14"
+            },
+            {
+              "lap": 2,
+              "time": "01:54:13",
+              "position": 17,
+              "lapTime": "0:58:59"
+            },
+            {
+              "lap": 3,
+              "time": "02:57:46",
+              "position": 18,
+              "lapTime": "1:3:33"
+            },
+            {
+              "lap": 4,
+              "time": "04:08:43",
+              "position": 18,
+              "lapTime": "1:10:57"
+            },
+            {
+              "lap": 5,
+              "time": "05:23:19",
+              "position": 18,
+              "lapTime": "1:14:36"
+            },
+            {
+              "lap": 6,
+              "time": "06:37:56",
+              "position": 19,
+              "lapTime": "1:14:37"
+            }
+          ]
+        },
+        {
+          "place": 20,
+          "sn": 9,
+          "name": "Jiří Šplíchal",
+          "category": "",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:54:07",
+              "position": 11,
+              "lapTime": "0:54:7"
+            },
+            {
+              "lap": 2,
+              "time": "01:49:25",
+              "position": 10,
+              "lapTime": "0:55:18"
+            },
+            {
+              "lap": 3,
+              "time": "02:51:10",
+              "position": 13,
+              "lapTime": "1:1:45"
+            },
+            {
+              "lap": 4,
+              "time": "04:03:51",
+              "position": 17,
+              "lapTime": "1:12:41"
+            },
+            {
+              "lap": 5,
+              "time": "05:22:59",
+              "position": 17,
+              "lapTime": "1:19:8"
+            },
+            {
+              "lap": 6,
+              "time": "06:46:34",
+              "position": 20,
+              "lapTime": "1:23:35"
+            }
+          ]
+        },
+        {
+          "place": 21,
+          "sn": 25,
+          "name": "Daniel Brázdil",
+          "category": "(45-49)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:00:29",
+              "position": 22,
+              "lapTime": "1:0:29"
+            },
+            {
+              "lap": 2,
+              "time": "02:02:51",
+              "position": 22,
+              "lapTime": "1:2:22"
+            },
+            {
+              "lap": 3,
+              "time": "03:10:06",
+              "position": 22,
+              "lapTime": "1:7:15"
+            },
+            {
+              "lap": 4,
+              "time": "04:25:46",
+              "position": 21,
+              "lapTime": "1:15:40"
+            },
+            {
+              "lap": 5,
+              "time": "05:45:10",
+              "position": 21,
+              "lapTime": "1:19:24"
+            },
+            {
+              "lap": 6,
+              "time": "06:57:02",
+              "position": 21,
+              "lapTime": "1:11:52"
+            }
+          ]
+        },
+        {
+          "place": 22,
+          "sn": 26,
+          "name": "Jiří Vávrů",
+          "category": "(45-49)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:56:49",
+              "position": 18,
+              "lapTime": "0:56:49"
+            },
+            {
+              "lap": 2,
+              "time": "01:56:10",
+              "position": 19,
+              "lapTime": "0:59:21"
+            },
+            {
+              "lap": 3,
+              "time": "03:05:00",
+              "position": 21,
+              "lapTime": "1:8:50"
+            },
+            {
+              "lap": 4,
+              "time": "04:26:14",
+              "position": 22,
+              "lapTime": "1:21:14"
+            },
+            {
+              "lap": 5,
+              "time": "05:46:42",
+              "position": 22,
+              "lapTime": "1:20:28"
+            },
+            {
+              "lap": 6,
+              "time": "07:03:31",
+              "position": 22,
+              "lapTime": "1:16:49"
+            }
+          ]
+        },
+        {
+          "place": 23,
+          "sn": 12,
+          "name": "Martin Macháček",
+          "category": "(65-69)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:15:15",
+              "position": 23,
+              "lapTime": "1:15:15"
+            },
+            {
+              "lap": 2,
+              "time": "02:33:52",
+              "position": 23,
+              "lapTime": "1:18:37"
+            },
+            {
+              "lap": 3,
+              "time": "03:55:52",
+              "position": 23,
+              "lapTime": "1:22:0"
+            },
+            {
+              "lap": 4,
+              "time": "05:27:25",
+              "position": 23,
+              "lapTime": "1:31:33"
+            },
+            {
+              "lap": 5,
+              "time": "07:06:40",
+              "position": 23,
+              "lapTime": "1:39:15"
+            },
+            {
+              "lap": 6,
+              "time": "08:46:42",
+              "position": 23,
+              "lapTime": "1:40:2"
+            }
+          ]
+        },
+        {
+          "place": 24,
+          "sn": 27,
+          "name": "Alena Žákovská",
+          "category": "(55-59)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:16:34",
+              "position": 24,
+              "lapTime": "1:16:34"
+            },
+            {
+              "lap": 2,
+              "time": "02:39:18",
+              "position": 24,
+              "lapTime": "1:22:44"
+            },
+            {
+              "lap": 3,
+              "time": "04:06:46",
+              "position": 24,
+              "lapTime": "1:27:28"
+            },
+            {
+              "lap": 4,
+              "time": "05:43:06",
+              "position": 24,
+              "lapTime": "1:36:20"
+            },
+            {
+              "lap": 5,
+              "time": "07:18:35",
+              "position": 24,
+              "lapTime": "1:35:29"
+            },
+            {
+              "lap": 6,
+              "time": "09:01:12",
+              "position": 24,
+              "lapTime": "1:42:37"
+            }
+          ]
+        },
+        {
+          "place": 25,
+          "sn": 10,
+          "name": "Martina Ježová",
+          "category": "(45-49)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:17:46",
+              "position": 25,
+              "lapTime": "1:17:46"
+            },
+            {
+              "lap": 2,
+              "time": "02:48:00",
+              "position": 25,
+              "lapTime": "1:30:14"
+            },
+            {
+              "lap": 3,
+              "time": "04:20:10",
+              "position": 25,
+              "lapTime": "1:32:10"
+            },
+            {
+              "lap": 4,
+              "time": "05:54:13",
+              "position": 25,
+              "lapTime": "1:34:3"
+            },
+            {
+              "lap": 5,
+              "time": "07:37:20",
+              "position": 25,
+              "lapTime": "1:43:7"
+            },
+            {
+              "lap": 6,
+              "time": "09:14:13",
+              "position": 25,
+              "lapTime": "1:36:53"
+            }
+          ]
+        },
+        {
+          "place": 26,
+          "sn": 4,
+          "name": "Martina Němečková",
+          "category": "(55-59)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:23:12",
+              "position": 26,
+              "lapTime": "1:23:12"
+            },
+            {
+              "lap": 2,
+              "time": "02:55:50",
+              "position": 26,
+              "lapTime": "1:32:38"
+            },
+            {
+              "lap": 3,
+              "time": "04:35:03",
+              "position": 26,
+              "lapTime": "1:39:13"
+            },
+            {
+              "lap": 4,
+              "time": "06:25:19",
+              "position": 26,
+              "lapTime": "1:50:16"
+            },
+            {
+              "lap": 5,
+              "time": "08:14:16",
+              "position": 26,
+              "lapTime": "1:48:57"
+            },
+            {
+              "lap": 6,
+              "time": "10:00:11",
+              "position": 26,
+              "lapTime": "1:45:55"
+            }
+          ]
+        },
+        {
+          "place": null,
+          "sn": 15,
+          "name": "Martina Jurgová",
+          "category": "",
+          "dnf": true,
+          "laps": []
+        },
+        {
+          "place": null,
+          "sn": 7,
+          "name": "Stanislav Ďurík",
+          "category": "",
+          "dnf": true,
+          "laps": []
+        },
+        {
+          "place": null,
+          "sn": 11,
+          "name": "Václav Mensa",
+          "category": "",
+          "dnf": true,
+          "laps": []
+        }
+      ]
+    },
+    {
+      "title": "Maraton",
+      "distance": 42000,
+      "laps": 4,
+      "lapDistance": 10500,
+      "results": [
+        {
+          "place": 1,
+          "sn": 108,
+          "name": "Zdeněk Velocha",
+          "category": "(Mm)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:54:45",
+              "position": 1,
+              "lapTime": "0:54:45"
+            },
+            {
+              "lap": 2,
+              "time": "01:49:11",
+              "position": 1,
+              "lapTime": "0:54:26"
+            },
+            {
+              "lap": 3,
+              "time": "02:43:59",
+              "position": 1,
+              "lapTime": "0:54:48"
+            },
+            {
+              "lap": 4,
+              "time": "03:42:25",
+              "position": 1,
+              "lapTime": "0:58:26"
+            }
+          ]
+        },
+        {
+          "place": 2,
+          "sn": 104,
+          "name": "Jan Horký",
+          "category": "(Mm)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:54:46",
+              "position": 2,
+              "lapTime": "0:54:46"
+            },
+            {
+              "lap": 2,
+              "time": "01:49:12",
+              "position": 2,
+              "lapTime": "0:54:26"
+            },
+            {
+              "lap": 3,
+              "time": "02:46:05",
+              "position": 2,
+              "lapTime": "0:56:53"
+            },
+            {
+              "lap": 4,
+              "time": "03:45:25",
+              "position": 2,
+              "lapTime": "0:59:20"
+            }
+          ]
+        },
+        {
+          "place": 3,
+          "sn": 107,
+          "name": "Pavel Nosek",
+          "category": "(Mm)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:55:48",
+              "position": 3,
+              "lapTime": "0:55:48"
+            },
+            {
+              "lap": 2,
+              "time": "01:55:28",
+              "position": 3,
+              "lapTime": "0:59:40"
+            },
+            {
+              "lap": 3,
+              "time": "02:57:34",
+              "position": 3,
+              "lapTime": "1:2:6"
+            },
+            {
+              "lap": 4,
+              "time": "04:03:28",
+              "position": 3,
+              "lapTime": "1:5:54"
+            }
+          ]
+        },
+        {
+          "place": 4,
+          "sn": 101,
+          "name": "Tereza Krakovičová",
+          "category": "(Mz)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:57:01",
+              "position": 4,
+              "lapTime": "0:57:1"
+            },
+            {
+              "lap": 2,
+              "time": "01:58:50",
+              "position": 4,
+              "lapTime": "1:1:49"
+            },
+            {
+              "lap": 3,
+              "time": "03:05:35",
+              "position": 4,
+              "lapTime": "1:6:45"
+            },
+            {
+              "lap": 4,
+              "time": "04:09:43",
+              "position": 4,
+              "lapTime": "1:4:8"
+            }
+          ]
+        },
+        {
+          "place": 5,
+          "sn": 102,
+          "name": "Roman Šůstek",
+          "category": "(Mm)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:10:59",
+              "position": 7,
+              "lapTime": "1:10:59"
+            },
+            {
+              "lap": 2,
+              "time": "02:24:17",
+              "position": 7,
+              "lapTime": "1:13:18"
+            },
+            {
+              "lap": 3,
+              "time": "03:40:46",
+              "position": 5,
+              "lapTime": "1:16:29"
+            },
+            {
+              "lap": 4,
+              "time": "05:01:15",
+              "position": 5,
+              "lapTime": "1:20:29"
+            }
+          ]
+        },
+        {
+          "place": 6,
+          "sn": 110,
+          "name": "Eva Adamová",
+          "category": "(Mz)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:07:21",
+              "position": 6,
+              "lapTime": "1:7:21"
+            },
+            {
+              "lap": 2,
+              "time": "02:22:34",
+              "position": 6,
+              "lapTime": "1:15:13"
+            },
+            {
+              "lap": 3,
+              "time": "03:41:48",
+              "position": 6,
+              "lapTime": "1:19:14"
+            },
+            {
+              "lap": 4,
+              "time": "05:03:47",
+              "position": 6,
+              "lapTime": "1:21:59"
+            }
+          ]
+        },
+        {
+          "place": 7,
+          "sn": 106,
+          "name": "Milan Daněk",
+          "category": "(Mm)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:01:03",
+              "position": 5,
+              "lapTime": "1:1:3"
+            },
+            {
+              "lap": 2,
+              "time": "02:16:47",
+              "position": 5,
+              "lapTime": "1:15:44"
+            },
+            {
+              "lap": 3,
+              "time": "03:44:24",
+              "position": 7,
+              "lapTime": "1:27:37"
+            },
+            {
+              "lap": 4,
+              "time": "05:11:51",
+              "position": 7,
+              "lapTime": "1:27:27"
+            }
+          ]
+        },
+        {
+          "place": 8,
+          "sn": 105,
+          "name": "Petra Ťupková",
+          "category": "(Mz)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:16:24",
+              "position": 8,
+              "lapTime": "1:16:24"
+            },
+            {
+              "lap": 2,
+              "time": "02:36:11",
+              "position": 8,
+              "lapTime": "1:19:47"
+            },
+            {
+              "lap": 3,
+              "time": "04:02:17",
+              "position": 8,
+              "lapTime": "1:26:6"
+            },
+            {
+              "lap": 4,
+              "time": "05:33:42",
+              "position": 8,
+              "lapTime": "1:31:25"
+            }
+          ]
+        },
+        {
+          "place": null,
+          "sn": 103,
+          "name": "Jan Hebelka",
+          "category": "",
+          "dnf": true,
+          "laps": []
+        },
+        {
+          "place": null,
+          "sn": 109,
+          "name": "Vilma Podmelová",
+          "category": "",
+          "dnf": true,
+          "laps": []
+        }
+      ]
+    },
+    {
+      "distance": 10500,
+      "laps": 1,
+      "lapDistance": 10500,
+      "results": [
+        {
+          "place": 1,
+          "sn": 254,
+          "name": "Vlastimil Lysák",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:40:44",
+              "position": 1,
+              "lapTime": "00:40:44",
+              "diff": "00:00:00"
+            }
+          ]
+        },
+        {
+          "place": 2,
+          "sn": 252,
+          "name": "Martin Vodák",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:42:38",
+              "position": 2,
+              "lapTime": "00:42:38",
+              "diff": "00:01:54"
+            }
+          ]
+        },
+        {
+          "place": 3,
+          "sn": 230,
+          "name": "Ondřej Jágr",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:43:27",
+              "position": 3,
+              "lapTime": "00:43:27",
+              "diff": "00:02:43"
+            }
+          ]
+        },
+        {
+          "place": 4,
+          "sn": 253,
+          "name": "Jiří Potůček",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:44:11",
+              "position": 4,
+              "lapTime": "00:44:11",
+              "diff": "00:03:27"
+            }
+          ]
+        },
+        {
+          "place": 5,
+          "sn": 226,
+          "name": "Martin Šperka",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:44:26",
+              "position": 5,
+              "lapTime": "00:44:26",
+              "diff": "00:03:42"
+            }
+          ]
+        },
+        {
+          "place": 6,
+          "sn": 227,
+          "name": "Tomáš Jančík",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:45:23",
+              "position": 6,
+              "lapTime": "00:45:23",
+              "diff": "00:04:39"
+            }
+          ]
+        },
+        {
+          "place": 7,
+          "sn": 223,
+          "name": "Vladimír Ondruška",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:46:42",
+              "position": 7,
+              "lapTime": "00:46:42",
+              "diff": "00:05:58"
+            }
+          ]
+        },
+        {
+          "place": 8,
+          "sn": 240,
+          "name": "Steve Chalk",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:47:03",
+              "position": 8,
+              "lapTime": "00:47:03",
+              "diff": "00:06:19"
+            }
+          ]
+        },
+        {
+          "place": 9,
+          "sn": 239,
+          "name": "Ondřej Buš",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:47:28",
+              "position": 9,
+              "lapTime": "00:47:28",
+              "diff": "00:06:44"
+            }
+          ]
+        },
+        {
+          "place": 10,
+          "sn": 242,
+          "name": "Martin Šerák",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:47:43",
+              "position": 11,
+              "lapTime": "00:47:43",
+              "diff": "00:06:59"
+            }
+          ]
+        },
+        {
+          "place": 11,
+          "sn": 221,
+          "name": "Petr Meluzín",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:47:43",
+              "position": 10,
+              "lapTime": "00:47:43",
+              "diff": "00:06:59"
+            }
+          ]
+        },
+        {
+          "place": 12,
+          "sn": 246,
+          "name": "Slávek Pícha",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:48:46",
+              "position": 12,
+              "lapTime": "00:48:46",
+              "diff": "00:08:02"
+            }
+          ]
+        },
+        {
+          "place": 13,
+          "sn": 224,
+          "name": "Jan Ondruška",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:49:36",
+              "position": 13,
+              "lapTime": "00:49:36",
+              "diff": "00:08:52"
+            }
+          ]
+        },
+        {
+          "place": 14,
+          "sn": 229,
+          "name": "Pavel Novák",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:50:04",
+              "position": 14,
+              "lapTime": "00:50:04",
+              "diff": "00:09:20"
+            }
+          ]
+        },
+        {
+          "place": 15,
+          "sn": 228,
+          "name": "Jakub Kunc",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:51:38",
+              "position": 15,
+              "lapTime": "00:51:38",
+              "diff": "00:10:54"
+            }
+          ]
+        },
+        {
+          "place": 16,
+          "sn": 256,
+          "name": "Vladimír Matěna",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:53:11",
+              "position": 16,
+              "lapTime": "00:53:11",
+              "diff": "00:12:27"
+            }
+          ]
+        },
+        {
+          "place": 17,
+          "sn": 248,
+          "name": "Radek Horský",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:54:04",
+              "position": 17,
+              "lapTime": "00:54:04",
+              "diff": "00:13:20"
+            }
+          ]
+        },
+        {
+          "place": 18,
+          "sn": 247,
+          "name": "Petr Palán",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:55:07",
+              "position": 18,
+              "lapTime": "00:55:07",
+              "diff": "00:14:23"
+            }
+          ]
+        },
+        {
+          "place": 19,
+          "sn": 234,
+          "name": "Pavel Svoboda",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:56:38",
+              "position": 19,
+              "lapTime": "00:56:38",
+              "diff": "00:15:54"
+            }
+          ]
+        },
+        {
+          "place": 20,
+          "sn": 235,
+          "name": "Petr Šamonil",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:56:50",
+              "position": 20,
+              "lapTime": "00:56:50",
+              "diff": "00:16:06"
+            }
+          ]
+        },
+        {
+          "place": 21,
+          "sn": 255,
+          "name": "Martin Sobotka",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:57:19",
+              "position": 21,
+              "lapTime": "00:57:19",
+              "diff": "00:16:35"
+            }
+          ]
+        },
+        {
+          "place": 22,
+          "sn": 236,
+          "name": "Jana Srnská",
+          "category": "(10z)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:59:20",
+              "position": 22,
+              "lapTime": "00:59:20",
+              "diff": "00:18:36"
+            }
+          ]
+        },
+        {
+          "place": 23,
+          "sn": 237,
+          "name": "Libor Jüthner",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:59:20",
+              "position": 23,
+              "lapTime": "00:59:20",
+              "diff": "00:18:36"
+            }
+          ]
+        },
+        {
+          "place": 24,
+          "sn": 238,
+          "name": "Jiří Boháč",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:01:55",
+              "position": 24,
+              "lapTime": "01:01:55",
+              "diff": "00:21:11"
+            }
+          ]
+        },
+        {
+          "place": 25,
+          "sn": 231,
+          "name": "Jan Češka",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:03:15",
+              "position": 25,
+              "lapTime": "01:03:15",
+              "diff": "00:22:31"
+            }
+          ]
+        },
+        {
+          "place": 26,
+          "sn": 111,
+          "name": "Eva Sedláčková",
+          "category": "(10z)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:03:34",
+              "position": 26,
+              "lapTime": "01:03:34",
+              "diff": "00:22:50"
+            }
+          ]
+        },
+        {
+          "place": 27,
+          "sn": 244,
+          "name": "Jiří Buš",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:04:23",
+              "position": 27,
+              "lapTime": "01:04:23",
+              "diff": "00:23:39"
+            }
+          ]
+        },
+        {
+          "place": 28,
+          "sn": 245,
+          "name": "Roman Buš",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:06:57",
+              "position": 28,
+              "lapTime": "01:06:57",
+              "diff": "00:26:13"
+            }
+          ]
+        },
+        {
+          "place": 29,
+          "sn": 241,
+          "name": "Zuzana Vránová",
+          "category": "(10z)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:07:02",
+              "position": 29,
+              "lapTime": "01:07:02",
+              "diff": "00:26:18"
+            }
+          ]
+        },
+        {
+          "place": 30,
+          "sn": 258,
+          "name": "Josef Dostál",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:09:08",
+              "position": 30,
+              "lapTime": "01:09:08",
+              "diff": "00:28:24"
+            }
+          ]
+        },
+        {
+          "place": 31,
+          "sn": 257,
+          "name": "Michael Žolcer",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:09:24",
+              "position": 31,
+              "lapTime": "01:09:24",
+              "diff": "00:28:40"
+            }
+          ]
+        },
+        {
+          "place": 32,
+          "sn": 251,
+          "name": "Andrea Jablunková",
+          "category": "(10z)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:10:06",
+              "position": 32,
+              "lapTime": "01:10:06",
+              "diff": "00:29:22"
+            }
+          ]
+        },
+        {
+          "place": 33,
+          "sn": 222,
+          "name": "Eva Meluzínová",
+          "category": "(10z)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:10:42",
+              "position": 33,
+              "lapTime": "01:10:42",
+              "diff": "00:29:58"
+            }
+          ]
+        },
+        {
+          "place": 34,
+          "sn": 232,
+          "name": "Romana Jakucová",
+          "category": "(10z)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:11:54",
+              "position": 34,
+              "lapTime": "01:11:54",
+              "diff": "00:31:10"
+            }
+          ]
+        },
+        {
+          "place": 35,
+          "sn": 233,
+          "name": "Veronika Pešová",
+          "category": "(10z)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:11:54",
+              "position": 35,
+              "lapTime": "01:11:54",
+              "diff": "00:31:10"
+            }
+          ]
+        },
+        {
+          "place": 36,
+          "sn": 249,
+          "name": "Jan Jablunka",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:12:46",
+              "position": 36,
+              "lapTime": "01:12:46",
+              "diff": "00:32:02"
+            }
+          ]
+        },
+        {
+          "place": 37,
+          "sn": 250,
+          "name": "Dušan Jablunka",
+          "category": "(10m)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:12:48",
+              "position": 37,
+              "lapTime": "01:12:48",
+              "diff": "00:32:04"
+            }
+          ]
+        },
+        {
+          "place": 38,
+          "sn": 225,
+          "name": "Renáta Žižlavská",
+          "category": "(10z)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:21:00",
+              "position": 38,
+              "lapTime": "01:21:00",
+              "diff": "00:40:16"
+            }
+          ]
+        },
+        {
+          "place": 39,
+          "sn": 243,
+          "name": "Kateřina Krejčiříková",
+          "category": "(10z)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:21:00",
+              "position": 39,
+              "lapTime": "01:21:00",
+              "diff": "00:40:16"
+            }
+          ]
+        },
+        {
+          "place": 40,
+          "sn": 220,
+          "name": "Barbora Fleissigová",
+          "category": "(10z)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "02:05:00",
+              "position": 40,
+              "lapTime": "02:05:00",
+              "diff": "01:24:16"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

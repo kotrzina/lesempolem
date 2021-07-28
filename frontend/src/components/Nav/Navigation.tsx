@@ -5,11 +5,10 @@ import './Navigation.css';
 import Address from '../../Address'
 
 
-interface Props {
+interface NavBarProps {
 }
 
-
-export const NavBar: React.FC<Props> = (props) => (
+export const NavBar: React.FC<NavBarProps> = (props: NavBarProps) => (
     <div id={'nav'} className={'all-Nav'}>
         <Navbar bg="light" expand="lg">
             <Container>

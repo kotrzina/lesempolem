@@ -6,6 +6,9 @@ export enum Address {
     video = '/video.html',
     track = '/trat.html',
     contacts = '/kontakty.html',
+
+    results2013 = '/vysledky-2013.html',
+    resultsPlaceholder = '/vysledky-:year.html',
 }
 
 export default Address;

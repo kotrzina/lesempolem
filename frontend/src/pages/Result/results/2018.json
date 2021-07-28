@@ -1,0 +1,2836 @@
+{
+  "title": "Výsledky závodu v roce 2018",
+  "year": 2018,
+  "races": [
+    {
+      "distance": 10000,
+      "laps": 1,
+      "lapDistance": 10000,
+      "results": [
+        {
+          "place": 1,
+          "category_place": 1,
+          "sn": 9,
+          "name": "Grün Vojtěch",
+          "club": "Elite Sport Boskovice/Rozběháme Česko",
+          "category": "M",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:38:27",
+              "diff": "",
+              "position": 1,
+              "lapTime": "00:38:27"
+            }
+          ]
+        },
+        {
+          "place": 2,
+          "category_place": 1,
+          "sn": 47,
+          "name": "Široký Stanislav",
+          "club": "Ak Blansko Dvorská",
+          "category": "MV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:40:11",
+              "diff": "+ 1m 44s",
+              "position": 2,
+              "lapTime": "00:40:11"
+            }
+          ]
+        },
+        {
+          "place": 3,
+          "category_place": 2,
+          "sn": 38,
+          "name": "Hrnčíř Tomáš",
+          "club": "Řícmanice",
+          "category": "MV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:41:22",
+              "diff": "+ 2m 55s",
+              "position": 3,
+              "lapTime": "00:41:22"
+            }
+          ]
+        },
+        {
+          "place": 4,
+          "category_place": 1,
+          "sn": 8,
+          "name": "Dvořáček Jiří",
+          "club": "ELITE SPORT MAX TRAINING Petrovice",
+          "category": "MV2",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:41:46",
+              "diff": "+ 3m 19s",
+              "position": 4,
+              "lapTime": "00:41:46"
+            }
+          ]
+        },
+        {
+          "place": 5,
+          "category_place": 3,
+          "sn": 44,
+          "name": "Jančík Tomáš",
+          "club": "Elite Sport Boskovice",
+          "category": "MV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:42:51",
+              "diff": "+ 4m 24s",
+              "position": 5,
+              "lapTime": "00:42:51"
+            }
+          ]
+        },
+        {
+          "place": 6,
+          "category_place": 1,
+          "sn": 83,
+          "name": "Polachová Lenka",
+          "club": "Horizont Kola Novák Blansko",
+          "category": "Ž",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:44:32",
+              "diff": "+ 6m 5s",
+              "position": 6,
+              "lapTime": "00:44:32"
+            }
+          ]
+        },
+        {
+          "place": 7,
+          "category_place": 4,
+          "sn": 33,
+          "name": "Šamonil Robert",
+          "club": "Horizont Kola Novák Blansko",
+          "category": "MV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:44:54",
+              "diff": "+ 6m 27s",
+              "position": 7,
+              "lapTime": "00:44:54"
+            }
+          ]
+        },
+        {
+          "place": 8,
+          "category_place": 2,
+          "sn": 76,
+          "name": "Beneš Petr",
+          "club": "blansko",
+          "category": "M",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:44:57",
+              "diff": "+ 6m 30s",
+              "position": 8,
+              "lapTime": "00:44:57"
+            }
+          ]
+        },
+        {
+          "place": 9,
+          "category_place": 3,
+          "sn": 55,
+          "name": "Šindelář Ondřej",
+          "club": "Elite Sport Boskovice",
+          "category": "M",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:45:05",
+              "diff": "+ 6m 38s",
+              "position": 9,
+              "lapTime": "00:45:05"
+            }
+          ]
+        },
+        {
+          "place": 10,
+          "category_place": 2,
+          "sn": 19,
+          "name": "Grün Gustav",
+          "club": "AC Okrouhlá",
+          "category": "MV2",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:45:09",
+              "diff": "+ 6m 42s",
+              "position": 10,
+              "lapTime": "00:45:09"
+            }
+          ]
+        },
+        {
+          "place": 11,
+          "category_place": 4,
+          "sn": 7,
+          "name": "Buš Ondřej",
+          "club": "Ráječko",
+          "category": "M",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:45:11",
+              "diff": "+ 6m 44s",
+              "position": 11,
+              "lapTime": "00:45:11"
+            }
+          ]
+        },
+        {
+          "place": 12,
+          "category_place": 5,
+          "sn": 16,
+          "name": "Weis Josef",
+          "club": "Elite Sport Boskovice",
+          "category": "MV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:45:45",
+              "diff": "+ 7m 18s",
+              "position": 12,
+              "lapTime": "00:45:45"
+            }
+          ]
+        },
+        {
+          "place": 13,
+          "category_place": 6,
+          "sn": 6,
+          "name": "Kinc Pavel",
+          "club": "VF Sport Team Černá Hora",
+          "category": "MV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:45:57",
+              "diff": "+ 7m 30s",
+              "position": 13,
+              "lapTime": "00:45:57"
+            }
+          ]
+        },
+        {
+          "place": 14,
+          "category_place": 3,
+          "sn": 82,
+          "name": "Bachratý Pavel",
+          "club": "Blansko",
+          "category": "MV2",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:46:11",
+              "diff": "+ 7m 44s",
+              "position": 14,
+              "lapTime": "00:46:11"
+            }
+          ]
+        },
+        {
+          "place": 15,
+          "category_place": 4,
+          "sn": 21,
+          "name": "Jančařík Petr",
+          "club": "AAC Brno",
+          "category": "MV2",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:46:45",
+              "diff": "+ 8m 18s",
+              "position": 15,
+              "lapTime": "00:46:45"
+            }
+          ]
+        },
+        {
+          "place": 16,
+          "category_place": 5,
+          "sn": 48,
+          "name": "Slezák Matrin",
+          "club": "Běžecký klub Brno",
+          "category": "M",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:46:47",
+              "diff": "+ 8m 20s",
+              "position": 16,
+              "lapTime": "00:46:47"
+            }
+          ]
+        },
+        {
+          "place": 17,
+          "category_place": 7,
+          "sn": 29,
+          "name": "Sotolář Stanislav",
+          "club": "OB Veselice",
+          "category": "MV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:46:55",
+              "diff": "+ 8m 28s",
+              "position": 17,
+              "lapTime": "00:46:55"
+            }
+          ]
+        },
+        {
+          "place": 18,
+          "category_place": 2,
+          "sn": 17,
+          "name": "Kriklová Alena",
+          "club": "Jaroměřice",
+          "category": "Ž",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:47:09",
+              "diff": "+ 8m 42s",
+              "position": 18,
+              "lapTime": "00:47:09"
+            }
+          ]
+        },
+        {
+          "place": 19,
+          "category_place": 8,
+          "sn": 13,
+          "name": "Horský Radek",
+          "club": "OB Veselice",
+          "category": "MV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:47:33",
+              "diff": "+ 9m 6s",
+              "position": 19,
+              "lapTime": "00:47:33"
+            }
+          ]
+        },
+        {
+          "place": 20,
+          "category_place": 3,
+          "sn": 66,
+          "name": "Klepalová Kamila",
+          "club": "Perunteam Blansko",
+          "category": "Ž",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:48:07",
+              "diff": "+ 9m 40s",
+              "position": 20,
+              "lapTime": "00:48:07"
+            }
+          ]
+        },
+        {
+          "place": 21,
+          "category_place": 9,
+          "sn": 79,
+          "name": "Martinek Jan",
+          "club": "SC Ráječko",
+          "category": "MV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:48:30",
+              "diff": "+ 10m 3s",
+              "position": 21,
+              "lapTime": "00:48:30"
+            }
+          ]
+        },
+        {
+          "place": 22,
+          "category_place": 6,
+          "sn": 46,
+          "name": "Fabiánek Jan",
+          "club": "Občerstvení Veselice",
+          "category": "M",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:49:05",
+              "diff": "+ 10m 38s",
+              "position": 22,
+              "lapTime": "00:49:05"
+            }
+          ]
+        },
+        {
+          "place": 23,
+          "category_place": 4,
+          "sn": 62,
+          "name": "Závodná Pavla",
+          "club": "Niva",
+          "category": "Ž",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:49:30",
+              "diff": "+ 11m 3s",
+              "position": 23,
+              "lapTime": "00:49:30"
+            }
+          ]
+        },
+        {
+          "place": 24,
+          "category_place": 1,
+          "sn": 50,
+          "name": "Kakáčová Jana",
+          "club": "Elite Sport Max Training Blansko",
+          "category": "ŽV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:49:52",
+              "diff": "+ 11m 25s",
+              "position": 24,
+              "lapTime": "00:49:52"
+            }
+          ]
+        },
+        {
+          "place": 25,
+          "category_place": 5,
+          "sn": 10,
+          "name": "Zoubek Karel",
+          "club": "Vanovice",
+          "category": "MV2",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:50:02",
+              "diff": "+ 11m 35s",
+              "position": 25,
+              "lapTime": "00:50:02"
+            }
+          ]
+        },
+        {
+          "place": 26,
+          "category_place": 10,
+          "sn": 59,
+          "name": "Macura Jan",
+          "club": "Horizont Kola Novák Blansko",
+          "category": "MV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:50:06",
+              "diff": "+ 11m 39s",
+              "position": 26,
+              "lapTime": "00:50:06"
+            }
+          ]
+        },
+        {
+          "place": 27,
+          "category_place": 6,
+          "sn": 74,
+          "name": "Odehnal Tomáš",
+          "club": "Boskovice",
+          "category": "MV2",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:50:27",
+              "diff": "+ 12m",
+              "position": 27,
+              "lapTime": "00:50:27"
+            }
+          ]
+        },
+        {
+          "place": 28,
+          "category_place": 7,
+          "sn": 4,
+          "name": "Zemánek Miroslav",
+          "club": "Bořitov",
+          "category": "M",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:50:34",
+              "diff": "+ 12m 7s",
+              "position": 28,
+              "lapTime": "00:50:34"
+            }
+          ]
+        },
+        {
+          "place": 29,
+          "category_place": 11,
+          "sn": 75,
+          "name": "Manoušek Ivo",
+          "club": "Blansko",
+          "category": "MV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:50:43",
+              "diff": "+ 12m 16s",
+              "position": 29,
+              "lapTime": "00:50:43"
+            }
+          ]
+        },
+        {
+          "place": 30,
+          "category_place": 8,
+          "sn": 78,
+          "name": "Kellner Ondřej",
+          "club": "Slavkov",
+          "category": "M",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:50:59",
+              "diff": "+ 12m 32s",
+              "position": 30,
+              "lapTime": "00:50:59"
+            }
+          ]
+        },
+        {
+          "place": 31,
+          "category_place": 12,
+          "sn": 80,
+          "name": "Ambros Jiří",
+          "club": "Slatinice",
+          "category": "MV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:51:08",
+              "diff": "+ 12m 41s",
+              "position": 31,
+              "lapTime": "00:51:08"
+            }
+          ]
+        },
+        {
+          "place": 32,
+          "category_place": 9,
+          "sn": 43,
+          "name": "Zavadil Pavel",
+          "club": "AT&T",
+          "category": "M",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:51:31",
+              "diff": "+ 13m 4s",
+              "position": 32,
+              "lapTime": "00:51:31"
+            }
+          ]
+        },
+        {
+          "place": 33,
+          "category_place": 10,
+          "sn": 12,
+          "name": "Buš Jiří",
+          "club": "Rájec-Jestřebí",
+          "category": "M",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:51:48",
+              "diff": "+ 13m 21s",
+              "position": 33,
+              "lapTime": "00:51:48"
+            }
+          ]
+        },
+        {
+          "place": 34,
+          "category_place": 13,
+          "sn": 72,
+          "name": "Vrána Filip",
+          "club": "Jundrov",
+          "category": "MV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:51:54",
+              "diff": "+ 13m 27s",
+              "position": 34,
+              "lapTime": "00:51:54"
+            }
+          ]
+        },
+        {
+          "place": 35,
+          "category_place": 2,
+          "sn": 51,
+          "name": "Ondroušková Ivana",
+          "club": "Blansko",
+          "category": "ŽV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:51:57",
+              "diff": "+ 13m 30s",
+              "position": 35,
+              "lapTime": "00:51:57"
+            }
+          ]
+        },
+        {
+          "place": 36,
+          "category_place": 7,
+          "sn": 57,
+          "name": "Münster Libor",
+          "club": "Blansko",
+          "category": "MV2",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:52:07",
+              "diff": "+ 13m 40s",
+              "position": 36,
+              "lapTime": "00:52:07"
+            }
+          ]
+        },
+        {
+          "place": 37,
+          "category_place": 11,
+          "sn": 5,
+          "name": "Mořický Lukáš",
+          "club": "Nesovice",
+          "category": "M",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:52:12",
+              "diff": "+ 13m 45s",
+              "position": 37,
+              "lapTime": "00:52:12"
+            }
+          ]
+        },
+        {
+          "place": 38,
+          "category_place": 8,
+          "sn": 61,
+          "name": "Hromek Jiří",
+          "club": "FENYX Adamov",
+          "category": "MV2",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:53:12",
+              "diff": "+ 14m 45s",
+              "position": 38,
+              "lapTime": "00:53:12"
+            }
+          ]
+        },
+        {
+          "place": 39,
+          "category_place": 1,
+          "sn": 71,
+          "name": "Svoboda Pavel",
+          "club": "TJ Sloup",
+          "category": "MV3",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:53:30",
+              "diff": "+ 15m 3s",
+              "position": 39,
+              "lapTime": "00:53:30"
+            }
+          ]
+        },
+        {
+          "place": 40,
+          "category_place": 5,
+          "sn": 25,
+          "name": "Krusinova Andrea",
+          "club": "Letovice",
+          "category": "Ž",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:54:11",
+              "diff": "+ 15m 44s",
+              "position": 40,
+              "lapTime": "00:54:11"
+            }
+          ]
+        },
+        {
+          "place": 41,
+          "category_place": 12,
+          "sn": 39,
+          "name": "Novák Pavel",
+          "club": "Suchdol",
+          "category": "M",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:54:29",
+              "diff": "+ 16m 2s",
+              "position": 41,
+              "lapTime": "00:54:29"
+            }
+          ]
+        },
+        {
+          "place": 42,
+          "category_place": 13,
+          "sn": 54,
+          "name": "Žejšek Martin",
+          "club": "Kašpaři VM",
+          "category": "M",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:54:46",
+              "diff": "+ 16m 19s",
+              "position": 42,
+              "lapTime": "00:54:46"
+            }
+          ]
+        },
+        {
+          "place": 43,
+          "category_place": 2,
+          "sn": 65,
+          "name": "Šperka Oldřich",
+          "club": "Jedovnice",
+          "category": "MV3",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:55:18",
+              "diff": "+ 16m 51s",
+              "position": 43,
+              "lapTime": "00:55:18"
+            }
+          ]
+        },
+        {
+          "place": 44,
+          "category_place": 9,
+          "sn": 84,
+          "name": "Novák Zdeněk",
+          "club": "Horizont Kola Novák Blansko",
+          "category": "MV2",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:55:18",
+              "diff": "+ 16m 51s",
+              "position": 44,
+              "lapTime": "00:55:18"
+            }
+          ]
+        },
+        {
+          "place": 45,
+          "category_place": 10,
+          "sn": 77,
+          "name": "Lorenc Antonín",
+          "club": "Bertík Blansko",
+          "category": "MV2",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:55:26",
+              "diff": "+ 16m 59s",
+              "position": 45,
+              "lapTime": "00:55:26"
+            }
+          ]
+        },
+        {
+          "place": 46,
+          "category_place": 14,
+          "sn": 35,
+          "name": "Kacetl Jan",
+          "club": "Těchov",
+          "category": "M",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:55:42",
+              "diff": "+ 17m 15s",
+              "position": 46,
+              "lapTime": "00:55:42"
+            }
+          ]
+        },
+        {
+          "place": 47,
+          "category_place": 15,
+          "sn": 41,
+          "name": "Novotný Karel",
+          "club": "Brno",
+          "category": "M",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:57:10",
+              "diff": "+ 18m 43s",
+              "position": 47,
+              "lapTime": "00:57:10"
+            }
+          ]
+        },
+        {
+          "place": 48,
+          "category_place": 6,
+          "sn": 37,
+          "name": "Širůčková Martina",
+          "club": "Rehacentrum Letovice",
+          "category": "Ž",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:57:32",
+              "diff": "+ 19m 5s",
+              "position": 48,
+              "lapTime": "00:57:32"
+            }
+          ]
+        },
+        {
+          "place": 49,
+          "category_place": 16,
+          "sn": 32,
+          "name": "Fabiánek Filip",
+          "club": "OB Veselice",
+          "category": "M",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:57:52",
+              "diff": "+ 19m 25s",
+              "position": 49,
+              "lapTime": "00:57:52"
+            }
+          ]
+        },
+        {
+          "place": 50,
+          "category_place": 11,
+          "sn": 11,
+          "name": "Buš Roman",
+          "club": "Rájec",
+          "category": "MV2",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:58:03",
+              "diff": "+ 19m 36s",
+              "position": 50,
+              "lapTime": "00:58:03"
+            }
+          ]
+        },
+        {
+          "place": 51,
+          "category_place": 1,
+          "sn": 28,
+          "name": "Žákovská alenazak",
+          "club": "horizont Blansko",
+          "category": "ŽV2",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:58:21",
+              "diff": "+ 19m 54s",
+              "position": 51,
+              "lapTime": "00:58:21"
+            }
+          ]
+        },
+        {
+          "place": 52,
+          "category_place": 14,
+          "sn": 34,
+          "name": "Hlaváč Libor",
+          "club": "Brno Borci Zdar!",
+          "category": "MV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:58:40",
+              "diff": "+ 20m 13s",
+              "position": 52,
+              "lapTime": "00:58:40"
+            }
+          ]
+        },
+        {
+          "place": 53,
+          "category_place": 3,
+          "sn": 63,
+          "name": "Polášková Martina",
+          "club": "Blansko",
+          "category": "ŽV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:58:56",
+              "diff": "+ 20m 29s",
+              "position": 53,
+              "lapTime": "00:58:56"
+            }
+          ]
+        },
+        {
+          "place": 54,
+          "category_place": 3,
+          "sn": 42,
+          "name": "Petřek Zdenek",
+          "club": "Sokol Bohuňovice",
+          "category": "MV3",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:00:01",
+              "diff": "+ 21m 34s",
+              "position": 54,
+              "lapTime": "01:00:01"
+            }
+          ]
+        },
+        {
+          "place": 55,
+          "category_place": 2,
+          "sn": 56,
+          "name": "Jalová Margita",
+          "club": "Elite Sport Boskovice",
+          "category": "ŽV2",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:00:33",
+              "diff": "+ 22m 6s",
+              "position": 55,
+              "lapTime": "01:00:33"
+            }
+          ]
+        },
+        {
+          "place": 56,
+          "category_place": 17,
+          "sn": 40,
+          "name": "Petržela Lukáš",
+          "club": "Skalice",
+          "category": "M",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:00:47",
+              "diff": "+ 22m 20s",
+              "position": 56,
+              "lapTime": "01:00:47"
+            }
+          ]
+        },
+        {
+          "place": 57,
+          "category_place": 18,
+          "sn": 14,
+          "name": "Jančík Petr",
+          "club": "Unín 62",
+          "category": "M",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:00:53",
+              "diff": "+ 22m 26s",
+              "position": 57,
+              "lapTime": "01:00:53"
+            }
+          ]
+        },
+        {
+          "place": 58,
+          "category_place": 15,
+          "sn": 18,
+          "name": "Kobeda Lubomir",
+          "club": "Holubice",
+          "category": "MV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:01:38",
+              "diff": "+ 23m 11s",
+              "position": 58,
+              "lapTime": "01:01:38"
+            }
+          ]
+        },
+        {
+          "place": 59,
+          "category_place": 19,
+          "sn": 15,
+          "name": "Kukla Jan",
+          "club": "Telnice",
+          "category": "M",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:03:46",
+              "diff": "+ 25m 19s",
+              "position": 59,
+              "lapTime": "01:03:46"
+            }
+          ]
+        },
+        {
+          "place": 60,
+          "category_place": 12,
+          "sn": 60,
+          "name": "Daněk Milan",
+          "club": "Horizont kola Novák Blansko",
+          "category": "MV2",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:04:29",
+              "diff": "+ 26m 2s",
+              "position": 60,
+              "lapTime": "01:04:29"
+            }
+          ]
+        },
+        {
+          "place": 61,
+          "category_place": 16,
+          "sn": 58,
+          "name": "Medek Jiří",
+          "club": "Černá Hora",
+          "category": "MV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:04:40",
+              "diff": "+ 26m 13s",
+              "position": 61,
+              "lapTime": "01:04:40"
+            }
+          ]
+        },
+        {
+          "place": 62,
+          "category_place": 17,
+          "sn": 26,
+          "name": "Kuběna Vít",
+          "club": "Ráječko",
+          "category": "MV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:05:31",
+              "diff": "+ 27m 4s",
+              "position": 62,
+              "lapTime": "01:05:31"
+            }
+          ]
+        },
+        {
+          "place": 63,
+          "category_place": 7,
+          "sn": 85,
+          "name": "Palátová Veronika",
+          "club": "Blansko",
+          "category": "Ž",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:05:52",
+              "diff": "+ 27m 25s",
+              "position": 63,
+              "lapTime": "01:05:52"
+            }
+          ]
+        },
+        {
+          "place": 64,
+          "category_place": 8,
+          "sn": 64,
+          "name": "Sobotková Irena",
+          "club": "Macháček a spol.",
+          "category": "Ž",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:06:41",
+              "diff": "+ 28m 14s",
+              "position": 64,
+              "lapTime": "01:06:41"
+            }
+          ]
+        },
+        {
+          "place": 65,
+          "category_place": 4,
+          "sn": 23,
+          "name": "Střítežská Jolana",
+          "club": "Lelekovice",
+          "category": "ŽV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:08:43",
+              "diff": "+ 30m 16s",
+              "position": 65,
+              "lapTime": "01:08:43"
+            }
+          ]
+        },
+        {
+          "place": 66,
+          "category_place": 5,
+          "sn": 49,
+          "name": "Šebková Iva",
+          "club": "Blansko",
+          "category": "ŽV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:09:35",
+              "diff": "+ 31m 8s",
+              "position": 66,
+              "lapTime": "01:09:35"
+            }
+          ]
+        },
+        {
+          "place": 67,
+          "category_place": 9,
+          "sn": 27,
+          "name": "Kopecká Barbora",
+          "club": "OCR Runners Olomouc",
+          "category": "Ž",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:09:58",
+              "diff": "+ 31m 31s",
+              "position": 67,
+              "lapTime": "01:09:58"
+            }
+          ]
+        },
+        {
+          "place": 68,
+          "category_place": 10,
+          "sn": 36,
+          "name": "Weisová Barbora",
+          "club": "Elite Sport Boskovice",
+          "category": "Ž",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:13:29",
+              "diff": "+ 35m 2s",
+              "position": 68,
+              "lapTime": "01:13:29"
+            }
+          ]
+        },
+        {
+          "place": 69,
+          "category_place": 13,
+          "sn": 70,
+          "name": "Klepal Petr",
+          "club": "PerunTeam Blansko",
+          "category": "MV2",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:17:02",
+              "diff": "+ 38m 35s",
+              "position": 69,
+              "lapTime": "01:17:02"
+            }
+          ]
+        },
+        {
+          "place": 70,
+          "category_place": 3,
+          "sn": 67,
+          "name": "Klepalová Lenka",
+          "club": "PerunTeam Blansko",
+          "category": "ŽV2",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:17:02",
+              "diff": "+ 38m 35s",
+              "position": 70,
+              "lapTime": "01:17:02"
+            }
+          ]
+        },
+        {
+          "place": 71,
+          "category_place": 4,
+          "sn": 73,
+          "name": "Růžička Bohuslav",
+          "club": "SC Ráječko",
+          "category": "MV3",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:20:09",
+              "diff": "+ 41m 42s",
+              "position": 71,
+              "lapTime": "01:20:09"
+            }
+          ]
+        },
+        {
+          "place": 72,
+          "category_place": 5,
+          "sn": 68,
+          "name": "Stráník Aleš",
+          "club": "Blansko",
+          "category": "MV3",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:26:55",
+              "diff": "+ 48m 28s",
+              "position": 72,
+              "lapTime": "01:26:55"
+            }
+          ]
+        },
+        {
+          "place": 73,
+          "category_place": 6,
+          "sn": 69,
+          "name": "Krejčiříková Kateřina",
+          "club": "Svatá Kateřina",
+          "category": "ŽV1",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:26:57",
+              "diff": "+ 48m 30s",
+              "position": 73,
+              "lapTime": "01:26:57"
+            }
+          ]
+        },
+        {
+          "place": 74,
+          "category_place": 6,
+          "sn": 24,
+          "name": "Hrubý Milan",
+          "club": "Blansko",
+          "category": "MV3",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:31:56",
+              "diff": "+ 53m 29s",
+              "position": 74,
+              "lapTime": "01:31:56"
+            }
+          ]
+        },
+        {
+          "place": null,
+          "category_place": null,
+          "sn": 81,
+          "name": "Macháček Martin",
+          "club": "Macháček a spol.",
+          "category": "MV3",
+          "dnf": true,
+          "laps": []
+        },
+        {
+          "place": null,
+          "category_place": null,
+          "sn": 20,
+          "name": "Grünová Ivana",
+          "club": "AC Okrouhlá",
+          "category": "ŽV1",
+          "dnf":  true,
+          "laps": []
+        },
+        {
+          "place": null,
+          "category_place": null,
+          "sn": 22,
+          "name": "Jančaříková Lenka",
+          "club": "AAC Brno",
+          "category": "ŽV1",
+          "dnf":  true,
+          "laps": []
+        }
+      ]
+    },
+    {
+      "distance": 5000,
+      "laps": 1,
+      "lapDistance": 5000,
+      "results": [
+        {
+          "place": 1,
+          "category_place": 1,
+          "sn": "D84",
+          "name": "Říha Jaroslav",
+          "club": "UNI Brno/Újezd u Černé Hory",
+          "category": "J",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:23:25",
+              "diff": "",
+              "position": 1,
+              "lapTime": "00:23:25"
+            }
+          ]
+        },
+        {
+          "place": 2,
+          "category_place": 1,
+          "sn": "D85",
+          "name": "Jančařík Tomáš",
+          "club": "UNI Brno",
+          "category": "P",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:24:20",
+              "diff": "+ 55s",
+              "position": 2,
+              "lapTime": "00:24:20"
+            }
+          ]
+        },
+        {
+          "place": 3,
+          "category_place": 1,
+          "sn": "30",
+          "name": "Haasová Radka",
+          "club": "Moravec team",
+          "category": "P",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:32:17",
+              "diff": "+ 8m 52s",
+              "position": 3,
+              "lapTime": "00:32:17"
+            }
+          ]
+        },
+        {
+          "place": 4,
+          "category_place": 2,
+          "sn": "52",
+          "name": "Charvárová Lenka",
+          "club": "Adamov",
+          "category": "P",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:32:37",
+              "diff": "+ 9m 12s",
+              "position": 4,
+              "lapTime": "00:32:37"
+            }
+          ]
+        },
+        {
+          "place": 5,
+          "category_place": 3,
+          "sn": "53",
+          "name": "Šamonilová Eva",
+          "club": "Horizont Blansko",
+          "category": "P",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:32:38",
+              "diff": "+ 9m 13s",
+              "position": 5,
+              "lapTime": "00:32:38"
+            }
+          ]
+        },
+        {
+          "place": 6,
+          "category_place": 4,
+          "sn": "45",
+          "name": "Hamadová Ivana",
+          "club": "Bílovice nad Svitavou",
+          "category": "P",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:36:57",
+              "diff": "+ 13m 32s",
+              "position": 6,
+              "lapTime": "00:36:57"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Žáci",
+      "distance": 1350,
+      "laps": 1,
+      "lapDistance": 1350,
+      "results": [
+        {
+          "place": 1,
+          "category_place": 1,
+          "sn": "D76",
+          "name": "Dobrovský Michal",
+          "club": "Biatlon Blansko",
+          "category": "ŽciS",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:05:51",
+              "diff": "",
+              "position": 1,
+              "lapTime": "00:05:51"
+            }
+          ]
+        },
+        {
+          "place": 2,
+          "category_place": 1,
+          "sn": "D79",
+          "name": "Charvát Matyáš",
+          "club": "Elite Sport Boskovice",
+          "category": "ŽciM",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:05:55",
+              "diff": "+ 4s",
+              "position": 2,
+              "lapTime": "00:05:55"
+            }
+          ]
+        },
+        {
+          "place": 3,
+          "category_place": 2,
+          "sn": "D62",
+          "name": "Kroupa Kryštof",
+          "club": "AK Blansko Dvorská",
+          "category": "ŽciM",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:05:58",
+              "diff": "+ 7s",
+              "position": 3,
+              "lapTime": "00:05:58"
+            }
+          ]
+        },
+        {
+          "place": 4,
+          "category_place": 3,
+          "sn": "D14",
+          "name": "Jančařík Tomáš",
+          "club": "VSK UNI Brno",
+          "category": "ŽciM",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:06:15",
+              "diff": "+ 24s",
+              "position": 4,
+              "lapTime": "00:06:15"
+            }
+          ]
+        },
+        {
+          "place": 5,
+          "category_place": 1,
+          "sn": "D10",
+          "name": "Křížová Viktorie",
+          "club": "Elite Sport Boskovice",
+          "category": "ŽkyM",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:06:37",
+              "diff": "+ 46s",
+              "position": 5,
+              "lapTime": "00:06:37"
+            }
+          ]
+        },
+        {
+          "place": 6,
+          "category_place": 2,
+          "sn": "D8",
+          "name": "Malits Marek",
+          "club": "ASK Blansko/",
+          "category": "ŽciS",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:06:44",
+              "diff": "+ 53s",
+              "position": 6,
+              "lapTime": "00:06:44"
+            }
+          ]
+        },
+        {
+          "place": 7,
+          "category_place": 2,
+          "sn": "D82",
+          "name": "Matušková Julie",
+          "club": "ASK Blansko",
+          "category": "ŽkyM",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:06:45",
+              "diff": "+ 54s",
+              "position": 7,
+              "lapTime": "00:06:45"
+            }
+          ]
+        },
+        {
+          "place": 8,
+          "category_place": 3,
+          "sn": "D77",
+          "name": "Dobrovská Lucie",
+          "club": "ASK BLANSKO",
+          "category": "ŽkyM",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:06:48",
+              "diff": "+ 57s",
+              "position": 8,
+              "lapTime": "00:06:48"
+            }
+          ]
+        },
+        {
+          "place": 9,
+          "category_place": 4,
+          "sn": "D74",
+          "name": "Bresser Timothy",
+          "club": "Elite sport Boskovice",
+          "category": "ŽciM",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:06:49",
+              "diff": "+ 58s",
+              "position": 9,
+              "lapTime": "00:06:49"
+            }
+          ]
+        },
+        {
+          "place": 10,
+          "category_place": 1,
+          "sn": "D16",
+          "name": "Kubinová Adéla",
+          "club": "Elite Sport Boskovice",
+          "category": "ŽkyS",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:06:56",
+              "diff": "+ 1m 5s",
+              "position": 10,
+              "lapTime": "00:06:56"
+            }
+          ]
+        },
+        {
+          "place": 11,
+          "category_place": 3,
+          "sn": "D1",
+          "name": "Dvořák Tomáš",
+          "club": "Kulířov",
+          "category": "ŽciS",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:07:11",
+              "diff": "+ 1m 20s",
+              "position": 11,
+              "lapTime": "00:07:11"
+            }
+          ]
+        },
+        {
+          "place": 12,
+          "category_place": 4,
+          "sn": "D63",
+          "name": "Jandáková Leona",
+          "club": "ASK Blansko",
+          "category": "ŽkyM",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:07:21",
+              "diff": "+ 1m 30s",
+              "position": 12,
+              "lapTime": "00:07:21"
+            }
+          ]
+        },
+        {
+          "place": 13,
+          "category_place": 5,
+          "sn": "D71",
+          "name": "Kovácsová Alžběta",
+          "club": "Elite Sport Boskovice",
+          "category": "ŽkyM",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:07:46",
+              "diff": "+ 1m 55s",
+              "position": 13,
+              "lapTime": "00:07:46"
+            }
+          ]
+        },
+        {
+          "place": 14,
+          "category_place": 4,
+          "sn": "D22",
+          "name": "Daněk Štěpán",
+          "club": "horizont Blansko",
+          "category": "ŽciS",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:09:10",
+              "diff": "+ 3m 19s",
+              "position": 14,
+              "lapTime": "00:09:10"
+            }
+          ]
+        },
+        {
+          "place": 15,
+          "category_place": 5,
+          "sn": "D24",
+          "name": "Skorepa petr",
+          "club": "elite boskovice",
+          "category": "ŽciM",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:10:12",
+              "diff": "+ 4m 21s",
+              "position": 15,
+              "lapTime": "00:10:12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Přípravka holky",
+      "distance": 600,
+      "laps": 1,
+      "lapDistance": 600,
+      "results": [
+        {
+          "place": 1,
+          "category_place": 1,
+          "sn": "D4",
+          "name": "Šamšulová Martina",
+          "club": "Elite Sport Boskovice/Letovice",
+          "category": "PříD",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:02:03",
+              "diff": "",
+              "position": 1,
+              "lapTime": "00:02:03"
+            }
+          ]
+        },
+        {
+          "place": 2,
+          "category_place": 2,
+          "sn": "D80",
+          "name": "Kniesová Lucie",
+          "club": "AK Blansko Dvorská",
+          "category": "PříD",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:02:04",
+              "diff": "+ 1s",
+              "position": 2,
+              "lapTime": "00:02:04"
+            }
+          ]
+        },
+        {
+          "place": 3,
+          "category_place": 3,
+          "sn": "D15",
+          "name": "Jančaříková Karolína",
+          "club": "VSK UNI Brno",
+          "category": "PříD",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:02:05",
+              "diff": "+ 2s",
+              "position": 3,
+              "lapTime": "00:02:05"
+            }
+          ]
+        },
+        {
+          "place": 4,
+          "category_place": 4,
+          "sn": "D59",
+          "name": "Rozkošná Klára",
+          "club": "Biatlon Blansko",
+          "category": "PříD",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:02:09",
+              "diff": "+ 6s",
+              "position": 4,
+              "lapTime": "00:02:09"
+            }
+          ]
+        },
+        {
+          "place": 5,
+          "category_place": 5,
+          "sn": "D81",
+          "name": "Králová Ema",
+          "club": "AK Blansko Dvorská",
+          "category": "PříD",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:02:18",
+              "diff": "+ 15s",
+              "position": 5,
+              "lapTime": "00:02:18"
+            }
+          ]
+        },
+        {
+          "place": 6,
+          "category_place": 6,
+          "sn": "D61",
+          "name": "Kroupová Bára",
+          "club": "AK Blansko Dvorská",
+          "category": "PříD",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:02:31",
+              "diff": "+ 28s",
+              "position": 6,
+              "lapTime": "00:02:31"
+            }
+          ]
+        },
+        {
+          "place": 7,
+          "category_place": 7,
+          "sn": "D12",
+          "name": "Prunerová Klára",
+          "club": "Praha",
+          "category": "PříD",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:02:33",
+              "diff": "+ 30s",
+              "position": 7,
+              "lapTime": "00:02:33"
+            }
+          ]
+        },
+        {
+          "place": 8,
+          "category_place": 8,
+          "sn": "D60",
+          "name": "Václavová Klára",
+          "club": "Svitávka",
+          "category": "PříD",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:02:44",
+              "diff": "+ 41s",
+              "position": 8,
+              "lapTime": "00:02:44"
+            }
+          ]
+        },
+        {
+          "place": 9,
+          "category_place": 9,
+          "sn": "D67",
+          "name": "Kaňová Barbora",
+          "club": "Lipovec",
+          "category": "PříD",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:02:45",
+              "diff": "+ 42s",
+              "position": 9,
+              "lapTime": "00:02:45"
+            }
+          ]
+        },
+        {
+          "place": 10,
+          "category_place": 10,
+          "sn": "D41",
+          "name": "Vybíhalová Nikola",
+          "club": "OB Veselice",
+          "category": "PříD",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:03:01",
+              "diff": "+ 58s",
+              "position": 10,
+              "lapTime": "00:03:01"
+            }
+          ]
+        },
+        {
+          "place": null,
+          "category_place": null,
+          "sn": "D64",
+          "name": "Vrbová Anna Marie",
+          "club": "Elit Train Max Training Blansko",
+          "category": "PříD",
+          "dnf": true,
+          "laps": []
+        }
+      ]
+    },
+    {
+      "title": "Přípravka kluci",
+      "distance": 600,
+      "laps": 1,
+      "lapDistance": 600,
+      "results": [
+        {
+          "place": 1,
+          "category_place": 1,
+          "sn": "D2",
+          "name": "Ellinger Denis",
+          "club": "ASK Blansko",
+          "category": "PříCh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:02:03",
+              "diff": "",
+              "position": 1,
+              "lapTime": "00:02:03"
+            }
+          ]
+        },
+        {
+          "place": 2,
+          "category_place": 2,
+          "sn": "D25",
+          "name": "Worbis Radim",
+          "club": "Kotvrdovice, Kotvrdovice",
+          "category": "PříCh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:02:07",
+              "diff": "+ 4s",
+              "position": 2,
+              "lapTime": "00:02:07"
+            }
+          ]
+        },
+        {
+          "place": 3,
+          "category_place": 3,
+          "sn": "D5",
+          "name": "Šafránek Jáchym",
+          "club": "Doubravice/Elite Sport Boskovice",
+          "category": "PříCh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:02:08",
+              "diff": "+ 5s",
+              "position": 3,
+              "lapTime": "00:02:08"
+            }
+          ]
+        },
+        {
+          "place": 4,
+          "category_place": 4,
+          "sn": "D78",
+          "name": "Zouhar Jan",
+          "club": "Kotvrdovice",
+          "category": "PříCh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:02:12",
+              "diff": "+ 9s",
+              "position": 4,
+              "lapTime": "00:02:12"
+            }
+          ]
+        },
+        {
+          "place": 5,
+          "category_place": 5,
+          "sn": "D19",
+          "name": "Krusina Daniel",
+          "club": "Letovice",
+          "category": "PříCh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:02:21",
+              "diff": "+ 18s",
+              "position": 5,
+              "lapTime": "00:02:21"
+            }
+          ]
+        },
+        {
+          "place": 6,
+          "category_place": 6,
+          "sn": "D75",
+          "name": "Kleb Jiř",
+          "club": "Kotvrdovice",
+          "category": "PříCh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:02:37",
+              "diff": "+ 34s",
+              "position": 6,
+              "lapTime": "00:02:37"
+            }
+          ]
+        },
+        {
+          "place": 7,
+          "category_place": 7,
+          "sn": "D7",
+          "name": "Malits Radek",
+          "club": "ASK Blansko /",
+          "category": "PříCh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:03:29",
+              "diff": "+ 1m 26s",
+              "position": 7,
+              "lapTime": "00:03:29"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Svišti holky",
+      "distance": 200,
+      "laps": 1,
+      "lapDistance": 200,
+      "results": [
+        {
+          "place": 1,
+          "category_place": 1,
+          "sn": "D65",
+          "name": "Jandáková Zuzana",
+          "club": "ASK Blansko",
+          "category": "STIh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:32",
+              "diff": "",
+              "position": 1,
+              "lapTime": "00:00:32"
+            }
+          ]
+        },
+        {
+          "place": 2,
+          "category_place": 2,
+          "sn": "D11",
+          "name": "Meluzínová Nela",
+          "club": "Elite Sport Boskovice",
+          "category": "STIh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:33",
+              "diff": "+ 1s",
+              "position": 2,
+              "lapTime": "00:00:33"
+            }
+          ]
+        },
+        {
+          "place": 3,
+          "category_place": 3,
+          "sn": "D66",
+          "name": "Hegedüšová Simona",
+          "club": "Elite sport Boskovice",
+          "category": "STIh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:33",
+              "diff": "+ 1s",
+              "position": 3,
+              "lapTime": "00:00:33"
+            }
+          ]
+        },
+        {
+          "place": 4,
+          "category_place": 4,
+          "sn": "D72",
+          "name": "Zukalová Linda",
+          "club": "Atletika Blansko",
+          "category": "STIh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:36",
+              "diff": "+ 4s",
+              "position": 4,
+              "lapTime": "00:00:36"
+            }
+          ]
+        },
+        {
+          "place": 5,
+          "category_place": 5,
+          "sn": "D17",
+          "name": "Kriklová Lenka",
+          "club": "Jaroměřice",
+          "category": "STIh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:37",
+              "diff": "+ 5s",
+              "position": 5,
+              "lapTime": "00:00:37"
+            }
+          ]
+        },
+        {
+          "place": 6,
+          "category_place": 6,
+          "sn": "D9",
+          "name": "Horská Nikol",
+          "club": "OB Veselice",
+          "category": "STIh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:37",
+              "diff": "+ 5s",
+              "position": 6,
+              "lapTime": "00:00:37"
+            }
+          ]
+        },
+        {
+          "place": 7,
+          "category_place": 7,
+          "sn": "D6",
+          "name": "Šafránková Anna",
+          "club": "Doubravice nad Svitavou",
+          "category": "STIh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:38",
+              "diff": "+ 6s",
+              "position": 7,
+              "lapTime": "00:00:38"
+            }
+          ]
+        },
+        {
+          "place": 8,
+          "category_place": 8,
+          "sn": "D48",
+          "name": "Juračková Karolína",
+          "club": "AK Blansko Dvorská",
+          "category": "STIh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:38",
+              "diff": "+ 6s",
+              "position": 8,
+              "lapTime": "00:00:38"
+            }
+          ]
+        },
+        {
+          "place": 9,
+          "category_place": 9,
+          "sn": "D29",
+          "name": "Sotolářová Barbora",
+          "club": "OB Veselice",
+          "category": "STIh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:39",
+              "diff": "+ 7s",
+              "position": 9,
+              "lapTime": "00:00:39"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Svišti kluci",
+      "distance": 200,
+      "laps": 1,
+      "lapDistance": 200,
+      "results": [
+        {
+          "place": 1,
+          "category_place": 1,
+          "sn": "D21",
+          "name": "Dostál Dominik",
+          "club": "Elite Sport Boskovice",
+          "category": "STIk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:29",
+              "diff": "",
+              "position": 1,
+              "lapTime": "00:00:29"
+            }
+          ]
+        },
+        {
+          "place": 2,
+          "category_place": 2,
+          "sn": "D58",
+          "name": "Rozkošný Jakub",
+          "club": "Lelekovice - biatlon",
+          "category": "STIk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:29",
+              "diff": "",
+              "position": 2,
+              "lapTime": "00:00:29"
+            }
+          ]
+        },
+        {
+          "place": 3,
+          "category_place": 3,
+          "sn": "D73",
+          "name": "Lachman Vojtěch",
+          "club": "Letovice",
+          "category": "STIk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:30",
+              "diff": "+ 1s",
+              "position": 3,
+              "lapTime": "00:00:30"
+            }
+          ]
+        },
+        {
+          "place": 4,
+          "category_place": 4,
+          "sn": "D49",
+          "name": "Korgo Vojta",
+          "club": "SPORT MAX TRAININ JAN KOHUT",
+          "category": "STIk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:30",
+              "diff": "+ 1s",
+              "position": 4,
+              "lapTime": "00:00:30"
+            }
+          ]
+        },
+        {
+          "place": 5,
+          "category_place": 5,
+          "sn": "D3",
+          "name": "Ellinger Šimon",
+          "club": "ASK Blansko",
+          "category": "STIk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:31",
+              "diff": "+ 2s",
+              "position": 5,
+              "lapTime": "00:00:31"
+            }
+          ]
+        },
+        {
+          "place": 6,
+          "category_place": 6,
+          "sn": "D35",
+          "name": "Kovařík Daniel",
+          "club": "Klepačov",
+          "category": "STIk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:32",
+              "diff": "+ 3s",
+              "position": 6,
+              "lapTime": "00:00:32"
+            }
+          ]
+        },
+        {
+          "place": 7,
+          "category_place": 7,
+          "sn": "D18",
+          "name": "Řehák Šimon",
+          "club": "Atletika Boskovice",
+          "category": "STIk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:33",
+              "diff": "+ 4s",
+              "position": 7,
+              "lapTime": "00:00:33"
+            }
+          ]
+        },
+        {
+          "place": 8,
+          "category_place": 8,
+          "sn": "D69",
+          "name": "Hrnčíř Tadeáš",
+          "club": "Řícmanice",
+          "category": "STIk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:35",
+              "diff": "+ 6s",
+              "position": 8,
+              "lapTime": "00:00:35"
+            }
+          ]
+        },
+        {
+          "place": 9,
+          "category_place": 9,
+          "sn": "D46",
+          "name": "Martinek Tomáš",
+          "club": "Těchov",
+          "category": "STIk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:37",
+              "diff": "+ 8s",
+              "position": 9,
+              "lapTime": "00:00:37"
+            }
+          ]
+        },
+        {
+          "place": 10,
+          "category_place": 10,
+          "sn": "D34",
+          "name": "Jarůšek Alex",
+          "club": "Veselice",
+          "category": "STIk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:38",
+              "diff": "+ 9s",
+              "position": 10,
+              "lapTime": "00:00:38"
+            }
+          ]
+        },
+        {
+          "place": 11,
+          "category_place": 11,
+          "sn": "D37",
+          "name": "Ondroušek Petr",
+          "club": "OB Veselice",
+          "category": "STIk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:39",
+              "diff": "+ 10s",
+              "position": 11,
+              "lapTime": "00:00:39"
+            }
+          ]
+        },
+        {
+          "place": 12,
+          "category_place": 12,
+          "sn": "D20",
+          "name": "Krusina Adam",
+          "club": "Letovice",
+          "category": "STIk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:41",
+              "diff": "+ 12s",
+              "position": 12,
+              "lapTime": "00:00:41"
+            }
+          ]
+        },
+        {
+          "place": 13,
+          "category_place": 13,
+          "sn": "D33",
+          "name": "Kala David",
+          "club": "Ostrov u Macochy",
+          "category": "STIk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:49",
+              "diff": "+ 20s",
+              "position": 13,
+              "lapTime": "00:00:49"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Svištící holky",
+      "distance": 200,
+      "laps": 1,
+      "lapDistance": 200,
+      "results": [
+        {
+          "place": 1,
+          "category_place": 1,
+          "sn": "D23",
+          "name": "Sofie SKOREPOVA",
+          "club": "elite boskovice",
+          "category": "SVCh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:17",
+              "diff": "",
+              "position": 1,
+              "lapTime": "00:00:17"
+            }
+          ]
+        },
+        {
+          "place": 2,
+          "category_place": 2,
+          "sn": "D26",
+          "name": "Černa Adéla",
+          "club": "Blansko",
+          "category": "SVCh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:19",
+              "diff": "+ 2s",
+              "position": 2,
+              "lapTime": "00:00:19"
+            }
+          ]
+        },
+        {
+          "place": 3,
+          "category_place": 3,
+          "sn": "D42",
+          "name": "Vybíhalová Denisa",
+          "club": "OB Veselice",
+          "category": "SVCh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:19",
+              "diff": "+ 2s",
+              "position": 3,
+              "lapTime": "00:00:19"
+            }
+          ]
+        },
+        {
+          "place": 4,
+          "category_place": 4,
+          "sn": "D57",
+          "name": "Rozkošná Erika",
+          "club": "Lelekovice",
+          "category": "SVCh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:21",
+              "diff": "+ 4s",
+              "position": 4,
+              "lapTime": "00:00:21"
+            }
+          ]
+        },
+        {
+          "place": 5,
+          "category_place": 5,
+          "sn": "D43",
+          "name": "Suchá Ema",
+          "club": "Olomučany",
+          "category": "SVCh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:22",
+              "diff": "+ 5s",
+              "position": 5,
+              "lapTime": "00:00:22"
+            }
+          ]
+        },
+        {
+          "place": 6,
+          "category_place": 6,
+          "sn": "D36",
+          "name": "Kovaříková Anita",
+          "club": "Klepačov",
+          "category": "SVCh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:24",
+              "diff": "+ 7s",
+              "position": 6,
+              "lapTime": "00:00:24"
+            }
+          ]
+        },
+        {
+          "place": 7,
+          "category_place": 7,
+          "sn": "D70",
+          "name": "Weisová Amálie",
+          "club": "Olešnice",
+          "category": "SVCh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:24",
+              "diff": "+ 7s",
+              "position": 7,
+              "lapTime": "00:00:24"
+            }
+          ]
+        },
+        {
+          "place": 8,
+          "category_place": 8,
+          "sn": "D68",
+          "name": "Hrnčířová Venuše",
+          "club": "Řícmanice",
+          "category": "SVCh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:25",
+              "diff": "+ 8s",
+              "position": 8,
+              "lapTime": "00:00:25"
+            }
+          ]
+        },
+        {
+          "place": 9,
+          "category_place": 9,
+          "sn": "D54",
+          "name": "Kacetlová Simona",
+          "club": "Těchov",
+          "category": "SVCh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:26",
+              "diff": "+ 9s",
+              "position": 9,
+              "lapTime": "00:00:26"
+            }
+          ]
+        },
+        {
+          "place": 10,
+          "category_place": 10,
+          "sn": "D45",
+          "name": "Šamonilová Běla",
+          "club": "Horizont Blansko",
+          "category": "SVCh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:28",
+              "diff": "+ 11s",
+              "position": 10,
+              "lapTime": "00:00:28"
+            }
+          ]
+        },
+        {
+          "place": 11,
+          "category_place": 11,
+          "sn": "D44",
+          "name": "Šamonilová Ria",
+          "club": "Horizont Blansko",
+          "category": "SVCh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:33",
+              "diff": "+ 16s",
+              "position": 11,
+              "lapTime": "00:00:33"
+            }
+          ]
+        },
+        {
+          "place": 12,
+          "category_place": 12,
+          "sn": "D32",
+          "name": "Novotná Alžběta",
+          "club": "Veselice",
+          "category": "SVCh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:35",
+              "diff": "+ 18s",
+              "position": 12,
+              "lapTime": "00:00:35"
+            }
+          ]
+        },
+        {
+          "place": 13,
+          "category_place": 13,
+          "sn": "D38",
+          "name": "Ondroušková Eva",
+          "club": "OB Veselice",
+          "category": "SVCh",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:38",
+              "diff": "+ 21s",
+              "position": 13,
+              "lapTime": "00:00:38"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Svištící kluci",
+      "distance": 200,
+      "laps": 1,
+      "lapDistance": 200,
+      "results": [
+        {
+          "place": 1,
+          "category_place": 1,
+          "sn": "D47",
+          "name": "Martinek Lukáš",
+          "club": "Těchov",
+          "category": "SVCk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:18",
+              "diff": "",
+              "position": 1,
+              "lapTime": "00:00:18"
+            }
+          ]
+        },
+        {
+          "place": 2,
+          "category_place": 2,
+          "sn": "D53",
+          "name": "Kacetl Richard",
+          "club": "Těchov",
+          "category": "SVCk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:18",
+              "diff": "",
+              "position": 2,
+              "lapTime": "00:00:18"
+            }
+          ]
+        },
+        {
+          "place": 3,
+          "category_place": 3,
+          "sn": "D50",
+          "name": "Korgo Matouš",
+          "club": "SPORT MAX TRAINING JAN KOHUT",
+          "category": "SVCk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:18",
+              "diff": "",
+              "position": 3,
+              "lapTime": "00:00:18"
+            }
+          ]
+        },
+        {
+          "place": 4,
+          "category_place": 4,
+          "sn": "D13",
+          "name": "Pruner Matyáš",
+          "club": "Praha",
+          "category": "SVCk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:18",
+              "diff": "",
+              "position": 4,
+              "lapTime": "00:00:18"
+            }
+          ]
+        },
+        {
+          "place": 5,
+          "category_place": 5,
+          "sn": "D28",
+          "name": "Sotolář Adam",
+          "club": "OB Veselice",
+          "category": "SVCk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:19",
+              "diff": "+ 1s",
+              "position": 5,
+              "lapTime": "00:00:19"
+            }
+          ]
+        },
+        {
+          "place": 6,
+          "category_place": 6,
+          "sn": "D39",
+          "name": "Ondroušek Felix",
+          "club": "OB Veselice",
+          "category": "SVCk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:20",
+              "diff": "+ 2s",
+              "position": 6,
+              "lapTime": "00:00:20"
+            }
+          ]
+        },
+        {
+          "place": 7,
+          "category_place": 7,
+          "sn": "D56",
+          "name": "Hlouška Filip",
+          "club": "Svitávka",
+          "category": "SVCk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:20",
+              "diff": "+ 2s",
+              "position": 7,
+              "lapTime": "00:00:20"
+            }
+          ]
+        },
+        {
+          "place": 8,
+          "category_place": 8,
+          "sn": "D27",
+          "name": "Černý Ondřej",
+          "club": "Blansko",
+          "category": "SVCk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:20",
+              "diff": "+ 2s",
+              "position": 8,
+              "lapTime": "00:00:20"
+            }
+          ]
+        },
+        {
+          "place": 9,
+          "category_place": 9,
+          "sn": "D55",
+          "name": "Krikl Tomáš",
+          "club": "Jaroměřice",
+          "category": "SVCk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:21",
+              "diff": "+ 3s",
+              "position": 9,
+              "lapTime": "00:00:21"
+            }
+          ]
+        },
+        {
+          "place": 10,
+          "category_place": 10,
+          "sn": "D51",
+          "name": "Felšöci Marek",
+          "club": "Brno Borci Zdar!",
+          "category": "SVCk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:22",
+              "diff": "+ 4s",
+              "position": 10,
+              "lapTime": "00:00:22"
+            }
+          ]
+        },
+        {
+          "place": 11,
+          "category_place": 11,
+          "sn": "D31",
+          "name": "Novotný Jan",
+          "club": "Nové Dvory",
+          "category": "SVCk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:23",
+              "diff": "+ 5s",
+              "position": 11,
+              "lapTime": "00:00:23"
+            }
+          ]
+        },
+        {
+          "place": 12,
+          "category_place": 12,
+          "sn": "D30",
+          "name": "Novák Max",
+          "club": "Suchdol",
+          "category": "SVCk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:23",
+              "diff": "+ 5s",
+              "position": 12,
+              "lapTime": "00:00:23"
+            }
+          ]
+        },
+        {
+          "place": 13,
+          "category_place": 13,
+          "sn": "D52",
+          "name": "Hlaváč Radim",
+          "club": "Brno Borci Zdar!",
+          "category": "SVCk",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:25",
+              "diff": "+ 7s",
+              "position": 13,
+              "lapTime": "00:00:25"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

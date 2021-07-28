@@ -14,16 +14,16 @@
 }
 
 #root {
-    background-color: #f0fffd;
     display: flex;
     flex-flow: column;
     height: 100%;
 }
 
-html, body, p, span, h1, h2, h3 {
+html, body {
     font-family: 'Roboto', serif;
     height: 100%;
     width: 100%;
+    background-color: #f0fffd;
 }
 
 #app {

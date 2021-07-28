@@ -1,0 +1,158 @@
+{
+  "header": {
+    "intro": "Pro všechny příchozí je připraveno pamětní startovní číslo a pamětní list! Protože věříme, že opět pokvete bez, bude z něj již tradičně vyroben nápoj, který bude závodníkům k dispozici během celého konání závodu. Na závodníky po doběhu čeká občerstvení z regionálních produktů v podobě Černohorského piva a uzených klobás z nedalekých Němčic. Pro vegetariány bude připraven těstovinový salát se zeleninou z místních zahrad, co hrdlo račí. První tři v každé kategorii obdrží medaile a diplomy. Pro všechny pak bohatá tombola včetně putovního poháru štěstí. Zdarma můžete navštívit rozhlednu v Podvrší, Horní a Dolní můstek propasti Macocha. Letos se opět objeví na pódiu živá hudba. Jako každý rok bude ochutnávka produktů zdravé výživy.",
+    "accommodation": "Ubytovaní bude možné zdarma v obřím stanu umíštěném na startu závodu. Tato možnost přepokládá spánek ve vlastních spacích pytlech. Sprchy a záchody jsou zajištěny v kulturním domě (100 m).",
+    "organizers": "Celá akce spočívá na práci společenství Kotržiny, složené z dobrovolných hasičů, oddílu stolního tenisu. Je dobré vědět, že k uspořádání akce tohoto charakteru ve složitém terénu je potřeba kolem 50 pořadatelů - dobrovolníků.",
+    "end": "Snad se za všechnu vynaloženou námahu atmosféra příprav přenese až k vám, účastníkům a návštěvníkům tohoto závodu. Těšíme se na vás!"
+  },
+  "rules": [
+    "Název: LESEMPOLEM",
+    "Datum: 12. 6. 2021",
+    "Ultramaraton je oficiálním závodem mistrovství ČR",
+    "Čas hlavního závodu (63 km / 6 kol): 07:00",
+    "Čas startu 42 km (4 kola) a 10 km (1 kolo): 09:00",
+    "Prezence min. 15 minut před startem závodu",
+    "Místo startu: Hřiště sportovního areálu ve Veselici (směr rozhledna ve Veselici)",
+    "Každý závodník je povinnen uhradit startovné ve výši odpovídající jeho kategorii",
+    "Závod proběhne v souladu s aktuálně platnými protiepidemickými opatřeními souvisejícími s onemocněním COVID-19"
+  ],
+  "track": [
+    "Kolo 10,5 km",
+    "Trať vede převážně po polních a lesních cestách (90 %) a pouze 10 % po asfaltových cestách",
+    "Každých 5 km občerstvovací stanice - voda, čaj, bezinková štáva, iontový napoj, CocaCola, chleba se sádlem, banány, meloun, čokoláda, sůl, rum"
+  ],
+  "registration": {
+    "timetable": [
+      {
+        "day": "pá",
+        "from": "17:00",
+        "to": "22:00"
+      },
+      {
+        "day": "so",
+        "from": "06:00",
+        "to": "08:45"
+      }
+    ],
+    "note": "Prezence min 15 min před startem závodu"
+  },
+  "races": [
+    {
+      "name": "MČR Ultramaraton",
+      "start": "07:00",
+      "distance": "63 km",
+      "categories": [
+        {
+          "name": "Muži",
+          "gender": "m"
+        },
+        {
+          "name": "Ženy",
+          "gender": "f"
+        },
+        {
+          "name": "Muži (35 - 39 let)",
+          "gender": "m"
+        },
+        {
+          "name": "Muži (40 - 44 let)",
+          "gender": "m"
+        },
+        {
+          "name": "Muži (45 - 49 let)",
+          "gender": "m"
+        },
+        {
+          "name": "Muži (50 - 54 let)",
+          "gender": "m"
+        },
+        {
+          "name": "Muži (55 - 59 let)",
+          "gender": "m"
+        },
+        {
+          "name": "Muži (60 - 64 let)",
+          "gender": "m"
+        },
+        {
+          "name": "Muži (65 - 69 let)",
+          "gender": "m"
+        },
+        {
+          "name": "Ženy (35 - 39 let)",
+          "gender": "f"
+        },
+        {
+          "name": "Ženy (40 - 44 let)",
+          "gender": "f"
+        },
+        {
+          "name": "Ženy (45 - 49 let)",
+          "gender": "f"
+        },
+        {
+          "name": "Ženy (50 - 54 let)",
+          "gender": "f"
+        },
+        {
+          "name": "Ženy (55 - 59 let)",
+          "gender": "f"
+        },
+        {
+          "name": "Ženy (60 - 64 let)",
+          "gender": "f"
+        },
+        {
+          "name": "Ženy (65 - 69 let)",
+          "gender": "f"
+        }
+      ]
+    },
+    {
+      "name": "Maraton",
+      "start": "09:00",
+      "distance": "42 km",
+      "categories": [
+        {
+          "name": "Muži",
+          "gender": "m"
+        },
+        {
+          "name": "Ženy",
+          "gender": "f"
+        }
+      ]
+    },
+    {
+      "name": "10.5 km",
+      "start": "09:00",
+      "distance": "10.5 km",
+      "categories": [
+        {
+          "name": "Muži",
+          "gender": "m"
+        },
+        {
+          "name": "Ženy",
+          "gender": "f"
+        }
+      ]
+    }
+  ],
+  "startingFee": [
+    {
+      "name": "Ultramaraton",
+      "price": 600,
+      "note": "Pro členy ČAU 420 Kč"
+    },
+    {
+      "name": "Maraton",
+      "price": 400,
+      "note": "Pro členy ČAU 280 Kč"
+    },
+    {
+      "name": "10 km",
+      "price": 100
+    }
+  ]
+}

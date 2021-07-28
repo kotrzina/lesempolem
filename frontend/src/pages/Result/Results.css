@@ -1,0 +1,13 @@
+#all-results table thead tr:first-child {
+    background-color: #faf8f2;
+
+
+}
+
+#all-results table tbody tr:nth-of-type(even) {
+    background-color: #faf8f2;
+}
+
+#all-results table tbody tr:nth-of-type(odd) {
+    background-color: #f0fffd;
+}

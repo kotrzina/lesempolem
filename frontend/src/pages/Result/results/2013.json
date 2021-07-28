@@ -1,0 +1,1388 @@
+{
+  "title": "Výsledky závodu v roce 2013",
+  "year": 2013,
+  "races": [
+    {
+      "distance": 10000,
+      "laps": 1,
+      "lapDistance": 10000,
+      "results": [
+        {
+          "place": 1,
+          "sn": "5",
+          "name": "Ryška Vít",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:40:09",
+              "diff": "",
+              "position": 1,
+              "lapTime": "00:40:09"
+            }
+          ]
+        },
+        {
+          "place": 2,
+          "sn": "27",
+          "name": "Dolák Hynek",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:40:27",
+              "diff": "+ 18s",
+              "position": 2,
+              "lapTime": "00:40:27"
+            }
+          ]
+        },
+        {
+          "place": 3,
+          "sn": "28",
+          "name": "Boháček Petr",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:40:49",
+              "diff": "+ 40s",
+              "position": 3,
+              "lapTime": "00:40:49"
+            }
+          ]
+        },
+        {
+          "place": 4,
+          "sn": "17",
+          "name": "Stloukal Jaroslav",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:43:25",
+              "diff": "+ 3m 16s",
+              "position": 4,
+              "lapTime": "00:43:25"
+            }
+          ]
+        },
+        {
+          "place": 5,
+          "sn": "18",
+          "name": "Dvořák Jaromír",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:43:48",
+              "diff": "+ 3m 39s",
+              "position": 5,
+              "lapTime": "00:43:48"
+            }
+          ]
+        },
+        {
+          "place": 6,
+          "sn": "39",
+          "name": "Možný Radek",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:44:55",
+              "diff": "+ 4m 46s",
+              "position": 6,
+              "lapTime": "00:44:55"
+            }
+          ]
+        },
+        {
+          "place": 7,
+          "sn": "34",
+          "name": "Odehnal Tomáš",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:45:13",
+              "diff": "+ 5m 4s",
+              "position": 7,
+              "lapTime": "00:45:13"
+            }
+          ]
+        },
+        {
+          "place": 8,
+          "sn": "21",
+          "name": "Nožka Jiří",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:45:17",
+              "diff": "+ 5m 8s",
+              "position": 8,
+              "lapTime": "00:45:17"
+            }
+          ]
+        },
+        {
+          "place": 9,
+          "sn": "31",
+          "name": "Němec Richard",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:45:32",
+              "diff": "+ 5m 23s",
+              "position": 9,
+              "lapTime": "00:45:32"
+            }
+          ]
+        },
+        {
+          "place": 10,
+          "sn": "6",
+          "name": "Kubík Pavel",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:46:14",
+              "diff": "+ 6m 5s",
+              "position": 10,
+              "lapTime": "00:46:14"
+            }
+          ]
+        },
+        {
+          "place": 11,
+          "sn": "43",
+          "name": "Kyzlink Karel",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:47:06",
+              "diff": "+ 6m 57s",
+              "position": 11,
+              "lapTime": "00:47:06"
+            }
+          ]
+        },
+        {
+          "place": 12,
+          "sn": "30",
+          "name": "Šerák Martin",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:47:27",
+              "diff": "+ 7m 18s",
+              "position": 12,
+              "lapTime": "00:47:27"
+            }
+          ]
+        },
+        {
+          "place": 13,
+          "sn": "33",
+          "name": "Hubert František",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:47:50",
+              "diff": "+ 7m 41s",
+              "position": 13,
+              "lapTime": "00:47:50"
+            }
+          ]
+        },
+        {
+          "place": 14,
+          "sn": "15",
+          "name": "Knotek David",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:48:04",
+              "diff": "+ 7m 55s",
+              "position": 14,
+              "lapTime": "00:48:04"
+            }
+          ]
+        },
+        {
+          "place": 15,
+          "sn": "42",
+          "name": "Buš Roman",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:48:05",
+              "diff": "+ 7m 56s",
+              "position": 15,
+              "lapTime": "00:48:05"
+            }
+          ]
+        },
+        {
+          "place": 16,
+          "sn": "22",
+          "name": "Zoubek Karel",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:48:48",
+              "diff": "+ 8m 39s",
+              "position": 16,
+              "lapTime": "00:48:48"
+            }
+          ]
+        },
+        {
+          "place": 17,
+          "sn": "9",
+          "name": "Jančařík Petr",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:49:37",
+              "diff": "+ 9m 28s",
+              "position": 17,
+              "lapTime": "00:49:37"
+            }
+          ]
+        },
+        {
+          "place": 18,
+          "sn": "25",
+          "name": "Hromek Jiří",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:50:21",
+              "diff": "+ 10m 12s",
+              "position": 18,
+              "lapTime": "00:50:21"
+            }
+          ]
+        },
+        {
+          "place": 19,
+          "sn": "38",
+          "name": "Stejskal Roman",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:51:16",
+              "diff": "+ 11m 7s",
+              "position": 19,
+              "lapTime": "00:51:16"
+            }
+          ]
+        },
+        {
+          "place": 20,
+          "sn": "32",
+          "name": "Skoták Hynek",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:51:21",
+              "diff": "+ 11m 12s",
+              "position": 20,
+              "lapTime": "00:51:21"
+            }
+          ]
+        },
+        {
+          "place": 21,
+          "sn": "35",
+          "name": "Procházka Jan",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:51:30",
+              "diff": "+ 11m 21s",
+              "position": 21,
+              "lapTime": "00:51:30"
+            }
+          ]
+        },
+        {
+          "place": 22,
+          "sn": "1",
+          "name": "Hloušek Michal",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:51:35",
+              "diff": "+ 11m 26s",
+              "position": 22,
+              "lapTime": "00:51:35"
+            }
+          ]
+        },
+        {
+          "place": 23,
+          "sn": "40",
+          "name": "Brtník Jiří",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:51:36",
+              "diff": "+ 11m 27s",
+              "position": 23,
+              "lapTime": "00:51:36"
+            }
+          ]
+        },
+        {
+          "place": 24,
+          "sn": "36",
+          "name": "Drábek Jan",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:52:12",
+              "diff": "+ 12m 3s",
+              "position": 24,
+              "lapTime": "00:52:12"
+            }
+          ]
+        },
+        {
+          "place": 25,
+          "sn": "7",
+          "name": "Vodička Marek",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:52:27",
+              "diff": "+ 12m 18s",
+              "position": 25,
+              "lapTime": "00:52:27"
+            }
+          ]
+        },
+        {
+          "place": 26,
+          "sn": "8",
+          "name": "Nešpor Petr",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:52:27",
+              "diff": "+ 12m 18s",
+              "position": 26,
+              "lapTime": "00:52:27"
+            }
+          ]
+        },
+        {
+          "place": 27,
+          "sn": "29",
+          "name": "Haresta Petr",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:52:48",
+              "diff": "+ 12m 39s",
+              "position": 27,
+              "lapTime": "00:52:48"
+            }
+          ]
+        },
+        {
+          "place": 28,
+          "sn": "26",
+          "name": "Šperka Oldřich",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:52:57",
+              "diff": "+ 12m 48s",
+              "position": 28,
+              "lapTime": "00:52:57"
+            }
+          ]
+        },
+        {
+          "place": 29,
+          "sn": "37",
+          "name": "Kubíček Jan",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:53:16",
+              "diff": "+ 13m 7s",
+              "position": 29,
+              "lapTime": "00:53:16"
+            }
+          ]
+        },
+        {
+          "place": 30,
+          "sn": "10",
+          "name": "Skoták Jiří",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:53:18",
+              "diff": "+ 13m 9s",
+              "position": 30,
+              "lapTime": "00:53:18"
+            }
+          ]
+        },
+        {
+          "place": 31,
+          "sn": "19",
+          "name": "Munster Libor",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:53:57",
+              "diff": "+ 13m 48s",
+              "position": 31,
+              "lapTime": "00:53:57"
+            }
+          ]
+        },
+        {
+          "place": 32,
+          "sn": "16",
+          "name": "Stráník Aleš",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:54:57",
+              "diff": "+ 14m 48s",
+              "position": 32,
+              "lapTime": "00:54:57"
+            }
+          ]
+        },
+        {
+          "place": 33,
+          "sn": "20",
+          "name": "Veselý Karel",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:55:41",
+              "diff": "+ 15m 32s",
+              "position": 33,
+              "lapTime": "00:55:41"
+            }
+          ]
+        },
+        {
+          "place": 34,
+          "sn": "23",
+          "name": "Macháček Martin",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:56:56",
+              "diff": "+ 16m 47s",
+              "position": 34,
+              "lapTime": "00:56:56"
+            }
+          ]
+        },
+        {
+          "place": 35,
+          "sn": "13",
+          "name": "Knotek Ilja",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:58:06",
+              "diff": "+ 17m 57s",
+              "position": 35,
+              "lapTime": "00:58:06"
+            }
+          ]
+        },
+        {
+          "place": 36,
+          "sn": "14",
+          "name": "Vojtíšek Tomáš",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:58:22",
+              "diff": "+ 18m 13s",
+              "position": 36,
+              "lapTime": "00:58:22"
+            }
+          ]
+        },
+        {
+          "place": 37,
+          "sn": "11",
+          "name": "Jablunka Dušan",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:58:27",
+              "diff": "+ 18m 18s",
+              "position": 37,
+              "lapTime": "00:58:27"
+            }
+          ]
+        },
+        {
+          "place": 38,
+          "sn": "41",
+          "name": "Frint Jiří",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:59:12",
+              "diff": "+ 19m 3s",
+              "position": 38,
+              "lapTime": "00:59:12"
+            }
+          ]
+        },
+        {
+          "place": 39,
+          "sn": "3",
+          "name": "Suchý Libor",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:04:47",
+              "diff": "+ 24m 38s",
+              "position": 39,
+              "lapTime": "01:04:47"
+            }
+          ]
+        },
+        {
+          "place": 40,
+          "sn": "44",
+          "name": "Jablunková Andrea",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:06:20",
+              "diff": "+ 26m 11s",
+              "position": 40,
+              "lapTime": "01:06:20"
+            }
+          ]
+        },
+        {
+          "place": 41,
+          "sn": "24",
+          "name": "Fuksa Karel",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:13:13",
+              "diff": "+ 33m 4s",
+              "position": 41,
+              "lapTime": "01:13:13"
+            }
+          ]
+        },
+        {
+          "place": 42,
+          "sn": "12",
+          "name": "Kubík Josef",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "01:16:12",
+              "diff": "+ 36m 3s",
+              "position": 42,
+              "lapTime": "01:16:12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "distance": 5000,
+      "laps": 1,
+      "lapDistance": 5000,
+      "results": [
+        {
+          "place": 1,
+          "sn": "25",
+          "name": "Havelka Jan",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:22:33",
+              "diff": "",
+              "position": 1,
+              "lapTime": "00:22:33"
+            }
+          ]
+        },
+        {
+          "place": 2,
+          "sn": "17",
+          "name": "Barešová Milada",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:23:07",
+              "diff": "+ 34s",
+              "position": 2,
+              "lapTime": "00:23:07"
+            }
+          ]
+        },
+        {
+          "place": 3,
+          "sn": "6",
+          "name": "Jančaříková Lenka",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:23:43",
+              "diff": "+ 1m 10s",
+              "position": 3,
+              "lapTime": "00:23:43"
+            }
+          ]
+        },
+        {
+          "place": 4,
+          "sn": "13",
+          "name": "Krejčová Magda",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:25:01",
+              "diff": "+ 2m 28s",
+              "position": 4,
+              "lapTime": "00:25:01"
+            }
+          ]
+        },
+        {
+          "place": 5,
+          "sn": "18",
+          "name": "Filipiová Andrea",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:26:09",
+              "diff": "+ 3m 36s",
+              "position": 5,
+              "lapTime": "00:26:09"
+            }
+          ]
+        },
+        {
+          "place": 6,
+          "sn": "16",
+          "name": "Komárková Zdena",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:26:37",
+              "diff": "+ 4m 4s",
+              "position": 6,
+              "lapTime": "00:26:37"
+            }
+          ]
+        },
+        {
+          "place": 7,
+          "sn": "12",
+          "name": "Nedomová Lucie",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:27:54",
+              "diff": "+ 5m 21s",
+              "position": 7,
+              "lapTime": "00:27:54"
+            }
+          ]
+        },
+        {
+          "place": 8,
+          "sn": "3",
+          "name": "Vodičková Šárka",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:28:21",
+              "diff": "+ 5m 48s",
+              "position": 8,
+              "lapTime": "00:28:21"
+            }
+          ]
+        },
+        {
+          "place": 9,
+          "sn": "14",
+          "name": "Klimešová Inka",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:29:15",
+              "diff": "+ 6m 42s",
+              "position": 9,
+              "lapTime": "00:29:15"
+            }
+          ]
+        },
+        {
+          "place": 10,
+          "sn": "20",
+          "name": "Kopecká Radka",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:29:16",
+              "diff": "+ 6m 43s",
+              "position": 10,
+              "lapTime": "00:29:16"
+            }
+          ]
+        },
+        {
+          "place": 11,
+          "sn": "15",
+          "name": "Krejčiříková Kateřina",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:30:37",
+              "diff": "+ 8m 4s",
+              "position": 11,
+              "lapTime": "00:30:37"
+            }
+          ]
+        },
+        {
+          "place": 12,
+          "sn": "8",
+          "name": "Žáčková Jitka",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:31:19",
+              "diff": "+ 8m 46s",
+              "position": 12,
+              "lapTime": "00:31:19"
+            }
+          ]
+        },
+        {
+          "place": 13,
+          "sn": "21",
+          "name": "Zitová Iva",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:31:27",
+              "diff": "+ 8m 54s",
+              "position": 13,
+              "lapTime": "00:31:27"
+            }
+          ]
+        },
+        {
+          "place": 14,
+          "sn": "5",
+          "name": "Netimeová Simona",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:32:38",
+              "diff": "+ 10m 5s",
+              "position": 14,
+              "lapTime": "00:32:38"
+            }
+          ]
+        },
+        {
+          "place": 15,
+          "sn": "19",
+          "name": "Kopecká Naděžda",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:34:30",
+              "diff": "+ 11m 57s",
+              "position": 15,
+              "lapTime": "00:34:30"
+            }
+          ]
+        },
+        {
+          "place": 16,
+          "sn": "11",
+          "name": "Sotáková Miroslava",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:34:47",
+              "diff": "+ 12m 14s",
+              "position": 16,
+              "lapTime": "00:34:47"
+            }
+          ]
+        },
+        {
+          "place": 17,
+          "sn": "7",
+          "name": "Martínková Romana",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:35:00",
+              "diff": "+ 12m 27s",
+              "position": 17,
+              "lapTime": "00:35:00"
+            }
+          ]
+        },
+        {
+          "place": 18,
+          "sn": "1",
+          "name": "Karásek Antonín",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:35:08",
+              "diff": "+ 12m 35s",
+              "position": 18,
+              "lapTime": "00:35:08"
+            }
+          ]
+        },
+        {
+          "place": 19,
+          "sn": "4",
+          "name": "Koňariková Lenka",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:35:31",
+              "diff": "+ 12m 58s",
+              "position": 19,
+              "lapTime": "00:35:31"
+            }
+          ]
+        },
+        {
+          "place": 20,
+          "sn": "2",
+          "name": "Novotná Zuzana",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:38:07",
+              "diff": "+ 15m 34s",
+              "position": 20,
+              "lapTime": "00:38:07"
+            }
+          ]
+        },
+        {
+          "place": 21,
+          "sn": "24",
+          "name": "Novotný Miloslav",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:38:08",
+              "diff": "+ 15m 35s",
+              "position": 21,
+              "lapTime": "00:38:08"
+            }
+          ]
+        },
+        {
+          "place": 22,
+          "sn": "10",
+          "name": "Sotáková Lenka",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:40:25",
+              "diff": "+ 17m 52s",
+              "position": 22,
+              "lapTime": "00:40:25"
+            }
+          ]
+        },
+        {
+          "place": 23,
+          "sn": "22",
+          "name": "Kudělková Eva",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:44:59",
+              "diff": "+ 22m 26s",
+              "position": 23,
+              "lapTime": "00:44:59"
+            }
+          ]
+        },
+        {
+          "place": 24,
+          "sn": "23",
+          "name": "Šolc Filip",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:45:00",
+              "diff": "+ 22m 27s",
+              "position": 24,
+              "lapTime": "00:45:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Žáci",
+      "distance": 1350,
+      "laps": 1,
+      "lapDistance": 1350,
+      "results": [
+        {
+          "place": 1,
+          "sn": "2",
+          "name": "Suchá Lenka",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:05:33",
+              "diff": "+ 42s",
+              "position": 1,
+              "lapTime": "00:05:33"
+            }
+          ]
+        },
+        {
+          "place": 2,
+          "sn": "15",
+          "name": "Plíhal Jiří",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:06:01",
+              "diff": "+ 1m 10s",
+              "position": 2,
+              "lapTime": "00:06:01"
+            }
+          ]
+        },
+        {
+          "place": 3,
+          "sn": "14",
+          "name": "Sedláková Zdislava",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:06:28",
+              "diff": "+ 1m 37s",
+              "position": 3,
+              "lapTime": "00:06:28"
+            }
+          ]
+        },
+        {
+          "place": 4,
+          "sn": "6",
+          "name": "Stehlík Jiří",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:08:04",
+              "diff": "+ 3m 13s",
+              "position": 4,
+              "lapTime": "00:08:04"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Svišti",
+      "distance": 200,
+      "laps": 1,
+      "lapDistance": 200,
+      "results": [
+        {
+          "place": 1,
+          "sn": "5",
+          "name": "Štoudková Pavla",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:55",
+              "diff": "",
+              "position": 1,
+              "lapTime": "00:00:55"
+            }
+          ]
+        },
+        {
+          "place": 2,
+          "sn": "1",
+          "name": "Augustínová Patricie",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:56",
+              "diff": "+ 1s",
+              "position": 2,
+              "lapTime": "00:00:56"
+            }
+          ]
+        },
+        {
+          "place": 3,
+          "sn": "32",
+          "name": "Krejčiříková Klára",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:00:58",
+              "diff": "+ 3s",
+              "position": 3,
+              "lapTime": "00:00:58"
+            }
+          ]
+        },
+        {
+          "place": 4,
+          "sn": "18",
+          "name": "Vodičková Kristýna",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:00",
+              "diff": "+ 5s",
+              "position": 4,
+              "lapTime": "00:01:00"
+            }
+          ]
+        },
+        {
+          "place": 5,
+          "sn": "21",
+          "name": "Salčáková Dominika",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:01",
+              "diff": "+ 6s",
+              "position": 5,
+              "lapTime": "00:01:01"
+            }
+          ]
+        },
+        {
+          "place": 6,
+          "sn": "22",
+          "name": "Salčáková Martina",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:03",
+              "diff": "+ 8s",
+              "position": 6,
+              "lapTime": "00:01:03"
+            }
+          ]
+        },
+        {
+          "place": 7,
+          "sn": "26",
+          "name": "Jarůšek Štěpán",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:03",
+              "diff": "+ 8s",
+              "position": 7,
+              "lapTime": "00:01:03"
+            }
+          ]
+        },
+        {
+          "place": 8,
+          "sn": "24",
+          "name": "Jančařík Tomáš",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:04",
+              "diff": "+ 9s",
+              "position": 8,
+              "lapTime": "00:01:04"
+            }
+          ]
+        },
+        {
+          "place": 9,
+          "sn": "12",
+          "name": "Sedláková Monika",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:04",
+              "diff": "+ 9s",
+              "position": 9,
+              "lapTime": "00:01:04"
+            }
+          ]
+        },
+        {
+          "place": 10,
+          "sn": "23",
+          "name": "Svoboda Lukáš",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:06",
+              "diff": "+ 11s",
+              "position": 10,
+              "lapTime": "00:01:06"
+            }
+          ]
+        },
+        {
+          "place": 11,
+          "sn": "10",
+          "name": "Sedláková Anna",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:08",
+              "diff": "+ 13s",
+              "position": 11,
+              "lapTime": "00:01:08"
+            }
+          ]
+        },
+        {
+          "place": 12,
+          "sn": "17",
+          "name": "Kubíková Sára",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:08",
+              "diff": "+ 13s",
+              "position": 12,
+              "lapTime": "00:01:08"
+            }
+          ]
+        },
+        {
+          "place": 13,
+          "sn": "3",
+          "name": "Suchý Libor",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:09",
+              "diff": "+ 14s",
+              "position": 13,
+              "lapTime": "00:01:09"
+            }
+          ]
+        },
+        {
+          "place": 14,
+          "sn": "19",
+          "name": "Vodičková Martina",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:13",
+              "diff": "+ 18s",
+              "position": 14,
+              "lapTime": "00:01:13"
+            }
+          ]
+        },
+        {
+          "place": 15,
+          "sn": "28",
+          "name": "Jablunka Jan",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:20",
+              "diff": "+ 25s",
+              "position": 15,
+              "lapTime": "00:01:20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Svištíci",
+      "distance": 200,
+      "laps": 1,
+      "lapDistance": 200,
+      "results": [
+        {
+          "place": 1,
+          "sn": "4",
+          "name": "Suchá Jana",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:17",
+              "diff": "",
+              "position": 1,
+              "lapTime": "00:01:17"
+            }
+          ]
+        },
+        {
+          "place": 2,
+          "sn": "8",
+          "name": "Ryška Daniel",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:22",
+              "diff": "+ 5s",
+              "position": 2,
+              "lapTime": "00:01:22"
+            }
+          ]
+        },
+        {
+          "place": 3,
+          "sn": "11",
+          "name": "Sedláková Barbora",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:23",
+              "diff": "+ 6s",
+              "position": 3,
+              "lapTime": "00:01:23"
+            }
+          ]
+        },
+        {
+          "place": 4,
+          "sn": "25",
+          "name": "Jančaříková Karolína",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:24",
+              "diff": "+ 7s",
+              "position": 4,
+              "lapTime": "00:01:24"
+            }
+          ]
+        },
+        {
+          "place": 5,
+          "sn": "31",
+          "name": "Vojtíšková Valerie",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:25",
+              "diff": "+ 8s",
+              "position": 5,
+              "lapTime": "00:01:25"
+            }
+          ]
+        },
+        {
+          "place": 6,
+          "sn": "30",
+          "name": "Knotková Eliška",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:32",
+              "diff": "+ 15s",
+              "position": 6,
+              "lapTime": "00:01:32"
+            }
+          ]
+        },
+        {
+          "place": 7,
+          "sn": "29",
+          "name": "Jarůšek Kryštof",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:32",
+              "diff": "+ 15s",
+              "position": 7,
+              "lapTime": "00:01:32"
+            }
+          ]
+        },
+        {
+          "place": 8,
+          "sn": "20",
+          "name": "Nohová Nelinka",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:39",
+              "diff": "+ 22s",
+              "position": 8,
+              "lapTime": "00:01:39"
+            }
+          ]
+        },
+        {
+          "place": 9,
+          "sn": "9",
+          "name": "Ryšková Linda",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:01:55",
+              "diff": "+ 38s",
+              "position": 9,
+              "lapTime": "00:01:55"
+            }
+          ]
+        },
+        {
+          "place": 10,
+          "sn": "27",
+          "name": "Jablunková Lucie",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:02:09",
+              "diff": "+ 52s",
+              "position": 10,
+              "lapTime": "00:02:09"
+            }
+          ]
+        },
+        {
+          "place": 11,
+          "sn": "33",
+          "name": "Krejčiříková Anežka",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "00:02:14",
+              "diff": "+ 57s",
+              "position": 11,
+              "lapTime": "00:02:14"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
