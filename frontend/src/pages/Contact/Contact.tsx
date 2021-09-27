@@ -14,7 +14,7 @@ import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 type Props = {};
 export const Contact: FC<Props> = (props: Props) => {
 
-    useDocumentTitle('Kontakty | Lesempolem')
+    useDocumentTitle('Kontakty')
 
     return (
         <>
@@ -118,7 +118,7 @@ const Person: FC<PersonProps> = (props: PersonProps) => {
                                     onClick={() => copyText(props.email)}
                                 />
                             </InputGroup.Text>
-                            <FormControl value={props.email}/>
+                            <FormControl value={props.email} readOnly={true}/>
                         </InputGroup>
                         <InputGroup>
                             <InputGroup.Text>
@@ -127,7 +127,7 @@ const Person: FC<PersonProps> = (props: PersonProps) => {
                                     onClick={() => copyText(props.phone)}
                                 />
                             </InputGroup.Text>
-                            <FormControl value={props.phone}/>
+                            <FormControl value={props.phone} readOnly={true}/>
                         </InputGroup>
                     </div>
                 </div>

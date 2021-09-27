@@ -5,12 +5,15 @@ import Address from "../../Address";
 import {TextFormField} from "../../components/TextFormField/TextFormField";
 import {SelectFormField} from "../../components/SelectFormField/SelectFormField";
 import {CheckboxFormField} from "../../components/CheckboxFormField/CheckboxFormField";
+import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 
 interface Props {
 
 }
 
 export const Registration: FC<Props> = (props) => {
+
+    useDocumentTitle("Registrace závodníků")
 
     const history = useHistory()
 

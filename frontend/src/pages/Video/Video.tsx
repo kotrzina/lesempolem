@@ -1,8 +1,12 @@
 import * as React from 'react';
 import {Col, ResponsiveEmbed, Row} from "react-bootstrap";
+import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 
 type Props = {};
 export const Video = (props: Props) => {
+
+    useDocumentTitle("Video")
+
     return (
         <Row>
             <Col md={12}>

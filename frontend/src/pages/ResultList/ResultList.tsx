@@ -4,12 +4,15 @@ import {Button, Col, Row} from "react-bootstrap";
 import {useHistory} from "react-router-dom";
 import './ResultList.css'
 import Address from "../../Address";
+import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 
 type Props = {
     years: number[];
 };
 
 export const ResultList: FC<Props> = (props: Props) => {
+
+    useDocumentTitle("Výsledky závodů Lesempolem")
 
     const history = useHistory();
 

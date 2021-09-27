@@ -11,7 +11,7 @@ import {useDocumentTitle} from "../../../hooks/useDocumentTitle";
 
 export const HomepagePage: React.FC = () => {
 
-    useDocumentTitle('Lesempolem - běžecké závody ve Veselici')
+    useDocumentTitle('Běžecké závody ve Veselici')
 
     const history = useHistory();
 

@@ -2,9 +2,13 @@ import * as React from 'react';
 import {Col, ResponsiveEmbed, Row} from "react-bootstrap";
 import {FC} from "react";
 import {DownloadableFiles} from "./DownloadableFiles";
+import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 
 type Props = {};
 export const Track: FC<Props> = (props: Props) => {
+
+    useDocumentTitle("Trať")
+
     return (
         <Row>
             <Col md={12}>

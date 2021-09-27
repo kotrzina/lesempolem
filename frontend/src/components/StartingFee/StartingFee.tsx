@@ -39,12 +39,14 @@ export const StartingFee = (props: Props) => {
             <h2>Startovné</h2>
             <p>Startovné bude hrazeno na místě v den závodu.</p>
             <Table id={'fees'}>
+                <tbody>
                 {props.fees.map((fee, feeIdx) => {
                     return <tr className={'fee-' + feeIdx} key={feeIdx}>
                         <td>{fee.name}</td>
                         <td>{getPrice(fee.price, fee.note)}</td>
                     </tr>
                 })}
+                </tbody>
             </Table>
             {props.fees.filter(fee => {
                 return (!(typeof fee.note === 'undefined'))

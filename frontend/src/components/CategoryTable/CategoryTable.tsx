@@ -30,6 +30,7 @@ type Props = {
 export const CategoryTable: FC<Props> = (props: Props) => {
     return (
         <Table id="categories">
+            <thead>
             {props.registration.timetable.map((reg, regIdx) => {
                 return (
                     <tr key={regIdx}>
@@ -48,19 +49,26 @@ export const CategoryTable: FC<Props> = (props: Props) => {
                 <th>Závod</th>
                 <th>Trať</th>
             </tr>
+            </thead>
+            <tbody>
             {props.races.map((race, raceIdx) => {
-                return race.categories.map((category, categoryIdx) => {
-                    return (
-                        <tr className={'race-' + raceIdx} key={raceIdx + categoryIdx}>
-                            <td><GenderIcon gender={category.gender}/></td>
-                            <td>{category.name}</td>
-                            <td>{race.start}</td>
-                            <td>{race.name}</td>
-                            <td>{race.distance}</td>
-                        </tr>
-                    )
-                })
+                return (
+                    <React.Fragment key={raceIdx}>
+                        {race.categories.map((category, categoryIdx) => {
+                            return (
+                                <tr className={'race-' + raceIdx} key={categoryIdx}>
+                                    <td><GenderIcon gender={category.gender}/></td>
+                                    <td>{category.name}</td>
+                                    <td>{race.start}</td>
+                                    <td>{race.name}</td>
+                                    <td>{race.distance}</td>
+                                </tr>
+                            )
+                        })}
+                    </React.Fragment>
+                )
             })}
+            </tbody>
         </Table>
     );
 };

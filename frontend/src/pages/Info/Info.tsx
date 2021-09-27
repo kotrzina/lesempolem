@@ -7,10 +7,13 @@ import {useHistory} from "react-router-dom";
 import Address from "../../Address";
 import './Info.css'
 import {StartingFee} from "../../components/StartingFee/StartingFee";
+import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 
 type Props = {};
 
 export const Info = (props: Props) => {
+
+    useDocumentTitle("Informace")
 
     const history = useHistory();
 
@@ -44,7 +47,7 @@ export const Info = (props: Props) => {
 
                 <Col sm={12} md={6}>
                     <List header={'Propozice'} items={text.rules}/>
-                    <StartingFee fees={text.startingFee} />
+                    <StartingFee fees={text.startingFee}/>
                     <List header={'Popis tratě'} items={[...text.track, getRaceTrack()]}/>
                     <Button
                         onClick={() => goto(Address.registration)}

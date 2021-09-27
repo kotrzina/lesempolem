@@ -4,6 +4,7 @@ import {useParams} from "react-router-dom";
 import {Col, Row} from "react-bootstrap";
 import {RaceTable} from "./RaceTable";
 import './Results.css'
+import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 
 type Params = {
     year: string;
@@ -47,6 +48,9 @@ type Props = {};
 
 export const Results: FC<Props> = (props: Props) => {
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const [title, setTitle] = useDocumentTitle("Výsledky závodu");
+
     const defaultState = useMemo<Competition>(() => {
         return {title: '', races: [], year: 0}
     }, []);
@@ -55,6 +59,7 @@ export const Results: FC<Props> = (props: Props) => {
     const [competition, setCompetition] = useState<Competition>(defaultState)
 
     useEffect(() => {
+        setTitle("Výsledky závodu v roce " + year)
         import ('./results/' + year + '.json')
             .then((data => {
                 setCompetition(data.default)
@@ -63,7 +68,7 @@ export const Results: FC<Props> = (props: Props) => {
                 setCompetition(defaultState)
                 alert(err)
             })
-    }, [year, defaultState])
+    }, [year, defaultState, setTitle])
 
     return (
         <>
