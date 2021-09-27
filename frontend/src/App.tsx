@@ -14,6 +14,7 @@ import {Track} from "./pages/Track/Track";
 import {Contact} from "./pages/Contact/Contact";
 import {Results} from "./pages/Result/Results";
 import {ResultList} from "./pages/ResultList/ResultList";
+import {Rules} from "./pages/Rules/Rules";
 
 export default function App() {
 
@@ -49,6 +50,9 @@ export default function App() {
                                 </Route>
                                 <Route exact={true} path={Address.resultsPlaceholder}>
                                     <Results/>
+                                </Route>
+                                <Route exact={true} path={Address.rules}>
+                                    <Rules/>
                                 </Route>
 
                                 <Route exact={true} path="/">

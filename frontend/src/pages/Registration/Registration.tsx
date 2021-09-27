@@ -1,6 +1,5 @@
 import {FC, useState} from "react";
 import {Button, Form} from "react-bootstrap";
-import {useHistory} from "react-router-dom";
 import Address from "../../Address";
 import {TextFormField} from "../../components/TextFormField/TextFormField";
 import {SelectFormField} from "../../components/SelectFormField/SelectFormField";
@@ -14,8 +13,6 @@ interface Props {
 export const Registration: FC<Props> = (props) => {
 
     useDocumentTitle("Registrace závodníků")
-
-    const history = useHistory()
 
     interface TextInputState {
         value: string;
@@ -32,10 +29,6 @@ export const Registration: FC<Props> = (props) => {
     const [dob, setDob] = useState<TextInputState>(defaultTextInputState)
     const [gender, setGender] = useState<genderType>('m')
     const [terms, setTerms] = useState<boolean>(true)
-
-    function termsLinkClicked() {
-        history.push(Address.contacts)
-    }
 
     function registrationFormSubmitted() {
         console.log(gender)
@@ -139,7 +132,7 @@ export const Registration: FC<Props> = (props) => {
                     id={'agree'}
                     label={
                     <>
-                        Souhlasím s <a href="#checked" onClick={termsLinkClicked}>podmínkami registrace</a>
+                        Souhlasím s <a href={Address.rules} target={"_blank"} rel="noreferrer">podmínkami registrace</a>
                     </>}
                     checked={true}
                     onChange={(v) => setTerms(v)}
