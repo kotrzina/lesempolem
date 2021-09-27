@@ -16,7 +16,7 @@ export const HomepagePage: React.FC = () => {
     const history = useHistory();
 
     function handleResultsClick() {
-        history.push(Address.results)
+        history.push(Address.results2021)
     }
 
     return (
