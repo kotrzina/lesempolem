@@ -63,7 +63,6 @@ export const Registration: FC<Props> = (props) => {
         }
 
         if (ok) {
-            // todo
             // send http request to backend
         }
     }
