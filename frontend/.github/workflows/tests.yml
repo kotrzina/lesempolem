@@ -1,0 +1,26 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  buildAndTest:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        working-directory: frontend
+        run: yarn
+
+      - name: Build
+        working-directory: frontend
+        run: yarn build
+
+      - name: Test
+        working-directory: frontend
+        run: yarn test --watchAll=false
