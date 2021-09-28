@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Race, Result} from "./Results";
+import {Race, Result} from "../Results";
 import {isMultilap, showCategories, showCategoryPlaces, showClub} from "./RaceTableModel";
 
 type Props = {

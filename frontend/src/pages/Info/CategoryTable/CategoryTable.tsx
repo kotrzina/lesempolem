@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Table} from "react-bootstrap";
 import {FC} from "react";
-import {GenderIcon} from "../GenderIcon/GenderIcon";
+import {GenderIcon} from "../../../components/GenderIcon/GenderIcon";
 import './CategoryTable.css'
 
 

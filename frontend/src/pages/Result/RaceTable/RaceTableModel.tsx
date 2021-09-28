@@ -1,4 +1,4 @@
-import {Race} from "./Results";
+import {Race} from "../Results";
 
 function showCategories(race: Race): boolean {
     if (race.results.length > 0) {

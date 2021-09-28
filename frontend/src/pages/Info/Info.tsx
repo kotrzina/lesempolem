@@ -1,17 +1,15 @@
 import * as React from 'react';
 import {Button, Col, Row} from "react-bootstrap";
 import text from './texts.json'
-import {CategoryTable} from "../../components/CategoryTable/CategoryTable";
-import {List} from "../../components/List/List";
+import {CategoryTable} from "./CategoryTable/CategoryTable";
+import {List} from "./List/List";
 import {useHistory} from "react-router-dom";
 import Address from "../../Address";
 import './Info.css'
-import {StartingFee} from "../../components/StartingFee/StartingFee";
+import {StartingFee} from "./StartingFee/StartingFee";
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 
-type Props = {};
-
-export const Info = (props: Props) => {
+export const Info = () => {
 
     useDocumentTitle("Informace")
 
@@ -22,7 +20,8 @@ export const Info = (props: Props) => {
     }
 
     function getRaceTrack(): JSX.Element {
-        return <a href="#race" onClick={() => goto(Address.track)} className={'text-success'}>
+        // eslint-disable-next-line jsx-a11y/anchor-is-valid
+        return <a onClick={() => goto(Address.track)} className={'text-success'}>
             Detailní informace o trati včetně videa
         </a>
     }

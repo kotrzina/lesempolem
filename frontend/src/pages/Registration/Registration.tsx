@@ -1,9 +1,9 @@
 import {FC, useState} from "react";
 import {Alert, Button, Form} from "react-bootstrap";
 import Address from "../../Address";
-import {TextFormField} from "../../components/TextFormField/TextFormField";
-import {SelectFormField} from "../../components/SelectFormField/SelectFormField";
-import {CheckboxFormField} from "../../components/CheckboxFormField/CheckboxFormField";
+import {TextFormField} from "./TextFormField/TextFormField";
+import {SelectFormField} from "./SelectFormField/SelectFormField";
+import {CheckboxFormField} from "./CheckboxFormField/CheckboxFormField";
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 
 interface Props {
