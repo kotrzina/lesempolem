@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {FC, useEffect, useState, useMemo} from "react";
 import {useParams} from "react-router-dom";
-import {Col, Row} from "react-bootstrap";
+import {Col, Row, Spinner} from "react-bootstrap";
 import {RaceTable} from "./RaceTable";
 import './Results.css'
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
@@ -51,6 +51,8 @@ export const Results: FC<Props> = (props: Props) => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [title, setTitle] = useDocumentTitle("Výsledky závodu");
 
+    const [spinner, setSpinner] = useState<boolean>(true)
+
     const defaultState = useMemo<Competition>(() => {
         return {title: '', races: [], year: 0}
     }, []);
@@ -59,23 +61,46 @@ export const Results: FC<Props> = (props: Props) => {
     const [competition, setCompetition] = useState<Competition>(defaultState)
 
     useEffect(() => {
+        setSpinner(true)
         setTitle("Výsledky závodu v roce " + year)
         import ('./results/' + year + '.json')
             .then((data => {
                 setCompetition(data.default)
+                setSpinner(false)
             }))
             .catch((err) => {
                 setCompetition(defaultState)
+                setSpinner(false)
                 alert(err)
             })
     }, [year, defaultState, setTitle])
 
+    function showSpinner(): JSX.Element {
+
+        if (spinner) {
+            return (
+                <Col sm={12} className={'center'}>
+                    <div className="break"/>
+                    <Spinner animation="border" variant="success"/>
+                    <div className="break"/>
+                </Col>
+            )
+        }
+
+        return (
+            <></>
+        )
+    }
+
     return (
         <>
             <Row id={'all-results'}>
-                <Col md={6}>
+                <Col sm={12}>
                     <h1>{competition.title}</h1>
                 </Col>
+
+
+                {showSpinner()}
 
                 {competition.races.map((race, raceIdx) => (
                     <RaceTable race={race} key={raceIdx}/>

@@ -19,12 +19,12 @@ export const Contact: FC<Props> = (props: Props) => {
     return (
         <>
             <Row>
-                <Col md={12} sm={6}>
+                <Col md={12}>
                     <h1>Kontakty na pořadatele</h1>
                 </Col>
             </Row>
 
-            <Row id={'persons'}>
+            <Row  md={6} sm={6} id={'persons'}>
                 <Person
                     name={'Jirka Skoták'}
                     photoPath={jirkaPhoto}
@@ -66,7 +66,7 @@ export const Contact: FC<Props> = (props: Props) => {
                             <Marker coords={{lat: 49.3891403, lng: 16.7038214}} />
                         </MarkerLayer>
                     </Map>
-
+                    <div className="break"/>
                 </Col>
             </Row>
 
@@ -104,7 +104,7 @@ const Person: FC<PersonProps> = (props: PersonProps) => {
     }
 
     return (
-        <Col md={3} sm={6}>
+        <Col lg={3} md={6} sm={12}>
             <div className="thumbnail">
                 <Image className={'userImage'} roundedCircle src={props.photoPath} alt="Fotka Jiřího Skotáka"/>
                 <div className="caption">

@@ -11,3 +11,59 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+@media (max-width: 992px) {
+
+  #root #app #nav div.smol {
+    max-width: 100%;
+  }
+
+  #nav div.navbar-nav > a {
+    margin: 0;
+    font-size: 165%;
+    text-indent: 0.4em;
+  }
+}
+
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  margin-bottom: 1.3rem;
+}
+
+
+.navbar-nav {
+  padding-bottom: 0;
+}
+
+button.navbar-toggler {
+  background-color: #289c4a;
+}
+
+button.collapsed {
+
+  background-color: #ddd;
+}
+
+.container .navbar {
+
+  border: none;
+}
+
+.navbar-toggler {
+  float: left;
+  margin: 8px 0 8px 15px;
+}
+
+.break {
+  margin-bottom: 16px;
+}
+
+.center {
+  text-align: center;
+}

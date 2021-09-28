@@ -14,7 +14,7 @@ export const RaceTable: FC<RaceProps> = (props: RaceProps) => {
     return (
         <Col md={12}>
             <RaceTableTitle title={props.race.title} distance={props.race.distance}/>
-            <Table>
+            <Table responsive={true}>
                 <RaceTableHeader race={props.race}/>
                 <RaceTableBody race={props.race}/>
             </Table>

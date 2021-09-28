@@ -1,5 +1,5 @@
 import {FC, useState} from "react";
-import {Button, Form} from "react-bootstrap";
+import {Alert, Button, Form} from "react-bootstrap";
 import Address from "../../Address";
 import {TextFormField} from "../../components/TextFormField/TextFormField";
 import {SelectFormField} from "../../components/SelectFormField/SelectFormField";
@@ -7,7 +7,7 @@ import {CheckboxFormField} from "../../components/CheckboxFormField/CheckboxForm
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 
 interface Props {
-
+    enabled: boolean
 }
 
 export const Registration: FC<Props> = (props) => {
@@ -27,11 +27,10 @@ export const Registration: FC<Props> = (props) => {
     const [email, setEmail] = useState<TextInputState>(defaultTextInputState)
     const [club, setClub] = useState<TextInputState>(defaultTextInputState)
     const [dob, setDob] = useState<TextInputState>(defaultTextInputState)
-    const [gender, setGender] = useState<genderType>('m')
+    const [, setGender] = useState<genderType>('m')
     const [terms, setTerms] = useState<boolean>(true)
 
     function registrationFormSubmitted() {
-        console.log(gender)
         let ok = true;
         const minStringLength = 1;
         if (name.value.length < minStringLength) {
@@ -78,10 +77,14 @@ export const Registration: FC<Props> = (props) => {
                 možné přovést na všechny závody. Pokud stále nejsi rozhodnutý, rozklikni si další pravidla a informace o
                 Lesempolem.
             </p>
+
+            <Alert show={!props.enabled} variant={"danger"}>Registrace není možná.</Alert>
+
             <Form>
 
                 <TextFormField
                     id={'name'}
+                    enabled={props.enabled}
                     label={'Jméno'}
                     fieldError={name.error}
                     placeholder={'Zadejte Vaše jméno'}
@@ -89,6 +92,7 @@ export const Registration: FC<Props> = (props) => {
                 />
                 <TextFormField
                     id={'surname'}
+                    enabled={props.enabled}
                     label={'Příjmení'}
                     fieldError={surname.error}
                     placeholder={'Zadejte Vaše příjmení'}
@@ -96,6 +100,7 @@ export const Registration: FC<Props> = (props) => {
                 />
                 <TextFormField
                     id={'email'}
+                    enabled={props.enabled}
                     type={'email'}
                     label={'Email'}
                     fieldError={email.error}
@@ -104,6 +109,7 @@ export const Registration: FC<Props> = (props) => {
                 />
                 <TextFormField
                     id={'club'}
+                    enabled={props.enabled}
                     label={'Klub / Bydliště'}
                     fieldError={club.error}
                     placeholder={'Zadejte klub, bydliště nebo cokoliv jiného'}
@@ -111,6 +117,7 @@ export const Registration: FC<Props> = (props) => {
                 />
                 <TextFormField
                     id={'dob'}
+                    enabled={props.enabled}
                     type={'date'}
                     label={'Datum narození:'}
                     fieldError={dob.error}
@@ -120,6 +127,7 @@ export const Registration: FC<Props> = (props) => {
 
                 <SelectFormField
                     id={'gender'}
+                    enabled={props.enabled}
                     label={'Pohlaví'}
                     options={[
                         {value: 'm', label: 'Muž'},
@@ -138,10 +146,11 @@ export const Registration: FC<Props> = (props) => {
                     onChange={(v) => setTerms(v)}
                 />
 
-                <Button variant="success" size={'lg'} type="submit" onClick={registrationFormSubmitted}>
+                <Button disabled={!props.enabled} variant="success" size={'lg'} type="submit" onClick={registrationFormSubmitted}>
                     Provést registraci
                 </Button>
             </Form>
+            <div className="break"/>
         </div>
     )
 }

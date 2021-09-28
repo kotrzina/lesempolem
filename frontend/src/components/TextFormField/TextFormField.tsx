@@ -8,7 +8,7 @@ interface Props {
     placeholder: string;
     fieldError?: boolean;
     fieldErrorDescription?: string;
-
+    enabled: boolean;
     onChange(v: string): void;
 }
 
@@ -33,6 +33,7 @@ export const TextFormField: FC<Props> = (props) => {
             <Form.Label><strong>{props.label}:</strong></Form.Label>
             <Form.Control
                 required={true}
+                disabled={!props.enabled}
                 isInvalid={props.fieldError}
                 type={type}
                 placeholder={props.placeholder}

@@ -23,7 +23,7 @@ export const Track: FC<Props> = (props: Props) => {
                         height="600px">
                     </iframe>
                 </ResponsiveEmbed>
-
+                <div className="break"/>
                 <DownloadableFiles files={[
                     {name: 'lesempolem2021_102nodes.gpx', path: '/maps/2021/lesempolem2021_102nodes.gpx'},
                     {name: 'lesempolem2021_102nodes.kml', path: '/maps/2021/lesempolem2021_102nodes.kml'},

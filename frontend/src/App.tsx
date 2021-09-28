@@ -18,6 +18,8 @@ import {Rules} from "./pages/Rules/Rules";
 
 export default function App() {
 
+    const registrationEnabled = false
+
     const results: number[] = [
         2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021
     ].reverse()
@@ -31,7 +33,7 @@ export default function App() {
                         <Container>
                             <Switch>
                                 <Route exact={true} path={Address.registration}>
-                                    <Registration/>
+                                    <Registration enabled={registrationEnabled}/>
                                 </Route>
                                 <Route exact={true} path={Address.info}>
                                     <Info/>
