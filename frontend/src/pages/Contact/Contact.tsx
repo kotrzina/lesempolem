@@ -15,6 +15,8 @@ export const Contact: FC = () => {
 
     useDocumentTitle('Kontakty')
 
+    const vsLink = 'https://github.com/kotrzina/lesempolem'
+
     return (
         <>
             <Row>
@@ -74,11 +76,7 @@ export const Contact: FC = () => {
                     <h2>Open source</h2>
                     <p>
                         Zdrojové kódy stránky lesempolem.cz jsou dostupné na adrese
-                        <a
-                            href={'https://gitlab.com/kotrzina/lesempolem'}
-                            rel={'noreferrer'}
-                            target={'_blank'}
-                        > https://gitlab.com/kotrzina/lesempolem</a>.
+                        <a href={vsLink} rel={'noreferrer'} target={'_blank'}> {vsLink}</a>.
                         Pull request určitě uvítáme!
                     </p>
                 </Col>
