@@ -39,7 +39,7 @@ export const HomepagePage: React.FC = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <Button variant={'success'} onClick={() => handleResultsClick()}>
+                        <Button variant={'success'} size={"lg"} onClick={() => handleResultsClick()}>
                             Výsledky LESEMPOLEM 2021
                         </Button>
                     </p>
