@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {FC} from "react";
+import {FC, useState} from "react";
 import {Row, Col, Image, InputGroup, FormControl} from "react-bootstrap";
 import danPhoto from './photos/dan.jpg'
 import jirkaPhoto from './photos/jirka.jpg'
@@ -11,8 +11,7 @@ import {faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons'
 import {Map, MarkerLayer, Marker, CompassControl, KeyboardControl, MouseControl} from 'react-mapycz'
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 
-type Props = {};
-export const Contact: FC<Props> = (props: Props) => {
+export const Contact: FC = () => {
 
     useDocumentTitle('Kontakty')
 
@@ -24,7 +23,7 @@ export const Contact: FC<Props> = (props: Props) => {
                 </Col>
             </Row>
 
-            <Row  md={6} sm={6} id={'persons'}>
+            <Row md={6} sm={6} id={'persons'}>
                 <Person
                     name={'Jirka Skoták'}
                     photoPath={jirkaPhoto}
@@ -60,10 +59,10 @@ export const Contact: FC<Props> = (props: Props) => {
                     <h2>Mapka:</h2>
                     <Map center={{lat: 49.3891403, lng: 16.7038214}} height={'500px'} zoom={14}>
                         <MarkerLayer>
-                            <CompassControl />
-                            <MouseControl zoom={true} />
-                            <KeyboardControl />
-                            <Marker coords={{lat: 49.3891403, lng: 16.7038214}} />
+                            <CompassControl/>
+                            <MouseControl zoom={true}/>
+                            <KeyboardControl/>
+                            <Marker coords={{lat: 49.3891403, lng: 16.7038214}}/>
                         </MarkerLayer>
                     </Map>
                     <div className="break"/>
@@ -97,9 +96,27 @@ type PersonProps = {
 }
 
 const Person: FC<PersonProps> = (props: PersonProps) => {
-    function copyText(v: string) {
-        navigator.clipboard.writeText(v).then(r => {
-            // string copied!
+
+    const [inputEmail, setInputEmail] = useState<string>(props.email)
+    const [inputPhone, setInputPhone] = useState<string>(props.phone)
+
+    function copyEmail() {
+        navigator.clipboard.writeText(props.email).then(() => {
+            setInputEmail("Zkopirováno!")
+            setTimeout(() => {
+                setInputEmail(props.email)
+            }, 2000)
+        })
+    }
+
+    function copyPhone() {
+        // remove spaces from phone number
+        const phoneCopy = props.phone.replaceAll(' ', '')
+        navigator.clipboard.writeText(phoneCopy).then(() => {
+            setInputPhone("Zkopirováno!")
+            setTimeout(() => {
+                setInputPhone(props.phone)
+            }, 2000)
         })
     }
 
@@ -111,23 +128,21 @@ const Person: FC<PersonProps> = (props: PersonProps) => {
                     <h3>{props.name}</h3>
                     <p>{props.description}</p>
                     <div>
-                        <InputGroup>
+                        <InputGroup onClick={() => copyEmail()}>
                             <InputGroup.Text>
                                 <FontAwesomeIcon
                                     icon={faEnvelope}
-                                    onClick={() => copyText(props.email)}
                                 />
                             </InputGroup.Text>
-                            <FormControl value={props.email} readOnly={true}/>
+                            <FormControl value={inputEmail} readOnly={true}/>
                         </InputGroup>
-                        <InputGroup>
+                        <InputGroup onClick={() => copyPhone()}>
                             <InputGroup.Text>
                                 <FontAwesomeIcon
                                     icon={faPhone}
-                                    onClick={() => copyText(props.phone)}
                                 />
                             </InputGroup.Text>
-                            <FormControl value={props.phone} readOnly={true}/>
+                            <FormControl value={inputPhone} readOnly={true}/>
                         </InputGroup>
                     </div>
                 </div>

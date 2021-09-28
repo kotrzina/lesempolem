@@ -44,12 +44,10 @@ type Competition = {
     races: Race[];
 }
 
-type Props = {};
-
-export const Results: FC<Props> = (props: Props) => {
+export const Results: FC = () => {
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [title, setTitle] = useDocumentTitle("Výsledky závodu");
+    const [, setTitle] = useDocumentTitle("Výsledky závodu");
 
     const [spinner, setSpinner] = useState<boolean>(true)
 

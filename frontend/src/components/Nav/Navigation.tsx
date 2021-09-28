@@ -4,11 +4,7 @@ import {NavLink} from "react-router-dom";
 import './Navigation.css';
 import Address from '../../Address'
 
-
-interface NavBarProps {
-}
-
-export const NavBar: React.FC<NavBarProps> = (props: NavBarProps) => {
+export const NavBar: React.FC = () => {
 
     const [expanded, setExpanded] = useState(false);
 
