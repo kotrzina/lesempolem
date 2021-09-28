@@ -5,6 +5,8 @@ import {TextFormField} from "./TextFormField/TextFormField";
 import {SelectFormField} from "./SelectFormField/SelectFormField";
 import {CheckboxFormField} from "./CheckboxFormField/CheckboxFormField";
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
+import * as React from "react";
+import {Break} from "../../components/Break/Break";
 
 interface Props {
     enabled: boolean
@@ -149,7 +151,7 @@ export const Registration: FC<Props> = (props) => {
                     Provést registraci
                 </Button>
             </Form>
-            <div className="break"/>
+            <Break size={16}/>
         </div>
     )
 }

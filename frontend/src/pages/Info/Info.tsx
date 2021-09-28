@@ -8,6 +8,7 @@ import Address from "../../Address";
 import './Info.css'
 import {StartingFee} from "./StartingFee/StartingFee";
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
+import {Break} from "../../components/Break/Break";
 
 export const Info = () => {
 
@@ -57,6 +58,7 @@ export const Info = () => {
                     </Button>
                 </Col>
             </Row>
+            <Break size={16}/>
         </>
     );
 };

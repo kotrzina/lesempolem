@@ -5,6 +5,7 @@ import {Col, Row, Spinner} from "react-bootstrap";
 import {RaceTable} from "./RaceTable/RaceTable";
 import './Results.css'
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
+import {Break} from "../../components/Break/Break";
 
 type Params = {
     year: string;
@@ -78,9 +79,9 @@ export const Results: FC = () => {
         if (spinner) {
             return (
                 <Col sm={12} className={'center'}>
-                    <div className="break"/>
+                    <Break size={16}/>
                     <Spinner animation="border" variant="success"/>
-                    <div className="break"/>
+                    <Break size={16}/>
                 </Col>
             )
         }

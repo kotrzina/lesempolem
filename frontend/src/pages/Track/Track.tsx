@@ -3,6 +3,7 @@ import {Col, ResponsiveEmbed, Row} from "react-bootstrap";
 import {FC} from "react";
 import {DownloadableFiles} from "./DownloadableFiles";
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
+import {Break} from "../../components/Break/Break";
 
 type Props = {};
 export const Track: FC<Props> = (props: Props) => {
@@ -23,7 +24,7 @@ export const Track: FC<Props> = (props: Props) => {
                         height="600px">
                     </iframe>
                 </ResponsiveEmbed>
-                <div className="break"/>
+                <Break size={16}/>
                 <DownloadableFiles files={[
                     {name: 'lesempolem2021_102nodes.gpx', path: '/maps/2021/lesempolem2021_102nodes.gpx'},
                     {name: 'lesempolem2021_102nodes.kml', path: '/maps/2021/lesempolem2021_102nodes.kml'},

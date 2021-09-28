@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {Col, ResponsiveEmbed, Row} from "react-bootstrap";
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
+import {Break} from "../../components/Break/Break";
 
 type Props = {};
 export const Video = (props: Props) => {
@@ -21,6 +22,7 @@ export const Video = (props: Props) => {
                     </iframe>
                 </ResponsiveEmbed>
             </Col>
+            <Break size={16}/>
         </Row>
     );
 };

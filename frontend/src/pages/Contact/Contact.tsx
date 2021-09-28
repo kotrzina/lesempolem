@@ -10,6 +10,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons'
 import {Map, MarkerLayer, Marker, CompassControl, KeyboardControl, MouseControl} from 'react-mapycz'
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
+import {Break} from "../../components/Break/Break";
 
 export const Contact: FC = () => {
 
@@ -67,7 +68,7 @@ export const Contact: FC = () => {
                             <Marker coords={{lat: 49.3891403, lng: 16.7038214}}/>
                         </MarkerLayer>
                     </Map>
-                    <div className="break"/>
+                    <Break size={16}/>
                 </Col>
             </Row>
 
