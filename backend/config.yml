@@ -1,0 +1,16 @@
+name: Lesempolem 2021
+year: 2021
+races:
+  - key: "63km"
+    title: "63 km"
+    expectedStart: "2022-06-11T09:00:00"
+    distance: 63000
+    laps: 6
+categories:
+  - name: Svistici
+    description: Small boys
+    short: SVm
+    gender: m
+    from: "2021-06-12T00:00:00"
+    to: "2022-06-11T00:00:00"
+    race: "63km"
