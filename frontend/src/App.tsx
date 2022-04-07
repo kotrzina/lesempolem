@@ -18,7 +18,7 @@ import {Rules} from "./pages/Rules/Rules";
 
 export default function App() {
 
-    const registrationEnabled = false
+    const registrationEnabled = true
 
     const results: number[] = [
         2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021

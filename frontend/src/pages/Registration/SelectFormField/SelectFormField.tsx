@@ -9,9 +9,11 @@ interface SelectOption {
 
 interface Props {
     id: string;
+    value: string;
     label: string;
     options: SelectOption[];
     enabled: boolean;
+
     onChange(v: string): void;
 }
 
@@ -21,6 +23,7 @@ export const SelectFormField: FC<Props> = (props) => {
             <Form.Label><strong>{props.label}</strong></Form.Label>
             <Form.Control
                 as="select"
+                value={props.value}
                 disabled={!props.enabled}
                 required={true}
                 onChange={(e) => props.onChange(e.target.value)}

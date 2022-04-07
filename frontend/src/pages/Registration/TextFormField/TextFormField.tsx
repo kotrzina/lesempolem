@@ -3,12 +3,14 @@ import {Form} from "react-bootstrap";
 
 interface Props {
     id: string;
-    type?: string;
+    type: "email" | "text" | "date";
+    value: string;
     label: string;
     placeholder: string;
-    fieldError?: boolean;
+    fieldError: boolean;
     fieldErrorDescription?: string;
     enabled: boolean;
+
     onChange(v: string): void;
 }
 
@@ -26,13 +28,14 @@ export const TextFormField: FC<Props> = (props) => {
         return <></>
     }
 
-    const type = props.type === null ? 'text' : props.type;
+    const type = props.type == null ? 'text' : props.type;
 
     return (
         <Form.Group controlId={props.id}>
             <Form.Label><strong>{props.label}:</strong></Form.Label>
             <Form.Control
                 required={true}
+                value={props.value}
                 disabled={!props.enabled}
                 isInvalid={props.fieldError}
                 type={type}
