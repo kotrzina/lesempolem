@@ -7,10 +7,10 @@
   },
   "rules": [
     "Název: LESEMPOLEM",
-    "Datum: 12. 6. 2021",
-    "Ultramaraton je oficiálním závodem mistrovství ČR",
+    "Datum: 11. 6. 2022",
+    "Ultramaraton je oficiálním závodem mistrovství ČR veteránů",
     "Čas hlavního závodu (63 km / 6 kol): 07:00",
-    "Čas startu 42 km (4 kola) a 10 km (1 kolo): 09:00",
+    "Čas startu 42 km (4 kola) a 21 km (2 kola): 10:00",
     "Prezence min. 15 minut před startem závodu",
     "Místo startu: Hřiště sportovního areálu ve Veselici (směr rozhledna ve Veselici)",
     "Každý závodník je povinnen uhradit startovné ve výši odpovídající jeho kategorii",
@@ -31,14 +31,14 @@
       {
         "day": "so",
         "from": "06:00",
-        "to": "08:45"
+        "to": "09:45"
       }
     ],
     "note": "Prezence min 15 min před startem závodu"
   },
   "races": [
     {
-      "name": "MČR Ultramaraton",
+      "name": "Ultramaraton",
       "start": "07:00",
       "distance": "63 km",
       "categories": [
@@ -110,7 +110,7 @@
     },
     {
       "name": "Maraton",
-      "start": "09:00",
+      "start": "10:00",
       "distance": "42 km",
       "categories": [
         {
@@ -124,9 +124,9 @@
       ]
     },
     {
-      "name": "10.5 km",
-      "start": "09:00",
-      "distance": "10.5 km",
+      "name": "Půlmaraton (OBL)",
+      "start": "10:00",
+      "distance": "22 km",
       "categories": [
         {
           "name": "Muži",
@@ -151,8 +151,8 @@
       "note": "Pro členy ČAU 280 Kč"
     },
     {
-      "name": "10 km",
-      "price": 100
+      "name": "Půlmaraton",
+      "price": 200
     }
   ]
 }
