@@ -1,4 +1,3 @@
-import * as React from 'react';
 import {FC} from "react";
 import {Button, Col, Row} from "react-bootstrap";
 import {useHistory} from "react-router-dom";
@@ -35,7 +34,7 @@ export const ResultList: FC<Props> = (props: Props) => {
                         <Button
                             size={'lg'}
                             variant={'success'}
-                            onClick={e => goto(year)}
+                            onClick={() => goto(year)}
                         >
                             {year}
                         </Button>

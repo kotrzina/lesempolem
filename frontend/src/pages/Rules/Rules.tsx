@@ -1,9 +1,8 @@
-import * as React from 'react';
 import {Col, Row} from "react-bootstrap";
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
+import {FC} from "react";
 
-type Props = {};
-export const Rules = (props: Props) => {
+export const Rules: FC = () => {
 
     useDocumentTitle("Podmínky registrace")
 

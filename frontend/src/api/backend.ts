@@ -27,7 +27,7 @@ type ApiItem = {
 }
 
 /** Creates new racer (API call) */
-export async function registerRacer(r: Racer) {
+export async function registerRacer(r: Racer): Promise<void> {
     const res = await fetch(BACKEND_URL, {
         method: "PUT",
         body: JSON.stringify({
@@ -47,14 +47,14 @@ export async function registerRacer(r: Racer) {
 }
 
 /** Fetches all registered racers (API call) */
-export async function fetchRegisteredRacers(): Promise<Array<Racer>> {
+export async function fetchRegisteredRacers(): Promise<Racer[]> {
     const res = await fetch(BACKEND_URL)
 
     if (res.status !== 200) {
         throw new Error("API ERROR")
     }
 
-    const data: Array<ApiItem> = await res.json()
+    const data: ApiItem[] = await res.json()
 
     // map api structure to app structure
     return data.map((item) => {

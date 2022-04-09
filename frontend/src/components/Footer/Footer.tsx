@@ -1,4 +1,3 @@
-import React from "react";
 import './Footer.css'
 import {Container, Row} from "react-bootstrap";
 import AutoservisSkoumalImage from './sponsorImages/ruda_skoumal.png'
@@ -7,12 +6,9 @@ import KolaNovakImage from './sponsorImages/kola_novak.png'
 import CSystemImage from './sponsorImages/csystem.png'
 import CernaHoraImage from './sponsorImages/cernahora.png'
 import KotrzinaImage from './sponsorImages/kotrzina-logo.png'
+import {FC} from "react";
 
-interface Props {
-
-};
-
-export const Footer: React.FC<Props> = (props) => (
+export const Footer: FC = () => (
     <div id={'sponsors'}>
         <Container>
             <Row md={12} className={'list'}>
@@ -55,7 +51,7 @@ interface SponsorProps {
     name: string;
     link: string;
     image: string;
-};
+}
 
 const Sponsor: React.FC<SponsorProps> = (props) => (
     <a rel="noreferrer" target={'_blank'} href={props.link}>

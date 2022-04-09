@@ -1,4 +1,3 @@
-import * as React from 'react';
 import {FC} from "react";
 import {Row, Col} from "react-bootstrap";
 import danPhoto from './photos/dan.jpg'

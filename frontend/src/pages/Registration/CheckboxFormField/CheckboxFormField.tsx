@@ -1,6 +1,5 @@
-import * as React from 'react';
 import {Form} from "react-bootstrap";
-import {ChangeEvent, useState} from "react";
+import {ChangeEvent, FC, useState} from "react";
 
 type Props = {
     id: string;
@@ -9,7 +8,7 @@ type Props = {
     onChange(v: boolean): void;
 };
 
-export const CheckboxFormField = (props: Props) => {
+export const CheckboxFormField: FC<Props> = (props: Props) => {
 
     const [isChecked, setChecked] = useState(props.checked)
 

@@ -1,12 +1,12 @@
-import * as React from 'react';
 import {Racer} from "../../../api/backend";
+import {FC} from "react";
 
 type Props = {
     racers: Array<Racer>
 };
 
 
-export const RegisteredList = (props: Props) => {
+export const RegisteredList: FC<Props> = (props: Props) => {
 
     function club(club: string): string {
         if (club === "") {

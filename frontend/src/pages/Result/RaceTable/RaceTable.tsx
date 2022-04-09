@@ -1,4 +1,3 @@
-import * as React from 'react';
 import {FC} from "react";
 import {Col, Table} from "react-bootstrap";
 import {Race} from "../Results";

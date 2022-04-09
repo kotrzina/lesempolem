@@ -1,10 +1,9 @@
-import * as React from 'react';
 import {Col, ResponsiveEmbed, Row} from "react-bootstrap";
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 import {Break} from "../../components/Break/Break";
+import {FC} from "react";
 
-type Props = {};
-export const Video = (props: Props) => {
+export const Video: FC = () => {
 
     useDocumentTitle("Video")
 

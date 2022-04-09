@@ -1,4 +1,3 @@
-import React from 'react';
 import {Switch, Route, BrowserRouter} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -16,7 +15,7 @@ import {Results} from "./pages/Result/Results";
 import {ResultList} from "./pages/ResultList/ResultList";
 import {Rules} from "./pages/Rules/Rules";
 
-export default function App() {
+export default function App(): JSX.Element {
 
     const registrationEnabled = true
 

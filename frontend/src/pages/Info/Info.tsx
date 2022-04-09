@@ -1,4 +1,3 @@
-import * as React from 'react';
 import {Button, Col, Row} from "react-bootstrap";
 import text from './texts.json'
 import {CategoryTable} from "./CategoryTable/CategoryTable";
@@ -9,8 +8,9 @@ import './Info.css'
 import {StartingFee} from "./StartingFee/StartingFee";
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 import {Break} from "../../components/Break/Break";
+import {FC} from "react";
 
-export const Info = () => {
+export const Info: FC = () => {
 
     useDocumentTitle("Informace")
 
@@ -21,7 +21,6 @@ export const Info = () => {
     }
 
     function getRaceTrack(): JSX.Element {
-        // eslint-disable-next-line jsx-a11y/anchor-is-valid
         return <a onClick={() => goto(Address.track)} className={'text-success'}>
             Detailní informace o trati včetně videa
         </a>

@@ -1,10 +1,10 @@
-import React, {useState} from "react";
+import {FC, useState} from "react";
 import {Navbar, Nav, Container} from "react-bootstrap";
 import {NavLink} from "react-router-dom";
 import './Navigation.css';
 import Address from '../../Address'
 
-export const NavBar: React.FC = () => {
+export const NavBar: FC = () => {
 
     const [expanded, setExpanded] = useState(false);
 
@@ -41,5 +41,6 @@ interface NavItemProps {
 }
 
 export const NavItem: React.FC<NavItemProps> = (props) => (
-    <NavLink onClick={() => props.clicked()} activeClassName={'selected'} exact={true} to={props.url}>{props.title}</NavLink>
+    <NavLink onClick={() => props.clicked()} activeClassName={'selected'} exact={true}
+             to={props.url}>{props.title}</NavLink>
 );

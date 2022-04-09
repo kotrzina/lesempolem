@@ -1,12 +1,10 @@
-import * as React from 'react';
 import {Alert, Col, ResponsiveEmbed, Row} from "react-bootstrap";
 import {FC} from "react";
 import {DownloadableFiles} from "./DownloadableFiles";
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 import {Break} from "../../components/Break/Break";
 
-type Props = {};
-export const Track: FC<Props> = (props: Props) => {
+export const Track: FC = () => {
 
     useDocumentTitle("Trať")
 
@@ -44,4 +42,3 @@ export const Track: FC<Props> = (props: Props) => {
         </Row>
     );
 };
-

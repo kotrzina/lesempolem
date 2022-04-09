@@ -1,4 +1,4 @@
-import * as React from 'react';
+import {FC} from "react";
 
 type Item = string | JSX.Element;
 
@@ -7,7 +7,7 @@ type Props = {
     items: Item[];
 };
 
-export const List = (props: Props) => {
+export const List: FC<Props> = (props: Props) => {
     return (
         <>
             <h2>{props.header}</h2>

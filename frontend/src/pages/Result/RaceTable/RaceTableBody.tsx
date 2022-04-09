@@ -1,13 +1,13 @@
-import * as React from 'react';
 import {Race, Result} from "../Results";
 import {isMultilap, showCategories, showCategoryPlaces, showClub} from "./RaceTableModel";
+import {FC} from "react";
 
 type Props = {
     race: Race
 };
 
 
-export const RaceTableBody = (props: Props) => {
+export const RaceTableBody: FC<Props> = (props: Props) => {
 
     function getRow(result: Result): Array<string> {
         let cols: Array<string> = []
@@ -50,7 +50,7 @@ export const RaceTableBody = (props: Props) => {
     }
 
     function disqualificationRow(laps: number, dnf?: boolean, dns?: boolean): Array<string> {
-        let cols: Array<string> = []
+        const cols: Array<string> = []
 
         for (let i = 0; i < props.race.laps; i++) {
             if (i === 0) {

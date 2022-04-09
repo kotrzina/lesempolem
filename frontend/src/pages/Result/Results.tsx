@@ -1,4 +1,3 @@
-import * as React from 'react';
 import {FC, useEffect, useState, useMemo} from "react";
 import {useParams} from "react-router-dom";
 import {Col, Row, Spinner} from "react-bootstrap";
