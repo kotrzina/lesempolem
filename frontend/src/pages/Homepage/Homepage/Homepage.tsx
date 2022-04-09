@@ -15,8 +15,8 @@ export const HomepagePage: React.FC = () => {
 
     const history = useHistory();
 
-    function handleResultsClick() {
-        history.push(Address.results2021)
+    function handleClickbait() {
+        history.push(Address.registration)
     }
 
     return (
@@ -27,20 +27,17 @@ export const HomepagePage: React.FC = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        12. června 2021 proběhne ve Veselici, v lesích okolo rozhledny Podvrší a v jejím blízkém okolí,
-                        7.
-                        ročník
-                        běžeckého závodu "Lesempolem", jehož nultý ročník proběhl v červnu 2013. Tento rok budou závody
-                        v
-                        ultramaratonském duchu. Pokud si na 62 km dlouho trať netroufneš, můžeš zkusit i něco kratšího.
-                        Bližší
-                        informace a registrace jsou v přípravách.
+                        11. června 2022 proběhne ve Veselici, v lesích okolo rozhledny Podvrší a v jejím blízkém okolí,
+                        8. ročník běžeckého závodu <strong>Lesempolem</strong>, jehož nultý ročník proběhl v červnu
+                        2013. Tento rok budou závody opět v ultramaratonském duchu. Pokud si na 63 km dlouho trať
+                        netroufneš, můžeš
+                        zkusit i něco kratšího.
                     </p>
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <Button variant={'success'} size={"lg"} onClick={() => handleResultsClick()}>
-                            Výsledky LESEMPOLEM 2021
+                        <Button variant={'success'} size={"lg"} onClick={() => handleClickbait()}>
+                            REGISTRACE 2022
                         </Button>
                     </p>
                 </Col>
@@ -59,10 +56,10 @@ export const HomepagePage: React.FC = () => {
             </Row>
 
             <Row id={'bb'} className={'d-none d-sm-none d-md-none d-lg-block'}>
-                <Button variant={"success"} size={'lg'} className={'btn-big'} onClick={() => handleResultsClick()}>
-                    &nbsp;MČR v ultramaratonu 2021&nbsp;
+                <Button variant={"success"} size={'lg'} className={'btn-big'} onClick={() => handleClickbait()}>
+                    REGISTRACE
                     <br/>
-                    Výsledky
+                    LESEMPOLEM 2022
                 </Button>
             </Row>
         </>

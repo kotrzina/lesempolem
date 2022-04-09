@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Col, ResponsiveEmbed, Row} from "react-bootstrap";
+import {Alert, Col, ResponsiveEmbed, Row} from "react-bootstrap";
 import {FC} from "react";
 import {DownloadableFiles} from "./DownloadableFiles";
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
@@ -13,6 +13,17 @@ export const Track: FC<Props> = (props: Props) => {
     return (
         <Row>
             <Col md={12}>
+                <Alert variant="danger">
+                    <Alert.Heading>Pozor!</Alert.Heading>
+                    <p>
+                        Tato stránka zobrazuje zastaralou trať z roku 2021. Neočekavají se velké změny a je i dost
+                        pravděpodobné, že trať zůstane beze změny. Bohužel to v tento okamžik garantovat nedokážeme.
+                    </p>
+                    <hr/>
+                    <p className="mb-0">
+                        Tato stránka včetně informací o trati bude včas aktualizována.
+                    </p>
+                </Alert>
                 <h1>Trať</h1>
                 <p>Trať jednoho kola (10,5 km).</p>
 
