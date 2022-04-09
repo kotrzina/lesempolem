@@ -1,11 +1,11 @@
 import {Button, Col, Row} from "react-bootstrap";
 import {useHistory} from "react-router-dom";
 import './Homepage.css';
-import Address from "../../../Address";
-import {Photo} from "../../../components/Photo/Photo";
+import Address from "../../Address";
+import {Photo} from "../../components/Photo/Photo";
 import photo1 from './images/photo_1.jpg'
 import photo2 from './images/photo_2.jpg'
-import {useDocumentTitle} from "../../../hooks/useDocumentTitle";
+import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 import {FC} from "react";
 
 
