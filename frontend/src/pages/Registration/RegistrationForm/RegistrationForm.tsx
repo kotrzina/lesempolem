@@ -237,7 +237,7 @@ export const RegistrationForm: FC<Props> = (props) => {
                         Provést registraci
                     </Button>
                 </Form>
-                <Break size={16}/>
+                <Break size={4}/>
             </Col>
         </Row>
     )

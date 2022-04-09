@@ -4,6 +4,7 @@ import * as React from "react";
 import {RegistrationForm} from "./RegistrationForm/RegistrationForm";
 import {Registered} from "./Registered/Registered";
 import {fetchRegisteredRacers, Racer} from "../../api/backend";
+import './Registration.css'
 
 interface Props {
     enabled: boolean
