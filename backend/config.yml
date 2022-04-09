@@ -2,7 +2,7 @@
 # For more information please visit https://lesempolem.cz
 - name: lesempolem
   api:
-    client: "*"               # used for CORS
+    client: "lesempolem.cz"   # used for CORS
     bearer: ""                # no password when empty or missing
     limits:
       list: "0"               # unlimited
