@@ -1,6 +1,5 @@
 import {FC, useEffect, useState} from "react";
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
-import * as React from "react";
 import {RegistrationForm} from "./RegistrationForm/RegistrationForm";
 import {Registered} from "./Registered/Registered";
 import {fetchRegisteredRacers, Racer} from "../../api/backend";

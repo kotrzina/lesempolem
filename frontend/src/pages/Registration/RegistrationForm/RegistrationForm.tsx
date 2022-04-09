@@ -1,6 +1,5 @@
 import {FC, useState} from "react";
 import {Alert, Button, Col, Form, Row} from "react-bootstrap";
-import * as React from "react";
 import {Racer, registerRacer} from "../../../api/backend";
 import Address from "../../../Address";
 import {TextFormField} from "../TextFormField/TextFormField";

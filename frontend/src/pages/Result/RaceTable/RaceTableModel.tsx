@@ -34,7 +34,7 @@ function isMultilap(race: Race): boolean {
     return race.laps > 1
 }
 
-function isSet(v?: any): boolean {
+function isSet(v?: string | number | undefined): boolean {
     return typeof v !== 'undefined' && v !== null
 }
 

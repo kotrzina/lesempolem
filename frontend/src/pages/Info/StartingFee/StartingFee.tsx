@@ -1,6 +1,6 @@
-import * as React from 'react';
 import {Table} from "react-bootstrap";
 import './StartingFees.css'
+import {FC} from "react";
 
 type Props = {
     fees: {
@@ -11,7 +11,7 @@ type Props = {
 };
 
 
-export const StartingFee = (props: Props) => {
+export const StartingFee: FC<Props> = (props: Props) => {
 
     let starsMain = 0;
     let starsNotes = 0;

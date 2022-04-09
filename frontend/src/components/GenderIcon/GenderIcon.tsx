@@ -1,12 +1,12 @@
-import * as React from 'react';
 import femaleIcon from "./images/female.png";
 import maleIcon from "./images/male.png";
+import {FC} from "react";
 
 type Props = {
     gender: string | 'm' | 'f';
 };
 
-export const GenderIcon = (props: Props) => {
+export const GenderIcon: FC<Props> = (props: Props) => {
     function getImageSource(): string {
         if (props.gender === 'f') {
             return femaleIcon

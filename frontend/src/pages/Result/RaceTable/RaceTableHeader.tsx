@@ -1,15 +1,15 @@
-import * as React from 'react';
 import {Race} from "../Results";
 import {isMultilap, showCategories, showCategoryPlaces, showClub} from "./RaceTableModel";
+import {FC} from "react";
 
 type Props = {
     race: Race
 };
 
-export const RaceTableHeader = (props: Props) => {
+export const RaceTableHeader: FC<Props> = (props: Props) => {
 
     function getHeaders(): Array<string> {
-        let cols: Array<string> = []
+        const cols: Array<string> = []
         cols.push('Poř.')
         cols.push('S. číslo')
         cols.push('Příjmení, Jméno')

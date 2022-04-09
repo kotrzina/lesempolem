@@ -1,11 +1,11 @@
-import * as React from 'react';
+import {FC} from "react";
 
 type Props = {
     title: string;
     distance: number; // in meters
 };
 
-export const RaceTableTitle = (props: Props) => {
+export const RaceTableTitle: FC<Props> = (props: Props) => {
 
     function getTitle(): string {
         if (props.title) {

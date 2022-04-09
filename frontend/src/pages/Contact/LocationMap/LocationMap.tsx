@@ -1,10 +1,9 @@
-import * as React from 'react';
 import {Col, Row} from "react-bootstrap";
 import {CompassControl, KeyboardControl, Map, Marker, MarkerLayer, MouseControl} from "react-mapycz";
 import {Break} from "../../../components/Break/Break";
+import {FC} from "react";
 
-type Props = {};
-export const LocationMap = (props: Props) => {
+export const LocationMap: FC = () => {
     return (
         <Row>
             <Col md={12}>
