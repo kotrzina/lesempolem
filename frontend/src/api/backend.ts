@@ -8,6 +8,7 @@ export type Racer = {
     club: string;
     born: Date;
     gender: 'm' | 'f';
+    race: string;
 }
 
 /** response from backend server */
@@ -21,6 +22,7 @@ type ApiItem = {
         club: string;
         born: string;
         gender: string;
+        race: string;
     }
 }
 
@@ -35,6 +37,7 @@ export async function registerRacer(r: Racer) {
             "club": r.club,
             "born": formatDateToApi(r.born),
             "gender": r.gender,
+            "race": r.race,
         })
     })
 
@@ -65,6 +68,7 @@ export async function fetchRegisteredRacers(): Promise<Array<Racer>> {
             club: item.payload.club,
             born: new Date(item.payload.born),
             gender: item.payload.gender,
+            race: item.payload.race,
         }
     })
 }

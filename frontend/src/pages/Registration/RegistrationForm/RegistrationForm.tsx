@@ -29,12 +29,14 @@ export const RegistrationForm: FC<Props> = (props) => {
     const defaultTextInputState = {value: '', error: false,};
 
     type genderType = 'm' | 'f'; // male, female
+    type raceType = '63km' | '42km' | '21km';
     const [name, setName] = useState<TextInputState>(defaultTextInputState)
     const [surname, setSurname] = useState<TextInputState>(defaultTextInputState)
     const [email, setEmail] = useState<TextInputState>(defaultTextInputState)
     const [club, setClub] = useState<TextInputState>(defaultTextInputState)
     const [dob, setDob] = useState<TextInputState>(defaultTextInputState)
     const [gender, setGender] = useState<genderType>('m')
+    const [race, setRace] = useState<raceType>('63km')
     const [terms, setTerms] = useState<boolean>(true)
 
     const [flash, setFlash] = useState<FlashState>({message: "", type: "success"})
@@ -42,6 +44,12 @@ export const RegistrationForm: FC<Props> = (props) => {
     function updateGender(v: string) {
         if (v === "m" || v === "f") {
             setGender(v)
+        }
+    }
+
+    function updateRace(v: string) {
+        if (v === "63km" || v === "42km" || v === "21km") {
+            setRace(v)
         }
     }
 
@@ -99,6 +107,7 @@ export const RegistrationForm: FC<Props> = (props) => {
                 club: club.value,
                 born: new Date(dob.value),
                 gender: gender,
+                race: race,
             }
             registerRacer(racer)
                 .then(() => {
@@ -196,6 +205,19 @@ export const RegistrationForm: FC<Props> = (props) => {
                             {value: 'f', label: 'Žena'},
                         ]}
                         onChange={updateGender}
+                    />
+
+                    <SelectFormField
+                        id={'race'}
+                        value={race}
+                        enabled={props.enabled}
+                        label={'Závod'}
+                        options={[
+                            {value: '63km', label: 'Ultramaraton - 63 km'},
+                            {value: '42km', label: 'Maraton - 42 km'},
+                            {value: '21km', label: 'Půlmaraton - 21 km'},
+                        ]}
+                        onChange={updateRace}
                     />
 
                     <CheckboxFormField
