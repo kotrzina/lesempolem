@@ -5,7 +5,7 @@
 In the project directory, you can run:
 
 ```bash
-export NODE_OPTIONS=--openssl-legacy-provider # might be useful
+export NODE_OPTIONS=--openssl-legacy-provider # might be useful with node 17
 yarn start
 ```
 

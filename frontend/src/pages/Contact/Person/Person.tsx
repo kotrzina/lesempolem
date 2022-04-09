@@ -1,7 +1,7 @@
 import {FC, useState} from "react";
 import {Col, FormControl, Image, InputGroup} from "react-bootstrap";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faEnvelope, faPhone} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import * as React from "react";
 
 type PersonProps = {
