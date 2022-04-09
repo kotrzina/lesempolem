@@ -2,7 +2,6 @@ import {Switch, Route, BrowserRouter} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {NavBar} from "./components/Nav/Navigation";
-import {HomepagePage} from "./pages/Homepage/Homepage/Homepage";
 import {Container} from "react-bootstrap";
 import {Footer} from "./components/Footer/Footer";
 import {Registration} from "./pages/Registration/Registration";
@@ -14,6 +13,7 @@ import {Contact} from "./pages/Contact/Contact";
 import {Results} from "./pages/Result/Results";
 import {ResultList} from "./pages/ResultList/ResultList";
 import {Rules} from "./pages/Rules/Rules";
+import {HomepagePage} from "./pages/Homepage/Homepage";
 
 export default function App(): JSX.Element {
 
