@@ -13,7 +13,7 @@ export const List: FC<Props> = (props: Props) => {
             <h2>{props.header}</h2>
             <ul>
                 {props.items.map((item, itemIdx) => {
-                    return <li key={itemIdx}>{item}</li>
+                    return <li key={itemIdx} dangerouslySetInnerHTML={{__html: item as string}}></li>
                 })}
             </ul>
         </>

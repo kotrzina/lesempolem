@@ -8,7 +8,8 @@
   "rules": [
     "Název: LESEMPOLEM",
     "Datum: 11. 6. 2022",
-    "Ultramaraton je oficiálním závodem mistrovství ČR veteránů",
+    "Ultramaraton je zařazen do <a target=\"_blank\" href=\"https://ultracau.cz/index.php/ultracup/ultracup-2022-seznam-zavodu-2\">poháru Ultracup 2022</a>",
+    "Půlmaraton je zařazen do <a target=\"_blank\" href=\"https://www.oblblansko.cz/index.php?page=terminovka\">Okresní běžecké ligy Blansko</a>",
     "Čas hlavního závodu (63 km / 6 kol): 07:00",
     "Čas startu 42 km (4 kola) a 21 km (2 kola): 10:00",
     "Prezence min. 15 minut před startem závodu",
@@ -43,67 +44,35 @@
       "distance": "63 km",
       "categories": [
         {
-          "name": "Muži",
+          "name": "Muži (do 39 let)",
           "gender": "m"
         },
         {
-          "name": "Ženy",
+          "name": "Muži (40 - 49 let)",
+          "gender": "m"
+        },
+        {
+          "name": "Muži (50 - 59 let)",
+          "gender": "m"
+        },
+        {
+          "name": "Muži (od 60 let)",
+          "gender": "m"
+        },
+        {
+          "name": "Ženy (do 39 let)",
           "gender": "f"
         },
         {
-          "name": "Muži (35 - 39 let)",
-          "gender": "m"
-        },
-        {
-          "name": "Muži (40 - 44 let)",
-          "gender": "m"
-        },
-        {
-          "name": "Muži (45 - 49 let)",
-          "gender": "m"
-        },
-        {
-          "name": "Muži (50 - 54 let)",
-          "gender": "m"
-        },
-        {
-          "name": "Muži (55 - 59 let)",
-          "gender": "m"
-        },
-        {
-          "name": "Muži (60 - 64 let)",
-          "gender": "m"
-        },
-        {
-          "name": "Muži (65 - 69 let)",
-          "gender": "m"
-        },
-        {
-          "name": "Ženy (35 - 39 let)",
+          "name": "Ženy (40 - 49 let)",
           "gender": "f"
         },
         {
-          "name": "Ženy (40 - 44 let)",
+          "name": "Ženy (50 - 59 let)",
           "gender": "f"
         },
         {
-          "name": "Ženy (45 - 49 let)",
-          "gender": "f"
-        },
-        {
-          "name": "Ženy (50 - 54 let)",
-          "gender": "f"
-        },
-        {
-          "name": "Ženy (55 - 59 let)",
-          "gender": "f"
-        },
-        {
-          "name": "Ženy (60 - 64 let)",
-          "gender": "f"
-        },
-        {
-          "name": "Ženy (65 - 69 let)",
+          "name": "Ženy (od 60 let)",
           "gender": "f"
         }
       ]
@@ -124,7 +93,7 @@
       ]
     },
     {
-      "name": "Půlmaraton (OBL)",
+      "name": "Půlmaraton",
       "start": "10:00",
       "distance": "21 km",
       "categories": [
