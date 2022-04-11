@@ -9,6 +9,7 @@ import {StartingFee} from "./StartingFee/StartingFee";
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 import {Break} from "../../components/Break/Break";
 import {FC} from "react";
+import {renderToString} from "react-dom/server";
 
 export const Info: FC = () => {
 
@@ -20,10 +21,12 @@ export const Info: FC = () => {
         history.push(add)
     }
 
-    function getRaceTrack(): JSX.Element {
-        return <a onClick={() => goto(Address.track)} className={'text-success'}>
-            Detailní informace o trati včetně videa
-        </a>
+    function getRaceTrack(): string {
+        return renderToString(
+            <a onClick={() => goto(Address.track)} className={'text-success'}>
+                Detailní informace o trati včetně videa
+            </a>
+        )
     }
 
     return (
