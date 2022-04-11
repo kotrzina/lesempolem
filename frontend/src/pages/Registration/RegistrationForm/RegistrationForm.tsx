@@ -15,6 +15,10 @@ interface Props {
 
 export const RegistrationForm: FC<Props> = (props) => {
 
+    const RegReady = "Provést registraci"
+    const RegWorking = "..."
+    const RegSuccess = "Zaregistrován!"
+
     interface TextInputState {
         value: string;
         error: boolean;
@@ -38,15 +42,19 @@ export const RegistrationForm: FC<Props> = (props) => {
     const [race, setRace] = useState<raceType>('63km')
     const [terms, setTerms] = useState<boolean>(true)
 
+    // flash message
     const [flash, setFlash] = useState<FlashState>({message: "", type: "success"})
 
-    function updateGender(v: string) {
+    // button
+    const [registerText, setRegisterText] = useState<string>(RegReady)
+
+    function onGender(v: string) {
         if (v === "m" || v === "f") {
             setGender(v)
         }
     }
 
-    function updateRace(v: string) {
+    function onRace(v: string) {
         if (v === "63km" || v === "42km" || v === "21km") {
             setRace(v)
         }
@@ -99,6 +107,7 @@ export const RegistrationForm: FC<Props> = (props) => {
         }
 
         if (ok) {
+            setRegisterText(RegWorking)
             const racer: Racer = {
                 firstname: name.value,
                 lastname: surname.value,
@@ -110,9 +119,13 @@ export const RegistrationForm: FC<Props> = (props) => {
             }
             registerRacer(racer)
                 .then(() => {
-                        const msg = `${racer.firstname} ${racer.lastname} zaregistrován(a). Budeme se těšit!`
+                        const msg = `🏃🏃🏃 ${racer.firstname} ${racer.lastname} zaregistrován(a). Budeme se těšit!`
                         setFlash({message: msg, type: "success"})
                         props.refreshFn() // refresh list of registered racers
+                        setRegisterText(RegSuccess)
+                        setInterval(() => {
+                            setRegisterText(RegReady)
+                        }, 5000)
                         resetForm()
                     }
                 )
@@ -121,6 +134,9 @@ export const RegistrationForm: FC<Props> = (props) => {
                         setFlash({message: msg, type: "danger"})
                     }
                 )
+                .finally(() => {
+                    window.scrollTo(0, 0)
+                })
         }
     }
 
@@ -137,7 +153,9 @@ export const RegistrationForm: FC<Props> = (props) => {
 
                 <Alert show={!props.enabled} variant={"danger"}>Registrace není možná.</Alert>
 
-                <Alert show={flash.message !== ""} variant={flash.type}>{flash.message}</Alert>
+                <Alert show={flash.message !== ""} variant={flash.type}>
+                    <strong>{flash.message}</strong>
+                </Alert>
 
                 <Form>
 
@@ -201,7 +219,7 @@ export const RegistrationForm: FC<Props> = (props) => {
                             {value: 'm', label: 'Muž'},
                             {value: 'f', label: 'Žena'},
                         ]}
-                        onChange={updateGender}
+                        onChange={onGender}
                     />
 
                     <SelectFormField
@@ -214,7 +232,7 @@ export const RegistrationForm: FC<Props> = (props) => {
                             {value: '42km', label: 'Maraton - 42 km'},
                             {value: '21km', label: 'Půlmaraton - 21 km'},
                         ]}
-                        onChange={updateRace}
+                        onChange={onRace}
                     />
 
                     <CheckboxFormField
@@ -228,13 +246,17 @@ export const RegistrationForm: FC<Props> = (props) => {
                         onChange={(v) => setTerms(v)}
                     />
 
-                    <Button disabled={!props.enabled} variant="success" size={'lg'} type="submit"
+                    <Button style={{width: "190px", backgroundColor: "#289c4a"}}
+                            disabled={!props.enabled}
+                            size={'lg'}
+                            type="submit"
                             onClick={e => {
                                 e.preventDefault()
                                 registrationFormSubmitted()
                             }}>
-                        Provést registraci
+                        {registerText}
                     </Button>
+
                 </Form>
                 <Break size={4}/>
             </Col>
