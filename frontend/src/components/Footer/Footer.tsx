@@ -3,8 +3,6 @@ import {Container, Row} from "react-bootstrap";
 import AutoservisSkoumalImage from './sponsorImages/ruda_skoumal.png'
 import TridoImage from './sponsorImages/trido.png'
 import KolaNovakImage from './sponsorImages/kola_novak.png'
-import CSystemImage from './sponsorImages/csystem.png'
-import CernaHoraImage from './sponsorImages/cernahora.png'
 import KotrzinaImage from './sponsorImages/kotrzina-logo.png'
 import {FC} from "react";
 
@@ -13,14 +11,14 @@ export const Footer: FC = () => (
         <Container>
             <Row md={12} className={'list'}>
                 <Sponsor
+                    name={'Vše pro cyklistiku a outdoor'}
+                    link={'https://kolanovak.cz/'}
+                    image={KolaNovakImage}
+                />
+                <Sponsor
                     name={'Autoservis Blansko, Rudolf Skoumal'}
                     link={'tel:+420728829500'}
                     image={AutoservisSkoumalImage}
-                />
-                <Sponsor
-                    name={'Společenství přátel Kotržiny'}
-                    link={'#'}
-                    image={KotrzinaImage}
                 />
                 <Sponsor
                     name={'Trido - Profesionální garážová vrata'}
@@ -28,19 +26,9 @@ export const Footer: FC = () => (
                     image={TridoImage}
                 />
                 <Sponsor
-                    name={'Vše pro cyklistiku a outdoor'}
-                    link={'https://kolanovak.cz/'}
-                    image={KolaNovakImage}
-                />
-                <Sponsor
-                    name={'Csystem'}
-                    link={'https://www.csystem.cz/'}
-                    image={CSystemImage}
-                />
-                <Sponsor
-                    name={'Pivovar Černá Hora'}
-                    link={'http://www.pivovarcernahora.cz/'}
-                    image={CernaHoraImage}
+                    name={'Společenství přátel Kotržiny'}
+                    link={'#'}
+                    image={KotrzinaImage}
                 />
             </Row>
         </Container>
