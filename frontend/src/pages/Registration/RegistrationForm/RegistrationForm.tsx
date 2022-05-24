@@ -145,10 +145,10 @@ export const RegistrationForm: FC<Props> = (props) => {
             <Col md={12}>
                 <h1>Registrace na Lesempolem</h1>
                 <p>
-                    Zde se můžeš na Lesempolem zaregistrovat. Závody se uskuteční 11. 6. 2022. Zajistíš si tím, že už tě
-                    budeme mít v počítači a tvoje odbavení při přidělení čísla na místě bude mnohem rychlejší.
-                    Registraci je možné přovést na všechny závody. Pokud stále nejsi rozhodnutý, rozklikni si další
-                    pravidla a informace o Lesempolem.
+                    Zde se můžeš na Lesempolem zaregistrovat. Závody se uskuteční 11.&nbsp;6.&nbsp;2022. Zajistíš si
+                    tím, že už Tě budeme mít v počítači a tvoje odbavení při přidělení čísla na místě bude mnohem
+                    rychlejší. Registraci je možné přovést na všechny závody do 10.&nbsp;6.&nbsp;2022. Pokud stále nejsi
+                    rozhodnutý, rozklikni si další pravidla a informace o Lesempolem.
                 </p>
 
                 <Alert show={!props.enabled} variant={"danger"}>Registrace není možná.</Alert>
