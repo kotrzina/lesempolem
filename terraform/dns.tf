@@ -30,7 +30,7 @@ resource "cloudflare_record" "backend_ipv6" {
   zone_id = cloudflare_zone.lesempolem_cz.id
   name    = "backend.lesempolem.cz"
   type    = "AAAA"
-  value   = "2a02:2b88:2:424::0"
+  value   = "2a02:2b88:2:424::1"
   proxied = false
 }
 
