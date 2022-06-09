@@ -17,7 +17,7 @@ import {HomepagePage} from "./pages/Homepage/Homepage";
 
 export default function App(): JSX.Element {
 
-    const registrationEnabled = true
+    const registrationEnabled = false
 
     const results: number[] = [
         2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021
