@@ -3,7 +3,7 @@ describe('homepage tests', () => {
         cy.visit("/")
 
         // web
-        cy.contains("REGISTRACE")
+        // cy.contains("REGISTRACE")
 
         // mobile
         cy.contains("Běžecké závody LESEMPOLEM")
