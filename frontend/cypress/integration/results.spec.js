@@ -5,7 +5,7 @@ function testResults(year) {
     cy.contains("Výsledky závodu v roce " + year)
     cy.contains("Poř.")
     cy.contains("S. číslo")
-    cy.contains("Příjmení, Jméno")
+    cy.contains("Jméno")
     cy.contains("Čas")
     cy.contains("Ztráta")
     cy.contains("km")
@@ -14,6 +14,7 @@ function testResults(year) {
 describe('results tests', () => {
     it("test all result pages", () => {
         const years = [
+            2022,
             2021,
             2019,
             2018,

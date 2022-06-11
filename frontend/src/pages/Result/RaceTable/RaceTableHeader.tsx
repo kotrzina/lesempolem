@@ -12,7 +12,7 @@ export const RaceTableHeader: FC<Props> = (props: Props) => {
         const cols: Array<string> = []
         cols.push('Poř.')
         cols.push('S. číslo')
-        cols.push('Příjmení, Jméno')
+        cols.push('Jméno')
 
         if (showCategories(props.race)) {
             cols.push('Kategorie')

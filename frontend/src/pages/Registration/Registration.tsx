@@ -16,7 +16,7 @@ export const Registration: FC<Props> = (props) => {
     const [racers, setRacers] = useState<Array<Racer>>([])
 
     useEffect(() => {
-        refreshRacers()
+        // refreshRacers()
     }, [])
 
     async function refreshRacers() {
