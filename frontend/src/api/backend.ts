@@ -1,7 +1,7 @@
 const BACKEND_URL: string = process.env.REACT_APP_BACKEND_URL as string
 
 /** internal type for frontend application */
-export type Racer = {
+export type     Racer = {
     firstname: string;
     lastname: string;
     email: string;
@@ -9,6 +9,7 @@ export type Racer = {
     born: Date;
     gender: 'm' | 'f';
     race: string;
+    created?: Date;
 }
 
 /** response from backend server */
@@ -69,6 +70,7 @@ export async function fetchRegisteredRacers(): Promise<Racer[]> {
             born: new Date(item.payload.born),
             gender: item.payload.gender,
             race: item.payload.race,
+            created: new Date(item.created),
         }
     })
 }

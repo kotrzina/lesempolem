@@ -7,21 +7,12 @@ type Props = {
 
 
 export const RegisteredList: FC<Props> = (props: Props) => {
-
-    function club(club: string): string {
-        if (club === "") {
-            return ""
-        }
-
-        return ` (${club})`
-    }
-
     return (
         <ul>
             {props.racers.map((racer, idx) => {
                 return (
                     <li key={idx}>
-                        {racer.firstname} {racer.lastname}{club(racer.club)}
+                        {racer.firstname} {racer.lastname}{racer.club !== "" && ` (${racer.club})`}
                     </li>
                 )
             })}

@@ -71,7 +71,7 @@ export const RegistrationForm: FC<Props> = (props) => {
 
     function registrationFormSubmitted() {
         let ok = true;
-        const minStringLength = 2;
+        const minStringLength = 1;
         if (name.value.length < minStringLength) {
             setName({value: name.value, error: true})
             ok = false;

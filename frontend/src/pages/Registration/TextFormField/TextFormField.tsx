@@ -16,18 +16,6 @@ interface Props {
 
 export const TextFormField: FC<Props> = (props) => {
 
-    function TextDescription() {
-        if (props.fieldError && props.fieldErrorDescription !== null) {
-            return (
-                <Form.Text className="text-danger">
-                    {props.fieldErrorDescription}
-                </Form.Text>
-            )
-        }
-
-        return <></>
-    }
-
     const type = props.type == null ? 'text' : props.type;
 
     return (
@@ -41,7 +29,11 @@ export const TextFormField: FC<Props> = (props) => {
                 type={type}
                 placeholder={props.placeholder}
                 onChange={(e) => props.onChange(e.target.value)}/>
-            <TextDescription/>
+            {props.fieldError && props.fieldErrorDescription !== null &&
+                <Form.Text className="text-danger">
+                    {props.fieldErrorDescription}
+                </Form.Text>
+            }
         </Form.Group>
     )
 
