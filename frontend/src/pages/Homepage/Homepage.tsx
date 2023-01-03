@@ -16,7 +16,7 @@ export const HomepagePage: FC = () => {
     const history = useHistory();
 
     function handleClickbait() {
-        history.push(Address.results2022)
+        history.push(Address.registration)
     }
 
     return (
@@ -37,7 +37,7 @@ export const HomepagePage: FC = () => {
                 <Col xs={12}>
                     <p>
                         <Button variant={'success'} size={"lg"} onClick={() => handleClickbait()}>
-                            VÝSLEDKY 2022
+                            REGISTRACE 2023
                         </Button>
                     </p>
                 </Col>
@@ -57,9 +57,9 @@ export const HomepagePage: FC = () => {
 
             <Row id={'bb'} className={'d-none d-sm-none d-md-none d-lg-block'}>
                 <Button variant={"success"} size={'lg'} className={'btn-big'} onClick={() => handleClickbait()}>
-                    VÝSLEDKY
+                    LESEMPOLEM
                     <br/>
-                    LESEMPOLEM 2022
+                    REGISTRACE 2023
                 </Button>
             </Row>
         </>
