@@ -6,7 +6,7 @@ export const TrackAlert: FC = () => {
         <Alert variant="danger">
             <Alert.Heading>Pozor!</Alert.Heading>
             <p>
-                Tato stránka zobrazuje zastaralou trať z roku 2021. Neočekavají se velké změny a je i dost
+                Tato stránka zobrazuje zastaralou trať z roku 2021 a 2022. Neočekavají se velké změny a je i dost
                 pravděpodobné, že trať zůstane beze změny. Bohužel to v tento okamžik garantovat nedokážeme.
             </p>
             <hr/>

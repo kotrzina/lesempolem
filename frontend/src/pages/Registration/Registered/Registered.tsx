@@ -1,11 +1,13 @@
-import {Col, Row} from "react-bootstrap";
+import {Col, Row, Spinner} from "react-bootstrap";
 import {RegisteredList} from "../RegisteredList/RegisteredList";
 import {Racer} from "../../../api/backend";
 import {FC} from "react";
 
 type Props = {
     racers: Array<Racer>;
+    loading: boolean;
 };
+
 export const Registered: FC<Props> = (props: Props) => {
 
     // sort racers from newest to oldest - based on registration time
@@ -21,7 +23,10 @@ export const Registered: FC<Props> = (props: Props) => {
     return (
         <Row>
             <Col md={6}>
-                <h2>Registrovaní:</h2>
+                <h2>
+                    {props.loading && <><Spinner animation={"border"} variant={"secondary"}/>&nbsp;</>}
+                    Registrovaní:
+                </h2>
                 <RegisteredList racers={props.racers.sort(sorter)}/>
             </Col>
         </Row>

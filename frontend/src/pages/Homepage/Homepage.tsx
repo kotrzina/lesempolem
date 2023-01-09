@@ -7,6 +7,7 @@ import photo1 from './images/photo_1.jpg'
 import photo2 from './images/photo_2.jpg'
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 import {FC} from "react";
+import {LpDate} from "../../components/Date/LpDate";
 
 
 export const HomepagePage: FC = () => {
@@ -27,7 +28,7 @@ export const HomepagePage: FC = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        11. června 2022 proběhne ve Veselici, v lesích okolo rozhledny Podvrší a v jejím blízkém okolí,
+                        10. června 2023 proběhne ve Veselici, v lesích okolo rozhledny Podvrší a v jejím blízkém okolí,
                         8. ročník běžeckého závodu <strong>Lesempolem</strong>, jehož nultý ročník proběhl v červnu
                         2013. Tento rok budou závody opět v ultramaratonském duchu. Pokud si na 63 km dlouho trať
                         netroufneš, můžeš
@@ -57,9 +58,9 @@ export const HomepagePage: FC = () => {
 
             <Row id={'bb'} className={'d-none d-sm-none d-md-none d-lg-block'}>
                 <Button variant={"success"} size={'lg'} className={'btn-big'} onClick={() => handleClickbait()}>
-                    LESEMPOLEM
+                    REGISTRACE
                     <br/>
-                    REGISTRACE 2023
+                    <LpDate type={"lp"} format={"short"}/>
                 </Button>
             </Row>
         </>
