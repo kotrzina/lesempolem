@@ -3,6 +3,7 @@ import {FC} from "react";
 import {DownloadableFiles} from "./DownloadableFiles";
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 import {Break} from "../../components/Break/Break";
+import {TrackAlert} from "./TrackAlert";
 
 export const Track: FC = () => {
 
@@ -12,6 +13,9 @@ export const Track: FC = () => {
         <Row>
             <Col md={12}>
                 <h1>Trať</h1>
+
+                <TrackAlert/>
+
                 <p>Trať jednoho kola (10,5 km).</p>
 
                 <ResponsiveEmbed aspectRatio={'16by9'}>
@@ -24,8 +28,8 @@ export const Track: FC = () => {
                 </ResponsiveEmbed>
                 <Break size={16}/>
                 <DownloadableFiles files={[
-                    {name: 'lesempolem2021_102nodes.gpx', path: '/maps/2021/lesempolem2021_102nodes.gpx'},
-                    {name: 'lesempolem2021_102nodes.kml', path: '/maps/2021/lesempolem2021_102nodes.kml'},
+                    {name: 'lesempolem_102nodes.gpx', path: '/maps/lesempolem_102nodes.gpx'},
+                    {name: 'lesempolem_102nodes.kml', path: '/maps/lesempolem_102nodes.kml'},
                 ]}/>
             </Col>
         </Row>

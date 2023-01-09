@@ -14,20 +14,23 @@ export const Registration: FC<Props> = (props) => {
     useDocumentTitle("Registrace závodníků")
 
     const [racers, setRacers] = useState<Array<Racer>>([])
+    const [loading, setLoading] = useState<boolean>(false)
 
     useEffect(() => {
         refreshRacers()
     }, [])
 
     async function refreshRacers() {
+        setLoading(true)
         const racers = await fetchRegisteredRacers()
         setRacers(racers)
+        setLoading(false)
     }
 
     return (
         <>
             <RegistrationForm enabled={props.enabled} refreshFn={refreshRacers}/>
-            <Registered racers={racers}/>
+            <Registered loading={loading} racers={racers}/>
         </>
     )
 

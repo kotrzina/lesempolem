@@ -6,6 +6,7 @@ import {TextFormField} from "../TextFormField/TextFormField";
 import {CheckboxFormField} from "../CheckboxFormField/CheckboxFormField";
 import {SelectFormField} from "../SelectFormField/SelectFormField";
 import {Break} from "../../../components/Break/Break";
+import {LpDate} from "../../../components/Date/LpDate";
 
 interface Props {
     enabled: boolean;
@@ -145,9 +146,9 @@ export const RegistrationForm: FC<Props> = (props) => {
             <Col md={12}>
                 <h1>Registrace na Lesempolem</h1>
                 <p>
-                    Zde se můžeš na Lesempolem zaregistrovat. Závody se uskuteční 11.&nbsp;6.&nbsp;2022. Zajistíš si
+                    Zde se můžeš na Lesempolem zaregistrovat. Závody se uskuteční <LpDate type={"lp"} format={"short"}/>. Zajistíš si
                     tím, že už Tě budeme mít v počítači a tvoje odbavení při přidělení čísla na místě bude mnohem
-                    rychlejší. Registraci je možné přovést na všechny závody do 10.&nbsp;6.&nbsp;2022. Pokud stále nejsi
+                    rychlejší. Registraci je možné přovést na všechny závody do <LpDate type={"registrationTo"} format={"short"}/>. Pokud stále nejsi
                     rozhodnutý, rozklikni si další pravidla a informace o Lesempolem.
                 </p>
 
@@ -228,7 +229,7 @@ export const RegistrationForm: FC<Props> = (props) => {
                         enabled={props.enabled}
                         label={'Závod'}
                         options={[
-                            {value: '63km', label: 'Ultramaraton - 63 km'},
+                            {value: '63km', label: 'MČR Ultramaraton - 63 km'},
                             {value: '42km', label: 'Maraton - 42 km'},
                             {value: '21km', label: 'Půlmaraton - 21 km'},
                         ]}
