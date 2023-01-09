@@ -3,7 +3,7 @@ describe('registration tests', () => {
         cy.visit("/registrace.html")
         fillValidData()
 
-        cy.get("input#name").clear().type("X")
+        cy.get("input#name").clear()
         submitForm()
         testInvalid(["name"])
     })
@@ -12,7 +12,7 @@ describe('registration tests', () => {
         cy.visit("/registrace.html")
         fillValidData()
 
-        cy.get("input#surname").clear().type("X")
+        cy.get("input#surname").clear()
         submitForm()
         testInvalid(["surname"])
     })
@@ -21,8 +21,8 @@ describe('registration tests', () => {
         cy.visit("/registrace.html")
         fillValidData()
 
-        cy.get("input#name").clear().type("X")
-        cy.get("input#surname").clear().type("X")
+        cy.get("input#name").clear()
+        cy.get("input#surname").clear()
         submitForm()
         testInvalid(["name", "surname"])
     })
@@ -40,7 +40,7 @@ describe('registration tests', () => {
         cy.visit("/registrace.html")
         fillValidData()
 
-        cy.get("input#club").clear().type("X")
+        cy.get("input#club").clear()
         submitForm()
         testInvalid(["club"])
     })
