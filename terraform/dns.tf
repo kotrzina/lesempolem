@@ -1,5 +1,6 @@
 resource "cloudflare_zone" "lesempolem_cz" {
-  zone = "lesempolem.cz"
+  zone       = "lesempolem.cz"
+  account_id = var.CLOUDFLARE_ACCOUNT_ID
 }
 
 resource "cloudflare_record" "cname_lesempolem_cz" {
@@ -16,22 +17,6 @@ resource "cloudflare_record" "cname_www_lesempolem_cz" {
   type    = "CNAME"
   value   = "lesempolem.pages.dev"
   proxied = true
-}
-
-resource "cloudflare_record" "backend" {
-  zone_id = cloudflare_zone.lesempolem_cz.id
-  name    = "backend.lesempolem.cz"
-  type    = "A"
-  value   = "89.221.215.36"
-  proxied = false
-}
-
-resource "cloudflare_record" "backend_ipv6" {
-  zone_id = cloudflare_zone.lesempolem_cz.id
-  name    = "backend.lesempolem.cz"
-  type    = "AAAA"
-  value   = "2a02:2b88:2:424::1"
-  proxied = false
 }
 
 resource "cloudflare_record" "mx_1" {

@@ -18,6 +18,11 @@ variable "CLOUDFLARE_API_KEY" {
   description = "Cloudflare API key"
 }
 
+variable "CLOUDFLARE_ACCOUNT_ID" {
+  type        = string
+  description = "Cloudflare account id"
+}
+
 terraform {
   backend "http" {
     address        = "https://gitlab.com/api/v4/projects/30017932/terraform/state/lesempolem"
@@ -33,7 +38,7 @@ terraform {
   required_providers {
     cloudflare = {
       source  = "cloudflare/cloudflare"
-      version = "~> 3.0"
+      version = "3.31"
     }
   }
 }
