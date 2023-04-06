@@ -6,6 +6,9 @@ on:
     branches:
       - main
 
+env:
+  NODE_OPTIONS: "--openssl-legacy-provider"
+
 jobs:
   buildAndTest:
     name: Build and Test
