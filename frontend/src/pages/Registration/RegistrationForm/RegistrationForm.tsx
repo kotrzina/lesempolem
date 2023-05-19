@@ -73,12 +73,12 @@ export const RegistrationForm: FC<Props> = (props) => {
     function registrationFormSubmitted() {
         let ok = true;
         const minStringLength = 1;
-        if (name.value.length < minStringLength) {
+        if (name.value.trim().length < minStringLength) {
             setName({value: name.value, error: true})
             ok = false;
         }
 
-        if (surname.value.length < minStringLength) {
+        if (surname.value.trim().length < minStringLength) {
             setSurname({value: surname.value, error: true})
             ok = false;
         }
@@ -93,7 +93,7 @@ export const RegistrationForm: FC<Props> = (props) => {
             ok = false;
         }
 
-        if (club.value.length < minStringLength) {
+        if (club.value.trim().length < minStringLength) {
             setClub({value: club.value, error: true})
             ok = false;
         }
@@ -110,10 +110,10 @@ export const RegistrationForm: FC<Props> = (props) => {
         if (ok) {
             setRegisterText(RegWorking)
             const racer: Racer = {
-                firstname: name.value,
-                lastname: surname.value,
-                email: email.value,
-                club: club.value,
+                firstname: name.value.trim(),
+                lastname: surname.value.trim(),
+                email: email.value.trim(),
+                club: club.value.trim(),
                 born: new Date(dob.value),
                 gender: gender,
                 race: race,
@@ -188,7 +188,7 @@ export const RegistrationForm: FC<Props> = (props) => {
                         label={'Email'}
                         fieldError={email.error}
                         placeholder={'Kontaktní email'}
-                        onChange={(v) => setEmail({value: v, error: false,})}
+                        onChange={(v) => setEmail({value: v.trim(), error: false,})}
                     />
                     <TextFormField
                         id={'club'}

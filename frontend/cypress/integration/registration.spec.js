@@ -54,6 +54,17 @@ describe('registration tests', () => {
         testInvalid(["dob"])
     })
 
+    it("empty fields (spaces)", () => {
+        cy.visit("/registrace.html")
+        fillValidData()
+
+        cy.get("input#name").clear().type("    ")
+        cy.get("input#surname").clear().type("    ")
+        cy.get("input#club").clear().type("    ")
+        submitForm()
+        testInvalid(["name", "surname", "club"])
+    })
+
     it("Valid registration", () => {
         cy.visit("/registrace.html")
         fillValidData()
