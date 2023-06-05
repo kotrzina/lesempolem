@@ -17,7 +17,7 @@ export const Registered: FC<Props> = (props: Props) => {
             return 1;
         }
 
-        return 0;
+        return -1;
     }
 
     return (
