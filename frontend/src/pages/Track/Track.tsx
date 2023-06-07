@@ -14,7 +14,7 @@ export const Track: FC = () => {
             <Col md={12}>
                 <h1>Trať</h1>
 
-                <TrackAlert/>
+                {false && <TrackAlert/>}
 
                 <p>Trať jednoho kola (10,5 km).</p>
 
