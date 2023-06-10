@@ -16,6 +16,7 @@ export enum Address {
     results2019 = '/vysledky-2019.html',
     results2021 = '/vysledky-2021.html',
     results2022 = '/vysledky-2022.html',
+    results2023 = '/vysledky-2023.html',
     resultsPlaceholder = '/vysledky-:year.html',
 
     rules = '/podminky.html',
