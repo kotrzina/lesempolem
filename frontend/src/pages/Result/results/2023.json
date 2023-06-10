@@ -970,9 +970,9 @@
             },
             {
               "lap": 6,
-              "time": "TBA",
+              "time": "08:19:04",
               "position": 22,
-              "lapTime": "TBA"
+              "lapTime": "01:45:48"
             }
           ]
         },
@@ -1014,11 +1014,27 @@
             },
             {
               "lap": 6,
-              "time": "TBA",
+              "time": "09:16:30",
               "position": 23,
-              "lapTime": "TBA"
+              "lapTime": "01:38:05"
             }
           ]
+        },
+        {
+          "place": null,
+          "sn": 48,
+          "name": "Richard Barcal",
+          "category": "",
+          "dnf": true,
+          "laps": []
+        },
+        {
+          "place": null,
+          "sn": 64,
+          "name": "Jiří Šplíchal",
+          "category": "",
+          "dnf": true,
+          "laps": []
         }
       ]
     },
@@ -1251,6 +1267,14 @@
               "lapTime": "01:27:42"
             }
           ]
+        },
+        {
+          "place": null,
+          "sn": 149,
+          "name": "Jiří Maňásek",
+          "category": "",
+          "dnf": true,
+          "laps": []
         }
       ]
     },
@@ -2199,6 +2223,14 @@
               "lapTime": "01:23:43"
             }
           ]
+        },
+        {
+          "place": null,
+          "sn": "D5",
+          "name": "Vilma Podmelová",
+          "category": "",
+          "dnf": true,
+          "laps": []
         }
       ]
     }
