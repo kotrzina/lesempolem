@@ -17,7 +17,7 @@ export const Registration: FC<Props> = (props) => {
     const [loading, setLoading] = useState<boolean>(false)
 
     useEffect(() => {
-        refreshRacers()
+        // refreshRacers()
     }, [])
 
     async function refreshRacers() {
@@ -30,7 +30,7 @@ export const Registration: FC<Props> = (props) => {
     return (
         <>
             <RegistrationForm enabled={props.enabled} refreshFn={refreshRacers}/>
-            <Registered loading={loading} racers={racers}/>
+            {false && <Registered loading={loading} racers={racers}/>}
         </>
     )
 
