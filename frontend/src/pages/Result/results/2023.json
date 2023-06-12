@@ -1286,7 +1286,7 @@
       "results": [
         {
           "place": 1,
-          "sn": "D27",
+          "sn": "27",
           "name": "Radek Bebej",
           "category": "m",
           "laps": [
@@ -1306,7 +1306,7 @@
         },
         {
           "place": 2,
-          "sn": "D1",
+          "sn": "1",
           "name": "Vítězslav Nečas",
           "category": "m",
           "laps": [
@@ -1326,7 +1326,7 @@
         },
         {
           "place": 3,
-          "sn": "D14",
+          "sn": "14",
           "name": "Miroslav Dvořák",
           "category": "m",
           "laps": [
@@ -1346,7 +1346,7 @@
         },
         {
           "place": 4,
-          "sn": "D20",
+          "sn": "20",
           "name": "Pavel Skoták",
           "category": "m",
           "laps": [
@@ -1366,7 +1366,7 @@
         },
         {
           "place": 5,
-          "sn": "D15",
+          "sn": "15",
           "name": "Pavel Krátký",
           "category": "m",
           "laps": [
@@ -1386,7 +1386,7 @@
         },
         {
           "place": 6,
-          "sn": "D32",
+          "sn": "32",
           "name": "Ondřej Buš",
           "category": "m",
           "laps": [
@@ -1406,7 +1406,7 @@
         },
         {
           "place": 7,
-          "sn": "D31",
+          "sn": "31",
           "name": "Lukáš Ryba",
           "category": "m",
           "laps": [
@@ -1426,7 +1426,7 @@
         },
         {
           "place": 8,
-          "sn": "D35",
+          "sn": "35",
           "name": "Roman Kupčík",
           "category": "m",
           "laps": [
@@ -1446,7 +1446,7 @@
         },
         {
           "place": 9,
-          "sn": "D23",
+          "sn": "23",
           "name": "Slávek Pícha",
           "category": "m",
           "laps": [
@@ -1466,7 +1466,7 @@
         },
         {
           "place": 10,
-          "sn": "D12",
+          "sn": "12",
           "name": "Zdeněk Novák",
           "category": "m",
           "laps": [
@@ -1486,7 +1486,7 @@
         },
         {
           "place": 11,
-          "sn": "D26",
+          "sn": "26",
           "name": "Jiří Hegr",
           "category": "m",
           "laps": [
@@ -1506,7 +1506,7 @@
         },
         {
           "place": 12,
-          "sn": "D17",
+          "sn": "17",
           "name": "Jiří Bělohlávek",
           "category": "m",
           "laps": [
@@ -1526,7 +1526,7 @@
         },
         {
           "place": 13,
-          "sn": "D19",
+          "sn": "19",
           "name": "Stanislav Široký",
           "category": "m",
           "laps": [
@@ -1546,7 +1546,7 @@
         },
         {
           "place": 14,
-          "sn": "D3",
+          "sn": "3",
           "name": "Pavel Novák",
           "category": "m",
           "laps": [
@@ -1566,7 +1566,7 @@
         },
         {
           "place": 15,
-          "sn": "D34",
+          "sn": "34",
           "name": "Pavel Rybář",
           "category": "m",
           "laps": [
@@ -1586,7 +1586,7 @@
         },
         {
           "place": 16,
-          "sn": "D25",
+          "sn": "25",
           "name": "Jiří Buš",
           "category": "m",
           "laps": [
@@ -1606,7 +1606,7 @@
         },
         {
           "place": 17,
-          "sn": "D2",
+          "sn": "2",
           "name": "Zdeňka Komárková",
           "category": "ž",
           "laps": [
@@ -1626,7 +1626,7 @@
         },
         {
           "place": 18,
-          "sn": "D22",
+          "sn": "22",
           "name": "Rudolf Kalaš",
           "category": "m",
           "laps": [
@@ -1646,7 +1646,7 @@
         },
         {
           "place": 19,
-          "sn": "D24",
+          "sn": "24",
           "name": "Dagmar Potůčková",
           "category": "ž",
           "laps": [
@@ -1666,7 +1666,7 @@
         },
         {
           "place": 20,
-          "sn": "D7",
+          "sn": "7",
           "name": "Martin Přibyl",
           "category": "m",
           "laps": [
@@ -1686,7 +1686,7 @@
         },
         {
           "place": 21,
-          "sn": "D8",
+          "sn": "8",
           "name": "Tereza Mikšovská",
           "category": "ž",
           "laps": [
@@ -1706,7 +1706,7 @@
         },
         {
           "place": 22,
-          "sn": "D49",
+          "sn": "49",
           "name": "Tomislav Odehnal",
           "category": "m",
           "laps": [
@@ -1726,7 +1726,7 @@
         },
         {
           "place": 23,
-          "sn": "D4",
+          "sn": "4",
           "name": "Barbora Jurová",
           "category": "ž",
           "laps": [
@@ -1746,7 +1746,7 @@
         },
         {
           "place": 24,
-          "sn": "D21",
+          "sn": "21",
           "name": "Ivo Kadrmas",
           "category": "m",
           "laps": [
@@ -1766,7 +1766,7 @@
         },
         {
           "place": 25,
-          "sn": "D6",
+          "sn": "6",
           "name": "Lukáš Slouka",
           "category": "m",
           "laps": [
@@ -1786,7 +1786,7 @@
         },
         {
           "place": 26,
-          "sn": "D39",
+          "sn": "39",
           "name": "Ivo Manoušek",
           "category": "m",
           "laps": [
@@ -1806,7 +1806,7 @@
         },
         {
           "place": 27,
-          "sn": "D43",
+          "sn": "43",
           "name": "Andrea Krušinová",
           "category": "ž",
           "laps": [
@@ -1826,7 +1826,7 @@
         },
         {
           "place": 28,
-          "sn": "D38",
+          "sn": "38",
           "name": "Petr Paděra",
           "category": "m",
           "laps": [
@@ -1846,7 +1846,7 @@
         },
         {
           "place": 29,
-          "sn": "D45",
+          "sn": "45",
           "name": "Lucie Pekárková",
           "category": "ž",
           "laps": [
@@ -1866,7 +1866,7 @@
         },
         {
           "place": 30,
-          "sn": "D36",
+          "sn": "36",
           "name": "Andrea Malásková",
           "category": "ž",
           "laps": [
@@ -1886,7 +1886,7 @@
         },
         {
           "place": 31,
-          "sn": "D37",
+          "sn": "37",
           "name": "Ivona Ciková",
           "category": "ž",
           "laps": [
@@ -1906,7 +1906,7 @@
         },
         {
           "place": 32,
-          "sn": "D48",
+          "sn": "48",
           "name": "Radka Haasová",
           "category": "ž",
           "laps": [
@@ -1926,7 +1926,7 @@
         },
         {
           "place": 33,
-          "sn": "D11",
+          "sn": "11",
           "name": "Ladislav Feifer",
           "category": "m",
           "laps": [
@@ -1946,7 +1946,7 @@
         },
         {
           "place": 34,
-          "sn": "D40",
+          "sn": "40",
           "name": "HANA BLAŽKOVÁ",
           "category": "ž",
           "laps": [
@@ -1966,7 +1966,7 @@
         },
         {
           "place": 35,
-          "sn": "D16",
+          "sn": "16",
           "name": "Dan Konečný",
           "category": "m",
           "laps": [
@@ -1986,7 +1986,7 @@
         },
         {
           "place": 36,
-          "sn": "D13",
+          "sn": "13",
           "name": "Jiří Boháč",
           "category": "m",
           "laps": [
@@ -2006,7 +2006,7 @@
         },
         {
           "place": 37,
-          "sn": "D47",
+          "sn": "47",
           "name": "Andrea Jablunková",
           "category": "ž",
           "laps": [
@@ -2026,7 +2026,7 @@
         },
         {
           "place": 38,
-          "sn": "D9",
+          "sn": "9",
           "name": "Jiří Opustil",
           "category": "m",
           "laps": [
@@ -2046,7 +2046,7 @@
         },
         {
           "place": 39,
-          "sn": "D42",
+          "sn": "42",
           "name": "Jan Martínek",
           "category": "m",
           "laps": [
@@ -2066,7 +2066,7 @@
         },
         {
           "place": 40,
-          "sn": "D28",
+          "sn": "28",
           "name": "Alena Žákovská",
           "category": "ž",
           "laps": [
@@ -2086,7 +2086,7 @@
         },
         {
           "place": 41,
-          "sn": "D33",
+          "sn": "33",
           "name": "Milan Daněk",
           "category": "m",
           "laps": [
@@ -2106,7 +2106,7 @@
         },
         {
           "place": 42,
-          "sn": "D30",
+          "sn": "30",
           "name": "Aleš Přikryl",
           "category": "m",
           "laps": [
@@ -2126,7 +2126,7 @@
         },
         {
           "place": 43,
-          "sn": "D29",
+          "sn": "29",
           "name": "Pavel Voráč",
           "category": "m",
           "laps": [
@@ -2146,7 +2146,7 @@
         },
         {
           "place": 44,
-          "sn": "D44",
+          "sn": "44",
           "name": "Renata Žižlavská",
           "category": "ž",
           "laps": [
@@ -2166,7 +2166,7 @@
         },
         {
           "place": 45,
-          "sn": "D41",
+          "sn": "41",
           "name": "Katerina Krejcirikova",
           "category": "ž",
           "laps": [
@@ -2186,7 +2186,7 @@
         },
         {
           "place": 46,
-          "sn": "D46",
+          "sn": "46",
           "name": "Dušan Jablunka",
           "category": "m",
           "laps": [
@@ -2206,7 +2206,7 @@
         },
         {
           "place": 47,
-          "sn": "D10",
+          "sn": "10",
           "name": "Dana Hradilová",
           "category": "ž",
           "laps": [
@@ -2226,7 +2226,7 @@
         },
         {
           "place": null,
-          "sn": "D5",
+          "sn": "5",
           "name": "Vilma Podmelová",
           "category": "",
           "dnf": true,
