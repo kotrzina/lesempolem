@@ -35,7 +35,6 @@ export const Info: FC = () => {
                 <Col md={12}>
                     <h1>Informace pro účastníky</h1>
                     <p>{text.header.intro}</p>
-                    <p>{text.header.accommodation}</p>
                     <p>{text.header.organizers}</p>
                     <p>{text.header.end}</p>
                 </Col>
@@ -45,11 +44,12 @@ export const Info: FC = () => {
                 <Col sm={12} md={6}>
                     <h2>Kategorie a harmonogram</h2>
                     <CategoryTable registration={text.registration} races={text.races}/>
+                    <StartingFee fees={text.startingFee}/>
                 </Col>
 
                 <Col sm={12} md={6}>
                     <List header={'Propozice'} items={text.rules}/>
-                    <StartingFee fees={text.startingFee}/>
+
                     <List header={'Popis tratě'} items={[...text.track, getRaceTrack()]}/>
                     <Button
                         onClick={() => goto(Address.registration)}

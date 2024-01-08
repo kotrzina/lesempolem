@@ -11,27 +11,27 @@ export const LpDate: FC<Props> = (props: Props) => {
     function getDay(): string {
         switch (props.type) {
             case "lp":
-                return "10";
+                return "9";
             case "registrationTo":
-                return "9"
+                return "8"
         }
     }
 
     function getYear(): string {
-        return "2023"
+        return "2024"
     }
 
     if (props.format === "short") {
         return (
             <>
-                {getDay()}.&nbsp;6.&nbsp;{getYear()}
+                {getDay()}.&nbsp;3.&nbsp;{getYear()}
             </>
         );
     }
 
     return (
         <>
-            {getDay()}.&nbsp;červen&nbsp;{getYear()}
+            {getDay()}.&nbsp;březen&nbsp;{getYear()}
         </>
     );
 };

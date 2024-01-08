@@ -16,7 +16,7 @@ describe('navigation test', () => {
 
         // Registration
         cy.get('.navbar-nav').contains("Registrace").click()
-        cy.contains("Jméno")
+        cy.contains("rozklikni")
         testMenuExists()
 
         // Info

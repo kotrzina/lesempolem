@@ -1,107 +1,61 @@
 {
   "header": {
-    "intro": "Pro všechny příchozí bude připraven tradiční, domácí bezový nápoj, který bude závodníkům k dispozici během celého konání závodu. Občerstvovací stanice budou po 5 km, kdy každý 5. km bude k dispozici voda. Každých 10 km bude připraveno plnohodnotné občerstvení včetně iontových nápojů a možnosti uložení vlastních balíčků. Po doběhu bude zajištěno občerstvení z regionálních produktů, nezapomínáme ani na vegetariány. První tři v každé kategorii obdrží medaile a diplomy. Pro všechny pak bohatá tombola včetně putovního pivního poháru štěstí a hromadné likvidace pouťového dortu. Od 16. hodiny pomůže milovníkům rocku z regenerací živý rockový koncert se skupinou RAVENHARD-GOTTHARD TRIBUTE BAND.  Ti, kdo ještě najdou zbytek sil, můžou navštívit místní rozhlednu v Podvrší, nebo nedaleké Punkevní jeskyně, či Horní můstek propasti Macocha.",
+    "intro": "V místě průběhu do druhého kola a v cíli bude připraveno občerstvení dodané pořadateli (voda, čaj, iontový nápoj, sůl, Coca cola, ovoce) + stoly určené pro možnost uložení vlastního občerstvení.  Na 5 km a 15 km bude tradiční samoobsluha s vodou a rumem. Pro příchozí diváky bude připraven kulturní program, udírna, výčep a bohaté občerstvení. Prezentace a zázemí závodu bude nově v kulturním domě (Informační centrum ve Veselici) v těsné blízkosti startu a cíle.",
     "accommodation": "Ubytovaní bude možné zdarma v obřím stanu umístěném na startu závodu. Tato možnost přepokládá spánek ve vlastních spacích pytlech. Sprchy a záchody jsou zajištěny v kulturním domě (100 m).",
     "organizers": "Celá akce spočívá na práci společenství Kotržiny, složené z dobrovolných hasičů, oddílu stolního tenisu a dalších dobrovolníků z místních spolků. Je dobré vědět, že k uspořádání akce tohoto charakteru ve složitém terénu je potřeba kolem 50 pořadatelů - dobrovolníků.",
     "end": "Snad se za všechnu vynaloženou námahu atmosféra příprav přenese až k vám, účastníkům a návštěvníkům tohoto závodu. Těšíme se na vás!"
   },
   "rules": [
     "Název: LESEMPOLEM",
-    "Datum: 10. 6. 2023",
-    "Ultramaraton - MČR v Ultratrailu",
-    "Půlmaraton je zařazen do <a target=\"_blank\" href=\"https://www.oblblansko.cz/index.php?page=terminovka\">Okresní běžecké ligy Blansko</a>",
-    "Čas startu hlavního závodu (63 km / 6 kol): 07:00",
-    "Čas startu 42 km (4 kola) a 21 km (2 kola): 10:00",
+    "Datum: 9. 3. 2024",
+    "Zařazeno do <a target=\"_blank\" href=\"https://www.oblblansko.cz/index.php?page=terminovka\">Okresní běžecké ligy Blansko</a>",
+    "Čas startu: 11:00",
     "Prezence min. 15 minut před startem závodu",
-    "Místo startu: Hřiště sportovního areálu ve Veselici (směr rozhledna ve Veselici)",
+    "Místo startu: Víceúčelová budova kulturního domu ve Veselici",
     "Každý závodník je povinnen uhradit startovné ve výši odpovídající jeho kategorii"
   ],
   "track": [
     "Kolo 10,5 km",
     "Trať vede převážně po polních a lesních cestách (90 %) a pouze 10 % po asfaltových cestách",
-    "Každých 5 km občerstvovací stanice - voda, čaj, bezinková štáva, iontový napoj, CocaCola, chleba se sádlem, banány, meloun, čokoláda, sůl, rum"
+    "Každých 5 km občerstvovací stanice"
   ],
   "registration": {
     "timetable": [
       {
-        "day": "pá",
-        "from": "17:00",
-        "to": "22:00"
-      },
-      {
         "day": "so",
-        "from": "06:00",
-        "to": "09:45"
+        "from": "9:30",
+        "to": "10:45"
       }
     ],
     "note": "Prezence min 15 min před startem závodu"
   },
   "races": [
     {
-      "name": "Ultramaraton",
-      "start": "07:00",
-      "distance": "63 km",
-      "categories": [
-        {
-          "name": "Muži (do 39 let)",
-          "gender": "m"
-        },
-        {
-          "name": "Muži (40 - 49 let)",
-          "gender": "m"
-        },
-        {
-          "name": "Muži (50 - 59 let)",
-          "gender": "m"
-        },
-        {
-          "name": "Muži (od 60 let)",
-          "gender": "m"
-        },
-        {
-          "name": "Ženy (do 39 let)",
-          "gender": "f"
-        },
-        {
-          "name": "Ženy (40 - 49 let)",
-          "gender": "f"
-        },
-        {
-          "name": "Ženy (50 - 59 let)",
-          "gender": "f"
-        },
-        {
-          "name": "Ženy (od 60 let)",
-          "gender": "f"
-        }
-      ]
-    },
-    {
-      "name": "Maraton",
-      "start": "10:00",
-      "distance": "42 km",
-      "categories": [
-        {
-          "name": "Muži",
-          "gender": "m"
-        },
-        {
-          "name": "Ženy",
-          "gender": "f"
-        }
-      ]
-    },
-    {
       "name": "Půlmaraton",
-      "start": "10:00",
+      "start": "11:00",
       "distance": "21 km",
       "categories": [
         {
-          "name": "Muži",
+          "name": "Muži dle OBL",
+          "gender": "m"
+        }
+      ]
+    },
+    {
+      "name": "Čtvrtmaraton",
+      "start": "11:00",
+      "distance": "10,5 km",
+      "categories": [
+        {
+          "name": "Ženy dle OBL",
+          "gender": "f"
+        },
+        {
+          "name": "Junioři dle OBL",
           "gender": "m"
         },
         {
-          "name": "Ženy",
+          "name": "Juniorky dle OBL",
           "gender": "f"
         }
       ]
@@ -109,18 +63,12 @@
   ],
   "startingFee": [
     {
-      "name": "Ultramaraton",
-      "price": 600,
-      "note": "Pro členy ČAU 420 Kč"
-    },
-    {
-      "name": "Maraton",
-      "price": 400,
-      "note": "Pro členy ČAU 280 Kč"
-    },
-    {
       "name": "Půlmaraton",
       "price": 200
+    },
+    {
+      "name": "Čtvrtmaraton",
+      "price": 100
     }
   ]
 }

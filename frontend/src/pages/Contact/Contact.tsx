@@ -57,7 +57,7 @@ export const Contact: FC = () => {
             <Row md={6} sm={6} id={'persons'}>
                 {people.map(person => {
                     return (
-                        <Person
+                        <Person key={person.name}
                             name={person.name}
                             photoPath={person.photoPath}
                             description={person.description}

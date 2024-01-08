@@ -6,7 +6,6 @@ import {TextFormField} from "../TextFormField/TextFormField";
 import {CheckboxFormField} from "../CheckboxFormField/CheckboxFormField";
 import {SelectFormField} from "../SelectFormField/SelectFormField";
 import {Break} from "../../../components/Break/Break";
-import {LpDate} from "../../../components/Date/LpDate";
 
 interface Props {
     enabled: boolean;
@@ -144,14 +143,6 @@ export const RegistrationForm: FC<Props> = (props) => {
     return (
         <Row>
             <Col md={12}>
-                <h1>Registrace na Lesempolem</h1>
-                <p>
-                    Zde se můžeš na Lesempolem zaregistrovat. Závody se uskuteční <LpDate type={"lp"} format={"short"}/>. Zajistíš si
-                    tím, že už Tě budeme mít v počítači a tvoje odbavení při přidělení čísla na místě bude mnohem
-                    rychlejší. Registraci je možné přovést na všechny závody do <LpDate type={"registrationTo"} format={"short"}/>. Pokud stále nejsi
-                    rozhodnutý, rozklikni si další pravidla a informace o Lesempolem.
-                </p>
-
                 <Alert show={!props.enabled} variant={"danger"}>Registrace není možná.</Alert>
 
                 <Alert show={flash.message !== ""} variant={flash.type}>

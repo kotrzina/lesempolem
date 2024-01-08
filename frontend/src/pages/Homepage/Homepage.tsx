@@ -7,6 +7,7 @@ import photo1 from './images/photo_1.jpg'
 import photo2 from './images/photo_2.jpg'
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 import {FC} from "react";
+import {LpDate} from "../../components/Date/LpDate";
 
 
 export const HomepagePage: FC = () => {
@@ -16,7 +17,7 @@ export const HomepagePage: FC = () => {
     const history = useHistory();
 
     function handleClickbait() {
-        history.push(Address.results2023)
+        history.push(Address.registration)
     }
 
     return (
@@ -37,7 +38,7 @@ export const HomepagePage: FC = () => {
                 <Col xs={12}>
                     <p>
                         <Button variant={'success'} size={"lg"} onClick={() => handleClickbait()}>
-                            VÝSLEDKY 2023
+                            REGISTRACE 2024
                         </Button>
                     </p>
                 </Col>
@@ -57,9 +58,9 @@ export const HomepagePage: FC = () => {
 
             <Row id={'bb'} className={'d-none d-sm-none d-md-none d-lg-block'}>
                 <Button variant={"success"} size={'lg'} className={'btn-big'} onClick={() => handleClickbait()}>
-                    VÝSLEDKY
+                    REGISTRACE
                     <br/>
-                    2023
+                    <LpDate type={"lp"} format={"short"}/>
                 </Button>
             </Row>
         </>
