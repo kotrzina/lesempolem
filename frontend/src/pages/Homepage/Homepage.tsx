@@ -28,11 +28,10 @@ export const HomepagePage: FC = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        10. června 2023 proběhne ve Veselici, v lesích okolo rozhledny Podvrší a v jejím blízkém okolí,
-                        8. ročník běžeckého závodu <strong>Lesempolem</strong>, jehož nultý ročník proběhl v červnu
-                        2013. Tento rok budou závody opět v ultramaratonském duchu. Pokud si na 63 km dlouho trať
-                        netroufneš, můžeš
-                        zkusit i něco kratšího.
+                        9. března proběhne ve Veselici, v lesích okolo rozhledny Podvrší a v jejím blízkém okolí,
+                        9. ročník běžeckého závodu <strong>Lesempolem</strong>, jehož nultý ročník proběhl v červnu
+                        2013. Tento rok budou závody přizpůsobeny blanenské okresní běžecké lize. Těšit se můžeš na
+                        půlmaraton pro muže a čtvrtmaraton pro ženy a juniory.
                     </p>
                 </Col>
                 <Col xs={12}>
