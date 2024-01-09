@@ -37,6 +37,18 @@
         {
           "name": "Muži dle OBL",
           "gender": "m"
+        },
+        {
+          "name": "Ženy nad pade*",
+          "gender": "f"
+        },
+        {
+          "name": "Ženy pod pade*",
+          "gender": "f"
+        },
+        {
+          "name": "Junioři*",
+          "gender": "m"
         }
       ]
     },
@@ -63,11 +75,11 @@
   "startingFee": [
     {
       "name": "Půlmaraton",
-      "price": 200
+      "price": 250
     },
     {
       "name": "Čtvrtmaraton",
-      "price": 100
+      "price": 150
     }
   ]
 }
