@@ -35,6 +35,7 @@ export const Info: FC = () => {
                 <Col md={12}>
                     <h1>Informace pro účastníky</h1>
                     <p>{text.header.intro}</p>
+                    <p>{text.header.borak}</p>
                     <p>{text.header.organizers}</p>
                     <p>{text.header.end}</p>
                 </Col>
