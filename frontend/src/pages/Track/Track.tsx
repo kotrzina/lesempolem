@@ -3,7 +3,6 @@ import {FC} from "react";
 import {DownloadableFiles} from "./DownloadableFiles";
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 import {Break} from "../../components/Break/Break";
-import {TrackAlert} from "./TrackAlert";
 
 export const Track: FC = () => {
 
@@ -14,7 +13,7 @@ export const Track: FC = () => {
             <Col md={12}>
                 <h1>Trať</h1>
 
-                {<TrackAlert/>}
+                {/*<TrackAlert/>*/}
 
                 <p>Trať jednoho kola (10,5 km).</p>
 
