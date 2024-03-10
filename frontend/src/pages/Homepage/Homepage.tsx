@@ -7,7 +7,6 @@ import photo1 from './images/photo_1.jpg'
 import photo2 from './images/photo_2.jpg'
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 import {FC} from "react";
-import {LpDate} from "../../components/Date/LpDate";
 
 
 export const HomepagePage: FC = () => {
@@ -17,7 +16,7 @@ export const HomepagePage: FC = () => {
     const history = useHistory();
 
     function handleClickbait() {
-        history.push(Address.registration)
+        history.push(Address.results2024)
     }
 
     return (
@@ -28,16 +27,15 @@ export const HomepagePage: FC = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        9. března proběhne ve Veselici, v lesích okolo rozhledny Podvrší a v jejím blízkém okolí,
-                        9. ročník běžeckého závodu <strong>Lesempolem</strong>, jehož nultý ročník proběhl v červnu
-                        2013. Tento rok budou závody přizpůsobeny blanenské okresní běžecké lize. Těšit se můžeš na
-                        půlmaraton pro muže a čtvrtmaraton pro ženy a juniory.
+                        9. března proběhnul ve Veselici, v lesích okolo rozhledny Podvrší a v jejím blízkém okolí,
+                        11. ročník běžeckého závodu <strong>Lesempolem</strong>, jehož nultý ročník proběhl v červnu
+                        2013. Tento rok byly závody přizpůsobeny blanenské okresní běžecké lize.
                     </p>
                 </Col>
                 <Col xs={12}>
                     <p>
                         <Button variant={'success'} size={"lg"} onClick={() => handleClickbait()}>
-                            REGISTRACE 2024
+                            VÝSLEDKY 2024
                         </Button>
                     </p>
                 </Col>
@@ -57,9 +55,9 @@ export const HomepagePage: FC = () => {
 
             <Row id={'bb'} className={'d-none d-sm-none d-md-none d-lg-block'}>
                 <Button variant={"success"} size={'lg'} className={'btn-big'} onClick={() => handleClickbait()}>
-                    REGISTRACE
+                    VÝSLEDKY
                     <br/>
-                    <LpDate type={"lp"} format={"short"}/>
+                    2024
                 </Button>
             </Row>
         </>

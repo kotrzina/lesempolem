@@ -12,6 +12,7 @@ function testResults(year) {
 describe('results tests', () => {
     it("test all result pages", () => {
         const years = [
+            2024,
             2023,
             2022,
             2021,
