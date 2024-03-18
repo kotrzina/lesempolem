@@ -6,6 +6,7 @@ import {fetchRegisteredRacers, Racer} from "../../api/backend";
 import './Registration.css'
 import {Button} from "react-bootstrap";
 import {LpDate} from "../../components/Date/LpDate";
+import address from "../../Address";
 
 interface Props {
     enabled: boolean
@@ -31,10 +32,8 @@ export const Registration: FC<Props> = (props) => {
 
     return (
         <>
-            <h1>Registrace na Lesempolem</h1>
-            <p>
-                Tento rok už Lesempolem proběhlo. Díky a uvidíme se příští rok!
-            </p>
+            <h1>Registrace</h1>
+
 
             <p hidden={true}>
                 Předběžná registrace na Lesempolem, které se uskuteční <LpDate type={"lp"} format={"short"}/>
@@ -42,15 +41,24 @@ export const Registration: FC<Props> = (props) => {
                 Pokud stále nejsi rozhodnutý, rozklikni si další pravidla a informace o Lesempolem.
             </p>
 
+            <h2>Borák - Lesepolem za tvarůžkem</h2>
             <p>
+                <p>
+                    Ultramaraton Borák - Lesempolem - závod Ultracupu 2024, který proběhne na trati Lesempolem
+                    11.&nbsp;5.&nbsp;2024
+                </p>
                 <Button
-                    hidden={true}
-                    href={"https://oblblansko.cz/index.php?page=registrace_online&rok_vyber=0&termin_vyber=255"}
+                    href={address.borak}
                     target={"_blank"}
                     variant={"success"}
                 >
-                    Registrovat se na Lesempolem
+                    Registrace na Borák
                 </Button>
+            </p>
+
+            <h2>Lesempolem</h2>
+            <p>
+                Tento rok už Lesempolem proběhlo. Díky a uvidíme se příští rok!
             </p>
 
             {false && <RegistrationForm enabled={props.enabled} refreshFn={refreshRacers}/>}

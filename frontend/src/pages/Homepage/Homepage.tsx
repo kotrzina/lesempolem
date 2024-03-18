@@ -34,8 +34,20 @@ export const HomepagePage: FC = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <Button variant={'success'} size={"lg"} onClick={() => handleClickbait()}>
+                        <Button
+                            variant={'success'}
+                            size={"lg"}
+                            onClick={() => handleClickbait()}>
                             VÝSLEDKY 2024
+                        </Button>
+                        <br/>
+                        <Button
+                            variant={"success"}
+                            size={'lg'}
+                            href={Address.borak}
+                            target={"_blank"}
+                            className={"mt-2"}>
+                            BORÁK 2024
                         </Button>
                     </p>
                 </Col>
@@ -54,10 +66,12 @@ export const HomepagePage: FC = () => {
             </Row>
 
             <Row id={'bb'} className={'d-none d-sm-none d-md-none d-lg-block'}>
-                <Button variant={"success"} size={'lg'} className={'btn-big'} onClick={() => handleClickbait()}>
-                    VÝSLEDKY
-                    <br/>
-                    2024
+                <Button variant={"success"} size={'lg'} className={'btn-big mb-3'} onClick={() => handleClickbait()}>
+                    VÝSLEDKY 2024
+                </Button>
+                <br/>
+                <Button variant={"success"} size={'lg'} className={'btn-big'} href={Address.borak} target={"_blank"}>
+                    BORÁK 2024
                 </Button>
             </Row>
         </>

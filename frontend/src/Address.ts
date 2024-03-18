@@ -21,6 +21,8 @@ export enum Address {
     resultsPlaceholder = '/vysledky-:year.html',
 
     rules = '/podminky.html',
+
+    borak = "https://borak.ultradao.cz/index.php/propozice"
 }
 
 export default Address;
