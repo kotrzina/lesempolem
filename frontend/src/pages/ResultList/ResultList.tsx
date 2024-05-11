@@ -6,7 +6,7 @@ import Address from "../../Address";
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 
 type Props = {
-    years: number[];
+    years: string[];
 };
 
 export const ResultList: FC<Props> = (props: Props) => {
@@ -15,9 +15,17 @@ export const ResultList: FC<Props> = (props: Props) => {
 
     const history = useHistory();
 
-    function goto(year: number): void {
+    function goto(year: string): void {
         const address = Address.resultsPlaceholder.replace(':year', year.toString())
         history.push(address)
+    }
+
+    function getRaceTitle(year: string): string {
+        if (year === '2024-borak') {
+            return 'Borák 2024'
+        }
+
+        return year
     }
 
     return (
@@ -36,7 +44,7 @@ export const ResultList: FC<Props> = (props: Props) => {
                             variant={'success'}
                             onClick={() => goto(year)}
                         >
-                            {year}
+                            {getRaceTitle(year)}
                         </Button>
                     </Col>
                 ))}

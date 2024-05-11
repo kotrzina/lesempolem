@@ -38,16 +38,15 @@ export const HomepagePage: FC = () => {
                             variant={'success'}
                             size={"lg"}
                             onClick={() => handleClickbait()}>
-                            VÝSLEDKY 2024
+                            Výsledky Lesempolem 2024
                         </Button>
                         <br/>
                         <Button
                             variant={"success"}
                             size={'lg'}
-                            href={Address.borak}
-                            target={"_blank"}
+                            href={Address.results2024Borak}
                             className={"mt-2"}>
-                            BORÁK 2024
+                            Výsledky BORÁK 2024
                         </Button>
                     </p>
                 </Col>
@@ -67,10 +66,10 @@ export const HomepagePage: FC = () => {
 
             <Row id={'bb'} className={'d-none d-sm-none d-md-none d-lg-block'}>
                 <Button variant={"success"} size={'lg'} className={'btn-big mb-3'} onClick={() => handleClickbait()}>
-                    VÝSLEDKY 2024
+                    LESEMPOLEM 2024
                 </Button>
                 <br/>
-                <Button variant={"success"} size={'lg'} className={'btn-big'} href={Address.borak} target={"_blank"}>
+                <Button variant={"success"} size={'lg'} className={'btn-big'} href={Address.results2024Borak}>
                     BORÁK 2024
                 </Button>
             </Row>
