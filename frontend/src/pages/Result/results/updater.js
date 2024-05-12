@@ -1,6 +1,6 @@
 import fs from "fs"
 
-const filename = './2016.json'
+const filename = './2024-borak.json'
 
 const f = fs.readFileSync(filename, 'utf8')
 let c = JSON.parse(f)
@@ -59,17 +59,17 @@ function makeBeautiful(v) {
 }
 
 
-c.races.forEach(race => {
-    let first = getTime(race.results[0].laps[0].time)
 
-    race.results.forEach(result => {
-        result.laps.forEach(lap => {
-            lap.diff = "+ " + lap.diff
-        })
 
+c.races[2].results.forEach(result => {
+    result.laps.forEach(lap => {
+        lap.diff = "+ " + makeBeautiful(lap.diff)
     })
-
 })
 
+console.log(c.races[2])
+
+
 const outputJson = JSON.stringify(c, null, 2).split('},{').join('}, {')
+// console.log(outputJson)
 fs.writeFileSync(filename, outputJson, 'utf8')
