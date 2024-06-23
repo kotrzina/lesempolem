@@ -14,10 +14,11 @@ import {Results} from "./pages/Result/Results";
 import {ResultList} from "./pages/ResultList/ResultList";
 import {Rules} from "./pages/Rules/Rules";
 import {HomepagePage} from "./pages/Homepage/Homepage";
+import {ReactElement} from "react";
 
-export default function App(): JSX.Element {
+export default function App(): ReactElement {
 
-    const registrationEnabled = false
+    const registrationEnabled = true
 
     const results: string[] = [
         "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2021", "2022", "2023", "2024", "2024-borak"

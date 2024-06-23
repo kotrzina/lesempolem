@@ -42,8 +42,8 @@ export const Registration: FC<Props> = (props) => {
                 Tento rok už Lesempolem proběhlo. Díky a uvidíme se příští rok!
             </p>
 
-            {false && <RegistrationForm enabled={props.enabled} refreshFn={refreshRacers}/>}
-            {false && <Registered loading={loading} racers={racers}/>}
+            {<RegistrationForm enabled={props.enabled} refreshFn={refreshRacers}/>}
+            {<Registered loading={loading} racers={racers}/>}
         </>
     )
 

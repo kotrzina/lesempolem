@@ -1,6 +1,5 @@
 import {FC, useState} from "react";
 import {Alert, Button, Col, Form, Row} from "react-bootstrap";
-import {Racer, registerRacer} from "../../../api/backend";
 import Address from "../../../Address";
 import {TextFormField} from "../TextFormField/TextFormField";
 import {CheckboxFormField} from "../CheckboxFormField/CheckboxFormField";
@@ -19,28 +18,62 @@ export const RegistrationForm: FC<Props> = (props) => {
     const RegWorking = "..."
     const RegSuccess = "Zaregistrován!"
 
-    interface TextInputState {
-        value: string;
-        error: boolean;
+    interface FormState {
+        name: string;
+        surname: string;
+        email: string;
+        club: string;
+        dob: string;
+        gender: "m" | "f";
+        race: string;
+        terms: boolean;
     }
+
+    interface FormErrorState {
+        name: boolean;
+        surname: boolean;
+        email: boolean;
+        club: boolean;
+        dob: boolean;
+    }
+
+
+    // not exported from original package
+    interface SelectOption {
+        value: string;
+        label: string;
+    }
+
+    const raceOptions: SelectOption[] = [
+        {value: '63km', label: 'Ultramaraton - 63 km'},
+        {value: '42km', label: 'Maraton - 42 km'},
+        {value: '21km', label: 'Půlmaraton - 21 km'},
+
+    ]
 
     interface FlashState {
         type: "success" | "danger"
         message: string;
     }
 
-    const defaultTextInputState = {value: '', error: false,};
+    const [form, setForm] = useState<FormState>({
+        name: "",
+        surname: "",
+        email: "",
+        club: "",
+        dob: "",
+        gender: "m",
+        race: raceOptions[0].value, // just use the first race in the list as default
+        terms: true,
+    })
 
-    type genderType = 'm' | 'f'; // male, female
-    type raceType = '63km' | '42km' | '21km';
-    const [name, setName] = useState<TextInputState>(defaultTextInputState)
-    const [surname, setSurname] = useState<TextInputState>(defaultTextInputState)
-    const [email, setEmail] = useState<TextInputState>(defaultTextInputState)
-    const [club, setClub] = useState<TextInputState>(defaultTextInputState)
-    const [dob, setDob] = useState<TextInputState>(defaultTextInputState)
-    const [gender, setGender] = useState<genderType>('m')
-    const [race, setRace] = useState<raceType>('63km')
-    const [terms, setTerms] = useState<boolean>(true)
+    const [formError, setFormError] = useState<FormErrorState>({
+        name: false,
+        surname: false,
+        email: false,
+        club: false,
+        dob: false,
+    })
 
     // flash message
     const [flash, setFlash] = useState<FlashState>({message: "", type: "success"})
@@ -50,93 +83,68 @@ export const RegistrationForm: FC<Props> = (props) => {
 
     function onGender(v: string) {
         if (v === "m" || v === "f") {
-            setGender(v)
+            setForm((prev) => {
+                return {...prev, gender: v}
+            })
         }
     }
 
     function onRace(v: string) {
-        if (v === "63km" || v === "42km" || v === "21km") {
-            setRace(v)
-        }
-    }
-
-    function resetForm() {
-        setName(defaultTextInputState)
-        setSurname(defaultTextInputState)
-        setEmail(defaultTextInputState)
-        setClub(defaultTextInputState)
-        setDob(defaultTextInputState)
-        setGender('m')
+        raceOptions.forEach((r) => {
+            if (r.value === v) {
+                setForm((prev) => {
+                    return {...prev, race: v}
+                })
+            }
+        })
     }
 
     function registrationFormSubmitted() {
-        let ok = true;
         const minStringLength = 1;
-        if (name.value.trim().length < minStringLength) {
-            setName({value: name.value, error: true})
-            ok = false;
-        }
-
-        if (surname.value.trim().length < minStringLength) {
-            setSurname({value: surname.value, error: true})
-            ok = false;
-        }
-
-        if (email.value.length < minStringLength) {
-            setEmail({value: email.value, error: true})
-            ok = false;
-        }
         const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-        if (!email.value.match(validRegex)) {
-            setEmail({value: email.value, error: true})
-            ok = false;
+
+        const errors: FormErrorState = {
+            name: form.name.trim().length < minStringLength,
+            surname: form.surname.trim().length < minStringLength,
+            email: !form.email.match(validRegex),
+            club: form.club.trim().length < minStringLength,
+            dob: isNaN(Date.parse(form.dob)),
         }
 
-        if (club.value.trim().length < minStringLength) {
-            setClub({value: club.value, error: true})
-            ok = false;
-        }
+        setFormError(errors)
 
-        if (isNaN(Date.parse(dob.value))) {
-            setDob({value: dob.value, error: true})
-            ok = false;
-        }
+        const ok =
+            Object.values(errors).every((v) => v === false)
+            && form.terms
 
-        if (!terms) {
-            ok = false;
-        }
+        console.log(form)
+        console.log(errors)
 
         if (ok) {
-            setRegisterText(RegWorking)
-            const racer: Racer = {
-                firstname: name.value.trim(),
-                lastname: surname.value.trim(),
-                email: email.value.trim(),
-                club: club.value.trim(),
-                born: new Date(dob.value),
-                gender: gender,
-                race: race,
-            }
-            registerRacer(racer)
-                .then(() => {
-                        const msg = `🏃🏃🏃 ${racer.firstname} ${racer.lastname} zaregistrován(a). Budeme se těšit!`
-                        setFlash({message: msg, type: "success"})
-                        props.refreshFn() // refresh list of registered racers
-                        setRegisterText(RegSuccess)
-                        setInterval(() => {
-                            setRegisterText(RegReady)
-                        }, 5000)
-                        resetForm()
-                    }
-                )
-                .catch(() => {
-                        const msg = `Zdá se, že registrace nefunguje. Zkus to prosím později.`
-                        setFlash({message: msg, type: "danger"})
-                    }
-                )
-                .finally(() => {
-                    window.scrollTo(0, 0)
-                })
+            // form object is ready and validated
+            // just send it to the server
+
+
+            // registerRacer(racer)
+            //     .then(() => {
+            //             const msg = `🏃🏃🏃 ${racer.firstname} ${racer.lastname} zaregistrován(a). Budeme se těšit!`
+            //             setFlash({message: msg, type: "success"})
+            //             props.refreshFn() // refresh list of registered racers
+            //             setRegisterText(RegSuccess)
+            //             setInterval(() => {
+            //                 setRegisterText(RegReady)
+            //             }, 5000)
+            //             resetForm()
+            //         }
+            //     )
+            //     .catch(() => {
+            //             const msg = `Zdá se, že registrace nefunguje. Zkus to prosím později.`
+            //             setFlash({message: msg, type: "danger"})
+            //         }
+            //     )
+            //     .finally(() => {
+            //         window.scrollTo(0, 0)
+            //     })
         }
     }
 
@@ -153,58 +161,78 @@ export const RegistrationForm: FC<Props> = (props) => {
 
                     <TextFormField
                         id={'name'}
-                        value={name.value}
+                        value={form.name}
                         enabled={props.enabled}
                         type={'text'}
                         label={'Jméno'}
-                        fieldError={name.error}
+                        fieldError={formError.name}
                         placeholder={'Zadejte tvoje jméno'}
-                        onChange={(v) => setName({value: v, error: false,})}
+                        onChange={(v) => {
+                            setForm((prev) => {
+                                return {...prev, name: v}
+                            })
+                        }}
                     />
                     <TextFormField
                         id={'surname'}
-                        value={surname.value}
+                        value={form.surname}
                         enabled={props.enabled}
                         type={'text'}
                         label={'Příjmení'}
-                        fieldError={surname.error}
+                        fieldError={formError.surname}
                         placeholder={'Zadejte tvoje příjmení'}
-                        onChange={(v) => setSurname({value: v, error: false,})}
+                        onChange={(v) => {
+                            setForm((prev) => {
+                                return {...prev, surname: v}
+                            })
+                        }}
                     />
                     <TextFormField
                         id={'email'}
-                        value={email.value}
+                        value={form.email}
                         enabled={props.enabled}
                         type={'email'}
                         label={'Email'}
-                        fieldError={email.error}
+                        fieldError={formError.email}
                         placeholder={'Kontaktní email'}
-                        onChange={(v) => setEmail({value: v.trim(), error: false,})}
+                        onChange={(v) => {
+                            setForm((prev) => {
+                                return {...prev, email: v}
+                            })
+                        }}
                     />
                     <TextFormField
                         id={'club'}
-                        value={club.value}
+                        value={form.club}
                         enabled={props.enabled}
                         type={'text'}
                         label={'Klub / Bydliště'}
-                        fieldError={club.error}
+                        fieldError={formError.club}
                         placeholder={'Zadejte klub, bydliště nebo cokoliv jiného'}
-                        onChange={(v) => setClub({value: v, error: false,})}
+                        onChange={(v) => {
+                            setForm((prev) => {
+                                return {...prev, club: v}
+                            })
+                        }}
                     />
                     <TextFormField
                         id={'dob'}
-                        value={dob.value}
+                        value={form.dob}
                         enabled={props.enabled}
                         type={'date'}
                         label={'Datum narození:'}
-                        fieldError={dob.error}
+                        fieldError={formError.dob}
                         placeholder={''}
-                        onChange={(v) => setDob({value: v, error: false,})}
+                        onChange={(v) => {
+                            setForm((prev) => {
+                                return {...prev, dob: v}
+                            })
+                        }}
                     />
 
                     <SelectFormField
                         id={'gender'}
-                        value={gender}
+                        value={form.gender}
                         enabled={props.enabled}
                         label={'Pohlaví'}
                         options={[
@@ -216,14 +244,10 @@ export const RegistrationForm: FC<Props> = (props) => {
 
                     <SelectFormField
                         id={'race'}
-                        value={race}
+                        value={form.race}
                         enabled={props.enabled}
                         label={'Závod'}
-                        options={[
-                            {value: '63km', label: 'MČR Ultramaraton - 63 km'},
-                            {value: '42km', label: 'Maraton - 42 km'},
-                            {value: '21km', label: 'Půlmaraton - 21 km'},
-                        ]}
+                        options={raceOptions}
                         onChange={onRace}
                     />
 
@@ -234,8 +258,12 @@ export const RegistrationForm: FC<Props> = (props) => {
                                 Souhlasím s <a href={Address.rules} target={"_blank"} rel="noreferrer">podmínkami
                                 registrace</a>
                             </>}
-                        checked={true}
-                        onChange={(v) => setTerms(v)}
+                        checked={form.terms}
+                        onChange={(v) => {
+                            setForm((prev) => {
+                                return {...prev, terms: v}
+                            })
+                        }}
                     />
 
                     <Button style={{width: "190px", backgroundColor: "#289c4a"}}
@@ -255,5 +283,3 @@ export const RegistrationForm: FC<Props> = (props) => {
         </Row>
     )
 }
-
-
