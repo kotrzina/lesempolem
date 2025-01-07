@@ -16,7 +16,7 @@ export const StartingFee: FC<Props> = (props: Props) => {
     let starsMain = 0;
     let starsNotes = 0;
 
-    function getPrice(price: number, note?: string): JSX.Element {
+    function getPrice(price: number, note?: string): React.ReactNode {
         if (!(typeof note === 'undefined')) {
             starsMain = starsMain + 1;
             const starsString = '*'.repeat(starsMain)
@@ -26,7 +26,7 @@ export const StartingFee: FC<Props> = (props: Props) => {
         return <>{price} Kč</>
     }
 
-    function getNote(note?: string): JSX.Element {
+    function getNote(note?: string): React.ReactNode {
         starsNotes++;
         const starsString = '*'.repeat(starsNotes);
         return <>

@@ -6,7 +6,7 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 type PersonProps = {
     name: string;
     photoPath: string;
-    description: string | JSX.Element
+    description: string | React.ReactNode
     email: string;
     phone: string;
 }

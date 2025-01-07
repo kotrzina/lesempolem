@@ -34,13 +34,22 @@ export const NavBar: FC = () => {
     )
 };
 
+// eslint-disable-next-line
 interface NavItemProps {
     url: string;
     title: string;
     clicked: () => void;
 }
 
-export const NavItem: React.FC<NavItemProps> = (props) => (
-    <NavLink onClick={() => props.clicked()} activeClassName={'selected'} exact={true}
-             to={props.url}>{props.title}</NavLink>
-);
+export const NavItem: React.FC<NavItemProps> = (props) => {
+    return (
+        <NavLink
+            onClick={() => props.clicked()}
+            className={({ isActive }) => isActive ? 'selected' : ''}
+            to={props.url}>
+            {props.title}
+        </NavLink>
+    );
+    // <NavLink onClick={() => props.clicked()} activeClassName={'selected'} exact={true}
+    //          to={props.url}>{props.title}</NavLink>
+};

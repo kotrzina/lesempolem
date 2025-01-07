@@ -1,12 +1,11 @@
 import {FC, useEffect, useState, useMemo} from "react";
-import {useParams} from "react-router-dom";
 import {Col, Row, Spinner} from "react-bootstrap";
 import {RaceTable} from "./RaceTable/RaceTable";
 import './Results.css'
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 import {Break} from "../../components/Break/Break";
 
-type Params = {
+type Props = {
     year: string;
 }
 
@@ -44,7 +43,7 @@ type Competition = {
     races: Race[];
 }
 
-export const Results: FC = () => {
+export const Results: FC<Props> = (props) => {
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [, setTitle] = useDocumentTitle("Výsledky závodu");
@@ -55,13 +54,12 @@ export const Results: FC = () => {
         return {title: '', races: [], year: 0}
     }, []);
 
-    const {year} = useParams<Params>()
     const [competition, setCompetition] = useState<Competition>(defaultState)
 
     useEffect(() => {
         setSpinner(true)
-        setTitle("Výsledky závodu v roce " + year)
-        import ('./results/' + year + '.json')
+        setTitle("Výsledky závodu v roce " + props.year)
+        import ('./results/' + props.year + '.json')
             .then((data => {
                 setCompetition(data.default)
                 setSpinner(false)
@@ -71,9 +69,9 @@ export const Results: FC = () => {
                 setSpinner(false)
                 alert(err)
             })
-    }, [year, defaultState, setTitle])
+    }, [props.year, defaultState, setTitle])
 
-    function showSpinner(): JSX.Element {
+    function showSpinner(): React.ReactNode {
 
         if (spinner) {
             return (

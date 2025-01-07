@@ -2,7 +2,7 @@ import {Button, Col, Row} from "react-bootstrap";
 import text from './texts.json'
 import {CategoryTable} from "./CategoryTable/CategoryTable";
 import {List} from "./List/List";
-import {useHistory} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import Address from "../../Address";
 import './Info.css'
 import {StartingFee} from "./StartingFee/StartingFee";
@@ -15,10 +15,10 @@ export const Info: FC = () => {
 
     useDocumentTitle("Informace")
 
-    const history = useHistory();
+    const navigate = useNavigate();
 
     function goto(add: Address) {
-        history.push(add)
+        navigate(add)
     }
 
     function getRaceTrack(): string {

@@ -7,7 +7,6 @@ import tomasPhoto from './photos/tom2.jpg'
 import './Contact.css'
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 import {Person} from "./Person/Person";
-import {LocationMap} from "./LocationMap/LocationMap";
 
 export const Contact: FC = () => {
 
@@ -68,7 +67,7 @@ export const Contact: FC = () => {
                 })}
             </Row>
 
-            <LocationMap/>
+            {/*<LocationMap/>*/}
 
             <Row>
                 <Col md={12}>
