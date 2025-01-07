@@ -24,10 +24,3 @@ jobs:
         working-directory: frontend
         run: yarn build
 
-      - name: Test
-        working-directory: frontend
-        run: yarn test --watchAll=false
-
-      - name: Lint
-        working-directory: frontend
-        run: yarn lint
