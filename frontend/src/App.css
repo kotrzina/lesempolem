@@ -45,6 +45,7 @@ a:hover {
 }
 
 #app .btn-big {
+    width: 380px;
     font-size: 200%;
     margin-bottom: 1em;
     border: 3px #000 solid;

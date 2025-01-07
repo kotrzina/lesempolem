@@ -3,7 +3,7 @@ import {ChangeEvent, FC, useState} from "react";
 
 type Props = {
     id: string;
-    label: string | JSX.Element;
+    label: string | React.ReactNode;
     checked: boolean;
     onChange(v: boolean): void;
 };

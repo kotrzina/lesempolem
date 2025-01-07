@@ -1,5 +1,5 @@
 import {Button, Col, Row} from "react-bootstrap";
-import {useHistory} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import './Homepage.css';
 import Address from "../../Address";
 import {Photo} from "../../components/Photo/Photo";
@@ -13,10 +13,10 @@ export const HomepagePage: FC = () => {
 
     useDocumentTitle('Běžecké závody ve Veselici')
 
-    const history = useHistory();
+    const navigate = useNavigate();
 
     function handleClickbait() {
-        history.push(Address.results2024)
+        navigate(Address.results2024)
     }
 
     return (

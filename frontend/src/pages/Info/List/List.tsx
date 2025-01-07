@@ -1,9 +1,9 @@
 import {FC} from "react";
 
-type Item = string | JSX.Element;
+type Item = string | React.ReactNode;
 
 type Props = {
-    header: string | JSX.Element;
+    header: string | React.ReactNode;
     items: Item[];
 };
 

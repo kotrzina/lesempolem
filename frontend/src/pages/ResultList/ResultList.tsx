@@ -1,6 +1,6 @@
 import {FC} from "react";
 import {Button, Col, Row} from "react-bootstrap";
-import {useHistory} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import './ResultList.css'
 import Address from "../../Address";
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
@@ -13,11 +13,11 @@ export const ResultList: FC<Props> = (props: Props) => {
 
     useDocumentTitle("Výsledky závodů Lesempolem")
 
-    const history = useHistory();
+    const navigate = useNavigate();
 
     function goto(year: string): void {
         const address = Address.resultsPlaceholder.replace(':year', year.toString())
-        history.push(address)
+        navigate(address)
     }
 
     function getRaceTitle(year: string): string {
