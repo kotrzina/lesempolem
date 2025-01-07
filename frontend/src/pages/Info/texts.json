@@ -1,18 +1,18 @@
 {
   "header": {
-    "intro": "V místě průběhu do druhého kola a v cíli bude připraveno občerstvení dodané pořadateli (voda, čaj, iontový nápoj, sůl, Coca cola, ovoce) + stoly určené pro možnost uložení vlastního občerstvení.  Na 5 km a 15 km bude tradiční samoobsluha s vodou a rumem. Pro příchozí diváky bude připraven kulturní program, udírna, výčep a bohaté občerstvení. Prezentace a zázemí závodu bude nově v kulturním domě (Informační centrum ve Veselici) v těsné blízkosti startu a cíle.",
-    "borak": "Pro ty, kterým chybí v letošním ročníku maraton nebo ultra, nebudou ošizeni.   V květnovém termínu se chystá sloučení závodů Borák a Lesempolem v jeden společný podnik na trati Lesempolem. Termín a podrobnosti budou včas zveřejněny.",
+    "intro": "V místě průběhu do dalšího kola a v cíli bude připraveno občerstvení dodané pořadateli (voda, čaj, iontový nápoj, sůl, Coca cola, ovoce) + stoly určené pro možnost uložení vlastního občerstvení. Na 5 km bude samoobsluha s vodou a rumem. Pro příchozí diváky bude připraven kulturní program, udírna, výčep a bohaté občerstvení. Prezentace a zázemí závodu bude nově v kulturním domě (Informační centrum ve Veselici) v těsné blízkosti startu a cíle.",
     "accommodation": "Ubytovaní bude možné zdarma v obřím stanu umístěném na startu závodu. Tato možnost přepokládá spánek ve vlastních spacích pytlech. Sprchy a záchody jsou zajištěny v kulturním domě (100 m).",
     "organizers": "Celá akce spočívá na práci společenství Kotržiny, složené z dobrovolných hasičů, oddílu stolního tenisu a dalších dobrovolníků z místních spolků. Je dobré vědět, že k uspořádání akce tohoto charakteru ve složitém terénu je potřeba kolem 50 pořadatelů - dobrovolníků.",
     "end": "Snad se za všechnu vynaloženou námahu atmosféra příprav přenese až k vám, účastníkům a návštěvníkům tohoto závodu. Těšíme se na vás!"
   },
   "rules": [
     "Název: LESEMPOLEM",
-    "Datum: 9. 3. 2024",
+    "Datum: 10. 5. 2025",
     "Zařazeno do <a target=\"_blank\" href=\"https://www.oblblansko.cz/index.php?page=terminovka\">Okresní běžecké ligy Blansko</a>",
-    "Čas startu: 11:00",
+    "Čas startu: 07:00 a 11:00",
     "Prezence min. 15 minut před startem závodu",
-    "Místo startu: Víceúčelová budova kulturního domu ve Veselici"
+    "Místo startu: Víceúčelová budova kulturního domu ve Veselici",
+    "Pro zařazení do kategorie je rozhodující rok narození."
   ],
   "track": [
     "Kolo 10,5 km",
@@ -22,8 +22,13 @@
   "registration": {
     "timetable": [
       {
+        "day": "pá",
+        "from": "18:00",
+        "to": "20:00"
+      },
+      {
         "day": "so",
-        "from": "9:30",
+        "from": "06:00",
         "to": "10:45"
       }
     ],
@@ -31,39 +36,62 @@
   },
   "races": [
     {
-      "name": "Půlmaraton",
-      "start": "11:00",
-      "distance": "21 km",
+      "name": "Ultramaraton",
+      "start": "07:00",
+      "distance": "84 km",
       "categories": [
         {
-          "name": "Muži dle OBL",
+          "name": "Muži do 39 let",
           "gender": "m"
         },
         {
-          "name": "Ženy nad pade*",
+          "name": "Muži do 40 - 59 let",
+          "gender": "m"
+        },
+        {
+          "name": "Muži nad 60 let",
+          "gender": "m"
+        },
+        {
+          "name": "Ženy do 39 let",
           "gender": "f"
         },
         {
-          "name": "Ženy pod pade*",
+          "name": "Ženy do 40 - 59 let",
+          "gender": "f"
+        },
+        {
+          "name": "Ženy nad 60 let",
           "gender": "f"
         }
       ]
     },
     {
-      "name": "Čtvrtmaraton",
+      "name": "Maraton",
+      "start": "11:00",
+      "distance": "42 km",
+      "categories": [
+        {
+          "name": "Muži",
+          "gender": "m"
+        },
+        {
+          "name": "Ženy",
+          "gender": "f"
+        }
+      ]
+    },
+    {
+      "name": "Kolo (OBL)",
       "start": "11:00",
       "distance": "10,5 km",
       "categories": [
         {
-          "name": "Ženy dle OBL",
-          "gender": "f"
-        },
-        {
-          "name": "Junioři dle OBL",
+          "name": "Muži",
           "gender": "m"
         },
         {
-          "name": "Juniorky dle OBL",
+          "name": "Ženy",
           "gender": "f"
         }
       ]
@@ -71,12 +99,16 @@
   ],
   "startingFee": [
     {
-      "name": "Půlmaraton",
-      "price": 250
+      "name": "Ultramaraton",
+      "price": 1000
     },
     {
-      "name": "Čtvrtmaraton",
-      "price": 150
+      "name": "Maraton",
+      "price": 500
+    },
+    {
+      "name": "Kolo",
+      "price": 200
     }
   ]
 }

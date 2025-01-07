@@ -5,6 +5,7 @@ import {Registered} from "./Registered/Registered";
 import {fetchRegisteredRacers, Racer} from "../../api/backend";
 import './Registration.css'
 import {LpDate} from "../../components/Date/LpDate";
+import {Alert} from "react-bootstrap";
 
 interface Props {
     enabled: boolean
@@ -39,7 +40,12 @@ export const Registration: FC<Props> = (props) => {
             </p>
 
             <p>
-                Tento rok už Lesempolem proběhlo. Díky a uvidíme se příští rok!
+                <Alert variant={"warning"}>
+                    <strong>
+                        Na zprovoznění online registrace usilovně pracujeme!
+                    </strong>
+                </Alert>
+
             </p>
 
             {false && <RegistrationForm enabled={props.enabled} refreshFn={refreshRacers}/>}

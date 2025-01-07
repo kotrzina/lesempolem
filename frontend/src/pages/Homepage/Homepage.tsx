@@ -16,37 +16,43 @@ export const HomepagePage: FC = () => {
     const navigate = useNavigate();
 
     function handleClickbait() {
-        navigate(Address.results2024)
+        navigate(Address.info)
     }
 
     return (
         <>
             <Row className={'d-lg-none'}>
                 <Col xs={12}>
-                    <h1>Běžecké závody LESEMPOLEM</h1>
+
                 </Col>
                 <Col xs={12}>
+                    <h1 style={{padding: 0}}>Běžecké závody LESEMPOLEM</h1>
+
                     <p>
-                        9. března proběhnul ve Veselici, v lesích okolo rozhledny Podvrší a v jejím blízkém okolí,
-                        11. ročník běžeckého závodu <strong>Lesempolem</strong>, jehož nultý ročník proběhl v červnu
-                        2013. Tento rok byly závody přizpůsobeny blanenské okresní běžecké lize.
+                        Lesempolem je jedinečný běžecký závod, který se každoročně koná v malebném prostředí obce
+                        Veselice v Jihomoravském kraji. Trať závodu vede převážně lesními a polními cestami v okolí
+                        rozhledny Podvrší, což nabízí nádherné výhledy a zážitek z běhu v přírodě. Závod je určen pro
+                        široké spektrum běžců – od amatérů až po zkušené závodníky – a nabízí různé délky tras, včetně 10
+                        km, maratonu a ultramaratonu. Díky různorodosti tratí si zde každý najde
+                        výzvu odpovídající své kondici.
+
+                        Závod je součástí Okresní běžecké ligy Blansko.
+                        Start a cíl se nachází ve sportovním areálu ve Veselici, kde na
+                        běžce i jejich doprovod čeká bohatý program, občerstvení a přátelská atmosféra. Ať už jste
+                        zkušený běžec, nebo si chcete užít pohyb v přírodě, Lesempolem je akcí, na kterou budete rádi
+                        vzpomínat.
+
+                        Pokud potřebujete další informace o nadcházejícím ročníku, sledujte naše oficiální stránky.
+                        Těšíme se na vás na startovní čáře!
                     </p>
                 </Col>
                 <Col xs={12}>
-                    <p>
+                <p>
                         <Button
                             variant={'success'}
                             size={"lg"}
                             onClick={() => handleClickbait()}>
-                            Výsledky Lesempolem 2024
-                        </Button>
-                        <br/>
-                        <Button
-                            variant={"success"}
-                            size={'lg'}
-                            href={Address.results2024Borak}
-                            className={"mt-2"}>
-                            Výsledky BORÁK 2024
+                            Lesempolem 15. 5. 2025
                         </Button>
                     </p>
                 </Col>
@@ -66,11 +72,8 @@ export const HomepagePage: FC = () => {
 
             <Row id={'bb'} className={'d-none d-sm-none d-md-none d-lg-block'}>
                 <Button variant={"success"} size={'lg'} className={'btn-big mb-3'} onClick={() => handleClickbait()}>
-                    LESEMPOLEM 2024
-                </Button>
-                <br/>
-                <Button variant={"success"} size={'lg'} className={'btn-big'} href={Address.results2024Borak}>
-                    BORÁK 2024
+                    LESEMPOLEM<br/>
+                    15. 5. 2025
                 </Button>
             </Row>
         </>
