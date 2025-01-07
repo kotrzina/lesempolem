@@ -35,7 +35,6 @@ export const Info: FC = () => {
                 <Col md={12}>
                     <h1>Informace pro účastníky</h1>
                     <p>{text.header.intro}</p>
-                    <p>{text.header.borak}</p>
                     <p>{text.header.organizers}</p>
                     <p>{text.header.end}</p>
                 </Col>
@@ -45,13 +44,6 @@ export const Info: FC = () => {
                 <Col sm={12} md={6}>
                     <h2>Kategorie a harmonogram</h2>
                     <CategoryTable registration={text.registration} races={text.races}/>
-                    <p>
-                        <i>
-                            * Zájemci o běh půlmaratonu z řad žen a juniorů nebudou o body do OBL ošizeni. V rámci OBL
-                            jim bude v průběhu do druhého kola zaznamenán čas a budou bodově i umístěním zařazeni do
-                            závodu čtvrtmaratonu.
-                        </i>
-                    </p>
                     <StartingFee fees={text.startingFee}/>
                 </Col>
 
