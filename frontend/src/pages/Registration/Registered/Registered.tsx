@@ -21,8 +21,8 @@ export const Registered: FC<Props> = (props: Props) => {
     }
 
     return (
-        <Row>
-            <Col md={6}>
+        <Row hidden={props.racers.length <= 0}>
+            <Col md={12}>
                 <h2>
                     {props.loading && <><Spinner animation={"border"} variant={"secondary"}/>&nbsp;</>}
                     Registrovaní:

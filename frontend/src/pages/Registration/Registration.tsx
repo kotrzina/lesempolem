@@ -19,7 +19,7 @@ export const Registration: FC<Props> = (props) => {
     const [loading, setLoading] = useState<boolean>(false)
 
     useEffect(() => {
-        // refreshRacers()
+        refreshRacers()
     }, [])
 
     async function refreshRacers() {
@@ -33,23 +33,22 @@ export const Registration: FC<Props> = (props) => {
         <>
             <h1>Registrace</h1>
 
-            <p hidden={true}>
-                Předběžná registrace na Lesempolem, které se uskuteční <LpDate type={"lp"} format={"short"}/>
-                , je k dispozici na stránkách OBL.
-                Pokud stále nejsi rozhodnutý, rozklikni si další pravidla a informace o Lesempolem.
-            </p>
-
             <p>
-                <Alert variant={"warning"}>
-                    <strong>
-                        Na zprovoznění online registrace usilovně pracujeme!
-                    </strong>
-                </Alert>
-
+                Předběžná registrace na Lesempolem, které se uskuteční <LpDate type={"lp"} format={"short"}/>.
+                Pokud stále nejsi rozhodnutý, rozklikni si další informace o Lesempolem.
             </p>
 
-            {false && <RegistrationForm enabled={props.enabled} refreshFn={refreshRacers}/>}
-            {false && <Registered loading={loading} racers={racers}/>}
+            {/*<p hidden={true}>*/}
+            {/*    <Alert variant={"warning"}>*/}
+            {/*        <strong>*/}
+            {/*            Na zprovoznění online registrace usilovně pracujeme!*/}
+            {/*        </strong>*/}
+            {/*    </Alert>*/}
+
+            {/*</p>*/}
+
+            {<RegistrationForm enabled={props.enabled} refreshFn={refreshRacers}/>}
+            {<Registered loading={loading} racers={racers}/>}
         </>
     )
 
