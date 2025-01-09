@@ -52,7 +52,7 @@ export const HomepagePage: FC = () => {
                             variant={'success'}
                             size={"lg"}
                             onClick={() => handleClickbait()}>
-                            Lesempolem 15. 5. 2025
+                            Lesempolem 10. 5. 2025
                         </Button>
                     </p>
                 </Col>
@@ -73,7 +73,7 @@ export const HomepagePage: FC = () => {
             <Row id={'bb'} className={'d-none d-sm-none d-md-none d-lg-block'}>
                 <Button variant={"success"} size={'lg'} className={'btn-big mb-3'} onClick={() => handleClickbait()}>
                     LESEMPOLEM<br/>
-                    15. 5. 2025
+                    10. 5. 2025
                 </Button>
             </Row>
         </>
