@@ -1,6 +1,6 @@
 # Registration form for running competition called Lesempolem
 # For more information please visit https://lesempolem.cz
-- name: lesempolem
+- name: lesempolem2025
   api:
     client: "*"               # used for CORS
     bearer: ""                # no password when empty or missing
