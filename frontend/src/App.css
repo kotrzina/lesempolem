@@ -54,3 +54,7 @@ a:hover {
 #app div.content {
     margin-top: 20px
 }
+
+#app form div {
+    margin-bottom: 14px;
+}

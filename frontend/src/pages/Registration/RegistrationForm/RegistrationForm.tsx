@@ -32,14 +32,14 @@ export const RegistrationForm: FC<Props> = (props) => {
     const defaultTextInputState = {value: '', error: false,};
 
     type genderType = 'm' | 'f'; // male, female
-    type raceType = '63km' | '42km' | '21km';
+    type raceType = '84km' | '42km' | '10km';
     const [name, setName] = useState<TextInputState>(defaultTextInputState)
     const [surname, setSurname] = useState<TextInputState>(defaultTextInputState)
     const [email, setEmail] = useState<TextInputState>(defaultTextInputState)
     const [club, setClub] = useState<TextInputState>(defaultTextInputState)
     const [dob, setDob] = useState<TextInputState>(defaultTextInputState)
     const [gender, setGender] = useState<genderType>('m')
-    const [race, setRace] = useState<raceType>('63km')
+    const [race, setRace] = useState<raceType>('84km')
     const [terms, setTerms] = useState<boolean>(true)
 
     // flash message
@@ -55,7 +55,7 @@ export const RegistrationForm: FC<Props> = (props) => {
     }
 
     function onRace(v: string) {
-        if (v === "63km" || v === "42km" || v === "21km") {
+        if (v === "84km" || v === "42km" || v === "10km") {
             setRace(v)
         }
     }
@@ -220,9 +220,9 @@ export const RegistrationForm: FC<Props> = (props) => {
                         enabled={props.enabled}
                         label={'Závod'}
                         options={[
-                            {value: '63km', label: 'MČR Ultramaraton - 63 km'},
+                            {value: '84km', label: 'Ultramaraton - 84 km'},
                             {value: '42km', label: 'Maraton - 42 km'},
-                            {value: '21km', label: 'Půlmaraton - 21 km'},
+                            {value: '10km', label: 'Kolo - 10,5 km'},
                         ]}
                         onChange={onRace}
                     />

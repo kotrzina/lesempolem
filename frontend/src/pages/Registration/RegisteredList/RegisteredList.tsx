@@ -1,5 +1,8 @@
 import {Racer} from "../../../api/backend";
 import {FC} from "react";
+import {Col, ListGroup, Row} from "react-bootstrap";
+import Club from "./Club";
+import Distance from "./Race";
 
 type Props = {
     racers: Array<Racer>
@@ -8,14 +11,16 @@ type Props = {
 
 export const RegisteredList: FC<Props> = (props: Props) => {
     return (
-        <ul>
+        <ListGroup>
             {props.racers.map((racer, idx) => {
                 return (
-                    <li key={idx}>
-                        {racer.firstname} {racer.lastname}{racer.club !== "" && ` (${racer.club})`}
-                    </li>
+                    <ListGroup.Item key={idx}>{racer.firstname} {racer.lastname}
+                        <Club club={racer.club}/>
+                        <Distance distance={racer.race}/>
+                    </ListGroup.Item>
+
                 )
             })}
-        </ul>
+        </ListGroup>
     );
 };
