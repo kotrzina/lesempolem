@@ -10,10 +10,6 @@ export const Club: FC<Props> = (props: Props) => {
     function parseDistance(d: string): number {
         const distance = parseInt(d);
 
-        if (distance === 10) {
-            return 10.5
-        }
-
         return distance
     }
 

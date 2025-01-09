@@ -6,6 +6,7 @@ import {fetchRegisteredRacers, Racer} from "../../api/backend";
 import './Registration.css'
 import {LpDate} from "../../components/Date/LpDate";
 import {Alert} from "react-bootstrap";
+import {Break} from "../../components/Break/Break";
 
 interface Props {
     enabled: boolean
@@ -19,13 +20,18 @@ export const Registration: FC<Props> = (props) => {
     const [loading, setLoading] = useState<boolean>(false)
 
     useEffect(() => {
-        refreshRacers()
+        void refreshRacers()
     }, [])
 
     async function refreshRacers() {
         setLoading(true)
-        const racers = await fetchRegisteredRacers()
-        setRacers(racers)
+        try {
+            const racers = await fetchRegisteredRacers()
+            setRacers(racers)
+        } catch (e) {
+            console.error(e)
+        }
+
         setLoading(false)
     }
 
@@ -49,6 +55,7 @@ export const Registration: FC<Props> = (props) => {
 
             {<RegistrationForm enabled={props.enabled} refreshFn={refreshRacers}/>}
             {<Registered loading={loading} racers={racers}/>}
+            <Break size={4}/>
         </>
     )
 

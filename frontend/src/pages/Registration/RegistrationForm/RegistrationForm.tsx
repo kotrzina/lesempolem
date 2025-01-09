@@ -32,7 +32,7 @@ export const RegistrationForm: FC<Props> = (props) => {
     const defaultTextInputState = {value: '', error: false,};
 
     type genderType = 'm' | 'f'; // male, female
-    type raceType = '84km' | '42km' | '10km';
+    type raceType = '84km' | '42km' | '14km';
     const [name, setName] = useState<TextInputState>(defaultTextInputState)
     const [surname, setSurname] = useState<TextInputState>(defaultTextInputState)
     const [email, setEmail] = useState<TextInputState>(defaultTextInputState)
@@ -55,7 +55,7 @@ export const RegistrationForm: FC<Props> = (props) => {
     }
 
     function onRace(v: string) {
-        if (v === "84km" || v === "42km" || v === "10km") {
+        if (v === "84km" || v === "42km" || v === "14km") {
             setRace(v)
         }
     }
@@ -196,7 +196,7 @@ export const RegistrationForm: FC<Props> = (props) => {
                         value={dob.value}
                         enabled={props.enabled}
                         type={'date'}
-                        label={'Datum narození:'}
+                        label={'Datum narození'}
                         fieldError={dob.error}
                         placeholder={''}
                         onChange={(v) => setDob({value: v, error: false,})}
@@ -206,7 +206,7 @@ export const RegistrationForm: FC<Props> = (props) => {
                         id={'gender'}
                         value={gender}
                         enabled={props.enabled}
-                        label={'Pohlaví'}
+                        label={'Pohlaví:    '}
                         options={[
                             {value: 'm', label: 'Muž'},
                             {value: 'f', label: 'Žena'},
@@ -218,11 +218,11 @@ export const RegistrationForm: FC<Props> = (props) => {
                         id={'race'}
                         value={race}
                         enabled={props.enabled}
-                        label={'Závod'}
+                        label={'Závod:'}
                         options={[
                             {value: '84km', label: 'Ultramaraton - 84 km'},
                             {value: '42km', label: 'Maraton - 42 km'},
-                            {value: '10km', label: 'Kolo - 10,5 km'},
+                            {value: '14km', label: 'Kolo - 14 km'},
                         ]}
                         onChange={onRace}
                     />
