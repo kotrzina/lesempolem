@@ -3,6 +3,10 @@ resource "cloudflare_zone" "lesempolem_cz" {
   account_id = var.CLOUDFLARE_ACCOUNT_ID
 }
 
+resource "cloudflare_zone_dnssec" "lesempolem_cz" {
+  zone_id = cloudflare_zone.lesempolem_cz.id
+}
+
 resource "cloudflare_record" "cname_lesempolem_cz" {
   zone_id = cloudflare_zone.lesempolem_cz.id
   name    = "lesempolem.cz"
