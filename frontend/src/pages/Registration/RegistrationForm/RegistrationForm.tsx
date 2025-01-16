@@ -186,7 +186,7 @@ export const RegistrationForm: FC<Props> = (props) => {
                         value={club.value}
                         enabled={props.enabled}
                         type={'text'}
-                        label={'Klub / Bydliště'}
+                        label={'Klub'}
                         fieldError={club.error}
                         placeholder={'Zadejte klub, bydliště nebo cokoliv jiného'}
                         onChange={(v) => setClub({value: v, error: false,})}
