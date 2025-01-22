@@ -100,7 +100,8 @@
   "startingFee": [
     {
       "name": "Ultramaraton",
-      "price": 1000
+      "price": 1000,
+      "note": "Pro členy ČAU sleva 200 Kč"
     },
     {
       "name": "Maraton",
