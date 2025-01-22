@@ -41,7 +41,7 @@ describe('navigation test', () => {
 
         // Track
         cy.get('.navbar-nav').contains("Kontakty").click()
-        cy.contains("Mapka")
+        cy.contains("Open source")
         testMenuExists()
 
         // Home

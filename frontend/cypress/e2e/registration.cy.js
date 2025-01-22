@@ -77,8 +77,8 @@ describe('registration tests', () => {
         cy.get("input#surname").clear().type(surname)
         cy.get("input#club").clear().type(club)
         submitForm()
-
-        cy.contains(`${name} ${surname} (${club})`)
+        
+        cy.contains(`${name} ${surname} zaregistrován(a)`)
         cy.contains(" Budeme se těšit!") // flash message
     })
 })

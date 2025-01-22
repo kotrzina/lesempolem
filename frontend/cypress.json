@@ -1,8 +1,0 @@
-{
-  "baseUrl": "http://localhost:3000",
-  "viewportWidth": 1000,
-  "viewportHeight": 1200,
-  "ignoreTestFiles": [
-    "registration.spec.js"
-  ]
-}
