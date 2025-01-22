@@ -1,5 +1,6 @@
 import {Route, Routes, BrowserRouter} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'leaflet/dist/leaflet.css';
 import './App.css';
 import {NavBar} from "./components/Nav/Navigation";
 import {Container} from "react-bootstrap";

@@ -1,4 +1,4 @@
-import {FC} from "react";
+import React, {FC} from "react";
 import {Row, Col} from "react-bootstrap";
 import danPhoto from './photos/dan.jpg'
 import jirkaPhoto from './photos/jirka.jpg'
@@ -7,6 +7,7 @@ import tomasPhoto from './photos/tom2.jpg'
 import './Contact.css'
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 import {Person} from "./Person/Person";
+import {LocationMap} from "./LocationMap/LocationMap";
 
 export const Contact: FC = () => {
 
@@ -57,17 +58,17 @@ export const Contact: FC = () => {
                 {people.map(person => {
                     return (
                         <Person key={person.name}
-                            name={person.name}
-                            photoPath={person.photoPath}
-                            description={person.description}
-                            email={person.email}
-                            phone={person.phone}
+                                name={person.name}
+                                photoPath={person.photoPath}
+                                description={person.description}
+                                email={person.email}
+                                phone={person.phone}
                         />
                     )
                 })}
             </Row>
 
-            {/*<LocationMap/>*/}
+            <LocationMap/>
 
             <Row>
                 <Col md={12}>
