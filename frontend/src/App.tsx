@@ -41,19 +41,15 @@ export default function App() {
                                 <Route path={Address.results} element={<ResultList years={results}/>}/>
                                 <Route path={Address.rules} element={<Rules/>}/>
                                 <Route path="/" element={<HomepagePage/>}/>
-
-                                <Route path="/vysledky-2024-borak.html" element={<Results year={"2024-borak"}/> } />
-                                <Route path="/vysledky-2024.html" element={<Results year={"2024"}/> } />
-                                <Route path="/vysledky-2023.html" element={<Results year={"2023"}/> } />
-                                <Route path="/vysledky-2022.html" element={<Results year={"2022"}/> } />
-                                <Route path="/vysledky-2021.html" element={<Results year={"2021"}/> } />
-                                <Route path="/vysledky-2019.html" element={<Results year={"2019"}/> } />
-                                <Route path="/vysledky-2018.html" element={<Results year={"2018"}/> } />
-                                <Route path="/vysledky-2017.html" element={<Results year={"2017"}/> } />
-                                <Route path="/vysledky-2016.html" element={<Results year={"2016"}/> } />
-                                <Route path="/vysledky-2015.html" element={<Results year={"2015"}/> } />
-                                <Route path="/vysledky-2014.html" element={<Results year={"2014"}/> } />
-                                <Route path="/vysledky-2013.html" element={<Results year={"2013"}/> } />
+                                {results.map((year) => {
+                                    return (
+                                        <Route
+                                            key={year}
+                                            path={Address.resultsPlaceholder.replace(':year', year)}
+                                            element={<Results year={year.toString()}/>}
+                                        />
+                                    )
+                                })}
                             </Routes>
                         </Container>
                     </div>
