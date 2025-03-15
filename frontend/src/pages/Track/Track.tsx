@@ -15,20 +15,19 @@ export const Track: FC = () => {
 
                 {/*<TrackAlert/>*/}
 
-                <p>Trať jednoho kola (10,5 km).</p>
+                <p>Trať jednoho kola (14 km).</p>
 
                 <Ratio aspectRatio={'16x9'}>
-                    <iframe
-                        src="https://www.google.com/maps/d/embed?mid=1k1C0Q-ZJPitjidSe98vClAma_f4yHD2-"
-                        width="100%"
-                        title={'Google Map with Track'}
-                        height="600px">
+                    <iframe style={{border: "none"}}
+                            src="https://en.frame.mapy.cz/s/gumohusame"
+                            width="100%"
+                            height="400"
+                            frameBorder="0">
                     </iframe>
                 </Ratio>
                 <Break size={16}/>
                 <DownloadableFiles files={[
-                    {name: 'lesempolem_102nodes.gpx', path: '/maps/lesempolem_102nodes.gpx'},
-                    {name: 'lesempolem_102nodes.kml', path: '/maps/lesempolem_102nodes.kml'},
+                    {name: 'borak-veselice-14km.gpx', path: '/maps/borak-veselice-14km.gpx'},
                 ]}/>
             </Col>
         </Row>
