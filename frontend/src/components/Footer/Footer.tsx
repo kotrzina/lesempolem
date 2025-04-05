@@ -4,12 +4,18 @@ import AutoservisSkoumalImage from './sponsorImages/ruda_skoumal.png'
 import TridoImage from './sponsorImages/trido.png'
 import KolaNovakImage from './sponsorImages/kola_novak.png'
 import KotrzinaImage from './sponsorImages/kotrzina-logo.png'
+import DobryDost from './sponsorImages/dobrydost.webp'
 import {FC} from "react";
 
 export const Footer: FC = () => (
     <div id={'sponsors'}>
         <Container>
             <Row md={12} className={'list'}>
+                <Sponsor
+                    name={'Dobrý Dost - Poctivý Jerky z Krasu'}
+                    link={'https://www.dobrydost.cz/'}
+                    image={DobryDost}
+                />
                 <Sponsor
                     name={'Vše pro cyklistiku a outdoor'}
                     link={'https://kolanovak.cz/'}
