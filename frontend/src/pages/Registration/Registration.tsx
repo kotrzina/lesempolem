@@ -24,6 +24,10 @@ export const Registration: FC<Props> = (props) => {
     }, [])
 
     async function refreshRacers() {
+        if (!props.enabled) {
+            return
+        }
+
         setLoading(true)
         try {
             const racers = await fetchRegisteredRacers()
