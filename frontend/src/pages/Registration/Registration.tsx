@@ -24,6 +24,7 @@ export const Registration: FC<Props> = (props) => {
     }, [])
 
     async function refreshRacers() {
+        // Early return to prevent unnecessary API calls when registration is disabled.
         if (!props.enabled) {
             return
         }
