@@ -16,6 +16,13 @@ export const ResultList: FC<Props> = (props: Props) => {
     const navigate = useNavigate();
 
     function goto(year: string): void {
+        if (year === '2025') {
+            const url = "https://www.oblblansko.cz/index.php?page=vysledky&navrat=terminovka&rok_vyber=2025&termin_vyber=289"
+            //@ts-ignore
+            window.open(url, '_blank').focus();
+            return
+        }
+
         const address = Address.resultsPlaceholder.replace(':year', year.toString())
         navigate(address)
     }

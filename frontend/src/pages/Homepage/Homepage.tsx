@@ -16,7 +16,9 @@ export const HomepagePage: FC = () => {
     const navigate = useNavigate();
 
     function handleClickbait() {
-        navigate(Address.info)
+        const url = "https://www.oblblansko.cz/index.php?page=vysledky&navrat=terminovka&rok_vyber=2025&termin_vyber=289"
+        //@ts-ignore
+        window.open(url, '_blank').focus();
     }
 
     return (
@@ -52,7 +54,7 @@ export const HomepagePage: FC = () => {
                             variant={'success'}
                             size={"lg"}
                             onClick={() => handleClickbait()}>
-                            Lesempolem 10. 5. 2025
+                            Lesempolem výsledky
                         </Button>
                     </p>
                 </Col>
@@ -73,7 +75,7 @@ export const HomepagePage: FC = () => {
             <Row id={'bb'} className={'d-none d-sm-none d-md-none d-lg-block'}>
                 <Button variant={"success"} size={'lg'} className={'btn-big mb-3'} onClick={() => handleClickbait()}>
                     LESEMPOLEM<br/>
-                    10. 5. 2025
+                    VÝSLEDKY
                 </Button>
             </Row>
         </>

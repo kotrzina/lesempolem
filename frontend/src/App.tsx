@@ -22,7 +22,7 @@ export default function App() {
     const registrationEnabled = false
 
     const results: string[] = [
-        "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2021", "2022", "2023", "2024", "2024-borak"
+        "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2021", "2022", "2023", "2024", "2024-borak", "2025"
     ].reverse()
 
     return (
