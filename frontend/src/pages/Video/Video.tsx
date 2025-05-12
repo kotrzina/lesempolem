@@ -14,10 +14,9 @@ export const Video: FC = () => {
                 <Ratio aspectRatio={'16x9'}>
                     <iframe
                         className="embed-responsive-item"
-                        src="https://www.youtube.com/embed/JSZ0lRwT7R0?rel=0"
+                        src="https://www.youtube.com/embed/bgcMtzmA-7s?rel=0"
                         title={'Video'}
                         allowFullScreen>
-
                     </iframe>
                 </Ratio>
             </Col>
