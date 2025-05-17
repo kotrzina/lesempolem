@@ -16,9 +16,7 @@ export const HomepagePage: FC = () => {
     const navigate = useNavigate();
 
     function handleClickbait() {
-        const url = "https://www.oblblansko.cz/index.php?page=vysledky&navrat=terminovka&rok_vyber=2025&termin_vyber=289"
-        //@ts-ignore
-        window.open(url, '_blank').focus();
+        navigate("/vysledky-2025.html")
     }
 
     return (

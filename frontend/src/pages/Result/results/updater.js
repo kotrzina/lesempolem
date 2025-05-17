@@ -1,6 +1,6 @@
 import fs from "fs"
 
-const filename = './2024-borak.json'
+const filename = './2025.json'
 
 const f = fs.readFileSync(filename, 'utf8')
 let c = JSON.parse(f)
@@ -61,13 +61,25 @@ function makeBeautiful(v) {
 
 
 
+c.races[0].results.forEach(result => {
+    result.laps.forEach(lap => {
+        lap.diff = "+ " + makeBeautiful(lap.diff)
+    })
+})
+
+c.races[1].results.forEach(result => {
+    result.laps.forEach(lap => {
+        lap.diff = "+ " + makeBeautiful(lap.diff)
+    })
+})
+
 c.races[2].results.forEach(result => {
     result.laps.forEach(lap => {
         lap.diff = "+ " + makeBeautiful(lap.diff)
     })
 })
 
-console.log(c.races[2])
+
 
 
 const outputJson = JSON.stringify(c, null, 2).split('},{').join('}, {')
