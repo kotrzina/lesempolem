@@ -10,7 +10,7 @@ export const Video: FC = () => {
     return (
         <Row>
             <Col md={12}>
-                <h1>Sestřih ze závodů - video</h1>
+                <h1>Video - jedeno kolo</h1>
                 <Ratio aspectRatio={'16x9'}>
                     <iframe
                         className="embed-responsive-item"

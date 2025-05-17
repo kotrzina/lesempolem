@@ -3,8 +3,11 @@ import {FC} from "react";
 import {DownloadableFiles} from "./DownloadableFiles";
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 import {Break} from "../../components/Break/Break";
+import {useNavigate} from "react-router-dom";
 
 export const Track: FC = () => {
+
+    const navigate = useNavigate();
 
     useDocumentTitle("Trať")
 
@@ -15,7 +18,7 @@ export const Track: FC = () => {
 
                 {/*<TrackAlert/>*/}
 
-                <p>Trať jednoho kola (14 km).</p>
+                <p>Trať jednoho kola (14 km). Můžeš mrknout i na <a href="#" onClick={() => {navigate("/video.html")}}>VIDEO.</a></p>
 
                 <Ratio aspectRatio={'16x9'}>
                     <iframe style={{border: "none"}}
