@@ -45,7 +45,7 @@ type Competition = {
 
 export const Results: FC<Props> = (props) => {
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+     
     const [, setTitle] = useDocumentTitle("Výsledky závodu");
 
     const [spinner, setSpinner] = useState<boolean>(true)

@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(yarn upgrade:*)",
+      "Bash(yarn build:*)",
+      "WebFetch(domain:localhost)",
+      "Bash(curl:*)",
+      "Bash(ls:*)",
+      "Bash(yarn add:*)",
+      "Bash(yarn lint:*)",
+      "Bash(yarn fix:*)"
+    ]
+  }
+}

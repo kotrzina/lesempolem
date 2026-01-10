@@ -5,7 +5,6 @@ import {Registered} from "./Registered/Registered";
 import {fetchRegisteredRacers, Racer} from "../../api/backend";
 import './Registration.css'
 import {LpDate} from "../../components/Date/LpDate";
-import {Alert} from "react-bootstrap";
 import {Break} from "../../components/Break/Break";
 
 interface Props {
