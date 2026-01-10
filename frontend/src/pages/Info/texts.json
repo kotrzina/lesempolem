@@ -8,8 +8,7 @@
   },
   "rules": [
     "Název: LESEMPOLEM",
-    "Datum: 10. 5. 2025",
-    "Zařazeno do <a target=\"_blank\" href=\"https://www.oblblansko.cz/index.php?page=terminovka\">Okresní běžecké ligy Blansko</a>",
+    "Datum: 16. 5. 2026",
     "Čas startu: 07:00 a 11:00",
     "Prezence min. 15 minut před startem závodu",
     "Místo startu: Víceúčelová budova kulturního domu ve Veselici",
@@ -82,7 +81,7 @@
       ]
     },
     {
-      "name": "Kolo (OBL)",
+      "name": "Kolo",
       "start": "11:00",
       "distance": "14 km",
       "categories": [

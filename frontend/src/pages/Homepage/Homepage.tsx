@@ -16,7 +16,7 @@ export const HomepagePage: FC = () => {
     const navigate = useNavigate();
 
     function handleClickbait() {
-        navigate("/vysledky-2025.html")
+        navigate(Address.registration)
     }
 
     return (
@@ -36,7 +36,6 @@ export const HomepagePage: FC = () => {
                         km, maratonu a ultramaratonu. Díky různorodosti tratí si zde každý najde
                         výzvu odpovídající své kondici.
 
-                        Závod je součástí Okresní běžecké ligy Blansko.
                         Start a cíl se nachází ve sportovním areálu ve Veselici, kde na
                         běžce i jejich doprovod čeká bohatý program, občerstvení a přátelská atmosféra. Ať už jste
                         zkušený běžec, nebo si chcete užít pohyb v přírodě, Lesempolem je akcí, na kterou budete rádi
@@ -52,7 +51,7 @@ export const HomepagePage: FC = () => {
                             variant={'success'}
                             size={"lg"}
                             onClick={() => handleClickbait()}>
-                            Lesempolem výsledky
+                            Registrace 16. 5. 2026
                         </Button>
                     </p>
                 </Col>
@@ -72,8 +71,8 @@ export const HomepagePage: FC = () => {
 
             <Row id={'bb'} className={'d-none d-sm-none d-md-none d-lg-block'}>
                 <Button variant={"success"} size={'lg'} className={'btn-big mb-3'} onClick={() => handleClickbait()}>
-                    LESEMPOLEM<br/>
-                    VÝSLEDKY
+                    REGISTRACE<br/>
+                    16. 5. 2026
                 </Button>
             </Row>
         </>
