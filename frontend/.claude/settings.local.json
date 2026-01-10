@@ -9,7 +9,8 @@
       "Bash(yarn add:*)",
       "Bash(yarn lint:*)",
       "Bash(yarn fix:*)",
-      "Bash(CI=true yarn test:*)"
+      "Bash(CI=true yarn test:*)",
+      "Bash(yarn start)"
     ]
   }
 }

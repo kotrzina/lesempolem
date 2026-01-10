@@ -1,4 +1,4 @@
-const BACKEND_URL: string = process.env.REACT_APP_BACKEND_URL as string
+const BACKEND_URL: string = "https://lesempolem-backend-460110181987.europe-west1.run.app/lesempolem2026"
 
 /** internal type for frontend application */
 export type     Racer = {
