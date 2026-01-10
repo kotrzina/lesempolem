@@ -76,7 +76,7 @@ export async function fetchRegisteredRacers(): Promise<Racer[]> {
 }
 
 /** Formats date to 2006/01/02 format used by backend */
-function formatDateToApi(date: Date): string {
+export function formatDateToApi(date: Date): string {
     const d = date.getDate().toString()
     const m = (date.getMonth() + 1).toString()
     const y = date.getFullYear().toString()
