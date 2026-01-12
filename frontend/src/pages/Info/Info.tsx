@@ -99,7 +99,6 @@ export const Info: FC = () => {
                     <p>Jako každý rok bude v místě průběhu do dalšího kola a v cíli bude připraveno bohaté občerstvení dodané pořadateli (voda, čaj, iontový nápoj, sůl, Coca cola, ovoce) + stoly určené pro možnost uložení vlastního občerstvení. Ani letos nebude chybět oblíbená tradiční Loštická pomazánka.</p>
                     <p>Pro příchozí diváky bude připraven kulturní program, udírna, výčep, bohaté občerstvení a napínavé doprovodné dětské běhy v kategoriích dle vzrůstu, vyspělosti a počtu příchozích.</p>
                     <p>Prezence a zázemí závodu bude tradičně v kulturním domě (Informační centrum ve Veselici) v těsné blízkosti startu a cíle. Parkování bude zajištěno na parkovištích ve vzdálenosti 200m od prezentace. Z pátku na sobotu bude umožněno za symbolický poplatek přespání v kulturním domě ve vlastních spacácích.</p>
-                    <p>Celá akce spočívá na práci společenství Kotržiny, složené z dobrovolných hasičů, oddílu stolního tenisu a dalších dobrovolníků z místních spolků.</p>
                     <p>Celá akce probíhající ve složitém terénu spočívá na dobrovolné práci pořadatelů – dobrovolníků. Snad se i letos tak, jak v předešlých ročnících všechna vynaložená námaha a atmosféra příprav přenese až k vám, účastníkům a návštěvníkům tohoto závodu. Těšíme se na vás!</p>
                 </Col>
             </Row>
