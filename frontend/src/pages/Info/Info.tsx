@@ -36,6 +36,8 @@ export const Info: FC = () => {
                     <h1>Informace pro účastníky</h1>
                     <p>{text.header.pre}</p>
                     <p>{text.header.intro}</p>
+                    <p>{text.header.spectators}</p>
+                    <p>{text.header.accommodation}</p>
                     <p>{text.header.organizers}</p>
                     <p>{text.header.end}</p>
                 </Col>
