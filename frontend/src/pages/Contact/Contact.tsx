@@ -38,7 +38,7 @@ export const Contact: FC = () => {
         {
             name: 'Luba Němec',
             photoPath: kozelPhoto,
-            description: 'Náš Kozlík shání a diriguje tu spoustu lidí, kteří vás pak po trati směrují, abyste nám někde nezabloudili. Také zajištuje všechny dobroty k jídlu a pití.',
+            description: 'Náš Kozlík shání a diriguje tu spoustu lidí, kteří vás pak po trati směrují, abyste nám někde nezabloudili. Také zajišťuje všechny dobroty k jídlu a pití.',
             email: 'lubanemec88@gmail.com',
             phone: '728 637 987',
         }

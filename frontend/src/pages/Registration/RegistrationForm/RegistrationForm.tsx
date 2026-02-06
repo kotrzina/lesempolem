@@ -158,7 +158,7 @@ export const RegistrationForm: FC<Props> = (props) => {
                         type={'text'}
                         label={'Jméno'}
                         fieldError={name.error}
-                        placeholder={'Zadejte tvoje jméno'}
+                        placeholder={'Zadej své jméno'}
                         onChange={(v) => setName({value: v, error: false,})}
                     />
                     <TextFormField
@@ -168,7 +168,7 @@ export const RegistrationForm: FC<Props> = (props) => {
                         type={'text'}
                         label={'Příjmení'}
                         fieldError={surname.error}
-                        placeholder={'Zadejte tvoje příjmení'}
+                        placeholder={'Zadej své příjmení'}
                         onChange={(v) => setSurname({value: v, error: false,})}
                     />
                     <TextFormField

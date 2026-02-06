@@ -39,10 +39,10 @@ const races = [
         distance: "84 km",
         categories: [
             { name: "Muži do 39 let", gender: "m" },
-            { name: "Muži do 40 - 59 let", gender: "m" },
+            { name: "Muži 40–59 let", gender: "m" },
             { name: "Muži nad 60 let", gender: "m" },
             { name: "Ženy do 39 let", gender: "f" },
-            { name: "Ženy do 40 - 59 let", gender: "f" },
+            { name: "Ženy 40–59 let", gender: "f" },
             { name: "Ženy nad 60 let", gender: "f" }
         ]
     },
@@ -95,7 +95,7 @@ export const Info: FC = () => {
             <Row>
                 <Col md={12}>
                     <h1>Informace pro účastníky</h1>
-                    <p>Nejen vytrvalostní běžce ale i všechny ty kdo milují pohyb v přírodě, zveme na další ročník mezi běžci oblíbený ultra podnik navazující na tradiční Loštický „Borák".</p>
+                    <p>Nejen vytrvalostní běžce, ale i všechny ty, kdo milují pohyb v přírodě, zveme na další ročník mezi běžci oblíbený ultra podnik navazující na tradiční Loštický „Borák".</p>
                     <p>Jako každý rok bude v místě průběhu do dalšího kola a v cíli bude připraveno bohaté občerstvení dodané pořadateli (voda, čaj, iontový nápoj, sůl, Coca cola, ovoce) + stoly určené pro možnost uložení vlastního občerstvení. Ani letos nebude chybět oblíbená tradiční Loštická pomazánka.</p>
                     <p>Pro příchozí diváky bude připraven kulturní program, výčep, bohaté občerstvení a napínavé doprovodné dětské běhy v kategoriích dle vzrůstu, vyspělosti a počtu příchozích.</p>
                     <p>Prezence a zázemí závodu bude tradičně v kulturním domě (Informační centrum ve Veselici) v těsné blízkosti startu a cíle. Parkování bude zajištěno na parkovištích ve vzdálenosti 200m od prezentace. Z pátku na sobotu bude umožněno za symbolický poplatek přespání v kulturním domě ve vlastních spacácích.</p>
