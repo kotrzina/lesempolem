@@ -16,7 +16,8 @@ const rules = [
     "Čas startu: 07:00 a 11:00",
     "Prezence min. 15 minut před startem závodu",
     "Místo startu: Víceúčelová budova kulturního domu ve Veselici",
-    "Pro zařazení do kategorie je rozhodující rok narození."
+    "Pro zařazení do kategorie je rozhodující rok narození.",
+    "Maraton je zařazen do <a target=\"_blank\" href=\"https://www.oblblansko.cz/index.php?page=terminovka\">Okresní běžecké ligy Blansko</a>"
 ];
 
 const track = [
@@ -47,7 +48,7 @@ const races = [
         ]
     },
     {
-        name: "Maraton",
+        name: "Maraton (OBL)",
         start: "11:00",
         distance: "42 km",
         categories: [

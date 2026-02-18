@@ -32,9 +32,10 @@ export const HomepagePage: FC = () => {
                         Lesempolem je jedinečný běžecký závod, který se každoročně koná v malebném prostředí obce
                         Veselice v Jihomoravském kraji. Trať závodu vede převážně lesními a polními cestami v okolí
                         rozhledny Podvrší, což nabízí nádherné výhledy a zážitek z běhu v přírodě. Závod je určen pro
-                        široké spektrum běžců – od amatérů až po zkušené závodníky – a nabízí různé délky tras, včetně 10
-                        km, maratonu a ultramaratonu. Díky různorodosti tratí si zde každý najde
+                        široké spektrum běžců – od amatérů až po zkušené závodníky – a nabízí tři tratě: 14 km,
+                        maraton (42 km) a ultramaraton (84 km). Díky různorodosti tratí si zde každý najde
                         výzvu odpovídající své kondici.
+                        Maraton je součástí Okresní běžecké ligy Blansko.
 
                         Start a cíl se nachází ve sportovním areálu ve Veselici, kde na
                         běžce i jejich doprovod čeká bohatý program, občerstvení a přátelská atmosféra. Ať už jste
