@@ -22,7 +22,7 @@ export const Track: FC = () => {
 
                 <Ratio aspectRatio={'16x9'}>
                     <iframe style={{border: "none"}}
-                            src="https://en.frame.mapy.cz/s/gumohusame"
+                            src="https://en.frame.mapy.cz/s/nucemavako"
                             width="100%"
                             height="400"
                             frameBorder="0">
