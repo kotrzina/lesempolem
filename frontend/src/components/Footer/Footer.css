@@ -26,4 +26,36 @@
     margin-bottom: 20px;
 }
 
+#sponsors .partner {
+    padding-top: 30px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#sponsors .partner .partner-body {
+    max-width: 640px;
+    text-align: center;
+    color: #fff;
+    padding: 0 16px;
+}
+
+#sponsors .partner .partner-body img {
+    max-width: 240px;
+    width: 100%;
+    height: auto;
+    margin: 0 0 12px;
+}
+
+#sponsors .partner .partner-body p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+#sponsors .partner + .list {
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 24px;
+}
+
 
