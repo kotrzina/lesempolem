@@ -102,6 +102,7 @@ export const Info: FC = () => {
                     <p>Pro příchozí diváky bude připraven kulturní program – loutkové divadlo „Hrnečku, vař!" a nafukovací hrad pro děti, výčep a ohniště na opékání párků. Napínavé doprovodné dětské běhy proběhnou v kategoriích dle vzrůstu, vyspělosti a počtu příchozích.</p>
                     <p>Prezence a zázemí závodu bude tradičně v kulturním domě (Informační centrum ve Veselici) v těsné blízkosti startu a cíle. Parkování bude zajištěno na parkovištích ve vzdálenosti 200m od prezentace. Z pátku na sobotu bude umožněno za symbolický poplatek přespání v kulturním domě ve vlastních spacácích.</p>
                     <p>Celá akce probíhající ve složitém terénu spočívá na dobrovolné práci pořadatelů – dobrovolníků ze spolku Kotržiny a partnerských organizací. Poděkování patří i sponzorovi Trido s.r.o. Snad se i letos tak, jak v předešlých ročnících všechna vynaložená námaha a atmosféra příprav přenese až k vám, účastníkům a návštěvníkům tohoto závodu. Těšíme se na vás!</p>
+                    <p>Konání akce umožnil podnik Lesy České republiky, s.&nbsp;p. Závod se koná na území, které spravuje státní podnik Lesy České republiky – jsou to i Vaše lesy, chovejme se tady ohleduplně.</p>
                 </Col>
             </Row>
 

@@ -11,15 +11,12 @@ import {FC} from "react";
 export const Footer: FC = () => (
     <div id={'sponsors'}>
         <Container>
-            <Row className={'partner'}>
-                <div className={'partner-body'}>
-                    <a rel="noreferrer" target={'_blank'} href={'https://lesycr.cz/'}>
-                        <img src={LesyCrImage} alt={'Lesy České republiky, s. p.'}/>
-                    </a>
-                    <p>Konání akce umožnil podnik Lesy České republiky, s.&nbsp;p. Závod se koná na území, které spravuje státní podnik Lesy České republiky – jsou to i Vaše lesy, chovejme se tady ohleduplně.</p>
-                </div>
-            </Row>
             <Row md={12} className={'list'}>
+                <Sponsor
+                    name={'Lesy České republiky, s. p.'}
+                    link={'https://lesycr.cz/'}
+                    image={LesyCrImage}
+                />
                 <Sponsor
                     name={'Dobrý Dost - Poctivý Jerky z Krasu'}
                     link={'https://www.dobrydost.cz/'}
