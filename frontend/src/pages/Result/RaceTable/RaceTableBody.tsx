@@ -1,5 +1,5 @@
 import {Race, Result} from "../Results";
-import {isMultilap, showCategories, showCategoryPlaces, showClub} from "./RaceTableModel";
+import {isMultilap, showCategories, showCategoryPlaces, showClub, showDiscipline} from "./RaceTableModel";
 import {FC} from "react";
 
 type Props = {
@@ -28,20 +28,37 @@ export const RaceTableBody: FC<Props> = (props: Props) => {
             cols.push(result.club ? result.club : "")
         }
 
+        const discipline = showDiscipline(props.race)
+        if (discipline) {
+            cols.push(result.discipline ? result.discipline : "")
+        }
+
         const multilap = isMultilap(props.race)
         if (!multilap) {
             if (result.dnf || result.dns) {
                 cols = [...cols, ...disqualificationRow(props.race.laps, result.dnf, result.dns)]
-                cols.push("") // diff
+                if (!discipline) {
+                    cols.push("") // diff
+                }
             } else {
                 cols.push(result.laps[0].time)
-                cols.push(result.laps[0].diff)
+                if (!discipline) {
+                    cols.push(result.laps[0].diff)
+                }
             }
         } else {
             if (result.dnf || result.dns) {
                 cols = [...cols, ...disqualificationRow(props.race.laps, result.dnf, result.dns)]
             } else {
-                result.laps.map(lap => cols.push(lap.time + " [" + lap.position + "]"))
+                result.laps.map(lap => {
+                    if (!lap.time) {
+                        cols.push("")
+                    } else if (lap.position) {
+                        cols.push(lap.time + " [" + lap.position + "]")
+                    } else {
+                        cols.push(lap.time)
+                    }
+                })
             }
         }
 

@@ -1,5 +1,5 @@
 import {Race} from "../Results";
-import {isMultilap, showCategories, showCategoryPlaces, showClub} from "./RaceTableModel";
+import {isMultilap, showCategories, showCategoryPlaces, showClub, showDiscipline} from "./RaceTableModel";
 import {FC} from "react";
 
 type Props = {
@@ -26,11 +26,18 @@ export const RaceTableHeader: FC<Props> = (props: Props) => {
             cols.push('Klub')
         }
 
+        const discipline = showDiscipline(props.race)
+        if (discipline) {
+            cols.push('Disciplína')
+        }
+
         const multilap = isMultilap(props.race)
 
         if (!multilap) {
             cols.push('Čas')
-            cols.push('Ztráta')
+            if (!discipline) {
+                cols.push('Ztráta')
+            }
         }
 
         if (multilap) {
