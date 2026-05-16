@@ -16,7 +16,7 @@ export const HomepagePage: FC = () => {
     const navigate = useNavigate();
 
     function handleClickbait() {
-        navigate(Address.registration)
+        navigate(Address.resultsPlaceholder.replace(':year', '2026'))
     }
 
     return (
@@ -52,7 +52,7 @@ export const HomepagePage: FC = () => {
                             variant={'success'}
                             size={"lg"}
                             onClick={() => handleClickbait()}>
-                            Registrace 16. 5. 2026
+                            Výsledky 16. 5. 2026
                         </Button>
                     </p>
                 </Col>
@@ -72,7 +72,7 @@ export const HomepagePage: FC = () => {
 
             <Row id={'bb'} className={'d-none d-sm-none d-md-none d-lg-block'}>
                 <Button variant={"success"} size={'lg'} className={'btn-big mb-3'} onClick={() => handleClickbait()}>
-                    REGISTRACE<br/>
+                    VÝSLEDKY<br/>
                     16. 5. 2026
                 </Button>
             </Row>
