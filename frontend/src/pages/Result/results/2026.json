@@ -1177,6 +1177,54 @@
           ]
         },
         {
+          "place": 27,
+          "category_place": 1,
+          "sn": 58,
+          "name": "Šlégrová Marcela",
+          "club": "Jazykovka Letovice Team",
+          "category": "MZV2",
+          "laps": [
+            {
+              "lap": 1,
+              "time": ""
+            },
+            {
+              "lap": 2,
+              "time": ""
+            },
+            {
+              "lap": 3,
+              "time": "06:30:06",
+              "position": 27,
+              "lapTime": "06:30:06"
+            }
+          ]
+        },
+        {
+          "place": 28,
+          "category_place": 3,
+          "sn": 57,
+          "name": "Daněk Milan",
+          "club": "Horizont Kola Novák Blansko",
+          "category": "MMV2",
+          "laps": [
+            {
+              "lap": 1,
+              "time": ""
+            },
+            {
+              "lap": 2,
+              "time": ""
+            },
+            {
+              "lap": 3,
+              "time": "07:12:00",
+              "position": 28,
+              "lapTime": "07:12:00"
+            }
+          ]
+        },
+        {
           "place": null,
           "sn": 77,
           "name": "Magál Igor",
@@ -1814,6 +1862,53 @@
               "diff": "+ 2h 1m 51s",
               "position": 37,
               "lapTime": "03:00:18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Čárkaři",
+      "distance": 0,
+      "laps": 1,
+      "lapDistance": 0,
+      "results": [
+        {
+          "place": 1,
+          "sn": 63,
+          "name": "Bohunický Cyril",
+          "club": "ADA Resorts",
+          "discipline": "Maraton (42 km)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "06:08:07"
+            }
+          ]
+        },
+        {
+          "place": 2,
+          "sn": 7,
+          "name": "Krejčiříková Kateřina",
+          "club": "Svatá Kateřina",
+          "discipline": "Kolo (14 km)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "02:38:07"
+            }
+          ]
+        },
+        {
+          "place": 3,
+          "sn": 8,
+          "name": "Krejčiřík Jan",
+          "club": "Svatá Kateřina",
+          "discipline": "Kolo (14 km)",
+          "laps": [
+            {
+              "lap": 1,
+              "time": "02:38:07"
             }
           ]
         }

@@ -24,6 +24,7 @@ export type Result = {
     name: string;
     club?: string;
     category?: string;
+    discipline?: string;
     laps: Lap[];
     dnf?: boolean;
     dns?: boolean;

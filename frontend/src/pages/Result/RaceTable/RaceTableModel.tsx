@@ -30,6 +30,10 @@ function showClub(race: Race): boolean {
     return false
 }
 
+function showDiscipline(race: Race): boolean {
+    return race.results.some(r => isSet(r.discipline))
+}
+
 function isMultilap(race: Race): boolean {
     return race.laps > 1
 }
@@ -38,4 +42,4 @@ function isSet(v?: string | number | undefined): boolean {
     return typeof v !== 'undefined' && v !== null
 }
 
-export {showCategories, showCategoryPlaces, showClub, isMultilap}
+export {showCategories, showCategoryPlaces, showClub, showDiscipline, isMultilap}

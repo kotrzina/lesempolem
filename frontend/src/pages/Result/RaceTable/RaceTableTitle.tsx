@@ -8,6 +8,9 @@ type Props = {
 export const RaceTableTitle: FC<Props> = (props: Props) => {
 
     function getTitle(): string {
+        if (props.title && props.distance <= 0) {
+            return props.title
+        }
         if (props.title) {
             return props.title + " - " + formatDistance(props.distance)
         } else {
