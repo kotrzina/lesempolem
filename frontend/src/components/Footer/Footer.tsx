@@ -6,6 +6,7 @@ import KolaNovakImage from './sponsorImages/kola_novak.png'
 import KotrzinaImage from './sponsorImages/kotrzina-logo.png'
 import DobryDost from './sponsorImages/dobrydost.webp'
 import LesyCrImage from './sponsorImages/lesy_cr.jpg'
+import TopPolepImage from './sponsorImages/top_polep.png'
 import {FC} from "react";
 
 export const Footer: FC = () => (
@@ -36,6 +37,11 @@ export const Footer: FC = () => (
                     name={'Trido - Profesionální garážová vrata'}
                     link={'https://www.trido.cz/'}
                     image={TridoImage}
+                />
+                <Sponsor
+                    name={'Top Polep - Reklamní polepy, tisk a světelná reklama'}
+                    link={'https://www.top-polep.cz/'}
+                    image={TopPolepImage}
                 />
                 <Sponsor
                     name={'Společenství přátel Kotržiny'}
