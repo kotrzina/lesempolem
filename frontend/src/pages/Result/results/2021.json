@@ -1,6 +1,12 @@
 {
   "title": "Výsledky závodu v roce 2021",
   "year": 2021,
+  "photoAlbums": [
+    {
+      "author": "Dana",
+      "url": "https://www.rajce.idnes.cz/dao/album/lesempolem-mcr-v-ultratrailu-2021"
+    }
+  ],
   "races": [
     {
       "title": "MČR ultramaraton",

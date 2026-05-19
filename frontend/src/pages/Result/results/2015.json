@@ -1,6 +1,12 @@
 {
   "title": "Výsledky závodu v roce 2015",
   "year": 2015,
+  "photoAlbums": [
+    {
+      "author": "Dana",
+      "url": "https://www.rajce.idnes.cz/dao/album/lesempolem-2015"
+    }
+  ],
   "races": [
     {
       "distance": 10000,
