@@ -2,12 +2,12 @@ import {Button, Col, Row} from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
 import './Homepage.css';
 import Address from "../../Address";
-import {Photo} from "../../components/Photo/Photo";
-import photo1 from './images/photo_1.jpg'
-import photo2 from './images/photo_2.jpg'
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 import {FC} from "react";
 
+const photoAlbums: { author: string; url: string }[] = [
+    {author: 'Dana', url: 'https://www.rajce.idnes.cz/dao/album/lesempolem-2026'},
+];
 
 export const HomepagePage: FC = () => {
 
@@ -47,26 +47,25 @@ export const HomepagePage: FC = () => {
                     </p>
                 </Col>
                 <Col xs={12}>
-                <p>
+                    <div className={'d-flex flex-wrap gap-2 mb-3'}>
                         <Button
                             variant={'success'}
                             size={"lg"}
                             onClick={() => handleClickbait()}>
                             Výsledky 16. 5. 2026
                         </Button>
-                    </p>
-                </Col>
-
-                <Col xs={12}>
-                    <h2>Fotky ze závodu:</h2>
-                </Col>
-
-                <Col xs={6}>
-                    <Photo src={photo1}/>
-                </Col>
-
-                <Col xs={6}>
-                    <Photo src={photo2}/>
+                        {photoAlbums.map((album) => (
+                            <Button
+                                key={album.url}
+                                variant={'success'}
+                                size={'lg'}
+                                href={album.url}
+                                target={'_blank'}
+                                rel={'noopener noreferrer'}>
+                                Fotky od {album.author}
+                            </Button>
+                        ))}
+                    </div>
                 </Col>
             </Row>
 
@@ -75,6 +74,16 @@ export const HomepagePage: FC = () => {
                     VÝSLEDKY<br/>
                     16. 5. 2026
                 </Button>
+                {photoAlbums.map((album) => (
+                    <a
+                        key={album.url}
+                        href={album.url}
+                        target={'_blank'}
+                        rel={'noopener noreferrer'}
+                        className={'photo-link'}>
+                        Fotky od {album.author} →
+                    </a>
+                ))}
             </Row>
         </>
     );
