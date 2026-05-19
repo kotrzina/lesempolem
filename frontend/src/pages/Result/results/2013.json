@@ -1,6 +1,16 @@
 {
   "title": "Výsledky závodu v roce 2013",
   "year": 2013,
+  "photoAlbums": [
+    {
+      "author": "mag80",
+      "url": "https://www.rajce.idnes.cz/mag80/album/lesempolem-veselice-15-6-2013"
+    },
+    {
+      "author": "vileda",
+      "url": "https://www.rajce.idnes.cz/vileda/album/lesempolem-zavody-veselice"
+    }
+  ],
   "races": [
     {
       "distance": 10000,

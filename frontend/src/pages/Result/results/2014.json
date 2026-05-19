@@ -1,6 +1,20 @@
 {
   "title": "Výsledky závodu v roce 2014",
   "year": 2014,
+  "photoAlbums": [
+    {
+      "author": "Nikol9",
+      "url": "https://www.rajce.idnes.cz/nikol9/album/lesempolem-veselice-14-6-2014"
+    },
+    {
+      "author": "simumar",
+      "url": "https://www.rajce.idnes.cz/simumar/album/lesempolem-veselice-14-6-2014"
+    },
+    {
+      "author": "Věra",
+      "url": "https://www.rajce.idnes.cz/verkaal/album/lesempolem-veselice-14-6-2014"
+    }
+  ],
   "races": [
     {
       "distance": 10250,

@@ -1,6 +1,20 @@
 {
   "title": "Výsledky závodu v roce 2018",
   "year": 2018,
+  "photoAlbums": [
+    {
+      "author": "AK Blansko Dvorská",
+      "url": "https://www.rajce.idnes.cz/akbd/album/lesempolem-ve-veselici-16-6-2018"
+    },
+    {
+      "author": "OBL Blansko",
+      "url": "https://www.rajce.idnes.cz/okresni-bezecka-liga/album/16-6-2018-lesempolem-veselice"
+    },
+    {
+      "author": "Perun Team Blansko",
+      "url": "https://www.rajce.idnes.cz/perunteamblansko/album/2018-06-16-obl-lesempolem"
+    }
+  ],
   "races": [
     {
       "distance": 10000,
