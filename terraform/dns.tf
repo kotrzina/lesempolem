@@ -47,3 +47,45 @@ resource "cloudflare_record" "google_verification" {
   type    = "TXT"
   value   = "google-site-verification=ZI4A65BCTQPahqvG4tUljiJEgagRmdjnQ_6mfxGvbN8"
 }
+
+resource "cloudflare_record" "spf" {
+  zone_id = cloudflare_zone.lesempolem_cz.id
+  name    = "lesempolem.cz"
+  type    = "TXT"
+  value   = "v=spf1 include:spf.seznam.cz ~all"
+}
+
+resource "cloudflare_record" "dkim_sig" {
+  zone_id = cloudflare_zone.lesempolem_cz.id
+  name    = "szn20221014._domainkey.lesempolem.cz."
+  type    = "CNAME"
+  value   = "szn20221014._domainkey.seznam.cz."
+}
+
+resource "cloudflare_record" "dkim_szn1" {
+  zone_id = cloudflare_zone.lesempolem_cz.id
+  name    = "szn1._domainkey.lesempolem.cz."
+  type    = "CNAME"
+  value   = "szn1._domainkey.seznam.cz."
+}
+
+resource "cloudflare_record" "dkim_szn2" {
+  zone_id = cloudflare_zone.lesempolem_cz.id
+  name    = "szn2._domainkey.lesempolem.cz."
+  type    = "CNAME"
+  value   = "szn2._domainkey.seznam.cz."
+}
+
+resource "cloudflare_record" "dkim_szn3" {
+  zone_id = cloudflare_zone.lesempolem_cz.id
+  name    = "szn3._domainkey.lesempolem.cz."
+  type    = "CNAME"
+  value   = "szn3._domainkey.seznam.cz."
+}
+
+resource "cloudflare_record" "dmarc" {
+  zone_id = cloudflare_zone.lesempolem_cz.id
+  name    = "_dmarc"
+  type    = "TXT"
+  value   = "v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s"
+}
