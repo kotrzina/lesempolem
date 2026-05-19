@@ -1,6 +1,12 @@
 {
   "title": "Výsledky závodu v roce 2023",
   "year": 2022,
+  "photoAlbums": [
+    {
+      "author": "Dana",
+      "url": "https://www.rajce.idnes.cz/dao/album/lesempolem-2023-mcr-v-ultratrailu"
+    }
+  ],
   "races": [
     {
       "title": "MČR ultramaraton",
