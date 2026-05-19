@@ -1,6 +1,12 @@
 {
   "title": "Výsledky závodu v roce 2025",
   "year": 2015,
+  "photoAlbums": [
+    {
+      "author": "Dana",
+      "url": "https://www.rajce.idnes.cz/dao/album/lesem-borem-2025"
+    }
+  ],
   "races": [
     {
       "title": "Ultramaraton",

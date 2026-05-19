@@ -1,6 +1,12 @@
 {
   "title": "Výsledky závodu v roce 2022",
   "year": 2022,
+  "photoAlbums": [
+    {
+      "author": "Dana",
+      "url": "https://www.rajce.idnes.cz/dao/album/lesempolem-2022"
+    }
+  ],
   "races": [
     {
       "title": "Ultramaraton",

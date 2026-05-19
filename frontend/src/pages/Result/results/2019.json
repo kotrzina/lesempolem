@@ -1,6 +1,12 @@
 {
   "title": "Výsledky závodu v roce 2019",
   "year": 2019,
+  "photoAlbums": [
+    {
+      "author": "Dana",
+      "url": "https://www.rajce.idnes.cz/dao/album/lesempolem-2019"
+    }
+  ],
   "races": [
     {
       "distance": 10000,
