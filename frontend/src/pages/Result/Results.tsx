@@ -1,5 +1,5 @@
 import {FC, useEffect, useState, useMemo} from "react";
-import {Col, Row, Spinner} from "react-bootstrap";
+import {Button, Col, Row, Spinner} from "react-bootstrap";
 import {RaceTable} from "./RaceTable/RaceTable";
 import './Results.css'
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
@@ -38,10 +38,16 @@ export type Race = {
     results: Result[]
 }
 
+export type PhotoAlbum = {
+    author: string;
+    url: string;
+}
+
 type Competition = {
     title: string;
     year: number;
     races: Race[];
+    photoAlbums?: PhotoAlbum[];
 }
 
 export const Results: FC<Props> = (props) => {
@@ -96,6 +102,23 @@ export const Results: FC<Props> = (props) => {
                     <h1>{competition.title}</h1>
                 </Col>
 
+                {competition.photoAlbums && competition.photoAlbums.length > 0 && (
+                    <Col sm={12}>
+                        <div className={'d-flex flex-wrap gap-2 mb-3'}>
+                            {competition.photoAlbums.map((album) => (
+                                <Button
+                                    key={album.url}
+                                    variant={'success'}
+                                    size={'lg'}
+                                    href={album.url}
+                                    target={'_blank'}
+                                    rel={'noopener noreferrer'}>
+                                    Fotky od {album.author}
+                                </Button>
+                            ))}
+                        </div>
+                    </Col>
+                )}
 
                 {showSpinner()}
 

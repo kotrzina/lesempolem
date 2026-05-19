@@ -1,6 +1,12 @@
 {
   "title": "Výsledky závodu v roce 2026",
   "year": 2026,
+  "photoAlbums": [
+    {
+      "author": "Dana",
+      "url": "https://www.rajce.idnes.cz/dao/album/lesempolem-2026"
+    }
+  ],
   "races": [
     {
       "title": "Ultramaraton",
