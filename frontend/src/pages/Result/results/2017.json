@@ -1,6 +1,24 @@
 {
   "title": "Výsledky závodu v roce 2017",
   "year": 2017,
+  "photoAlbums": [
+    {
+      "author": "Lenkatopka",
+      "url": "https://www.rajce.idnes.cz/lenkatopka/album/10-6-2017-lesempolem-veselice"
+    },
+    {
+      "author": "mag80",
+      "url": "https://www.rajce.idnes.cz/mag80/album/lesempolem-veselice-10-6-2017"
+    },
+    {
+      "author": "Nikol9",
+      "url": "https://www.rajce.idnes.cz/nikol9/album/lesempolem-10-6-2017"
+    },
+    {
+      "author": "simumar",
+      "url": "https://www.rajce.idnes.cz/simumar/album/lesempolem-veselice-10-6-2017"
+    }
+  ],
   "races": [
     {
       "distance": 10000,

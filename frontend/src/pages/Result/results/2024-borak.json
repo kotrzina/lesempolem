@@ -1,6 +1,12 @@
 {
   "title": "Výsledky závodu Borák za tvarůžkem v roce 2024",
   "year": 2024,
+  "photoAlbums": [
+    {
+      "author": "Dana",
+      "url": "https://www.rajce.idnes.cz/dao/album/borak-ve-veselici-11-5-2024"
+    }
+  ],
   "races": [
     {
       "title": "Ultramaraton",
