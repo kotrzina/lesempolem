@@ -5,3 +5,18 @@
     min-height: 32.5em;
     padding-top: 1.15em;
 }
+
+#bb .photo-link {
+    display: block;
+    width: 380px;
+    text-align: center;
+    color: #1e7e34;
+    font-size: 125%;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 0.5em;
+}
+
+#bb .photo-link:hover {
+    text-decoration: underline;
+}
