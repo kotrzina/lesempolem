@@ -6,7 +6,7 @@ import {useDocumentTitle} from "../../hooks/useDocumentTitle";
 import {FC} from "react";
 
 const photoAlbums: { author: string; url: string }[] = [
-    {author: 'Dana', url: 'https://www.rajce.idnes.cz/dao/album/lesempolem-2026'},
+    {author: 'Dan Orálek', url: 'https://www.rajce.idnes.cz/dao/album/lesempolem-2026'},
 ];
 
 export const HomepagePage: FC = () => {
