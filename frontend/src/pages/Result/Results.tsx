@@ -1,5 +1,7 @@
 import {FC, useEffect, useState, useMemo} from "react";
 import {Button, Col, Row, Spinner} from "react-bootstrap";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faCamera} from "@fortawesome/free-solid-svg-icons";
 import {RaceTable} from "./RaceTable/RaceTable";
 import './Results.css'
 import {useDocumentTitle} from "../../hooks/useDocumentTitle";
@@ -113,7 +115,8 @@ export const Results: FC<Props> = (props) => {
                                     href={album.url}
                                     target={'_blank'}
                                     rel={'noopener noreferrer'}>
-                                    Fotky od {album.author}
+                                    <FontAwesomeIcon icon={faCamera} className={'me-2'}/>
+                                    {album.author}
                                 </Button>
                             ))}
                         </div>
